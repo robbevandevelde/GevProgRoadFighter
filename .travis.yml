@@ -20,9 +20,6 @@ addons:
     - libfreetype6-dev
     - libvorbis-dev
     - libflac-dev
-cache:
-      directories:
-      - $HOME/SFML-2.5.0_LINUX
 install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
 - sudo apt-get install libsfml-dev
