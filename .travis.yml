@@ -22,7 +22,6 @@ addons:
     - libflac-dev
 install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
-- sudo apt-get install libsfml-dev
 
 script:
   - mkdir build
@@ -31,7 +30,6 @@ script:
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
 
 before_install:
-  - sudo apt-add-repository ppa:sonkun/sfml-development --yes
   - mkdir $HOME/usr
   - export PATH="$HOME/usr/bin:$PATH"
   - wget https://cmake.org/files/v3.12/cmake-3.12.3-Linux-x86_64.sh
