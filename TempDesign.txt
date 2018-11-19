@@ -1,0 +1,33 @@
+needed:
+    -1 controlable player ->entity
+    -1 computer controlled car ->entity
+    -2 extra vehicles ->entity
+    -abiltiy to shoot bullets ->entity
+    -live score system ->seperate process?
+    -cars can only drive on roads (duh)
+    -game logic in seperate library
+    -SFML must be split off from the game logic
+    -input in seperate class
+    -hierarchy of game objects
+    -entity class->this class will have a lot of subclasses that are made with abstract factory
+    -game class
+    -singleton random class
+    -singleton transformation class
+    -rectangle based collision detection
+    -SFML in visual representation (remember split from gam logic)
+    -use the c++ clock function to make the program run equally on all pc's
+    -comments and documentation(using doxygen)
+    -clang tidy code formatting
+    -use cmake for project
+    -Describe entire project in Readme
+    -Work incremently
+    -use travis
+    -use gtest
+
+class design:
+    GameLibrary:
+        abstract Entity class(
+        location
+        pure virtual move function
+        virtual destructor!!
+        )
