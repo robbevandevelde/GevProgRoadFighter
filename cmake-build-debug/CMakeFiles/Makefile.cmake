@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../GameLogic/CMakeLists.txt"
   "CMakeFiles/3.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeSystem.cmake"
@@ -43,9 +44,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "GameLogic/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GevProgRoadFighter.dir/DependInfo.cmake"
+  "GameLogic/CMakeFiles/GameLogic.dir/DependInfo.cmake"
   )

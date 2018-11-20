@@ -5,3 +5,10 @@
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/install.dir
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/install/strip.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/install/local.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/GameLogic.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/edit_cache.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/rebuild_cache.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/install.dir
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/CMakeFiles/list_install_components.dir

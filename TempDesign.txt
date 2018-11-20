@@ -25,7 +25,7 @@ needed:
     -use gtest
 
 class design:
-    GameLibrary:
+    GameLibrary(all using namespace RoadFighter:
         abstract Entity class(
         location
         pure virtual move function

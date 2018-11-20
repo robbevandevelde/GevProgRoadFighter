@@ -169,6 +169,19 @@ GevProgRoadFighter/fast:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/build
 .PHONY : GevProgRoadFighter/fast
 
+#=============================================================================
+# Target rules for targets named GameLogic
+
+# Build rule for target.
+GameLogic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GameLogic
+.PHONY : GameLogic
+
+# fast build rule for target.
+GameLogic/fast:
+	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/build
+.PHONY : GameLogic/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -209,6 +222,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... GameLogic"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

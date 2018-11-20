@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRo
 CMakeFiles/GevProgRoadFighter.dir/all:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/depend
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target GevProgRoadFighter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target GevProgRoadFighter"
 .PHONY : CMakeFiles/GevProgRoadFighter.dir/all
 
 # Include target in all.
@@ -98,6 +98,61 @@ CMakeFiles/GevProgRoadFighter.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/GevProgRoadFighter.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory GameLogic
+
+# Convenience name for "all" pass in the directory.
+GameLogic/all: GameLogic/CMakeFiles/GameLogic.dir/all
+
+.PHONY : GameLogic/all
+
+# Convenience name for "clean" pass in the directory.
+GameLogic/clean: GameLogic/CMakeFiles/GameLogic.dir/clean
+
+.PHONY : GameLogic/clean
+
+# Convenience name for "preinstall" pass in the directory.
+GameLogic/preinstall:
+
+.PHONY : GameLogic/preinstall
+
+#=============================================================================
+# Target rules for target GameLogic/CMakeFiles/GameLogic.dir
+
+# All Build rule for target.
+GameLogic/CMakeFiles/GameLogic.dir/all:
+	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/depend
+	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target GameLogic"
+.PHONY : GameLogic/CMakeFiles/GameLogic.dir/all
+
+# Include target in all.
+all: GameLogic/CMakeFiles/GameLogic.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+GameLogic/CMakeFiles/GameLogic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 10
+	$(MAKE) -f CMakeFiles/Makefile2 GameLogic/CMakeFiles/GameLogic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
+.PHONY : GameLogic/CMakeFiles/GameLogic.dir/rule
+
+# Convenience name for target.
+GameLogic: GameLogic/CMakeFiles/GameLogic.dir/rule
+
+.PHONY : GameLogic
+
+# clean rule for target.
+GameLogic/CMakeFiles/GameLogic.dir/clean:
+	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/clean
+.PHONY : GameLogic/CMakeFiles/GameLogic.dir/clean
+
+# clean rule for target.
+clean: GameLogic/CMakeFiles/GameLogic.dir/clean
 
 .PHONY : clean
 

@@ -5,7 +5,7 @@
 		<Option title="GevProgRoadFighter"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\GameLogic\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
@@ -123,7 +123,82 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="GameLogic">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/libGameLogic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 GameLogic"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameLogic/fast">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/libGameLogic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 GameLogic/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Car.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entity.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PlayerCar.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entity_Factory.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/RoadFighterGame.cpp">
+			<Option target="GameLogic"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
@@ -132,6 +207,9 @@
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake/Modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GameLogic\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
