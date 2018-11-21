@@ -7,6 +7,8 @@
 
 namespace roadfighter {
     class Entity {
+        public:
+
 
     };
 }

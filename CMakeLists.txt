@@ -3,15 +3,16 @@ cmake_minimum_required(VERSION 3.12)
 project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
+#extra compile flags to make srue code conventions are followed
 set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 
-#set the path of the gamelogiclibrary ro LOGIC_INCLUDE_DIR
+# set the path of the gamelogiclibrary ro LOGIC_INCLUDE_DIR
 #SET(LOGIC_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/GameLogic)
-#run cmakelist in GameLogic
+# run cmakelist in GameLogic
 add_subdirectory(GameLogic)
 #include_directories(${LOGIC_INCLUDE_DIR})
 
@@ -19,7 +20,9 @@ add_subdirectory(GameLogic)
 FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
 #
 ## The source files to compile
-SET(SRC main.cpp)
+SET(SRC main.cpp
+        Singletons/Random.cpp
+        Singletons/Random.h)
 #
 ## Add include dirs for SFML
 ## (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)

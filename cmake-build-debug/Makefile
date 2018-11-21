@@ -182,6 +182,33 @@ GameLogic/fast:
 	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/build
 .PHONY : GameLogic/fast
 
+Singletons/Random.o: Singletons/Random.cpp.o
+
+.PHONY : Singletons/Random.o
+
+# target to build an object file
+Singletons/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o
+.PHONY : Singletons/Random.cpp.o
+
+Singletons/Random.i: Singletons/Random.cpp.i
+
+.PHONY : Singletons/Random.i
+
+# target to preprocess a source file
+Singletons/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i
+.PHONY : Singletons/Random.cpp.i
+
+Singletons/Random.s: Singletons/Random.cpp.s
+
+.PHONY : Singletons/Random.s
+
+# target to generate assembly for a file
+Singletons/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s
+.PHONY : Singletons/Random.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -223,6 +250,9 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... GameLogic"
+	@echo "... Singletons/Random.o"
+	@echo "... Singletons/Random.i"
+	@echo "... Singletons/Random.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
