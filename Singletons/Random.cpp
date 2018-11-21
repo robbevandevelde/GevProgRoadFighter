@@ -4,14 +4,17 @@
 
 #include "Random.h"
 
-Random::Random() {
- if(this->m_instance)
-}
 
-std::weak_ptr<Random> Random::getInstance() {
-    return std::weak_ptr<Random>();
-}
+Random& Random::getInstance(){
+    //private instnace here gets made staticly so there can only be made once
+    static Random instance;
+    return instance;
+};
 
 int Random::getRandom(const int to) const {
-    return 0;
+    //uniform random generator found on https://stackoverflow.com/questions/13445688/how-to-generate-a-random-number-in-c
+    std::mt19937 rng;
+    rng.seed(std::random_device()());
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(0,to);
+    return dist6(rng);
 }

@@ -4,7 +4,7 @@ project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
 #extra compile flags to make srue code conventions are followed
-set(CMAKE_CXX_FLAGS "-Wall -Werror")
+#set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules
