@@ -1,10 +1,5 @@
-cmake_minimum_required(VERSION 3.12)
-#Set the name and version for the gamelogic library
-project(RoadFighterLogicLib VERSION 1.0.0 DESCRIPTION "this is the logic library for a roadfighterGame")
 
-set(CMAKE_CXX_STANDARD 14)
-#extra flags to make sure code convetions are followed
-set(CMAKE_CXX_FLAGS "-Wall -Werror")
+set( LIB GLL)
 
 #include all the headers that are found in the include directory
 include_directories(include)
@@ -23,7 +18,7 @@ SET(SRC
         Source/Location.cpp include/Location.h)
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly
-ADD_LIBRARY(GameLogic STATIC ${SRC})
+ADD_LIBRARY(${LIB} STATIC ${SRC})
 
 
 

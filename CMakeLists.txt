@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 #extra compile flags to make srue code conventions are followed
 #set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
+#set include dir for gtest
+include_directories(gtest/include)
+# Set Library dir for gtest
+link_directories(gtest/lib)
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
@@ -31,9 +35,19 @@ INCLUDE_DIRECTORIES(${SFML_INCLUDE_DIR})
 ## The program we're compiling with the sources set above
 ADD_EXECUTABLE(GevProgRoadFighter ${SRC})
 
+
+SET(DEBUG_SRC main.cpp
+        Singletons/Random.cpp
+        Singletons/Random.h)
+## adding a test executable to test he library
+ADD_EXECUTABLE(GevProgRoadFighterTest ${DEBUG_SRC})
+
+TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  GLL)
+TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  gtest)
+
 #
-##Link the gamelogicLibrary adn make sure it is compiled before making linking to the target
-#TARGET_LINK_LIBRARIES(GevProgRoadFighter GameLogic)
+##Link the gamelogicLibrary and make sure it is compiled before making linking to the target
+TARGET_LINK_LIBRARIES(GevProgRoadFighter GLL)
 #ADD_DEPENDENCIES(GevProgRoadFighter GameLogic)
 
 ## Link target to SFML libs

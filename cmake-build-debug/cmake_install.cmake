@@ -55,6 +55,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighter")
   if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter"
+         OLD_RPATH "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
     endif()

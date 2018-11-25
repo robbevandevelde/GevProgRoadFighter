@@ -50,5 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GevProgRoadFighter.dir/DependInfo.cmake"
-  "GameLogic/CMakeFiles/GameLogic.dir/DependInfo.cmake"
+  "CMakeFiles/GevProgRoadFighterTest.dir/DependInfo.cmake"
+  "GameLogic/CMakeFiles/GLL.dir/DependInfo.cmake"
   )

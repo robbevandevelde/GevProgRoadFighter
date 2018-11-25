@@ -94,6 +94,7 @@ GevProgRoadFighter_EXTERNAL_OBJECTS =
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/build.make
+GevProgRoadFighter: GameLogic/libGLL.a
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so

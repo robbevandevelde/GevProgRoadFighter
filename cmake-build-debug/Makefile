@@ -80,28 +80,6 @@ install/local/fast: preinstall/fast
 	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,6 +101,28 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -170,17 +170,30 @@ GevProgRoadFighter/fast:
 .PHONY : GevProgRoadFighter/fast
 
 #=============================================================================
-# Target rules for targets named GameLogic
+# Target rules for targets named GevProgRoadFighterTest
 
 # Build rule for target.
-GameLogic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GameLogic
-.PHONY : GameLogic
+GevProgRoadFighterTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GevProgRoadFighterTest
+.PHONY : GevProgRoadFighterTest
 
 # fast build rule for target.
-GameLogic/fast:
-	$(MAKE) -f GameLogic/CMakeFiles/GameLogic.dir/build.make GameLogic/CMakeFiles/GameLogic.dir/build
-.PHONY : GameLogic/fast
+GevProgRoadFighterTest/fast:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/build
+.PHONY : GevProgRoadFighterTest/fast
+
+#=============================================================================
+# Target rules for targets named GLL
+
+# Build rule for target.
+GLL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GLL
+.PHONY : GLL
+
+# fast build rule for target.
+GLL/fast:
+	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/build
+.PHONY : GLL/fast
 
 Singletons/Random.o: Singletons/Random.cpp.o
 
@@ -189,6 +202,7 @@ Singletons/Random.o: Singletons/Random.cpp.o
 # target to build an object file
 Singletons/Random.cpp.o:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.o
 .PHONY : Singletons/Random.cpp.o
 
 Singletons/Random.i: Singletons/Random.cpp.i
@@ -198,6 +212,7 @@ Singletons/Random.i: Singletons/Random.cpp.i
 # target to preprocess a source file
 Singletons/Random.cpp.i:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.i
 .PHONY : Singletons/Random.cpp.i
 
 Singletons/Random.s: Singletons/Random.cpp.s
@@ -207,6 +222,7 @@ Singletons/Random.s: Singletons/Random.cpp.s
 # target to generate assembly for a file
 Singletons/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.s
 .PHONY : Singletons/Random.cpp.s
 
 main.o: main.cpp.o
@@ -216,6 +232,7 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -225,6 +242,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -234,6 +252,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -244,12 +263,13 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... GevProgRoadFighter"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... GameLogic"
+	@echo "... GevProgRoadFighter"
+	@echo "... GevProgRoadFighterTest"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... GLL"
 	@echo "... Singletons/Random.o"
 	@echo "... Singletons/Random.i"
 	@echo "... Singletons/Random.s"
