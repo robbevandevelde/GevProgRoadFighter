@@ -6,8 +6,10 @@
 #define GEVPROGROADFIGHTER_BULLET_H
 
 #include "Entity.h"
+#include "CollisionObject.h"
+
 namespace roadfighter {
-    class Bullet: public Entity {
+    class Bullet: public CollisionObject,Entity {
 
     };
 }

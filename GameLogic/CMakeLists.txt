@@ -15,7 +15,7 @@ SET(SRC
         Source/Entities/World.cpp
         Source/RoadFighterGame.cpp
         Source/Entity_Factory.cpp
-        Source/Location.cpp include/Location.h)
+        Source/Location.cpp include/Location.h Source/Entities/CollisionObject.cpp include/entities/CollisionObject.h)
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly
 ADD_LIBRARY(${LIB} STATIC ${SRC})
