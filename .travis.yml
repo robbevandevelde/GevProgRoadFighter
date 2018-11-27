@@ -20,7 +20,6 @@ addons:
     - libfreetype6-dev
     - libvorbis-dev
     - libflac-dev
-    - lgtest
 
 before_install:
   - sudo apt-get install -y libxml2-dev
@@ -30,6 +29,17 @@ before_install:
   - wget https://cmake.org/files/v3.12/cmake-3.12.3-Linux-x86_64.sh
   - chmod +x cmake-3.12.3-Linux-x86_64.sh
   - ./cmake-3.12.3-Linux-x86_64.sh --prefix=$HOME/usr --exclude-subdir --skip-license
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libgtest-dev valgrind cmake
+  - sudo wget https://github.com/google/googletest/archive/release-1.7.0.tar.gz
+  - sudo tar xf release-1.7.0.tar.gz
+  - cd googletest-release-1.7.0
+  - sudo cmake -DBUILD_SHARED_LIBS=ON .
+  - sudo make
+  - sudo cp -a include/gtest /usr/include
+  - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
+  - which valgrind
+  - cd "${TRAVIS_BUILD_DIR}"
 install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
 
