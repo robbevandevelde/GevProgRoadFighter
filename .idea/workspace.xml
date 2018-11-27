@@ -14,9 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis2.4.2Test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travisTest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis2.4.2Test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/travis2.4.2Test.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/GameLogic/cmake-build-debug/" />
@@ -68,8 +68,8 @@
           <entry key="cpp" value="1235" />
           <entry key="h" value="1574" />
           <entry key="md" value="193" />
-          <entry key="txt" value="3356" />
-          <entry key="yml" value="370" />
+          <entry key="txt" value="3395" />
+          <entry key="yml" value="387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -77,8 +77,8 @@
           <entry key="CMakeLists.txt" value="1501" />
           <entry key="Doxygen file" value="5" />
           <entry key="ObjectiveC" value="2804" />
-          <entry key="PLAIN_TEXT" value="2048" />
-          <entry key="YAML" value="370" />
+          <entry key="PLAIN_TEXT" value="2087" />
+          <entry key="YAML" value="387" />
         </counts>
       </usages-collector>
     </session>
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/GameLogic/include/entities/Bullet.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="e#115#134#0" expanded="true" />
               </folding>
@@ -97,17 +97,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            <state relative-caret-position="180">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis2.4.2Test.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travis2.4.2Test.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
@@ -243,10 +243,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="368" />
+    <option name="y" value="27" />
+    <option name="width" value="1207" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -300,7 +300,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MebTOGroep" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
@@ -381,7 +381,7 @@
       <workItem from="1542891245149" duration="4953000" />
       <workItem from="1543163574425" duration="5946000" />
       <workItem from="1543256967083" duration="43000" />
-      <workItem from="1543322649149" duration="924000" />
+      <workItem from="1543322649149" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="added cmakelist, main file, travis.yml and todo file">
       <created>1542482951227</created>
@@ -481,11 +481,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543323360848</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="testing travis">
+      <created>1543323583997</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1543323583997</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added gtest to travis">
+      <created>1543323819282</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543323819282</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45491000" />
+    <option name="totallyTimeSpent" value="46023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -552,7 +566,9 @@
     <MESSAGE value="added and linked gtest to seperate executable" />
     <MESSAGE value="attempt at making travis work with sfml 2.4.2" />
     <MESSAGE value="fixed typo in travis file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo in travis file" />
+    <MESSAGE value="testing travis" />
+    <MESSAGE value="added gtest to travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="added gtest to travis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,17 +798,10 @@
     <entry file="file://$PROJECT_DIR$/GameLogic/include/entities/Bullet.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="e#115#134#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -803,10 +812,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis2.4.2Test.yml">
+    <entry file="file://$PROJECT_DIR$/travis2.4.2Test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
