@@ -12,14 +12,18 @@ addons:
     - g++-7
     - gcc-7
     - cmake
+    - libsfml-dev
+    - libopenal-dev
+    - libjpeg-dev
+    - libudev-dev
+    - libxrandr-dev
+    - libfreetype6-dev
+    - libvorbis-dev
+    - libflac-dev
 
-
-before_script:
-  -wget https://www.sfml-dev.org/files/SFML-2.4.2-linux-gcc-64-bit.tar.gz -o /tmp/sfml.tar.gz
-  -tar -xzvf /tmp/sfml.tar.gz
-  -sudo cp -r SFML-2.4.2/* /usr/
-  -sudo apt-get install -u libjprg62-dev libsndfile1-dev libglewl1.5 libglewl1.5-dev libfreetype6 libjpeg-turbo8v libjpeg8 libopenal-dev
 before_install:
+  - sudo apt-get install -y libxml2-dev
+  - sudo apt-get install libsfml-dev
   - mkdir $HOME/usr
   - export PATH="$HOME/usr/bin:$PATH"
   - wget https://cmake.org/files/v3.12/cmake-3.12.3-Linux-x86_64.sh
