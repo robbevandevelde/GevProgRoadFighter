@@ -16,7 +16,7 @@ addons:
 
 before_script:
   -wget https://www.sfml-dev.org/files/SFML-2.4.2-linux-gcc-64-bit.tar.gz -o /tmp/sfml.tar.gz
-  -tar -xzvf /tmp/sfml.tat.gz
+  -tar -xzvf /tmp/sfml.tar.gz
   -sudo cp -r SFML-2.4.2/* /usr/
   -sudo apt-get install -u libjprg62-dev libsndfile1-dev libglewl1.5 libglewl1.5-dev libfreetype6 libjpeg-turbo8v libjpeg8 libopenal-dev
 before_install:
