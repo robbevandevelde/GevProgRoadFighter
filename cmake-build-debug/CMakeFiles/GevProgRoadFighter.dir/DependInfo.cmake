@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Singletons/Random.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Clock.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Random.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o"
   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

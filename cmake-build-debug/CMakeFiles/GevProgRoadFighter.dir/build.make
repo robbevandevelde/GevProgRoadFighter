@@ -70,36 +70,51 @@ CMakeFiles/GevProgRoadFighter.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp" -o CMakeFiles/GevProgRoadFighter.dir/main.cpp.s
 
-CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
-CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o: ../Singletons/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Singletons/Random.cpp"
+CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
+CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o: ../Utility/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Random.cpp"
 
-CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Singletons/Random.cpp" > CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i
+CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Random.cpp" > CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.i
 
-CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Singletons/Random.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s
+CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Random.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.s
+
+CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
+CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o: ../Utility/Clock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Clock.cpp"
+
+CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Clock.cpp" > CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.i
+
+CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Utility/Clock.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.s
 
 # Object files for target GevProgRoadFighter
 GevProgRoadFighter_OBJECTS = \
 "CMakeFiles/GevProgRoadFighter.dir/main.cpp.o" \
-"CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o"
+"CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o"
 
 # External object files for target GevProgRoadFighter
 GevProgRoadFighter_EXTERNAL_OBJECTS =
 
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
-GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o
+GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o
+GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/build.make
 GevProgRoadFighter: GameLogic/libGLL.a
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GevProgRoadFighter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GevProgRoadFighter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GevProgRoadFighter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

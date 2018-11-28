@@ -2,7 +2,7 @@
 // Created by thibaut on 25.11.18.
 //
 
-#include "entities/CollisionObject.h"
+#include "../../include/Entities/CollisionObject.h"
 namespace roadfighter {
 
     const Location &CollisionObject::getM_loc1() const {

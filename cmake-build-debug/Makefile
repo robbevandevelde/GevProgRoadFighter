@@ -195,35 +195,62 @@ GLL/fast:
 	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/build
 .PHONY : GLL/fast
 
-Singletons/Random.o: Singletons/Random.cpp.o
+Utility/Clock.o: Utility/Clock.cpp.o
 
-.PHONY : Singletons/Random.o
+.PHONY : Utility/Clock.o
 
 # target to build an object file
-Singletons/Random.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.o
-.PHONY : Singletons/Random.cpp.o
+Utility/Clock.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o
+.PHONY : Utility/Clock.cpp.o
 
-Singletons/Random.i: Singletons/Random.cpp.i
+Utility/Clock.i: Utility/Clock.cpp.i
 
-.PHONY : Singletons/Random.i
+.PHONY : Utility/Clock.i
 
 # target to preprocess a source file
-Singletons/Random.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.i
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.i
-.PHONY : Singletons/Random.cpp.i
+Utility/Clock.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.i
+.PHONY : Utility/Clock.cpp.i
 
-Singletons/Random.s: Singletons/Random.cpp.s
+Utility/Clock.s: Utility/Clock.cpp.s
 
-.PHONY : Singletons/Random.s
+.PHONY : Utility/Clock.s
 
 # target to generate assembly for a file
-Singletons/Random.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.s
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Singletons/Random.cpp.s
-.PHONY : Singletons/Random.cpp.s
+Utility/Clock.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.s
+.PHONY : Utility/Clock.cpp.s
+
+Utility/Random.o: Utility/Random.cpp.o
+
+.PHONY : Utility/Random.o
+
+# target to build an object file
+Utility/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.o
+.PHONY : Utility/Random.cpp.o
+
+Utility/Random.i: Utility/Random.cpp.i
+
+.PHONY : Utility/Random.i
+
+# target to preprocess a source file
+Utility/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.i
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.i
+.PHONY : Utility/Random.cpp.i
+
+Utility/Random.s: Utility/Random.cpp.s
+
+.PHONY : Utility/Random.s
+
+# target to generate assembly for a file
+Utility/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.s
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.s
+.PHONY : Utility/Random.cpp.s
 
 main.o: main.cpp.o
 
@@ -270,9 +297,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GLL"
-	@echo "... Singletons/Random.o"
-	@echo "... Singletons/Random.i"
-	@echo "... Singletons/Random.s"
+	@echo "... Utility/Clock.o"
+	@echo "... Utility/Clock.i"
+	@echo "... Utility/Clock.s"
+	@echo "... Utility/Random.o"
+	@echo "... Utility/Random.i"
+	@echo "... Utility/Random.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

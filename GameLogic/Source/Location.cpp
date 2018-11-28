@@ -2,7 +2,7 @@
 // Created by thibaut on 21.11.18.
 //
 
-#include "Location.h"
+#include "../include/Location.h"
 
 double Location::getX() const {
     return x;

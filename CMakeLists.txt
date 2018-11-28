@@ -1,4 +1,4 @@
-#help for making c++ static library found at https://www.youtube.com/watch?v=vwt-qdJFMjM
+#setting cmake version and project name
 cmake_minimum_required(VERSION 3.12)
 project(GevProgRoadFighter)
 
@@ -6,52 +6,52 @@ set(CMAKE_CXX_STANDARD 14)
 #extra compile flags to make srue code conventions are followed
 #set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
+# run cmakelist in GameLogic
+add_subdirectory(GameLogic)
+
 #set include dir for gtest
 include_directories(gtest/include)
 # Set Library dir for gtest
 link_directories(gtest/lib)
+
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 
-# set the path of the gamelogiclibrary ro LOGIC_INCLUDE_DIR
-#SET(LOGIC_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/GameLogic)
-# run cmakelist in GameLogic
-add_subdirectory(GameLogic)
-#include_directories(${LOGIC_INCLUDE_DIR})
-
-## Look for SFML >= 2.0, with the specific subcomponents listed below
+# Look for SFML >= 2.0, with the specific subcomponents listed below
 FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
-#
-## The source files to compile
+
+# The source files to compile
 SET(SRC main.cpp
-        Singletons/Random.cpp
-        Singletons/Random.h)
-#
-## Add include dirs for SFML
-## (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
+        Utility/Random.cpp
+        Utility/Random.h Utility/Clock.cpp Utility/Clock.h)
+
+# Add include dirs for SFML
+# (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
 INCLUDE_DIRECTORIES(${SFML_INCLUDE_DIR})
-#
-## The program we're compiling with the sources set above
+
+# The program we're compiling with the sources set above
 ADD_EXECUTABLE(GevProgRoadFighter ${SRC})
 
-
+#making a debug targer to link gtest to
 SET(DEBUG_SRC main.cpp
-        Singletons/Random.cpp
-        Singletons/Random.h)
-## adding a test executable to test he library
+        Utility/Random.cpp
+        Utility/Random.h)
+
+# adding a test executable to test he library
 ADD_EXECUTABLE(GevProgRoadFighterTest ${DEBUG_SRC})
 
+#linking ggl and gtest to debug targer
 TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  GLL)
 TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  gtest)
 
-#
-##Link the gamelogicLibrary and make sure it is compiled before making linking to the target
+
+#Link the gamelogic library to main targer
 TARGET_LINK_LIBRARIES(GevProgRoadFighter GLL)
-#ADD_DEPENDENCIES(GevProgRoadFighter GameLogic)
 
 ## Link target to SFML libs
 ## (The SFML_LIBRARIES variable is defined by FindSFML.cmake, if SFML was found)
 TARGET_LINK_LIBRARIES(GevProgRoadFighter ${SFML_LIBRARIES})
-#
+
+#defining compile directory
 INSTALL(TARGETS GevProgRoadFighter DESTINATION ${PROJECT_SOURCE_DIR}/bin)

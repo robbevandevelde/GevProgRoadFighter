@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GevProgRoadFighter.dir/main.cpp.o"
-  "CMakeFiles/GevProgRoadFighter.dir/Singletons/Random.cpp.o"
+  "CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o"
+  "CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o"
   "GevProgRoadFighter.pdb"
   "GevProgRoadFighter"
 )
