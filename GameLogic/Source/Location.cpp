@@ -61,4 +61,17 @@ namespace roadfighter {
 
     Location::Location() {}
 
+    Location &Location::operator=(const Location &other) {
+        x=other.x;
+        y=other.y;
+        return *this;
+    }
+
+    Location &Location::operator=(Location &&other) noexcept{
+        x=std::move(other.x);
+        y=std::move(other.y);
+        return *this;
+    }
+
+
 }

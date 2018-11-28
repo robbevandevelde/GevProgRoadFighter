@@ -42,7 +42,7 @@ namespace roadfighter {
          * @param other the Location that is being copied
          * @return a new Location that is equal to the other one
          */
-        Location &operator=(Location &other) = default;
+        Location &operator=(const Location &other);
 
         /**
          * move assignment for Location
@@ -50,7 +50,7 @@ namespace roadfighter {
          * @return a Location
          * that contains all the data of the first one
          */
-        Location &operator=(Location &&other) = default;
+        Location &operator=(Location &&other) noexcept;
 
         /**
          * destructor for Location
