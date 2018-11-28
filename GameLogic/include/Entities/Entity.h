@@ -10,6 +10,7 @@ namespace roadfighter {
         public:
             virtual void update()=0;
 
+
     };
 }
 

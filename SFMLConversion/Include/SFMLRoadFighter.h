@@ -1,0 +1,15 @@
+//
+// Created by thibaut on 28.11.18.
+//
+
+#ifndef GEVPROGROADFIGHTER_SFMLROADFIGHTER_H
+#define GEVPROGROADFIGHTER_SFMLROADFIGHTER_H
+
+
+
+class SFMLRoadFighter{
+
+};
+
+
+#endif //GEVPROGROADFIGHTER_SFMLROADFIGHTER_H

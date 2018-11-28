@@ -195,62 +195,92 @@ GLL/fast:
 	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/build
 .PHONY : GLL/fast
 
-Utility/Clock.o: Utility/Clock.cpp.o
+SFMLConversion/Source/SFMLRoadFighter.o: SFMLConversion/Source/SFMLRoadFighter.cpp.o
 
-.PHONY : Utility/Clock.o
-
-# target to build an object file
-Utility/Clock.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.o
-.PHONY : Utility/Clock.cpp.o
-
-Utility/Clock.i: Utility/Clock.cpp.i
-
-.PHONY : Utility/Clock.i
-
-# target to preprocess a source file
-Utility/Clock.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.i
-.PHONY : Utility/Clock.cpp.i
-
-Utility/Clock.s: Utility/Clock.cpp.s
-
-.PHONY : Utility/Clock.s
-
-# target to generate assembly for a file
-Utility/Clock.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Clock.cpp.s
-.PHONY : Utility/Clock.cpp.s
-
-Utility/Random.o: Utility/Random.cpp.o
-
-.PHONY : Utility/Random.o
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.o
 
 # target to build an object file
-Utility/Random.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.o
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.o
-.PHONY : Utility/Random.cpp.o
+SFMLConversion/Source/SFMLRoadFighter.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.o
 
-Utility/Random.i: Utility/Random.cpp.i
+SFMLConversion/Source/SFMLRoadFighter.i: SFMLConversion/Source/SFMLRoadFighter.cpp.i
 
-.PHONY : Utility/Random.i
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.i
 
 # target to preprocess a source file
-Utility/Random.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.i
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.i
-.PHONY : Utility/Random.cpp.i
+SFMLConversion/Source/SFMLRoadFighter.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.i
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.i
 
-Utility/Random.s: Utility/Random.cpp.s
+SFMLConversion/Source/SFMLRoadFighter.s: SFMLConversion/Source/SFMLRoadFighter.cpp.s
 
-.PHONY : Utility/Random.s
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.s
 
 # target to generate assembly for a file
-Utility/Random.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/Utility/Random.cpp.s
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/Utility/Random.cpp.s
-.PHONY : Utility/Random.cpp.s
+SFMLConversion/Source/SFMLRoadFighter.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.s
+.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.s
+
+SFMLConversion/Utility/Clock.o: SFMLConversion/Utility/Clock.cpp.o
+
+.PHONY : SFMLConversion/Utility/Clock.o
+
+# target to build an object file
+SFMLConversion/Utility/Clock.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.o
+.PHONY : SFMLConversion/Utility/Clock.cpp.o
+
+SFMLConversion/Utility/Clock.i: SFMLConversion/Utility/Clock.cpp.i
+
+.PHONY : SFMLConversion/Utility/Clock.i
+
+# target to preprocess a source file
+SFMLConversion/Utility/Clock.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.i
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.i
+.PHONY : SFMLConversion/Utility/Clock.cpp.i
+
+SFMLConversion/Utility/Clock.s: SFMLConversion/Utility/Clock.cpp.s
+
+.PHONY : SFMLConversion/Utility/Clock.s
+
+# target to generate assembly for a file
+SFMLConversion/Utility/Clock.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.s
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.s
+.PHONY : SFMLConversion/Utility/Clock.cpp.s
+
+SFMLConversion/Utility/Random.o: SFMLConversion/Utility/Random.cpp.o
+
+.PHONY : SFMLConversion/Utility/Random.o
+
+# target to build an object file
+SFMLConversion/Utility/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.o
+.PHONY : SFMLConversion/Utility/Random.cpp.o
+
+SFMLConversion/Utility/Random.i: SFMLConversion/Utility/Random.cpp.i
+
+.PHONY : SFMLConversion/Utility/Random.i
+
+# target to preprocess a source file
+SFMLConversion/Utility/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.i
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.i
+.PHONY : SFMLConversion/Utility/Random.cpp.i
+
+SFMLConversion/Utility/Random.s: SFMLConversion/Utility/Random.cpp.s
+
+.PHONY : SFMLConversion/Utility/Random.s
+
+# target to generate assembly for a file
+SFMLConversion/Utility/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.s
+	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.s
+.PHONY : SFMLConversion/Utility/Random.cpp.s
 
 main.o: main.cpp.o
 
@@ -297,12 +327,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GLL"
-	@echo "... Utility/Clock.o"
-	@echo "... Utility/Clock.i"
-	@echo "... Utility/Clock.s"
-	@echo "... Utility/Random.o"
-	@echo "... Utility/Random.i"
-	@echo "... Utility/Random.s"
+	@echo "... SFMLConversion/Source/SFMLRoadFighter.o"
+	@echo "... SFMLConversion/Source/SFMLRoadFighter.i"
+	@echo "... SFMLConversion/Source/SFMLRoadFighter.s"
+	@echo "... SFMLConversion/Utility/Clock.o"
+	@echo "... SFMLConversion/Utility/Clock.i"
+	@echo "... SFMLConversion/Utility/Clock.s"
+	@echo "... SFMLConversion/Utility/Random.o"
+	@echo "... SFMLConversion/Utility/Random.i"
+	@echo "... SFMLConversion/Utility/Random.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

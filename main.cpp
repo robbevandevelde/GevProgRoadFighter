@@ -3,9 +3,9 @@
 //
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Utility/Clock.h"
+#include "GameLogic/Utility/Clock.h"
 #include "GameLogic/include/Entity_Factory.h"
-#include "Utility/Random.h"
+#include "GameLogic/Utility/Random.h"
 #include <memory>
 
 int main(int argc, char *argv[]) {

@@ -1,10 +1,10 @@
 needed:
     -1 controlable player ->entity
-    -1 computer controlled car ->entity
+    -1 computer controlled CollisionObject ->entity
     -2 extra vehicles ->entity
-    -abiltiy to shoot bullets ->entity
+    -abiltiy to shoot CollisionObjects ->entity
     -live score system ->seperate process?
-    -cars can only drive on roads (duh)
+    -CollisionObjects can only drive on roads (duh)
     -game logic in seperate library
     -SFML must be split off from the game logic
     -input in seperate class

@@ -1,0 +1,14 @@
+//
+// Created by thibaut on 28.11.18.
+//
+
+#ifndef GEVPROGROADFIGHTER_SCOREOBSERVER_H
+#define GEVPROGROADFIGHTER_SCOREOBSERVER_H
+
+
+class ScoreObserver {
+
+};
+
+
+#endif //GEVPROGROADFIGHTER_SCOREOBSERVER_H

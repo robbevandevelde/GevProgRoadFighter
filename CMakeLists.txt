@@ -23,8 +23,10 @@ FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
 
 # The source files to compile
 SET(SRC main.cpp
-        Utility/Random.cpp
-        Utility/Random.h Utility/Clock.cpp Utility/Clock.h)
+        GameLogic/Utility/Random.cpp
+        GameLogic/Utility/Random.h
+        GameLogic/Utility/Clock.cpp
+        GameLogic/Utility/Clock.h SFMLConversion/Source/SFMLRoadFighter.cpp SFMLConversion/Include/SFMLRoadFighter.h)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
@@ -35,8 +37,10 @@ ADD_EXECUTABLE(GevProgRoadFighter ${SRC})
 
 #making a debug targer to link gtest to
 SET(DEBUG_SRC main.cpp
-        Utility/Random.cpp
-        Utility/Random.h)
+        GameLogic/Utility/Random.cpp
+        GameLogic/Utility/Random.h
+        GameLogic/Utility/Clock.cpp
+        GameLogic/Utility/Clock.h)
 
 # adding a test executable to test he library
 ADD_EXECUTABLE(GevProgRoadFighterTest ${DEBUG_SRC})

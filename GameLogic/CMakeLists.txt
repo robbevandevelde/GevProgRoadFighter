@@ -18,14 +18,18 @@ SET(SRC
         include/Entities/Bullet.h
         Source/Entities/World.cpp
         include/Entities/World.h
-        Source/RoadFighterGame.cpp
-        include/RoadFighterGame.h
         Source/Entity_Factory.cpp
         include/Entity_Factory.h
         Source/Location.cpp
         include/Location.h
         Source/Entities/CollisionObject.cpp
-        include/Entities/CollisionObject.h)
+        include/Entities/CollisionObject.h
+        Source/Observer/Observable.cpp
+        include/Observer/Observable.h
+        Source/Observer/ObserverBase.cpp
+        include/Observer/ObserverBase.h
+        Source/Observer/ScoreObserver.cpp
+        include/Observer/ScoreObserver.h)
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly
 ADD_LIBRARY(${LIB} STATIC ${SRC})

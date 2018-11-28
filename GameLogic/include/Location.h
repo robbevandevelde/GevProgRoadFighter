@@ -7,38 +7,81 @@
 
 
 #include <ostream>
+namespace roadfighter {
+    class Location {
+    private:
+        double x;
+        double y;
+    public:
+        /**
+           * default constructor for Location
+           */
+        Location();
+        /**
+         * constructor by value
+         * @param x
+         * @param y
+         */
+        Location(double x, double y);
 
-class Location {
-private:
-    double x;
-    double y;
-public:
 
-    double getX() const;
+        /**
+         * copy constructor
+         * @param copy the other Location that is being copied
+         */
+        Location(const Location &copy) = default;
 
-    void setX(double x);
+        /**
+         * move constructor
+         * @param Move the other Location that is being moved in this one
+         */
+        Location(Location &&move) = default;
 
-    double getY() const;
+        /**
+         * copy assigment for Location
+         * @param other the Location that is being copied
+         * @return a new Location that is equal to the other one
+         */
+        Location &operator=(Location &other) = default;
 
-    void setY(double y);
+        /**
+         * move assignment for Location
+         * @param other other Location that is being moved
+         * @return a Location
+         * that contains all the data of the first one
+         */
+        Location &operator=(Location &&other) = default;
 
-    bool operator==(const Location &rhs) const;
+        /**
+         * destructor for Location
+         */
+        virtual ~Location();
 
-    bool operator!=(const Location &rhs) const;
+        double getX() const;
 
-    bool operator<(const Location &rhs) const;
+        void setX(double x);
 
-    bool operator>(const Location &rhs) const;
+        double getY() const;
 
-    bool operator<=(const Location &rhs) const;
+        void setY(double y);
 
-    bool operator>=(const Location &rhs) const;
+        bool operator==(const Location &rhs) const;
 
-    friend std::ostream &operator<<(std::ostream &os, const Location &location);
+        bool operator!=(const Location &rhs) const;
 
-    virtual ~Location();
+        bool operator<(const Location &rhs) const;
 
-};
+        bool operator>(const Location &rhs) const;
+
+        bool operator<=(const Location &rhs) const;
+
+        bool operator>=(const Location &rhs) const;
+
+        friend std::ostream &operator<<(std::ostream &os, const Location &location);
+
+
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_LOCATION_H
