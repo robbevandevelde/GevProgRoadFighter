@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include" 
+CXX_INCLUDES = -I"/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include" -I"/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include" 
 

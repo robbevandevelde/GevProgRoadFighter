@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -70,31 +70,31 @@ CMakeFiles/GevProgRoadFighter.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp" -o CMakeFiles/GevProgRoadFighter.dir/main.cpp.s
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o: ../SFMLConversion/Utility/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.cpp"
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o: ../GameLogic/Utility/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp"
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.cpp" > CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.i
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp" > CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.i
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.cpp" -o CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.s
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp" -o CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.s
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o: ../SFMLConversion/Utility/Clock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.cpp"
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o: ../GameLogic/Utility/Clock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp"
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.cpp" > CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.i
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp" > CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.i
 
-CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.cpp" -o CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.s
+CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp" -o CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.s
 
 CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o: CMakeFiles/GevProgRoadFighter.dir/flags.make
 CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o: ../SFMLConversion/Source/SFMLRoadFighter.cpp
@@ -112,16 +112,16 @@ CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.s: c
 # Object files for target GevProgRoadFighter
 GevProgRoadFighter_OBJECTS = \
 "CMakeFiles/GevProgRoadFighter.dir/main.cpp.o" \
-"CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o" \
-"CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o"
 
 # External object files for target GevProgRoadFighter
 GevProgRoadFighter_EXTERNAL_OBJECTS =
 
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
-GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o
-GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o
+GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o
+GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o
 GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/build.make
 GevProgRoadFighter: GameLogic/libGLL.a

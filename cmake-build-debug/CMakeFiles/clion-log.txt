@@ -1,4 +1,4 @@
-/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter"
+/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter"
 -- Found SFML 2.4 in /usr/include
 -- Configuring done
 -- Generating done

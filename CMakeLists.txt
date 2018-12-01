@@ -9,53 +9,11 @@ set(CMAKE_CXX_STANDARD 14)
 # run cmakelist in GameLogic
 add_subdirectory(GameLogic)
 
-#set include dir for gtest
-include_directories(gtest/include)
-# Set Library dir for gtest
-link_directories(gtest/lib)
+# run cmakelist in SFMLconversion containing the sfml target
+add_subdirectory(SFMLConversion)
 
-# Extend the CMake module path to find the FindSFML.cmake
-# file in {project root}/cmake/Modules
-SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
-
-# Look for SFML >= 2.0, with the specific subcomponents listed below
-FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
-
-# The source files to compile
-SET(SRC main.cpp
-        GameLogic/Utility/Random.cpp
-        GameLogic/Utility/Random.h
-        GameLogic/Utility/Clock.cpp
-        GameLogic/Utility/Clock.h SFMLConversion/Source/SFMLRoadFighter.cpp SFMLConversion/Include/SFMLRoadFighter.h)
-
-# Add include dirs for SFML
-# (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
-INCLUDE_DIRECTORIES(${SFML_INCLUDE_DIR})
-
-# The program we're compiling with the sources set above
-ADD_EXECUTABLE(GevProgRoadFighter ${SRC})
-
-#making a debug targer to link gtest to
-SET(DEBUG_SRC main.cpp
-        GameLogic/Utility/Random.cpp
-        GameLogic/Utility/Random.h
-        GameLogic/Utility/Clock.cpp
-        GameLogic/Utility/Clock.h)
-
-# adding a test executable to test he library
-ADD_EXECUTABLE(GevProgRoadFighterTest ${DEBUG_SRC})
-
-#linking ggl and gtest to debug targer
-TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  GLL)
-TARGET_LINK_LIBRARIES(GevProgRoadFighterTest  gtest)
-
-
-#Link the gamelogic library to main targer
-TARGET_LINK_LIBRARIES(GevProgRoadFighter GLL)
-
-## Link target to SFML libs
-## (The SFML_LIBRARIES variable is defined by FindSFML.cmake, if SFML was found)
-TARGET_LINK_LIBRARIES(GevProgRoadFighter ${SFML_LIBRARIES})
+# run cmakelist in Test conatining the test target
+add_subdirectory(Test)
 
 #defining compile directory
-INSTALL(TARGETS GevProgRoadFighter DESTINATION ${PROJECT_SOURCE_DIR}/bin)
+

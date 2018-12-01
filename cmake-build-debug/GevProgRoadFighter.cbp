@@ -5,7 +5,7 @@
 		<Option title="GevProgRoadFighter"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\GameLogic\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\GameLogic\;CMake Files\SFMLConversion\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\Test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
@@ -37,117 +37,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install">
+			<Target title="edit_cache">
 				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GevProgRoadFighter">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GevProgRoadFighter"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GevProgRoadFighter/fast">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GevProgRoadFighter/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GevProgRoadFighterTest">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GevProgRoadFighterTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GevProgRoadFighterTest/fast">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GevProgRoadFighterTest/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -163,11 +57,21 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="list_install_components">
 				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -180,6 +84,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -203,6 +108,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -217,6 +123,104 @@
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GevProgRoadFighter">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 GevProgRoadFighter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GevProgRoadFighter/fast">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 GevProgRoadFighter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GevProgRoadFighterTest">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/../gtest/include"/>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 GevProgRoadFighterTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GevProgRoadFighterTest/fast">
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/../gtest/include"/>
+					<Add directory="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 GevProgRoadFighterTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/thibaut/CLionProjects/gevorderd\ programmeren/GevProgRoadFighter/cmake-build-debug/Test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -259,6 +263,21 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/ScoreObserver.cpp">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/RoadFighterGame.cpp">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h">
 			<Option target="GLL"/>
 		</Unit>
@@ -298,40 +317,48 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/ScoreObserver.h">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/RoadFighterGame.h">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntity.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFMLRoadFighter.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.cpp">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntity.cpp">
 			<Option target="GevProgRoadFighter"/>
-			<Option target="GevProgRoadFighterTest"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.h">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
 			<Option target="GevProgRoadFighter"/>
-			<Option target="GevProgRoadFighterTest"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.cpp">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp">
 			<Option target="GevProgRoadFighter"/>
-			<Option target="GevProgRoadFighterTest"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.h">
-			<Option target="GevProgRoadFighter"/>
-			<Option target="GevProgRoadFighterTest"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp">
-			<Option target="GevProgRoadFighter"/>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp">
+			<Option target="GLL"/>
 			<Option target="GevProgRoadFighterTest"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GameLogic\"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\SFMLConversion\"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake/Modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake\Modules\"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\GameLogic\"/>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

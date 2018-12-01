@@ -9,6 +9,7 @@
 
 namespace roadfighter {
     class PlayerCar:public Car {
+    public:
         /**
        * default constructor for PlayerCar
        */
@@ -25,6 +26,9 @@ namespace roadfighter {
          * @param Move the other PlayerCar that is being moved in this one
          */
         PlayerCar(PlayerCar &&move)= default;
+
+        PlayerCar(double m_maxVertSpeed, double m_vertAccel,
+                  double m_horAccel);
 
         /**
          * copy assigment for PlayerCar
@@ -46,6 +50,18 @@ namespace roadfighter {
          * destructor for PlayerCar
          */
         virtual ~PlayerCar();
+
+        void decreasFuel(const double &amount);
+
+        void increaseFuel(const double &amount);
+
+        void update() override;
+
+
+
+    private:
+        double m_fuel;
+
     };
 }
 

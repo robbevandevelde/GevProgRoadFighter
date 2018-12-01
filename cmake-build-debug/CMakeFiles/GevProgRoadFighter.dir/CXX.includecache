@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entity_Factory.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
 time.h
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
 memory
 -
 random
 -
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entity_Factory.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp
 iostream
 -
 SFML/Graphics.hpp
 -
-SFMLConversion/Utility/Clock.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.h
+GameLogic/Utility/Clock.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
 GameLogic/include/Entity_Factory.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entity_Factory.h
-SFMLConversion/Utility/Random.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.h
+GameLogic/Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
 memory
 -
 

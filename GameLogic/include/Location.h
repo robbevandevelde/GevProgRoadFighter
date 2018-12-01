@@ -16,7 +16,7 @@ namespace roadfighter {
         /**
            * default constructor for Location
            */
-        Location();
+        Location()= default;
         /**
          * constructor by value
          * @param x
@@ -55,7 +55,7 @@ namespace roadfighter {
         /**
          * destructor for Location
          */
-        virtual ~Location();
+        virtual ~Location()= default;
 
         double getX() const;
 

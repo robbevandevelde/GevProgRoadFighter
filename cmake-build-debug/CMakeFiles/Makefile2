@@ -50,10 +50,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -63,80 +63,6 @@ CMAKE_SOURCE_DIR = "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRo
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug"
-
-#=============================================================================
-# Target rules for target CMakeFiles/GevProgRoadFighter.dir
-
-# All Build rule for target.
-CMakeFiles/GevProgRoadFighter.dir/all: GameLogic/CMakeFiles/GLL.dir/all
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/depend
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=15,16,17,18,19 "Built target GevProgRoadFighter"
-.PHONY : CMakeFiles/GevProgRoadFighter.dir/all
-
-# Include target in all.
-all: CMakeFiles/GevProgRoadFighter.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/GevProgRoadFighter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 19
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GevProgRoadFighter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/GevProgRoadFighter.dir/rule
-
-# Convenience name for target.
-GevProgRoadFighter: CMakeFiles/GevProgRoadFighter.dir/rule
-
-.PHONY : GevProgRoadFighter
-
-# clean rule for target.
-CMakeFiles/GevProgRoadFighter.dir/clean:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/clean
-.PHONY : CMakeFiles/GevProgRoadFighter.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/GevProgRoadFighter.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/GevProgRoadFighterTest.dir
-
-# All Build rule for target.
-CMakeFiles/GevProgRoadFighterTest.dir/all: GameLogic/CMakeFiles/GLL.dir/all
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/depend
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=20,21,22,23 "Built target GevProgRoadFighterTest"
-.PHONY : CMakeFiles/GevProgRoadFighterTest.dir/all
-
-# Include target in all.
-all: CMakeFiles/GevProgRoadFighterTest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/GevProgRoadFighterTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 18
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GevProgRoadFighterTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/GevProgRoadFighterTest.dir/rule
-
-# Convenience name for target.
-GevProgRoadFighterTest: CMakeFiles/GevProgRoadFighterTest.dir/rule
-
-.PHONY : GevProgRoadFighterTest
-
-# clean rule for target.
-CMakeFiles/GevProgRoadFighterTest.dir/clean:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/clean
-.PHONY : CMakeFiles/GevProgRoadFighterTest.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/GevProgRoadFighterTest.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory GameLogic
@@ -163,7 +89,7 @@ GameLogic/preinstall:
 GameLogic/CMakeFiles/GLL.dir/all:
 	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/depend
 	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target GLL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target GLL"
 .PHONY : GameLogic/CMakeFiles/GLL.dir/all
 
 # Include target in all.
@@ -173,7 +99,7 @@ all: GameLogic/CMakeFiles/GLL.dir/all
 
 # Build rule for subdir invocation for target.
 GameLogic/CMakeFiles/GLL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 14
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 18
 	$(MAKE) -f CMakeFiles/Makefile2 GameLogic/CMakeFiles/GLL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
 .PHONY : GameLogic/CMakeFiles/GLL.dir/rule
@@ -190,6 +116,116 @@ GameLogic/CMakeFiles/GLL.dir/clean:
 
 # clean rule for target.
 clean: GameLogic/CMakeFiles/GLL.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory SFMLConversion
+
+# Convenience name for "all" pass in the directory.
+SFMLConversion/all: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/all
+
+.PHONY : SFMLConversion/all
+
+# Convenience name for "clean" pass in the directory.
+SFMLConversion/clean: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/clean
+
+.PHONY : SFMLConversion/clean
+
+# Convenience name for "preinstall" pass in the directory.
+SFMLConversion/preinstall:
+
+.PHONY : SFMLConversion/preinstall
+
+#=============================================================================
+# Target rules for target SFMLConversion/CMakeFiles/GevProgRoadFighter.dir
+
+# All Build rule for target.
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/all: GameLogic/CMakeFiles/GLL.dir/all
+	$(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/depend
+	$(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=19,20,21,22,23 "Built target GevProgRoadFighter"
+.PHONY : SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/all
+
+# Include target in all.
+all: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 23
+	$(MAKE) -f CMakeFiles/Makefile2 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
+.PHONY : SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/rule
+
+# Convenience name for target.
+GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/rule
+
+.PHONY : GevProgRoadFighter
+
+# clean rule for target.
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/clean:
+	$(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/clean
+.PHONY : SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/clean
+
+# clean rule for target.
+clean: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Test
+
+# Convenience name for "all" pass in the directory.
+Test/all: Test/CMakeFiles/GevProgRoadFighterTest.dir/all
+
+.PHONY : Test/all
+
+# Convenience name for "clean" pass in the directory.
+Test/clean: Test/CMakeFiles/GevProgRoadFighterTest.dir/clean
+
+.PHONY : Test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Test/preinstall:
+
+.PHONY : Test/preinstall
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/GevProgRoadFighterTest.dir
+
+# All Build rule for target.
+Test/CMakeFiles/GevProgRoadFighterTest.dir/all: GameLogic/CMakeFiles/GLL.dir/all
+	$(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/depend
+	$(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=24,25 "Built target GevProgRoadFighterTest"
+.PHONY : Test/CMakeFiles/GevProgRoadFighterTest.dir/all
+
+# Include target in all.
+all: Test/CMakeFiles/GevProgRoadFighterTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/GevProgRoadFighterTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 20
+	$(MAKE) -f CMakeFiles/Makefile2 Test/CMakeFiles/GevProgRoadFighterTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" 0
+.PHONY : Test/CMakeFiles/GevProgRoadFighterTest.dir/rule
+
+# Convenience name for target.
+GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/rule
+
+.PHONY : GevProgRoadFighterTest
+
+# clean rule for target.
+Test/CMakeFiles/GevProgRoadFighterTest.dir/clean:
+	$(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/clean
+.PHONY : Test/CMakeFiles/GevProgRoadFighterTest.dir/clean
+
+# clean rule for target.
+clean: Test/CMakeFiles/GevProgRoadFighterTest.dir/clean
 
 .PHONY : clean
 

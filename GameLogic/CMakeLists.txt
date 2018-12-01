@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.12)
-set( LIB GLL)
+set(LIB GLL)
 
 #make a source variable conatining all the cpp files
 SET(SRC
@@ -29,10 +29,19 @@ SET(SRC
         Source/Observer/ObserverBase.cpp
         include/Observer/ObserverBase.h
         Source/Observer/ScoreObserver.cpp
-        include/Observer/ScoreObserver.h)
+        include/Observer/ScoreObserver.h
+        Source/RoadFighterGame.cpp
+        include/RoadFighterGame.h
+        Utility/Random.cpp
+        Utility/Random.h
+        Utility/Clock.cpp
+        Utility/Clock.h ../Test/mainTest.cpp)
+
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly
-ADD_LIBRARY(${LIB} STATIC ${SRC})
+ADD_LIBRARY(${LIB}  ${SRC})
+
+TARGET_INCLUDE_DIRECTORIES(${LIB} PUBLIC include)
 
 
 

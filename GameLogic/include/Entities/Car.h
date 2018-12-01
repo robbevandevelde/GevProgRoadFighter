@@ -28,6 +28,9 @@ namespace roadfighter {
          */
         Car(Car &&move)= default;
 
+        Car(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
+            double m_horAccel);
+
         /**
          * copy assigment for Car
          * @param other the Car that is being copied
@@ -48,9 +51,32 @@ namespace roadfighter {
          * destructor for Car
          */
         virtual ~Car();
+
+        virtual void stop();
+
+        virtual void moveLeft();
+
+        virtual void moveRight();
+
+        virtual void accelerate();
+
+        virtual void decelerate();
+
+        void setVerticalSpeed(double m_VerticalSpeed);
+
+        void setHorizontalSpeed(double m_HorizontalSpeed);
+
+        void update() override;
+
+
     private:
-        double m_VerticalSpeed;
-        double m_HorizontalSpeed;
+        double m_verticalSpeed;
+        double m_horizontalSpeed;
+
+        double m_maxVertSpeed;
+
+        double m_vertAccel;
+        double m_horAccel;
     };
 }
 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Clock.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/GameLogic/Utility/Random.cpp.o"
   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFMLRoadFighter.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o"
-  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Clock.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o"
-  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Utility/Random.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o"
   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/main.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -14,6 +14,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../gtest/include"
+  "../GameLogic/include"
   )
 
 # Targets to which this target links.

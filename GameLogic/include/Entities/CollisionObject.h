@@ -9,7 +9,7 @@
 #include "../Location.h"
 
 namespace  roadfighter {
-    class CollisionObject{
+    class CollisionObject: public Entity{
     public:
         /**
          * default constructor for CollisionObject
@@ -65,6 +65,10 @@ namespace  roadfighter {
         void setM_loc2(const Location &m_loc2);
 
         bool checkCollision(const CollisionObject& check) const ;
+
+        void vertMove(double amount);
+
+        void horMove(double amount);
 
 
 

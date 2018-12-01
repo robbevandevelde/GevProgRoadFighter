@@ -51,10 +51,11 @@ namespace roadfighter {
          */
         virtual ~World();
 
-    private:
+        void addEntity(std::shared_ptr<CollisionObject> obj);
+
         void update() override;
 
-        std::shared_ptr<PlayerCar> m_player;
+    private:
 
         std::vector<std::shared_ptr<CollisionObject> > m_roadEntities;
 

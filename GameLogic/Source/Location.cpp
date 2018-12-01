@@ -55,11 +55,8 @@ namespace roadfighter {
         return os;
     }
 
-    Location::~Location() {}
 
     Location::Location(double x, double y) : x(x), y(y) {}
-
-    Location::Location() {}
 
     Location &Location::operator=(const Location &other) {
         x=other.x;
@@ -72,6 +69,7 @@ namespace roadfighter {
         y=std::move(other.y);
         return *this;
     }
+
 
 
 }

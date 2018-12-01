@@ -37,37 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter"
-         RPATH "")
-  endif()
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GevProgRoadFighter")
-  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter"
-         OLD_RPATH "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/gtest/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/bin/GevProgRoadFighter")
-    endif()
-  endif()
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic/cmake_install.cmake")
+  include("/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/cmake_install.cmake")
+  include("/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/cmake_install.cmake")
 
 endif()
 

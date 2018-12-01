@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,38 +59,48 @@ CMAKE_BINARY_DIR = "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRo
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -102,27 +112,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/thibaut/Documents/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/thibaut/Documents/CLion-2018.3/clion-2018.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,32 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GevProgRoadFighter
-
-# Build rule for target.
-GevProgRoadFighter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GevProgRoadFighter
-.PHONY : GevProgRoadFighter
-
-# fast build rule for target.
-GevProgRoadFighter/fast:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/build
-.PHONY : GevProgRoadFighter/fast
-
-#=============================================================================
-# Target rules for targets named GevProgRoadFighterTest
-
-# Build rule for target.
-GevProgRoadFighterTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GevProgRoadFighterTest
-.PHONY : GevProgRoadFighterTest
-
-# fast build rule for target.
-GevProgRoadFighterTest/fast:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/build
-.PHONY : GevProgRoadFighterTest/fast
-
-#=============================================================================
 # Target rules for targets named GLL
 
 # Build rule for target.
@@ -195,122 +169,31 @@ GLL/fast:
 	$(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/build
 .PHONY : GLL/fast
 
-SFMLConversion/Source/SFMLRoadFighter.o: SFMLConversion/Source/SFMLRoadFighter.cpp.o
+#=============================================================================
+# Target rules for targets named GevProgRoadFighter
 
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.o
+# Build rule for target.
+GevProgRoadFighter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GevProgRoadFighter
+.PHONY : GevProgRoadFighter
 
-# target to build an object file
-SFMLConversion/Source/SFMLRoadFighter.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.o
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.o
+# fast build rule for target.
+GevProgRoadFighter/fast:
+	$(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build
+.PHONY : GevProgRoadFighter/fast
 
-SFMLConversion/Source/SFMLRoadFighter.i: SFMLConversion/Source/SFMLRoadFighter.cpp.i
+#=============================================================================
+# Target rules for targets named GevProgRoadFighterTest
 
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.i
+# Build rule for target.
+GevProgRoadFighterTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GevProgRoadFighterTest
+.PHONY : GevProgRoadFighterTest
 
-# target to preprocess a source file
-SFMLConversion/Source/SFMLRoadFighter.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.i
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.i
-
-SFMLConversion/Source/SFMLRoadFighter.s: SFMLConversion/Source/SFMLRoadFighter.cpp.s
-
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.s
-
-# target to generate assembly for a file
-SFMLConversion/Source/SFMLRoadFighter.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Source/SFMLRoadFighter.cpp.s
-.PHONY : SFMLConversion/Source/SFMLRoadFighter.cpp.s
-
-SFMLConversion/Utility/Clock.o: SFMLConversion/Utility/Clock.cpp.o
-
-.PHONY : SFMLConversion/Utility/Clock.o
-
-# target to build an object file
-SFMLConversion/Utility/Clock.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.o
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.o
-.PHONY : SFMLConversion/Utility/Clock.cpp.o
-
-SFMLConversion/Utility/Clock.i: SFMLConversion/Utility/Clock.cpp.i
-
-.PHONY : SFMLConversion/Utility/Clock.i
-
-# target to preprocess a source file
-SFMLConversion/Utility/Clock.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.i
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.i
-.PHONY : SFMLConversion/Utility/Clock.cpp.i
-
-SFMLConversion/Utility/Clock.s: SFMLConversion/Utility/Clock.cpp.s
-
-.PHONY : SFMLConversion/Utility/Clock.s
-
-# target to generate assembly for a file
-SFMLConversion/Utility/Clock.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Clock.cpp.s
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Clock.cpp.s
-.PHONY : SFMLConversion/Utility/Clock.cpp.s
-
-SFMLConversion/Utility/Random.o: SFMLConversion/Utility/Random.cpp.o
-
-.PHONY : SFMLConversion/Utility/Random.o
-
-# target to build an object file
-SFMLConversion/Utility/Random.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.o
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.o
-.PHONY : SFMLConversion/Utility/Random.cpp.o
-
-SFMLConversion/Utility/Random.i: SFMLConversion/Utility/Random.cpp.i
-
-.PHONY : SFMLConversion/Utility/Random.i
-
-# target to preprocess a source file
-SFMLConversion/Utility/Random.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.i
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.i
-.PHONY : SFMLConversion/Utility/Random.cpp.i
-
-SFMLConversion/Utility/Random.s: SFMLConversion/Utility/Random.cpp.s
-
-.PHONY : SFMLConversion/Utility/Random.s
-
-# target to generate assembly for a file
-SFMLConversion/Utility/Random.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/SFMLConversion/Utility/Random.cpp.s
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/SFMLConversion/Utility/Random.cpp.s
-.PHONY : SFMLConversion/Utility/Random.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/GevProgRoadFighter.dir/build.make CMakeFiles/GevProgRoadFighter.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/GevProgRoadFighterTest.dir/build.make CMakeFiles/GevProgRoadFighterTest.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+GevProgRoadFighterTest/fast:
+	$(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/build
+.PHONY : GevProgRoadFighterTest/fast
 
 # Help Target
 help:
@@ -320,25 +203,13 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... GLL"
 	@echo "... GevProgRoadFighter"
 	@echo "... GevProgRoadFighterTest"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... GLL"
-	@echo "... SFMLConversion/Source/SFMLRoadFighter.o"
-	@echo "... SFMLConversion/Source/SFMLRoadFighter.i"
-	@echo "... SFMLConversion/Source/SFMLRoadFighter.s"
-	@echo "... SFMLConversion/Utility/Clock.o"
-	@echo "... SFMLConversion/Utility/Clock.i"
-	@echo "... SFMLConversion/Utility/Clock.s"
-	@echo "... SFMLConversion/Utility/Random.o"
-	@echo "... SFMLConversion/Utility/Random.i"
-	@echo "... SFMLConversion/Utility/Random.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
