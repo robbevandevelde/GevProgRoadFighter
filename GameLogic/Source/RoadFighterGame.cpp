@@ -20,6 +20,7 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::tick() {
+        m_world.get()->update();
         if(m_nextHorMove==h_left){
             m_Player.get()->setHorizontalSpeed(-0.1);
         }else if(m_nextHorMove==h_right){
@@ -32,8 +33,6 @@ namespace roadfighter{
             m_Player.get()->decelerate();
         }
         m_nextVertMove=v_none;
-
-        m_world.get()->update();
     }
 
     void RoadFighterGame::setVertMove(EVertMove move) {
@@ -44,6 +43,12 @@ namespace roadfighter{
         m_nextHorMove=move;
     }
 
+    EVertMove RoadFighterGame::getM_nextVertMove() const {
+        return m_nextVertMove;
+    }
 
+    EHorMove RoadFighterGame::getM_nextHorMove() const {
+        return m_nextHorMove;
+    }
 
 }

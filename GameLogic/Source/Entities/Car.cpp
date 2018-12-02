@@ -65,4 +65,8 @@ namespace roadfighter {
         m_verticalSpeed=0;
     }
 
+    double Car::getHorizontalSpeed() const {
+        return m_horizontalSpeed;
+    }
+
 }

@@ -65,6 +65,11 @@ namespace roadfighter {
         void setVertMove(EVertMove move);
 
         void setHorMove(EHorMove move);
+
+        EVertMove getM_nextVertMove() const;
+
+        EHorMove getM_nextHorMove() const;
+
     private:
         std::shared_ptr<World> m_world;
 

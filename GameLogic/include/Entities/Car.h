@@ -68,6 +68,8 @@ namespace roadfighter {
 
         void update() override;
 
+        double getHorizontalSpeed() const;
+
 
     private:
         double m_verticalSpeed;

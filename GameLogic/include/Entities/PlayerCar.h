@@ -59,6 +59,7 @@ namespace roadfighter {
 
 
 
+
     private:
         double m_fuel;
 

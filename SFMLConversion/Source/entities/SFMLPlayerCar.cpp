@@ -4,6 +4,7 @@
 
 #include "../../Include/Entities/SFMLPlayerCar.h"
 
+#include <iostream>
 SFMLPlayerCar::SFMLPlayerCar(double m_maxVertSpeed, double m_vertAccel, double m_horAccel)
         : PlayerCar(m_maxVertSpeed, m_vertAccel, m_horAccel), SFMLEntity("../../SFMLConversion/resources/sprites/passing_car.png") {
     std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getM_loc1());
@@ -16,5 +17,11 @@ SFMLPlayerCar::SFMLPlayerCar(double m_maxVertSpeed, double m_vertAccel, double m
 void SFMLPlayerCar::draw(sf::RenderWindow &window) {
     std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getM_loc1());
     setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
+    if(getHorizontalSpeed()<0){
+        SFMLEntity::setRotation(-10);
+    }else if(getHorizontalSpeed()>0){
+        SFMLEntity::setRotation(10);
+    }
+    std::cout<<getHorizontalSpeed()<<std::endl;
     window.draw(*this);
 }
