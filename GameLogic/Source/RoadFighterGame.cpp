@@ -4,7 +4,6 @@
 
 #include <RoadFighterGame.h>
 
-#include "RoadFighterGame.h"
 namespace roadfighter{
     RoadFighterGame::RoadFighterGame() {
         m_world=std::make_shared<World>(World());
@@ -22,9 +21,9 @@ namespace roadfighter{
 
     void RoadFighterGame::tick() {
         if(m_nextHorMove==h_left){
-            m_Player.get()->setHorizontalSpeed(-1);
+            m_Player.get()->setHorizontalSpeed(-0.1);
         }else if(m_nextHorMove==h_right){
-            m_Player.get()->setHorizontalSpeed(1);
+            m_Player.get()->setHorizontalSpeed(0.1);
         }
         m_nextHorMove=h_none;
         if(m_nextVertMove==v_accel){

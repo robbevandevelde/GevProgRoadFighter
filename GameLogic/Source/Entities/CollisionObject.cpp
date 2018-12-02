@@ -3,8 +3,6 @@
 //
 
 #include <Entities/CollisionObject.h>
-
-#include "../../include/Entities/CollisionObject.h"
 namespace roadfighter {
 
     const Location &CollisionObject::getM_loc1() const {

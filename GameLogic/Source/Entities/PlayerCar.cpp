@@ -3,8 +3,6 @@
 //
 
 #include <Entities/PlayerCar.h>
-
-#include "../../include/Entities/PlayerCar.h"
 namespace roadfighter {
 
     PlayerCar::PlayerCar() {}

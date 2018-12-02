@@ -7,7 +7,7 @@
 
 SFMLRoadFighter::SFMLRoadFighter() {
     std::shared_ptr<SFMLPlayerCar> player=std::shared_ptr<SFMLPlayerCar>(new SFMLPlayerCar(400,10,0.1));
-    std::shared_ptr<roadfighter::PlayerCar> playerCar=std::make_shared<roadfighter::PlayerCar>(*player);
+    std::shared_ptr<roadfighter::PlayerCar> playerCar=player;
     std::shared_ptr<SFMLEntity> playerDraw=player;
     m_game=std::make_shared<roadfighter::RoadFighterGame>(roadfighter::RoadFighterGame(playerCar));
     m_drawings={};
@@ -20,7 +20,7 @@ void SFMLRoadFighter::startGame() {
     while (window.isOpen())
     {
 
-        if(gameclock.getTimeAsSeconds()>0.1) {
+        if(gameclock.getTimeAsSeconds()>0.033) {
             draw(window);
             m_game->tick();
             gameclock.restart();

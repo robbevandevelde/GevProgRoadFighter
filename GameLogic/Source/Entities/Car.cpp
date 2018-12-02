@@ -53,6 +53,7 @@ namespace roadfighter {
 
     void Car::update() {
         horMove(m_horizontalSpeed);
+        m_horizontalSpeed=0;
         vertMove(m_verticalSpeed);
 
     }
