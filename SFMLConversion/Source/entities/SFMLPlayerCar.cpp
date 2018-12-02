@@ -3,14 +3,20 @@
 //
 
 #include "../../Include/Entities/SFMLPlayerCar.h"
-
+#include <iostream>
 
 SFMLPlayerCar::SFMLPlayerCar(double m_maxVertSpeed, double m_vertAccel, double m_horAccel)
         : PlayerCar(m_maxVertSpeed, m_vertAccel, m_horAccel), SFMLEntity("../../SFMLConversion/resources/sprites/passing_car.png") {
-//    SFMLEntity::loadSprite();
+    std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getM_loc1());
+    std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getM_loc2());
+    std::cout<<(std::get<0>(sfmlpos1)-std::get<0>(sfmlpos2))/SFMLEntity::getScale().x<<" "<<(std::get<1>(sfmlpos1)-std::get<1>(sfmlpos2))/SFMLEntity::getScale().y<<std::endl;
+    SFMLEntity::scale(sf::Vector2f(
+            ((std::get<0>(sfmlpos2)-std::get<0>(sfmlpos1))/SFMLEntity::getGlobalBounds().width),
+            ((std::get<1>(sfmlpos2)-std::get<1>(sfmlpos1))/SFMLEntity::getGlobalBounds().height)));
 }
 
 void SFMLPlayerCar::draw(sf::RenderWindow &window) {
-    setSpriteLocation((4+this->getM_loc1().getX()),(3+this->getM_loc1().getY()));
+    std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getM_loc1());
+    setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
     window.draw(*this);
 }

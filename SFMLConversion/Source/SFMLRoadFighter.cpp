@@ -22,7 +22,7 @@ void SFMLRoadFighter::startGame() {
 
         if(gameclock.getTimeAsSeconds()>0.1) {
             draw(window);
-            m_game.get()->tick();
+            m_game->tick();
             gameclock.restart();
         }
         sf::Event event;
@@ -34,12 +34,12 @@ void SFMLRoadFighter::startGame() {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
             {
                 // left key is pressed: move our player to the left
-                m_game.get()->setHorMove(roadfighter::h_left);
+                m_game->setHorMove(roadfighter::h_left);
 
             }if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
             {
                 // right key is pressed: move our player to the right
-                m_game.get()->setHorMove(roadfighter::h_right);
+                m_game->setHorMove(roadfighter::h_right);
             }
         }
 //        sf::RectangleShape shape(sf::Vector2f(100,100));
@@ -52,7 +52,7 @@ void SFMLRoadFighter::startGame() {
 void SFMLRoadFighter::draw(sf::RenderWindow& window) {
     window.clear();
     for(auto i:m_drawings){
-        i.get()->draw(window);
+        i->draw(window);
     }
 
 }

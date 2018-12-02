@@ -16,7 +16,7 @@ FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
 # The source files to compile
 SET(SRC main.cpp
         Source/SFMLRoadFighter.cpp
-        Include/SFMLRoadFighter.h Source/entities/SFMLPlayerCar.cpp Include/Entities/SFMLPlayerCar.h Source/entities/SFMLEntity.cpp Include/Entities/SFMLEntity.h)
+        Include/SFMLRoadFighter.h Source/entities/SFMLPlayerCar.cpp Include/Entities/SFMLPlayerCar.h Source/entities/SFMLEntity.cpp Include/Entities/SFMLEntity.h Source/Transformation.cpp Include/Transformation.h)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)

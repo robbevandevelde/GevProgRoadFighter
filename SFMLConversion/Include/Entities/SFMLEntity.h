@@ -7,6 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <memory>
+#include "../Transformation.h"
 
 class SFMLEntity: public sf::Sprite {
 public:

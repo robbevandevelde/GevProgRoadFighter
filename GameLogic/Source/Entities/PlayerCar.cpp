@@ -7,13 +7,9 @@
 #include "../../include/Entities/PlayerCar.h"
 namespace roadfighter {
 
-    PlayerCar::PlayerCar() {
+    PlayerCar::PlayerCar() {}
 
-    }
-
-    PlayerCar::~PlayerCar() {
-
-    }
+    PlayerCar::~PlayerCar() {}
 
     void PlayerCar::decreasFuel(const double &amount) {
         m_fuel-=amount;
