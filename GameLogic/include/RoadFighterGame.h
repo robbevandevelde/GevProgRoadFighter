@@ -8,6 +8,7 @@
 #include <memory>
 #include "Entities/World.h"
 #include "Entities/PlayerCar.h"
+#include "Entity_Factory_base.h"
 namespace roadfighter {
     enum EVertMove{v_none,v_accel,v_decel};
     enum EHorMove{h_none,h_left,h_right};
@@ -71,6 +72,8 @@ namespace roadfighter {
         EHorMove getM_nextHorMove() const;
 
     private:
+        std::shared_ptr<Entity_Factory_base> factory;
+
         std::shared_ptr<World> m_world;
 
         std::shared_ptr<PlayerCar> m_Player;

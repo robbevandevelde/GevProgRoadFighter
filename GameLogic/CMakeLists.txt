@@ -18,8 +18,8 @@ SET(SRC
         include/Entities/Bullet.h
         Source/Entities/World.cpp
         include/Entities/World.h
-        Source/Entity_Factory.cpp
-        include/Entity_Factory.h
+        Source/Entity_Factory_base.cpp
+        include/Entity_Factory_base.h
         Source/Location.cpp
         include/Location.h
         Source/Entities/CollisionObject.cpp
