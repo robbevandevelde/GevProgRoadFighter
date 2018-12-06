@@ -14,9 +14,7 @@ public:
 
     SFMLEntity();
 
-    SFMLEntity(const std::string& path);
-
-    virtual void draw(sf::RenderWindow& window)=0;
+    SFMLEntity(const std::string& path,std::shared_ptr<sf::RenderWindow> window);
 
     void setSpriteLocation(double x,double y);
 
@@ -24,8 +22,10 @@ public:
 
     void loadSprite(const std::string& path);
 
+    const std::shared_ptr<sf::RenderWindow> &getWindow() const;
+
 private:
-    std::shared_ptr<sf::RenderWindow> window;
+    std::shared_ptr<sf::RenderWindow> m_window;
 
     sf::Texture* m_texture;
 

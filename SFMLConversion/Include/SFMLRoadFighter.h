@@ -7,6 +7,7 @@
 
 #include <../../GameLogic/include/RoadFighterGame.h>
 #include <../../GameLogic/Utility/Clock.h>
+#include "SFML_Entity_Factory.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include "Entities/SFMLPlayerCar.h"
@@ -16,13 +17,10 @@ class SFMLRoadFighter{
 public:
     SFMLRoadFighter();
 
-    void startGame();
 
 private:
 
-    void draw(sf::RenderWindow& window) ;
-
-    std::vector<std::shared_ptr<SFMLEntity>> m_drawings;
+    void draw(std::shared_ptr<sf::RenderWindow> window) ;
 
     std::shared_ptr<roadfighter::RoadFighterGame> m_game;
 

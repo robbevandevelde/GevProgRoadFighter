@@ -5,7 +5,4 @@
 #include <Entities/Entity.h>
 
 #include "../../include/Entities/Entity.h"
-namespace roadfighter {
-
-    void Entity::update() {}
-}
+namespace roadfighter {}

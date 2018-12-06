@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o"
+  "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o"
   "GevProgRoadFighter.pdb"
   "GevProgRoadFighter"
 )

@@ -387,6 +387,33 @@ Source/Entities/World.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.s
 .PHONY : Source/Entities/World.cpp.s
 
+Source/EntityTransporter.o: Source/EntityTransporter.cpp.o
+
+.PHONY : Source/EntityTransporter.o
+
+# target to build an object file
+Source/EntityTransporter.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o
+.PHONY : Source/EntityTransporter.cpp.o
+
+Source/EntityTransporter.i: Source/EntityTransporter.cpp.i
+
+.PHONY : Source/EntityTransporter.i
+
+# target to preprocess a source file
+Source/EntityTransporter.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.i
+.PHONY : Source/EntityTransporter.cpp.i
+
+Source/EntityTransporter.s: Source/EntityTransporter.cpp.s
+
+.PHONY : Source/EntityTransporter.s
+
+# target to generate assembly for a file
+Source/EntityTransporter.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.s
+.PHONY : Source/EntityTransporter.cpp.s
+
 Source/Entity_Factory_base.o: Source/Entity_Factory_base.cpp.o
 
 .PHONY : Source/Entity_Factory_base.o
@@ -440,6 +467,33 @@ Source/Location.s: Source/Location.cpp.s
 Source/Location.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Location.cpp.s
 .PHONY : Source/Location.cpp.s
+
+Source/MoveController.o: Source/MoveController.cpp.o
+
+.PHONY : Source/MoveController.o
+
+# target to build an object file
+Source/MoveController.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o
+.PHONY : Source/MoveController.cpp.o
+
+Source/MoveController.i: Source/MoveController.cpp.i
+
+.PHONY : Source/MoveController.i
+
+# target to preprocess a source file
+Source/MoveController.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.i
+.PHONY : Source/MoveController.cpp.i
+
+Source/MoveController.s: Source/MoveController.cpp.s
+
+.PHONY : Source/MoveController.s
+
+# target to generate assembly for a file
+Source/MoveController.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.s
+.PHONY : Source/MoveController.cpp.s
 
 Source/Observer/Observable.o: Source/Observer/Observable.cpp.o
 
@@ -667,12 +721,18 @@ help:
 	@echo "... Source/Entities/World.o"
 	@echo "... Source/Entities/World.i"
 	@echo "... Source/Entities/World.s"
+	@echo "... Source/EntityTransporter.o"
+	@echo "... Source/EntityTransporter.i"
+	@echo "... Source/EntityTransporter.s"
 	@echo "... Source/Entity_Factory_base.o"
 	@echo "... Source/Entity_Factory_base.i"
 	@echo "... Source/Entity_Factory_base.s"
 	@echo "... Source/Location.o"
 	@echo "... Source/Location.i"
 	@echo "... Source/Location.s"
+	@echo "... Source/MoveController.o"
+	@echo "... Source/MoveController.i"
+	@echo "... Source/MoveController.s"
 	@echo "... Source/Observer/Observable.o"
 	@echo "... Source/Observer/Observable.i"
 	@echo "... Source/Observer/Observable.s"

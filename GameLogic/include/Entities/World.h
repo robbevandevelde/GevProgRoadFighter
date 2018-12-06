@@ -10,9 +10,10 @@
 #include "Entity.h"
 #include "PlayerCar.h"
 #include "CollisionObject.h"
+#include "EntityTransporter.h"
 
 namespace roadfighter {
-    class World :Entity{
+    class World :public Entity{
     public:
         /**
          * default constructor for World
@@ -30,6 +31,8 @@ namespace roadfighter {
          * @param Move the other world that is being moved in this one
          */
         World(World &&move)= default;
+
+        World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter);
 
         /**
          * copy assigment for World
@@ -56,13 +59,19 @@ namespace roadfighter {
          */
         void setBackY(double setback);
 
-        void addEntity(std::shared_ptr<CollisionObject> obj);
+        void addEntity(std::shared_ptr<Entity> obj);
 
         void update() override;
 
+        void getNewEntities();
+
+        void draw() override;
+
     private:
 
-        std::vector<std::shared_ptr<CollisionObject> > m_roadEntities;
+        std::vector<std::shared_ptr<Entity> > m_roadEntities;
+
+        std::shared_ptr<roadfighter::EntityTransporter> m_Transporter;
 
     };
 }

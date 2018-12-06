@@ -6,31 +6,33 @@
 
 #IncludeRegexTransform: 
 
+../GameLogic/include/Entities/Car.h
+Entity.h
+../GameLogic/include/Entities/Entity.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+
+../GameLogic/include/Entities/CollisionObject.h
+Entity.h
+../GameLogic/include/Entities/Entity.h
+../Location.h
+../GameLogic/include/Location.h
+
+../GameLogic/include/Entities/Entity.h
+
+../GameLogic/include/Entities/PlayerCar.h
+memory
+-
+Car.h
+../GameLogic/include/Entities/Car.h
+MoveController.h
+../GameLogic/include/Entities/MoveController.h
+
 ../GameLogic/include/Location.h
 ostream
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Car.h
-Entity.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-CollisionObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
-Entity.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-../Location.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PlayerCar.h
-Car.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Car.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
-ostream
--
+../GameLogic/include/MoveController.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntity.h
 SFML/Graphics.hpp
@@ -41,8 +43,8 @@ memory
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
-../../../GameLogic/include/Entities/PlayerCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PlayerCar.h
+Entities/PlayerCar.h
+-
 SFML/Graphics.hpp
 -
 SFMLEntity.h

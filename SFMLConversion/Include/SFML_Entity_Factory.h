@@ -8,17 +8,25 @@
 #include <Entity_Factory_base.h>
 #include <SFML/Graphics.hpp>
 #include <memory>
+#include <Entities/Entity.h>
+#include "Entities/SFMLWorld.h"
+#include "Entities/SFMLPlayerCar.h"
 
-class SFML_Entity_Factory:roadfighter::Entity_Factory_base {
-    roadfighter::Entity *createBullet() override;
+class SFML_Entity_Factory: public roadfighter::Entity_Factory_base {
+public:
+    SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
 
-    roadfighter::Entity *creatPassingCar() override;
+    std::shared_ptr<roadfighter::Entity> createBullet() override;
 
-    roadfighter::Entity *createPlayerCar() override;
+    std::shared_ptr<roadfighter::Entity> creatPassingCar() override;
 
-    roadfighter::Entity *createRacingCar() override;
+    std::shared_ptr<roadfighter::Entity> createPlayerCar() override;
 
-    roadfighter::Entity *createWorld() override;
+    std::shared_ptr<roadfighter::Entity> createRacingCar() override;
+
+    std::shared_ptr<roadfighter::Entity> createWorld() override;
+
+
 
 private:
     std::shared_ptr<sf::RenderWindow> window;

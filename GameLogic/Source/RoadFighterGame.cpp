@@ -1,54 +1,57 @@
+#include <utility>
+
 //
 // Created by thibaut on 01.12.18.
 //
-
 #include <RoadFighterGame.h>
 
 namespace roadfighter{
     RoadFighterGame::RoadFighterGame() {
-        m_world=std::make_shared<World>(World());
+        m_Factory=std::make_shared<GLL_Entity_Factory>(GLL_Entity_Factory());
+        initialize();
     }
 
-    RoadFighterGame::RoadFighterGame(std::shared_ptr<PlayerCar>& player) {
-        m_world=std::make_shared<World>(World());
-        m_Player=player;
-        m_world.get()->addEntity(m_Player);
+    RoadFighterGame::RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory) {
+        m_Factory= std::move(factory);
+        initialize();
     }
 
-    void RoadFighterGame::addObject(std::shared_ptr<CollisionObject>& obj) {
-        m_world.get()->addEntity(obj);
-    }
 
     void RoadFighterGame::tick() {
-        m_world.get()->update();
-        if(m_nextHorMove==h_left){
-            m_Player.get()->setHorizontalSpeed(-0.1);
-        }else if(m_nextHorMove==h_right){
-            m_Player.get()->setHorizontalSpeed(0.1);
-        }
-        m_nextHorMove=h_none;
-        if(m_nextVertMove==v_accel){
-            m_Player.get()->accelerate();
-        }else if(m_nextVertMove==v_decel){
-            m_Player.get()->decelerate();
-        }
-        m_nextVertMove=v_none;
+        m_world->update();
     }
 
-    void RoadFighterGame::setVertMove(EVertMove move) {
-        m_nextVertMove=move;
+
+    void RoadFighterGame::drawWorld() {
+        m_world->draw();
     }
 
-    void RoadFighterGame::setHorMove(EHorMove move) {
-        m_nextHorMove=move;
+    void RoadFighterGame::moveLeft() {
+        m_MoveController->setHorMove(h_left);
     }
 
-    EVertMove RoadFighterGame::getM_nextVertMove() const {
-        return m_nextVertMove;
+    void RoadFighterGame::moveRight() {
+        m_MoveController->setHorMove(h_right);
     }
 
-    EHorMove RoadFighterGame::getM_nextHorMove() const {
-        return m_nextHorMove;
+    void RoadFighterGame::accelerate() {
+        m_MoveController->setVertMove(v_accel);
     }
+
+    void RoadFighterGame::decelerate() {
+        m_MoveController->setVertMove(v_decel);
+    }
+
+    void RoadFighterGame::initialize() {
+        m_Transporter=std::make_shared<EntityTransporter>(EntityTransporter());
+        m_MoveController=std::make_shared<MoveController>(MoveController());
+        m_Factory->setController(m_MoveController);
+        m_Factory->setTransporter(m_Transporter);
+
+        m_world=m_Factory->createWorld();
+        m_Transporter->addEntity(m_Factory->createPlayerCar());
+
+    }
+
 
 }

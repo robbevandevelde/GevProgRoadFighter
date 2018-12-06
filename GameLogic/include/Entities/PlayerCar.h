@@ -5,7 +5,9 @@
 #ifndef GEVPROGROADFIGHTER_PLAYERCAR_H
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
 
+#include <memory>
 #include "Car.h"
+#include "MoveController.h"
 
 namespace roadfighter {
     class PlayerCar:public Car {
@@ -14,6 +16,14 @@ namespace roadfighter {
        * default constructor for PlayerCar
        */
         PlayerCar();
+
+        /**
+         * constructor with arguments for playerCar
+         * @param controller a shared pointer to the move controller the car will use
+         * @param fuel the amount of fuel the car will use (default at 100)
+         */
+        PlayerCar(double m_maxVertSpeed, double m_vertAccel,
+                  double m_horAccel,std::shared_ptr<MoveController> controller,int fuel=100);
 
         /**
          * copy constructor
@@ -26,9 +36,6 @@ namespace roadfighter {
          * @param Move the other PlayerCar that is being moved in this one
          */
         PlayerCar(PlayerCar &&move)= default;
-
-        PlayerCar(double m_maxVertSpeed, double m_vertAccel,
-                  double m_horAccel);
 
         /**
          * copy assigment for PlayerCar
@@ -62,6 +69,8 @@ namespace roadfighter {
 
     private:
         double m_fuel;
+
+        std::shared_ptr<MoveController> m_moveController;
 
     };
 }

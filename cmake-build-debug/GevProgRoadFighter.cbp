@@ -248,6 +248,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/EntityTransporter.cpp">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entity_Factory_base.cpp">
 			<Option target="GLL"/>
 		</Unit>
@@ -255,6 +258,9 @@
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Location.cpp">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/MoveController.cpp">
 			<Option target="GLL"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/Observable.cpp">
@@ -305,6 +311,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/EntityTransporter.h">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entity_Factory_base.h">
 			<Option target="GLL"/>
 		</Unit>
@@ -312,6 +321,9 @@
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/MoveController.h">
 			<Option target="GLL"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/Observable.h">
@@ -330,6 +342,9 @@
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h">
@@ -354,6 +369,9 @@
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLWorld.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp">

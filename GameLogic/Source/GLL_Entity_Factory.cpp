@@ -4,23 +4,23 @@
 
 #include "GLL_Entity_Factory.h"
 namespace roadfighter{
-    Entity *GLL_Entity_Factory::createBullet() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createBullet() {
+        return std::shared_ptr<Entity>(nullptr);
+    }
+
+    std::shared_ptr<Entity>  GLL_Entity_Factory::creatPassingCar() {
         return nullptr;
     }
 
-    Entity *GLL_Entity_Factory::creatPassingCar() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createPlayerCar() {
         return nullptr;
     }
 
-    Entity *GLL_Entity_Factory::createPlayerCar() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createRacingCar() {
         return nullptr;
     }
 
-    Entity *GLL_Entity_Factory::createRacingCar() {
-        return nullptr;
-    }
-
-    Entity *GLL_Entity_Factory::createWorld() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createWorld() {
         return nullptr;
     }
 }

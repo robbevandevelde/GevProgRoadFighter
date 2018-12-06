@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GLL.dir/Utility/Random.cpp.o"
   "CMakeFiles/GLL.dir/Utility/Clock.cpp.o"
   "CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o"
+  "CMakeFiles/GLL.dir/Source/MoveController.cpp.o"
+  "CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
   "libGLL.pdb"
   "libGLL.a"
 )

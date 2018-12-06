@@ -53,10 +53,18 @@ namespace roadfighter {
 
     void Car::update() {
         horMove(m_horizontalSpeed);
-        m_horizontalSpeed=0;
         vertMove(m_verticalSpeed);
 
     }
+
+    double Car::getVertAccel() const {
+        return m_vertAccel;
+    }
+
+    double Car::getHorAccel() const {
+        return m_horAccel;
+    }
+
 
     Car::Car(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
              double m_horAccel) : CollisionObject(m_loc1, m_loc2), m_maxVertSpeed(m_maxVertSpeed),

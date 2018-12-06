@@ -6,12 +6,13 @@
 #define GEVPROGROADFIGHTER_ROADFIGHTERGAME_H
 
 #include <memory>
-#include "Entities/World.h"
-#include "Entities/PlayerCar.h"
 #include "Entity_Factory_base.h"
+#include "GLL_Entity_Factory.h"
+#include "Entities/Entity.h"
+#include "MoveController.h"
+#include "EntityTransporter.h"
 namespace roadfighter {
-    enum EVertMove{v_none,v_accel,v_decel};
-    enum EHorMove{h_none,h_left,h_right};
+
     class RoadFighterGame {
     public:
         /**
@@ -20,10 +21,10 @@ namespace roadfighter {
         RoadFighterGame();
 
         /**
-         * constuctor were the player car is given
-         * @param player the player
+         * a constructor were the factory that is used to initalise all the objects is given
+         * @param factory the fectory that will be used to make everything
          */
-        RoadFighterGame(std::shared_ptr<PlayerCar>& player);
+        RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
 
         /**
          * copy constructor
@@ -58,29 +59,30 @@ namespace roadfighter {
          */
         virtual ~RoadFighterGame()= default;
 
-
-        void addObject(std::shared_ptr<CollisionObject>& obj);
-
         void tick();
 
-        void setVertMove(EVertMove move);
+        void moveLeft();
 
-        void setHorMove(EHorMove move);
+        void moveRight();
 
-        EVertMove getM_nextVertMove() const;
+        void accelerate();
 
-        EHorMove getM_nextHorMove() const;
+        void decelerate();
+
+        void initialize();
+
+        void drawWorld();
+
+
 
     private:
-        std::shared_ptr<Entity_Factory_base> factory;
+        std::shared_ptr<MoveController> m_MoveController;
 
-        std::shared_ptr<World> m_world;
+        std::shared_ptr<EntityTransporter> m_Transporter;
 
-        std::shared_ptr<PlayerCar> m_Player;
+        std::shared_ptr<Entity> m_world;
 
-        EVertMove m_nextVertMove;
-
-        EHorMove m_nextHorMove;
+        std::shared_ptr<Entity_Factory_base> m_Factory;
 
     };
 }

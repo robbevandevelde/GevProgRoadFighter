@@ -9,7 +9,7 @@
 #include "CollisionObject.h"
 
 namespace roadfighter {
-    class Car : public CollisionObject,Entity {
+    class Car : public CollisionObject {
     public:
         /**
          * default constructor for Car
@@ -70,6 +70,9 @@ namespace roadfighter {
 
         double getHorizontalSpeed() const;
 
+        double getVertAccel() const;
+
+        double getHorAccel() const;
 
     private:
         double m_verticalSpeed;
