@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.o  -o GevProgRoadFighterTest  -L"/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/../gtest/lib" -Wl,-rpath,"/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/../gtest/lib:" ../GameLogic/libGLL.a -lgtest 

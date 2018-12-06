@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../GameLogic/include/Location.h
+ostream
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp
+../../include/entities/Bullet.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Bullet.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Car.cpp
+../../include/entities/Car.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Car.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entity.cpp
+../../include/entities/Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Entity.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp
+../../include/entities/PassingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/PassingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PlayerCar.cpp
+../../include/entities/PlayerCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/PlayerCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp
+../../include/entities/RacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/RacingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp
+../../include/entities/World.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/World.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Location.cpp
+Location.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Location.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Bullet.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Entity.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Car.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Entity.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Entity.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/PassingCar.h
+Car.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Car.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/PlayerCar.h
+Car.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Car.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/RacingCar.h
+Car.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Car.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/World.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/entities/Entity.h
+

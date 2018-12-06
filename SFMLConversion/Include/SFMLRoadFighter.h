@@ -20,11 +20,13 @@ public:
 
 private:
 
-    void draw(sf::RenderWindow& window);
+    void draw(sf::RenderWindow& window) ;
 
     std::vector<std::shared_ptr<SFMLEntity>> m_drawings;
 
     std::shared_ptr<roadfighter::RoadFighterGame> m_game;
+
+
 
 
 

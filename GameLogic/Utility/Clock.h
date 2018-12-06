@@ -7,7 +7,7 @@
 #include <time.h>
 
 /**
- * an ecncpsulation for the c++ clock library to make it easier to use
+ * an encapsulation for the c++ clock library to make it easier to use
  */
 class Clock {
 public:

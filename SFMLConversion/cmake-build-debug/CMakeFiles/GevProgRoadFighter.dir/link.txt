@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/GevProgRoadFighter.dir/main.cpp.o CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o  -o GevProgRoadFighter -lGLL /usr/lib/x86_64-linux-gnu/libsfml-system.so /usr/lib/x86_64-linux-gnu/libsfml-window.so /usr/lib/x86_64-linux-gnu/libsfml-graphics.so 

@@ -14,8 +14,14 @@ namespace roadfighter {
     }
 
     void World::update() {
-        for(auto i:m_roadEntities){
+        for(auto& i:m_roadEntities){
             i.get()->update();
+        }
+    }
+
+    void World::setBackY(double setback) {
+        for(auto& i:m_roadEntities){
+            i->vertMove(-setback);
         }
     }
 

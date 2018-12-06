@@ -10,6 +10,8 @@ namespace roadfighter {
         public:
             virtual void update();
 
+            virtual void draw()=0;
+
 
     };
 }

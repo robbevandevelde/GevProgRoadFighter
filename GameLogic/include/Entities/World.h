@@ -45,11 +45,16 @@ namespace roadfighter {
          */
         World& operator=(World&& other)= default;
 
-
         /**
          * destructor for World
          */
         virtual ~World();
+
+        /**
+         * this function subtracts the given paramater from all the y values of the m_roadEntities
+         * @param setback the amount all entities should be setback
+         */
+        void setBackY(double setback);
 
         void addEntity(std::shared_ptr<CollisionObject> obj);
 

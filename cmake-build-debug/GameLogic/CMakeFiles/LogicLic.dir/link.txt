@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLogicLic.a  CMakeFiles/LogicLic.dir/Source/Entities/Entity.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/PlayerCar.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/Car.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/PassingCar.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/RacingCar.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/Bullet.cpp.o CMakeFiles/LogicLic.dir/Source/Entities/World.cpp.o CMakeFiles/LogicLic.dir/Source/RoadFighterGame.cpp.o CMakeFiles/LogicLic.dir/Source/Entity_Factory.cpp.o
+/usr/bin/ranlib libLogicLic.a

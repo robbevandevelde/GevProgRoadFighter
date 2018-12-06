@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+time.h
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp
+iostream
+-
+SFML/Graphics.hpp
+-
+../GameLogic/Utility/Clock.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+../GameLogic/Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+memory
+-
+

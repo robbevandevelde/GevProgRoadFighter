@@ -24,8 +24,9 @@ public:
 
     void loadSprite(const std::string& path);
 
-
 private:
+    std::shared_ptr<sf::RenderWindow> window;
+
     sf::Texture* m_texture;
 
 };
