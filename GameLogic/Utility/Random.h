@@ -15,6 +15,14 @@ private:
      */
     Random(){};
 
+    Random(const Random &copy)=delete;
+
+    Random(const Random &&move)= delete;
+
+    Random operator=(const Random &other)=delete;
+
+    Random operator=(const Random &&other)=delete;
+
 public:
 
     /**

@@ -13,7 +13,17 @@ public:
     static Transformation& getInstance();
 
     std::tuple<int,int> locationTransformation(const roadfighter::Location& loc);
+
+    Transformation(const Transformation &copy)=delete;
+
+    Transformation(const Transformation &&move)= delete;
+
+    Transformation operator=(const Transformation &other)=delete;
+
+    Transformation operator=(const Transformation &&other)=delete;
 private:
+
+
     Transformation(int x,int y);
     int m_xSize;
     int m_ySize;
