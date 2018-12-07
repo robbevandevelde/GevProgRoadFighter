@@ -12,11 +12,11 @@ namespace roadfighter{
         return nullptr;
     }
 
-    std::shared_ptr<Entity>  GLL_Entity_Factory::createPlayerCar() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) {
         return nullptr;
     }
 
-    std::shared_ptr<Entity>  GLL_Entity_Factory::createRacingCar() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createRacingCar(double x,double y,double max,double vAccel,double hAccel) {
         return nullptr;
     }
 

@@ -8,9 +8,11 @@
 #include <Entity_Factory_base.h>
 #include <SFML/Graphics.hpp>
 #include <memory>
+#include <Location.h>
 #include <Entities/Entity.h>
 #include "Entities/SFMLWorld.h"
 #include "Entities/SFMLPlayerCar.h"
+#include "Entities/SFMLRacingCar.h"
 
 class SFML_Entity_Factory: public roadfighter::Entity_Factory_base {
 public:
@@ -20,9 +22,9 @@ public:
 
     std::shared_ptr<roadfighter::Entity> creatPassingCar() override;
 
-    std::shared_ptr<roadfighter::Entity> createPlayerCar() override;
+    std::shared_ptr<roadfighter::Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
 
-    std::shared_ptr<roadfighter::Entity> createRacingCar() override;
+    std::shared_ptr<roadfighter::Entity> createRacingCar(double x,double y,double max,double vAccel,double hAccel) override;
 
     std::shared_ptr<roadfighter::Entity> createWorld() override;
 

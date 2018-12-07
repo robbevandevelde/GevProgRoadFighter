@@ -24,8 +24,8 @@ namespace roadfighter {
         }
     }
 
-    void Car::setHorizontalSpeed(double m_HorizontalSpeed) {
-        Car::m_horizontalSpeed = m_HorizontalSpeed;
+    void Car::setHorizontalSpeed(double HorizontalSpeed) {
+        Car::m_horizontalSpeed = HorizontalSpeed;
     }
 
     void Car::moveLeft() {
@@ -42,15 +42,16 @@ namespace roadfighter {
         m_horizontalSpeed=m_horAccel;
     }
 
-    void Car::accelerate() {
-        m_verticalSpeed+=m_vertAccel;
+    void Car::accelerate(double dt) {
+
+        m_verticalSpeed+=m_vertAccel*dt;
         if(m_verticalSpeed>m_maxVertSpeed){
             m_verticalSpeed=m_maxVertSpeed;
         }
     }
 
-    void Car::decelerate() {
-        m_verticalSpeed-=m_vertAccel;
+    void Car::decelerate(double dt) {
+        m_verticalSpeed-=m_vertAccel*dt;
         if(m_verticalSpeed<0){
             m_verticalSpeed=0;
         }
@@ -59,7 +60,7 @@ namespace roadfighter {
 
     void Car::update(double dt) {
         horMove(m_horizontalSpeed*dt);
-        vertMove(m_verticalSpeed*dt);
+        vertMove(-m_verticalSpeed*dt);
 
     }
 

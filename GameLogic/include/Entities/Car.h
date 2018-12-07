@@ -52,20 +52,50 @@ namespace roadfighter {
          */
         virtual ~Car();
 
+        /**
+         * a function that sets the vertical and horizontal speed to 0
+         */
         virtual void stop();
 
+        /**
+         * a function that substracts the horizontalaccel from the horizontalspeed
+         */
         virtual void moveLeft();
 
+        /**
+         * a function that add the horizontalaccel from the horizontalspeed
+         */
         virtual void moveRight();
 
-        virtual void accelerate();
+        /**
+         * a function that accelrates the car with the verticalaccel*dt
+         * @param dt teh amount of a tick that has passed since previous one
+         */
+        virtual void accelerate(double dt);
 
-        virtual void decelerate();
+        /**
+        * a function that decelerates the car with the verticalaccel*dt
+        * @param dt teh amount of a tick that has passed since previous one
+        */
+        virtual void decelerate(double dt);
 
+        /**
+         * setter for vertivalspeed
+         * @param m_VerticalSpeed the new verticalspeed
+         */
         void setVerticalSpeed(double m_VerticalSpeed);
 
-        void setHorizontalSpeed(double m_HorizontalSpeed);
+        /**
+         * setter for horizontalspeed
+         * @param m_HorizontalSpeed the new horizontalspeed
+         */
+        void setHorizontalSpeed(double HorizontalSpeed);
 
+        /**
+         * a function that updates the car
+         * @param dt the amount of ticks that have passed since the previous one
+         * overrided form entity class
+         */
         void update(double dt) override;
 
         double getHorizontalSpeed() const;

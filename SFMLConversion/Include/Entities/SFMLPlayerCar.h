@@ -17,6 +17,11 @@ public:
                   const std::shared_ptr<roadfighter::MoveController> &controller, int fuel,
                   const std::shared_ptr<sf::RenderWindow> &window);
 
+    SFMLPlayerCar(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double m_maxVertSpeed,
+                  double m_vertAccel, double m_horAccel, double m_fuel,
+                  const std::shared_ptr<roadfighter::MoveController> &m_moveController,
+                  const std::shared_ptr<sf::RenderWindow> &window);
+
     void draw() override;
 
 

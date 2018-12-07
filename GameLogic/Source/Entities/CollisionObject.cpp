@@ -47,10 +47,10 @@ namespace roadfighter {
             m_loc1.setX(m_loc1.getX()+moveBack);
             m_loc2.setX(m_loc2.getX()+moveBack);
         }
-        if(m_loc2.getX()>3){
-            double moveBack=m_loc2.getX()-3;
-            m_loc1.setX(m_loc1.getX()-moveBack);
-            m_loc2.setX(m_loc2.getX()-moveBack);
+        if(m_loc2.getX()>3) {
+            double moveBack = m_loc2.getX() - 3;
+            m_loc1.setX(m_loc1.getX() - moveBack);
+            m_loc2.setX(m_loc2.getX() - moveBack);
         }
     }
 

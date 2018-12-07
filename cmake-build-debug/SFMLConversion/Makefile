@@ -306,6 +306,33 @@ Source/entities/SFMLPlayerCar.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.s
 .PHONY : Source/entities/SFMLPlayerCar.cpp.s
 
+Source/entities/SFMLRacingCar.o: Source/entities/SFMLRacingCar.cpp.o
+
+.PHONY : Source/entities/SFMLRacingCar.o
+
+# target to build an object file
+Source/entities/SFMLRacingCar.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o
+.PHONY : Source/entities/SFMLRacingCar.cpp.o
+
+Source/entities/SFMLRacingCar.i: Source/entities/SFMLRacingCar.cpp.i
+
+.PHONY : Source/entities/SFMLRacingCar.i
+
+# target to preprocess a source file
+Source/entities/SFMLRacingCar.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.i
+.PHONY : Source/entities/SFMLRacingCar.cpp.i
+
+Source/entities/SFMLRacingCar.s: Source/entities/SFMLRacingCar.cpp.s
+
+.PHONY : Source/entities/SFMLRacingCar.s
+
+# target to generate assembly for a file
+Source/entities/SFMLRacingCar.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.s
+.PHONY : Source/entities/SFMLRacingCar.cpp.s
+
 Source/entities/SFMLWorld.o: Source/entities/SFMLWorld.cpp.o
 
 .PHONY : Source/entities/SFMLWorld.o
@@ -415,6 +442,9 @@ help:
 	@echo "... Source/entities/SFMLPlayerCar.o"
 	@echo "... Source/entities/SFMLPlayerCar.i"
 	@echo "... Source/entities/SFMLPlayerCar.s"
+	@echo "... Source/entities/SFMLRacingCar.o"
+	@echo "... Source/entities/SFMLRacingCar.i"
+	@echo "... Source/entities/SFMLRacingCar.s"
 	@echo "... Source/entities/SFMLWorld.o"
 	@echo "... Source/entities/SFMLWorld.i"
 	@echo "... Source/entities/SFMLWorld.s"

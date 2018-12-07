@@ -6,12 +6,14 @@
 #define GEVPROGROADFIGHTER_RACINGCAR_H
 
 #include "Car.h"
+#include "../../Utility/Random.h"
 namespace roadfighter {
     class RacingCar :public Car{
+    public:
         /**
        * default constructor for RacingCar
        */
-        RacingCar();
+        RacingCar()= default;
 
         /**
          * copy constructor
@@ -24,6 +26,9 @@ namespace roadfighter {
          * @param Move the other RacingCar that is being moved in this one
          */
         RacingCar(RacingCar &&move)= default;
+
+        RacingCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
+                  double m_horAccel);
 
         /**
          * copy assigment for RacingCar
@@ -40,11 +45,12 @@ namespace roadfighter {
          */
         RacingCar& operator=(RacingCar&& other)= default;
 
-
         /**
          * destructor for RacingCar
          */
-        virtual ~RacingCar();
+        virtual ~RacingCar()= default;
+
+        void update(double dt) override;
 
     };
 }

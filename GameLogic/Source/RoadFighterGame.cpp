@@ -53,9 +53,13 @@ namespace roadfighter{
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
-        std::shared_ptr<Entity> player=m_Factory->createPlayerCar();
+        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(0,0,1.2,0.02,0.1,100);
         m_Transporter->addEntity(player);
         m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
+
+        //create racingcar
+        std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(1,1,1,0.02,0.2);
+        m_Transporter->addEntity(enemy1);
 
     }
 

@@ -37,6 +37,9 @@ namespace roadfighter {
          */
         PlayerCar(PlayerCar &&move)= default;
 
+        PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
+                  double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController);
+
         /**
          * copy assigment for PlayerCar
          * @param other the PlayerCar that is being copied

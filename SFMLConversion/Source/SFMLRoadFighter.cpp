@@ -15,7 +15,7 @@ SFMLRoadFighter::SFMLRoadFighter() {
     while (window->isOpen())
     {
 
-        if(gameclock.getTimeAsSeconds()>0.1) {
+        if(gameclock.getTimeAsSeconds()>0.033) {
             window->clear();
             draw(window);
             m_game->tick(gameclock.getTimeAsSeconds()/0.1);

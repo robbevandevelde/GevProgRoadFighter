@@ -17,9 +17,9 @@ namespace roadfighter {
 
         virtual std::shared_ptr<Entity> creatPassingCar()=0;
 
-        virtual std::shared_ptr<Entity> createPlayerCar()=0;
+        virtual std::shared_ptr<Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel)=0;
 
-        virtual std::shared_ptr<Entity> createRacingCar()=0;
+        virtual std::shared_ptr<Entity> createRacingCar(double x,double y,double max,double vAccel,double hAccel)=0;
 
         virtual std::shared_ptr<Entity> createWorld()=0;
 

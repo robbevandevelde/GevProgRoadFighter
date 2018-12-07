@@ -20,9 +20,9 @@ namespace roadfighter {
 
         std::shared_ptr<Entity> creatPassingCar() override;
 
-        std::shared_ptr<Entity> createPlayerCar() override;
+        std::shared_ptr<Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
 
-        std::shared_ptr<Entity> createRacingCar() override;
+        std::shared_ptr<Entity> createRacingCar(double x,double y,double max,double vAccel,double hAccel) override;
 
         std::shared_ptr<Entity> createWorld() override;
 
