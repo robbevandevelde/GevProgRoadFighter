@@ -70,6 +70,8 @@ namespace roadfighter {
 
         double getHorizontalSpeed() const;
 
+        double getVerticalSpeed() const;
+
         double getVertAccel() const;
 
         double getHorAccel() const;

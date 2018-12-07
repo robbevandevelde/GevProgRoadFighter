@@ -16,6 +16,12 @@ namespace roadfighter {
 
     void Car::setVerticalSpeed(double m_VerticalSpeed) {
         Car::m_verticalSpeed = m_VerticalSpeed;
+        if(m_VerticalSpeed>m_maxVertSpeed){
+            Car::m_verticalSpeed =m_maxVertSpeed;
+        }
+        if(m_VerticalSpeed<0){
+            Car::m_verticalSpeed =0;
+        }
     }
 
     void Car::setHorizontalSpeed(double m_HorizontalSpeed) {
@@ -75,6 +81,10 @@ namespace roadfighter {
 
     double Car::getHorizontalSpeed() const {
         return m_horizontalSpeed;
+    }
+
+    double Car::getVerticalSpeed() const {
+        return m_verticalSpeed;
     }
 
 }

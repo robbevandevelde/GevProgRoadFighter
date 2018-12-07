@@ -31,6 +31,11 @@ namespace roadfighter {
         }else{
             Car::setHorizontalSpeed(0);
         }
+        if(m_moveController->getNextVertMove()==v_accel){
+            Car::setVerticalSpeed(Car::getVerticalSpeed()+(Car::getVertAccel()*dt));
+        }else if(m_moveController->getNextVertMove()==v_decel){
+            Car::setVerticalSpeed(Car::getVerticalSpeed()-(Car::getVertAccel()*dt));
+        }
         Car::update(dt);
     }
 

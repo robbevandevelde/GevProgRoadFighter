@@ -30,9 +30,10 @@ namespace roadfighter {
     }
 
     void World::setBackY(double setback) {
-//        for(auto& i:m_roadEntities){
-//            i->vertMove(-setback);
-//        }
+        for(auto& i:m_roadEntities){
+            auto temp=std::dynamic_pointer_cast<CollisionObject>(i);
+            temp->vertMove(-setback);
+        }
     }
 
     void World::addEntity(std::shared_ptr<Entity> obj) {

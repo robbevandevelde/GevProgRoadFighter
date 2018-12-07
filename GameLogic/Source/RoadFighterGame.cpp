@@ -69,15 +69,15 @@ namespace roadfighter{
     }
 
     double RoadFighterGame::getsSpeed() const {
-        return 0;
+        return m_Player->getVerticalSpeed();
     }
 
     double RoadFighterGame::getYvariance() const {
-        return m_Player->getM_loc2().getY()-m_Player->getheight();
+        return m_Player->getM_loc2().getY()-m_Player->getheight()/2;
     }
 
     void RoadFighterGame::normalizeWorld(double ySetback) {
-
+        m_world->setBackY(ySetback);
     }
 
 }

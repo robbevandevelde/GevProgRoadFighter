@@ -20,6 +20,7 @@ void SFMLPlayerCar::draw() {
             SFMLEntitySprite::setRotation(getRotation()-1);
         }
     }
+
     getWindow()->draw(*this);
 }
 
