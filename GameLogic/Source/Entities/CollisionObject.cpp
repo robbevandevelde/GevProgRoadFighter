@@ -55,4 +55,12 @@ namespace roadfighter {
     }
 
 
+    double CollisionObject::getheight() const {
+        return m_loc2.getY()-m_loc1.getY();
+    }
+
+    double CollisionObject::getWidth() const {
+        return m_loc2.getX()-m_loc1.getX();
+    }
+
 }

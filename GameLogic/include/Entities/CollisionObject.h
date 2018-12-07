@@ -70,6 +70,10 @@ namespace  roadfighter {
 
         void horMove(double amount);
 
+        double getheight() const;
+
+        double getWidth() const;
+
 
 
     private:

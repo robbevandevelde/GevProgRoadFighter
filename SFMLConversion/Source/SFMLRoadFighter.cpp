@@ -15,10 +15,10 @@ SFMLRoadFighter::SFMLRoadFighter() {
     while (window->isOpen())
     {
 
-        if(gameclock.getTimeAsSeconds()>0.033) {
+        if(gameclock.getTimeAsSeconds()>0.1) {
             window->clear();
-            m_game->drawWorld();
-            m_game->tick();
+            draw(window);
+            m_game->tick(gameclock.getTimeAsSeconds()/0.1);
             gameclock.restart();
 
         }
@@ -28,18 +28,24 @@ SFMLRoadFighter::SFMLRoadFighter() {
             // "close requested" event: we close the window
             if (event.type == sf::Event::Closed)
                 window->close();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-            {
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
                 // left key is pressed: move our player to the left
                 m_game->moveLeft();
-
-            }if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
             {
                 // right key is pressed: move our player to the right
                 m_game->moveRight();
             }
+            if(event.type ==sf::Event::KeyReleased){
+                m_game->stopHorizontalMove();
+            }
+
         }
         window->display();
     }
 }
 
+void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
+    m_game->drawWorld();
+}

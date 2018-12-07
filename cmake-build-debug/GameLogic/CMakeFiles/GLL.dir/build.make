@@ -304,6 +304,19 @@ GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/EntityTransporter.cpp" -o CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.s
 
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o: ../GameLogic/Source/Entities/bonusCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/bonusCar.cpp"
+
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/bonusCar.cpp" > CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.i
+
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/bonusCar.cpp" -o CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.s
+
 # Object files for target GLL
 GLL_OBJECTS = \
 "CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o" \
@@ -324,7 +337,8 @@ GLL_OBJECTS = \
 "CMakeFiles/GLL.dir/Utility/Clock.cpp.o" \
 "CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o" \
 "CMakeFiles/GLL.dir/Source/MoveController.cpp.o" \
-"CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
+"CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o" \
+"CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o"
 
 # External object files for target GLL
 GLL_EXTERNAL_OBJECTS =
@@ -348,9 +362,10 @@ GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o
+GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/build.make
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libGLL.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libGLL.a"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && $(CMAKE_COMMAND) -P CMakeFiles/GLL.dir/cmake_clean_target.cmake
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GLL.dir/link.txt --verbose=$(VERBOSE)
 

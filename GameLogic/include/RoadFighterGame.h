@@ -7,6 +7,8 @@
 
 #include <memory>
 #include "Entity_Factory_base.h"
+#include "Entities/World.h"
+#include "Entities/PlayerCar.h"
 #include "GLL_Entity_Factory.h"
 #include "Entities/Entity.h"
 #include "MoveController.h"
@@ -59,28 +61,39 @@ namespace roadfighter {
          */
         virtual ~RoadFighterGame()= default;
 
-        void tick();
+        void tick(double dt);
 
         void moveLeft();
+
+        void stopHorizontalMove();
 
         void moveRight();
 
         void accelerate();
 
+        void stopVerticalMove();
+
         void decelerate();
 
         void initialize();
 
-        void drawWorld();
+        double getsSpeed() const;
 
-
+        void drawWorld() const;
 
     private:
+        double getYvariance() const;
+
+        void normalizeWorld(double ySetback);
+
+    private:
+        std::shared_ptr<PlayerCar> m_Player;
+
         std::shared_ptr<MoveController> m_MoveController;
 
         std::shared_ptr<EntityTransporter> m_Transporter;
 
-        std::shared_ptr<Entity> m_world;
+        std::shared_ptr<World> m_world;
 
         std::shared_ptr<Entity_Factory_base> m_Factory;
 

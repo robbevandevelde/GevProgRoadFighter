@@ -248,6 +248,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/bonusCar.cpp">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/EntityTransporter.cpp">
 			<Option target="GLL"/>
 		</Unit>
@@ -311,6 +314,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/bonusCar.h">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/EntityTransporter.h">
 			<Option target="GLL"/>
 		</Unit>
@@ -338,7 +344,7 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/RoadFighterGame.h">
 			<Option target="GLL"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntity.h">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
@@ -365,7 +371,7 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/Transformation.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntity.cpp">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">

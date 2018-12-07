@@ -56,6 +56,9 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/M
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/Source/Entities/World.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/World.h
 
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o: ../GameLogic/include/Entities/bonusCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o: ../GameLogic/Source/Entities/bonusCar.cpp
+
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/Source/EntityTransporter.cpp

@@ -56,6 +56,9 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o
  ../GameLogic/include/MoveController.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o
+ ../GameLogic/include/Entities/bonusCar.h
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/bonusCar.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o
  ../GameLogic/include/Entities/Entity.h
  ../GameLogic/include/EntityTransporter.h

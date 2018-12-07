@@ -387,6 +387,33 @@ Source/Entities/World.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.s
 .PHONY : Source/Entities/World.cpp.s
 
+Source/Entities/bonusCar.o: Source/Entities/bonusCar.cpp.o
+
+.PHONY : Source/Entities/bonusCar.o
+
+# target to build an object file
+Source/Entities/bonusCar.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o
+.PHONY : Source/Entities/bonusCar.cpp.o
+
+Source/Entities/bonusCar.i: Source/Entities/bonusCar.cpp.i
+
+.PHONY : Source/Entities/bonusCar.i
+
+# target to preprocess a source file
+Source/Entities/bonusCar.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.i
+.PHONY : Source/Entities/bonusCar.cpp.i
+
+Source/Entities/bonusCar.s: Source/Entities/bonusCar.cpp.s
+
+.PHONY : Source/Entities/bonusCar.s
+
+# target to generate assembly for a file
+Source/Entities/bonusCar.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.s
+.PHONY : Source/Entities/bonusCar.cpp.s
+
 Source/EntityTransporter.o: Source/EntityTransporter.cpp.o
 
 .PHONY : Source/EntityTransporter.o
@@ -721,6 +748,9 @@ help:
 	@echo "... Source/Entities/World.o"
 	@echo "... Source/Entities/World.i"
 	@echo "... Source/Entities/World.s"
+	@echo "... Source/Entities/bonusCar.o"
+	@echo "... Source/Entities/bonusCar.i"
+	@echo "... Source/Entities/bonusCar.s"
 	@echo "... Source/EntityTransporter.o"
 	@echo "... Source/EntityTransporter.i"
 	@echo "... Source/EntityTransporter.s"

@@ -96,18 +96,18 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.s
 
-SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/flags.make
-SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o: ../SFMLConversion/Source/entities/SFMLEntity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntity.cpp"
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/flags.make
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o: ../SFMLConversion/Source/entities/SFMLEntitySprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp"
 
-SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.i"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntity.cpp" > CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.i
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp" > CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.i
 
-SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.s"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntity.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.s
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.s
 
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.o: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/flags.make
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.o: ../SFMLConversion/Source/Transformation.cpp
@@ -166,7 +166,7 @@ GevProgRoadFighter_OBJECTS = \
 "CMakeFiles/GevProgRoadFighter.dir/main.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o" \
-"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o" \
@@ -178,7 +178,7 @@ GevProgRoadFighter_EXTERNAL_OBJECTS =
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o
-SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntity.cpp.o
+SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o

@@ -66,7 +66,7 @@ namespace roadfighter {
 
         void setHorizontalSpeed(double m_HorizontalSpeed);
 
-        void update() override;
+        void update(double dt) override;
 
         double getHorizontalSpeed() const;
 

@@ -4,6 +4,7 @@
 // Created by thibaut on 01.12.18.
 //
 #include <RoadFighterGame.h>
+#include <iostream>
 
 namespace roadfighter{
     RoadFighterGame::RoadFighterGame() {
@@ -17,12 +18,14 @@ namespace roadfighter{
     }
 
 
-    void RoadFighterGame::tick() {
-        m_world->update();
+    void RoadFighterGame::tick(double dt) {
+        m_world->update(dt);
+        m_Transporter->clear();
+        normalizeWorld(getYvariance());
     }
 
 
-    void RoadFighterGame::drawWorld() {
+    void RoadFighterGame::drawWorld() const{
         m_world->draw();
     }
 
@@ -47,11 +50,34 @@ namespace roadfighter{
         m_MoveController=std::make_shared<MoveController>(MoveController());
         m_Factory->setController(m_MoveController);
         m_Factory->setTransporter(m_Transporter);
+        m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
-        m_world=m_Factory->createWorld();
-        m_Transporter->addEntity(m_Factory->createPlayerCar());
+        //create player
+        std::shared_ptr<Entity> player=m_Factory->createPlayerCar();
+        m_Transporter->addEntity(player);
+        m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
 
     }
 
+
+    void RoadFighterGame::stopHorizontalMove() {
+        m_MoveController->setHorMove(h_none);
+    }
+
+    void RoadFighterGame::stopVerticalMove() {
+        m_MoveController->setVertMove(v_none);
+    }
+
+    double RoadFighterGame::getsSpeed() const {
+        return 0;
+    }
+
+    double RoadFighterGame::getYvariance() const {
+        return m_Player->getM_loc2().getY()-m_Player->getheight();
+    }
+
+    void RoadFighterGame::normalizeWorld(double ySetback) {
+
+    }
 
 }

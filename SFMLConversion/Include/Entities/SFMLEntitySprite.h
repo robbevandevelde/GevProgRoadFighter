@@ -9,12 +9,12 @@
 #include <memory>
 #include "../Transformation.h"
 
-class SFMLEntity: public sf::Sprite {
+class SFMLEntitySprite: public sf::Sprite {
 public:
 
-    SFMLEntity();
+    SFMLEntitySprite();
 
-    SFMLEntity(const std::string& path,std::shared_ptr<sf::RenderWindow> window);
+    SFMLEntitySprite(const std::string& path,std::shared_ptr<sf::RenderWindow> window);
 
     void setSpriteLocation(double x,double y);
 

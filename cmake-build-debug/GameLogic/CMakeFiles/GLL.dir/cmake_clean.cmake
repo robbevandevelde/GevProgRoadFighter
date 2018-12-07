@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o"
   "CMakeFiles/GLL.dir/Source/MoveController.cpp.o"
   "CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
+  "CMakeFiles/GLL.dir/Source/Entities/bonusCar.cpp.o"
   "libGLL.pdb"
   "libGLL.a"
 )

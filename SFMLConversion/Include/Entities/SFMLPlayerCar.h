@@ -7,9 +7,9 @@
 
 #include <Entities/PlayerCar.h>
 #include <SFML/Graphics.hpp>
-#include "SFMLEntity.h"
+#include "SFMLEntitySprite.h"
 
-class SFMLPlayerCar: public roadfighter::PlayerCar, public SFMLEntity{
+class SFMLPlayerCar: public roadfighter::PlayerCar, public SFMLEntitySprite{
 public:
 
 

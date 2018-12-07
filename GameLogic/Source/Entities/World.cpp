@@ -20,13 +20,12 @@ namespace roadfighter {
         for(auto i:m_Transporter->getEntities()){
             m_roadEntities.emplace_back(i);
         }
-        m_Transporter->clear();
     }
 
-    void World::update() {
+    void World::update(double dt) {
         getNewEntities();
         for(auto& i:m_roadEntities){
-            i.get()->update();
+            i.get()->update(dt);
         }
     }
 

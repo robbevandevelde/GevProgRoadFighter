@@ -5,6 +5,7 @@
 //
 
 #include <Entities/PlayerCar.h>
+#include <iostream>
 namespace roadfighter {
 
     PlayerCar::PlayerCar() {}
@@ -22,7 +23,7 @@ namespace roadfighter {
         m_fuel+=amount;
     }
 
-    void PlayerCar::update() {
+    void PlayerCar::update(double dt) {
         if(m_moveController->getNextHorMove()==h_left){
             Car::setHorizontalSpeed(-Car::getHorAccel());
         }else if(m_moveController->getNextHorMove()==h_right){
@@ -30,8 +31,7 @@ namespace roadfighter {
         }else{
             Car::setHorizontalSpeed(0);
         }
-        m_moveController->setNone();
-        Car::update();
+        Car::update(dt);
     }
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,

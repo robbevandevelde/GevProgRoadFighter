@@ -3,7 +3,7 @@
 //
 
 #include <Entities/Car.h>
-
+#include <iostream>
 #include "../../include/Entities/Car.h"
 namespace roadfighter {
     Car::Car() {
@@ -51,9 +51,9 @@ namespace roadfighter {
     }
 
 
-    void Car::update() {
-        horMove(m_horizontalSpeed);
-        vertMove(m_verticalSpeed);
+    void Car::update(double dt) {
+        horMove(m_horizontalSpeed*dt);
+        vertMove(m_verticalSpeed*dt);
 
     }
 
