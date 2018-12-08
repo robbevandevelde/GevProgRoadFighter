@@ -8,10 +8,13 @@
 #include "Car.h"
 namespace roadfighter {
     class PassingCar: public Car {
+    public:
         /**
          * default constructor for PassingCar
          */
-        PassingCar();
+        PassingCar()= default;
+
+        PassingCar(const Location &m_loc1, const Location &m_loc2, double vertSpeed);
 
         /**
          * copy constructor
@@ -43,7 +46,11 @@ namespace roadfighter {
         /**
          * destructor for PassingCar
          */
-        virtual ~PassingCar();
+        ~PassingCar() override = default;
+
+        void updateLogic() override;
+
+        void updateMovement(double dt) override;
 
     };
 }

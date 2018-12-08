@@ -13,7 +13,7 @@ namespace roadfighter {
         /**
          * default constructor for Bullet
          */
-        Bullet();
+        Bullet()= default;
 
         /**
          * copy constructor
@@ -46,7 +46,7 @@ namespace roadfighter {
         /**
          * destructor for Bullet
          */
-        virtual ~Bullet();
+        virtual ~Bullet()= default;
 
     };
 }

@@ -9,12 +9,17 @@ std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createBullet() {
     return nullptr;
 }
 
-std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::creatPassingCar() {
-    return nullptr;
+std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::creatPassingCar(double x,double y,double vSpeed) {
+    std::shared_ptr<SFMLPassingCar> toreturn=std::make_shared<SFMLPassingCar>(window,roadfighter::Location(x-0.25,y-0.25),roadfighter::Location(x+0.25,y+0.25),vSpeed);
+    return toreturn;
+}
+
+std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createBonusCar(double x, double y,double vSpeed) {
+    std::shared_ptr<SFMLBonusCar> toreturn=std::make_shared<SFMLBonusCar>(window,roadfighter::Location(x-0.25,y-0.25),roadfighter::Location(x+0.25,y+0.25),vSpeed);
+    return toreturn;
 }
 
 std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) {
-//    std::shared_ptr<SFMLPlayerCar> toreturn=std::make_shared<SFMLPlayerCar>(400,10,0.1,getController(),100,window);
     std::shared_ptr<SFMLPlayerCar> toreturn=std::make_shared<SFMLPlayerCar>(roadfighter::Location(x-0.25,y-0.25),roadfighter::Location(x+0.25,y+0.25),
             max,vAccel,hAccel,fuel,getController(),window);
     return toreturn;
@@ -31,3 +36,4 @@ std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createWorld() {
 }
 
 SFML_Entity_Factory::SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window) : window(window) {}
+

@@ -31,7 +31,7 @@ SFMLPlayerCar::SFMLPlayerCar(
         const std::shared_ptr<roadfighter::MoveController> &controller,
         int fuel,
         const std::shared_ptr<sf::RenderWindow> &window) :
-        PlayerCar(m_maxVertSpeed, m_vertAccel, m_horAccel, controller, fuel), SFMLEntitySprite("../../SFMLConversion/resources/sprites/passing_car.png", window) {
+        PlayerCar(m_maxVertSpeed, m_vertAccel, m_horAccel, controller, fuel), SFMLEntitySprite("../../SFMLConversion/resources/sprites/player_car.png", window) {
     std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getM_loc1());
     std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getM_loc2());
     SFMLEntitySprite::scale(sf::Vector2f(
@@ -43,7 +43,7 @@ SFMLPlayerCar::SFMLPlayerCar(const roadfighter::Location &m_loc1, const roadfigh
                              double m_maxVertSpeed, double m_vertAccel, double m_horAccel, double m_fuel,
                              const std::shared_ptr<roadfighter::MoveController> &m_moveController,
                               const std::shared_ptr<sf::RenderWindow> &window) : PlayerCar(
-        m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel, m_fuel, m_moveController), SFMLEntitySprite("../../SFMLConversion/resources/sprites/passing_car.png",
+        m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel, m_fuel, m_moveController), SFMLEntitySprite("../../SFMLConversion/resources/sprites/player_car.png",
                                                                                                              window) {
     std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getM_loc1());
     std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getM_loc2());

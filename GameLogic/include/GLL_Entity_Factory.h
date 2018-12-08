@@ -18,7 +18,9 @@ namespace roadfighter {
 
         std::shared_ptr<Entity> createBullet() override;
 
-        std::shared_ptr<Entity> creatPassingCar() override;
+        std::shared_ptr<Entity> creatPassingCar(double x,double y,double vSpeed) override;
+
+        std::shared_ptr<Entity> createBonusCar(double x, double y, double vSpeed) override;
 
         std::shared_ptr<Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
 

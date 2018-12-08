@@ -48,7 +48,7 @@ namespace roadfighter {
         /**
          * destructor for RacingCar
          */
-        virtual ~RacingCar()= default;
+        ~RacingCar() override = default;
 
         void updateMovement(double dt) override;
 

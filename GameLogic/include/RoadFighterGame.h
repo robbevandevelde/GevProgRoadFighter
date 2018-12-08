@@ -13,6 +13,7 @@
 #include "Entities/Entity.h"
 #include "MoveController.h"
 #include "EntityTransporter.h"
+#include "../Utility/Random.h"
 namespace roadfighter {
 
     class RoadFighterGame {
@@ -86,6 +87,8 @@ namespace roadfighter {
         void drawWorld() const;
 
     private:
+        void addRandomCars();
+
         double getYvariance() const;
 
         void normalizeWorld(double ySetback);

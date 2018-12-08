@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../GameLogic/Utility/Random.h
-memory
--
-random
--
-
 ../GameLogic/include/Entities/Car.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -26,27 +20,25 @@ Entity.h
 
 ../GameLogic/include/Entities/Entity.h
 
-../GameLogic/include/Entities/RacingCar.h
+../GameLogic/include/Entities/PlayerCar.h
+memory
+-
 Car.h
 ../GameLogic/include/Entities/Car.h
-../../Utility/Random.h
-../GameLogic/Utility/Random.h
+MoveController.h
+../GameLogic/include/Entities/MoveController.h
 
 ../GameLogic/include/Location.h
 ostream
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp
-Entities/RacingCar.h
+../GameLogic/include/MoveController.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PlayerCar.cpp
+utility
+-
+Entities/PlayerCar.h
 -
 iostream
 -
-../../include/Entities/RacingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
-Car.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Car.h
-../../Utility/Random.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
 

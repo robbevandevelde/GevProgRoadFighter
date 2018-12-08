@@ -50,7 +50,7 @@ namespace roadfighter {
         /**
          * destructor for Car
          */
-        virtual ~Car();
+        virtual ~Car()= default;
 
         /**
          * a function that sets the vertical and horizontal speed to 0

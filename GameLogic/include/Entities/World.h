@@ -32,7 +32,7 @@ namespace roadfighter {
          */
         World(World &&move)= default;
 
-        World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter);
+        explicit World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter);
 
         /**
          * copy assigment for World

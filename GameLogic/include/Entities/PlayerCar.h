@@ -59,7 +59,7 @@ namespace roadfighter {
         /**
          * destructor for PlayerCar
          */
-        virtual ~PlayerCar();
+        ~PlayerCar() override = default ;
 
         void decreasFuel(const double &amount);
 

@@ -33,6 +33,7 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::logicTick() {
+        addRandomCars();
         m_world->updateLogic();
         m_Transporter->clear();
     }
@@ -94,6 +95,23 @@ namespace roadfighter{
 
         std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,1,0.02,0.2);
         m_Transporter->addEntity(enemy8);
+
+    }
+
+    void RoadFighterGame::addRandomCars() {
+        int newCarProb=Random::getInstance().getRandom(5);
+        if(newCarProb==0){
+            int bonusorpassing=Random::getInstance().getRandom(5);
+            if(bonusorpassing==0){
+                int loc=Random::getInstance().getRandom(6)-3;
+                auto bonus=m_Factory->createBonusCar(loc,-5,-0.5);
+                m_Transporter->addEntity(bonus);
+            }else{
+                int loc=Random::getInstance().getRandom(6)-3;
+                auto passing=m_Factory->creatPassingCar(loc,-5,-0.5);
+                m_Transporter->addEntity(passing);
+            }
+        }
 
     }
 

@@ -6,21 +6,11 @@
 #include <iostream>
 #include "../../include/Entities/Car.h"
 namespace roadfighter {
-    Car::Car() {
-
-    }
-
-    Car::~Car() {
-
-    }
 
     void Car::setVerticalSpeed(double m_VerticalSpeed) {
         Car::m_verticalSpeed = m_VerticalSpeed;
         if(m_VerticalSpeed>m_maxVertSpeed){
             Car::m_verticalSpeed =m_maxVertSpeed;
-        }
-        if(m_VerticalSpeed<0){
-            Car::m_verticalSpeed =0;
         }
     }
 

@@ -8,10 +8,6 @@
 #include <iostream>
 namespace roadfighter {
 
-    PlayerCar::PlayerCar() {}
-
-    PlayerCar::~PlayerCar() {}
-
     void PlayerCar::decreasFuel(const double &amount) {
         m_fuel-=amount;
         if(m_fuel<0){
@@ -35,6 +31,9 @@ namespace roadfighter {
             Car::setVerticalSpeed(Car::getVerticalSpeed()+(Car::getVertAccel()*dt));
         }else if(m_moveController->getNextVertMove()==v_decel){
             Car::setVerticalSpeed(Car::getVerticalSpeed()-(Car::getVertAccel()*dt));
+            if(Car::getVerticalSpeed()<0){
+                Car::setVerticalSpeed(0);
+            }
         }
         Car::updateMovement(dt);
     }

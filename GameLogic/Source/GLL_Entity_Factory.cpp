@@ -8,7 +8,7 @@ namespace roadfighter{
         return std::shared_ptr<Entity>(nullptr);
     }
 
-    std::shared_ptr<Entity>  GLL_Entity_Factory::creatPassingCar() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::creatPassingCar(double x,double y,double vSpeed) {
         return nullptr;
     }
 
@@ -22,5 +22,9 @@ namespace roadfighter{
 
     std::shared_ptr<Entity>  GLL_Entity_Factory::createWorld() {
         return nullptr;
+    }
+
+    std::shared_ptr<Entity> GLL_Entity_Factory::createBonusCar(double x, double y, double vSpeed) {
+        return std::shared_ptr<Entity>();
     }
 }
