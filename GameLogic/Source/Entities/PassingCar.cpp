@@ -18,4 +18,8 @@ namespace roadfighter {
         Car::setVerticalSpeed(vertSpeed);
     }
 
+    bool PassingCar::mustDelete() const {
+        return getM_loc1().getY()>4;
+    }
+
 }

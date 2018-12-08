@@ -56,6 +56,8 @@ namespace  roadfighter {
          */
         virtual ~CollisionObject();
 
+        virtual bool mustDelete() const=0;
+
         const Location &getM_loc1() const;
 
         void setM_loc1(const Location &m_loc1);

@@ -50,4 +50,8 @@ namespace roadfighter {
                          double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController)
             : Car(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
               m_moveController(m_moveController) {}
+
+    bool PlayerCar::mustDelete() const {
+        return false;
+    }
 }

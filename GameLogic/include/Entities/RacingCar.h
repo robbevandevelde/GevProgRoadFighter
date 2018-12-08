@@ -54,6 +54,8 @@ namespace roadfighter {
 
         void updateLogic() override;
 
+
+        bool mustDelete() const override;
     };
 }
 

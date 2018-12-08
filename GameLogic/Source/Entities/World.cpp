@@ -29,6 +29,7 @@ namespace roadfighter {
     }
 
     void World::updateLogic() {
+        deleteUnused();
         getNewEntities();
         for(auto& i:m_roadEntities){
             i->updateLogic();
@@ -51,6 +52,16 @@ namespace roadfighter {
         for(const auto& i:m_roadEntities){
             i->draw();
         }
+    }
+
+    void World::deleteUnused() {
+        for(unsigned int i=0;i<m_roadEntities.size();i++){
+            auto collision=std::dynamic_pointer_cast<CollisionObject>(m_roadEntities[i]);
+            if(collision->mustDelete()){
+                m_roadEntities.erase(m_roadEntities.begin()+i);
+            }
+        }
+
     }
 
 }

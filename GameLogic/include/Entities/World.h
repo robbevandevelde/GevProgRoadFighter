@@ -69,6 +69,8 @@ namespace roadfighter {
 
         void updateLogic() override;
 
+        void deleteUnused();
+
     private:
 
         std::vector<std::shared_ptr<Entity> > m_roadEntities;

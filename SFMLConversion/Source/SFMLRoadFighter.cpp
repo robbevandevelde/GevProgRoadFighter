@@ -68,7 +68,7 @@ void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
 
     text.setCharacterSize(24);
 
-    text.setFillColor(sf::Color::Red);
+    text.setColor(sf::Color::Red);
 
     window->draw(text);
 }

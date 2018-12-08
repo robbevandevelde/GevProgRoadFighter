@@ -69,6 +69,7 @@ namespace roadfighter {
 
         void updateLogic() override;
 
+        bool mustDelete() const override;
 
     private:
         double m_fuel;

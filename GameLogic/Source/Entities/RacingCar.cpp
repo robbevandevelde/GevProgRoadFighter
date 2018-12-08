@@ -34,5 +34,9 @@ namespace roadfighter {
 
     }
 
+    bool RacingCar::mustDelete() const {
+        return false;
+    }
+
 
 }

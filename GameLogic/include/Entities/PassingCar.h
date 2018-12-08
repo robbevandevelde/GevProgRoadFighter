@@ -52,6 +52,8 @@ namespace roadfighter {
 
         void updateMovement(double dt) override;
 
+        bool mustDelete() const override;
+
     };
 }
 

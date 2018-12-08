@@ -13,6 +13,7 @@ SFMLPassingCar::SFMLPassingCar(const std::shared_ptr<sf::RenderWindow> &window,
     SFMLEntitySprite::scale(sf::Vector2f(
             ((std::get<0>(sfmlpos2)-std::get<0>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().width),
             ((std::get<1>(sfmlpos2)-std::get<1>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().height)));
+    SFMLEntitySprite::rotate(180);
 }
 
 void SFMLPassingCar::draw() {

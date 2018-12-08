@@ -3,6 +3,10 @@
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o
  ../GameLogic/include/Entities/BonusCar.h
+ ../GameLogic/include/Entities/Car.h
+ ../GameLogic/include/Entities/CollisionObject.h
+ ../GameLogic/include/Entities/Entity.h
+ ../GameLogic/include/Location.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/BonusCar.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp
@@ -27,12 +31,13 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entity.cpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o
+ ../GameLogic/include/Entities/Car.h
+ ../GameLogic/include/Entities/CollisionObject.h
+ ../GameLogic/include/Entities/Entity.h
+ ../GameLogic/include/Entities/PassingCar.h
+ ../GameLogic/include/Location.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Car.h
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o
  ../GameLogic/include/Entities/Car.h
  ../GameLogic/include/Entities/CollisionObject.h
