@@ -20,17 +20,5 @@ SFMLRacingCar::SFMLRacingCar(const roadfighter::Location &m_loc1, const roadfigh
 void SFMLRacingCar::draw() {
     std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getM_loc1());
     setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
-//    if(getHorizontalSpeed()<0){
-//        SFMLEntitySprite::setRotation(-10);
-//    }else if(getHorizontalSpeed()>0){
-//        SFMLEntitySprite::setRotation(10);
-//    }else{
-//        if(getRotation()>160) {
-//            SFMLEntitySprite::setRotation(getRotation()+1);
-//        }else if(getRotation()>0){
-//            SFMLEntitySprite::setRotation(getRotation()-1);
-//        }
-//    }
-
     getWindow()->draw(*this);
 }

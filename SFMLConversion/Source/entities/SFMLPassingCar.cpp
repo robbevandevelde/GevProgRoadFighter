@@ -13,11 +13,15 @@ SFMLPassingCar::SFMLPassingCar(const std::shared_ptr<sf::RenderWindow> &window,
     SFMLEntitySprite::scale(sf::Vector2f(
             ((std::get<0>(sfmlpos2)-std::get<0>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().width),
             ((std::get<1>(sfmlpos2)-std::get<1>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().height)));
-    SFMLEntitySprite::rotate(180);
 }
 
 void SFMLPassingCar::draw() {
     std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getM_loc1());
     setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
+    if(getVerticalSpeed()<0){
+        SFMLEntitySprite::setRotation(180);
+    }else{
+        SFMLEntitySprite::setRotation(0);
+    }
     getWindow()->draw(*this);
 }

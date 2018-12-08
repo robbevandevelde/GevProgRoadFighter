@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
 ../GameLogic/include/Entities/Car.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -27,6 +33,12 @@ Car.h
 ../GameLogic/include/Entities/Car.h
 MoveController.h
 ../GameLogic/include/Entities/MoveController.h
+
+../GameLogic/include/Entities/RacingCar.h
+Car.h
+../GameLogic/include/Entities/Car.h
+../../Utility/Random.h
+../GameLogic/Utility/Random.h
 
 ../GameLogic/include/Location.h
 ostream
@@ -50,6 +62,12 @@ SFML/Graphics.hpp
 SFMLEntitySprite.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
 
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
+SFMLEntitySprite.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
+Entities/RacingCar.h
+-
+
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
 SFML/Graphics.hpp
 -
@@ -61,4 +79,8 @@ Location.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
 iostream
 -
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLRacingCar.cpp
+../../Include/Entities/SFMLRacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
 

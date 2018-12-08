@@ -1,6 +1,7 @@
-//
-// Created by thibaut on 21.11.18.
-//
+/**
+ * @file
+ * this file has a very simple 2d location class that is used in every collision object to represetn it's position
+ */
 
 #ifndef GEVPROGROADFIGHTER_LOCATION_H
 #define GEVPROGROADFIGHTER_LOCATION_H
@@ -57,14 +58,35 @@ namespace roadfighter {
          */
         virtual ~Location()= default;
 
+        /**
+         * getter for the x coordinate
+         * @return a double
+         */
         double getX() const;
 
+        /**
+         * seeter for the x coordinate
+         * @param x a double
+         */
         void setX(double x);
 
+        /**
+         * getter for the y coordinate
+         * @return a double
+         */
         double getY() const;
 
+        /**
+         * setter for the y coordinate
+         * @param y a double
+         */
         void setY(double y);
 
+        /**
+         * esuality operators
+         * @param rhs the location you are comparing to
+         * @return a bool
+         */
         bool operator==(const Location &rhs) const;
 
         bool operator!=(const Location &rhs) const;
@@ -77,6 +99,12 @@ namespace roadfighter {
 
         bool operator>=(const Location &rhs) const;
 
+        /**
+         * ostream operator
+         * @param os ostream object you are writing to
+         * @param location the location you are writing on the ostream object
+         * @return the sotream object with the location wrtiten on it
+         */
         friend std::ostream &operator<<(std::ostream &os, const Location &location);
 
 

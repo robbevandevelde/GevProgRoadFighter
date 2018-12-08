@@ -414,33 +414,6 @@ Source/entities/SFMLWorld.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.s
 .PHONY : Source/entities/SFMLWorld.cpp.s
 
-__/GameLogic/Source/GLL_Entity_Factory.o: __/GameLogic/Source/GLL_Entity_Factory.cpp.o
-
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.o
-
-# target to build an object file
-__/GameLogic/Source/GLL_Entity_Factory.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.o
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.cpp.o
-
-__/GameLogic/Source/GLL_Entity_Factory.i: __/GameLogic/Source/GLL_Entity_Factory.cpp.i
-
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.i
-
-# target to preprocess a source file
-__/GameLogic/Source/GLL_Entity_Factory.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.i
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.cpp.i
-
-__/GameLogic/Source/GLL_Entity_Factory.s: __/GameLogic/Source/GLL_Entity_Factory.cpp.s
-
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.s
-
-# target to generate assembly for a file
-__/GameLogic/Source/GLL_Entity_Factory.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/__/GameLogic/Source/GLL_Entity_Factory.cpp.s
-.PHONY : __/GameLogic/Source/GLL_Entity_Factory.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -508,9 +481,6 @@ help:
 	@echo "... Source/entities/SFMLWorld.o"
 	@echo "... Source/entities/SFMLWorld.i"
 	@echo "... Source/entities/SFMLWorld.s"
-	@echo "... __/GameLogic/Source/GLL_Entity_Factory.o"
-	@echo "... __/GameLogic/Source/GLL_Entity_Factory.i"
-	@echo "... __/GameLogic/Source/GLL_Entity_Factory.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

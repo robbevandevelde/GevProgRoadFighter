@@ -1,6 +1,7 @@
-//
-// Created by thibaut on 01.12.18.
-//
+/**
+ * @file
+ * this file contains a class that will be the brains of the logic behind the roadfighter game
+ */
 
 #ifndef GEVPROGROADFIGHTER_ROADFIGHTERGAME_H
 #define GEVPROGROADFIGHTER_ROADFIGHTERGAME_H
@@ -25,7 +26,7 @@ namespace roadfighter {
 
         /**
          * a constructor were the factory that is used to initalise all the objects is given
-         * @param factory the fectory that will be used to make everything
+         * @param factory the factory that will be used to make everything
          */
         RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
 
@@ -62,31 +63,77 @@ namespace roadfighter {
          */
         virtual ~RoadFighterGame()= default;
 
+        /**
+         * a function that will tick the whole game with dt ticks
+         * @param dt the amount of ticks the game should move (should be 1 or lower otherwise it's possible more gameticks occur in 1 tick)
+         *
+         * in this function the position of the objects will always be updated by dt ticks
+         * but the gamelogic will only be done if 1 tick has passed
+         * so if you call this function with dt being 0.5 twice it will update only the positions the first time,
+         * but the second time it will update both the positions and the gamelogic
+         */
         void tick(double dt);
 
+        /**
+         * a function that updates the movement of all entities by dt ticks
+         * @param dt amount of a tick the postions must be updated with
+         */
         void movementTick(double dt);
 
+        /**
+         * a function that does a logic tick which will update the logic of all entities and possibly add new cars to the world
+         */
         void logicTick();
 
+        /**
+         * a function that will set the movementcontroller to go left next tick
+         */
         void moveLeft();
 
+        /**
+         * a fucntion that sets the movementcontroller to none for the horizontal move
+         */
         void stopHorizontalMove();
 
+        /**
+         * a function that will set the movementcontroller to go right next tick
+         */
         void moveRight();
 
+        /**
+         * a function that will set the movementcontroller to accelerate in the vertical direction next tick
+         */
         void accelerate();
 
+        /**
+         * a fucntion that sets the movementcontroller to none for the vertical move
+         */
         void stopVerticalMove();
 
+        /**
+        * a function that will set the movementcontroller to decelerate in the vertical direction next tick
+        */
         void decelerate();
 
-        void initialize();
-
+        /**
+         * gets the current speed of the playercar
+         * @return a double represeting the speed of the playercar
+         */
         double getsSpeed() const;
 
+        /**
+         * a function that calls the draw function on the world which will then call the draw function on all its entities
+         */
         void drawWorld() const;
 
     private:
+
+        /**
+         * a function that is used in the constructor to intialize the game
+         * in this function the player car and a bunch of racingccars will be created trought he factory
+         */
+        void initialize();
+
         void addRandomCars();
 
         double getYvariance() const;

@@ -265,22 +265,9 @@ GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/Utility/Clock.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp" -o CMakeFiles/GLL.dir/Utility/Clock.cpp.s
 
-GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
-GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o: ../Test/mainTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp"
-
-GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLL.dir/__/Test/mainTest.cpp.i"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp" > CMakeFiles/GLL.dir/__/Test/mainTest.cpp.i
-
-GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/__/Test/mainTest.cpp.s"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp" -o CMakeFiles/GLL.dir/__/Test/mainTest.cpp.s
-
 GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
 GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o: ../GameLogic/Source/MoveController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/Source/MoveController.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/MoveController.cpp"
 
 GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.i: cmake_force
@@ -293,7 +280,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.s: cmake_force
 
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/Source/EntityTransporter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/EntityTransporter.cpp"
 
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.i: cmake_force
@@ -306,7 +293,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.s: cmake_force
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/Source/Entities/BonusCar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/BonusCar.cpp"
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.i: cmake_force
@@ -316,6 +303,19 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.i: cmake_force
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/BonusCar.cpp" -o CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.s
+
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: GameLogic/CMakeFiles/GLL.dir/flags.make
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/Source/GLL_Entity_Factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp"
+
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp" > CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.i
+
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/GameLogic" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp" -o CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.s
 
 # Object files for target GLL
 GLL_OBJECTS = \
@@ -335,10 +335,10 @@ GLL_OBJECTS = \
 "CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o" \
 "CMakeFiles/GLL.dir/Utility/Random.cpp.o" \
 "CMakeFiles/GLL.dir/Utility/Clock.cpp.o" \
-"CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o" \
 "CMakeFiles/GLL.dir/Source/MoveController.cpp.o" \
 "CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o" \
-"CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o"
+"CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o" \
+"CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o"
 
 # External object files for target GLL
 GLL_EXTERNAL_OBJECTS =
@@ -359,10 +359,10 @@ GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.c
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o
-GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o
+GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/build.make
 GameLogic/libGLL.a: GameLogic/CMakeFiles/GLL.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libGLL.a"

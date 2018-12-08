@@ -468,6 +468,33 @@ Source/Entity_Factory_base.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.s
 .PHONY : Source/Entity_Factory_base.cpp.s
 
+Source/GLL_Entity_Factory.o: Source/GLL_Entity_Factory.cpp.o
+
+.PHONY : Source/GLL_Entity_Factory.o
+
+# target to build an object file
+Source/GLL_Entity_Factory.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o
+.PHONY : Source/GLL_Entity_Factory.cpp.o
+
+Source/GLL_Entity_Factory.i: Source/GLL_Entity_Factory.cpp.i
+
+.PHONY : Source/GLL_Entity_Factory.i
+
+# target to preprocess a source file
+Source/GLL_Entity_Factory.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.i
+.PHONY : Source/GLL_Entity_Factory.cpp.i
+
+Source/GLL_Entity_Factory.s: Source/GLL_Entity_Factory.cpp.s
+
+.PHONY : Source/GLL_Entity_Factory.s
+
+# target to generate assembly for a file
+Source/GLL_Entity_Factory.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.s
+.PHONY : Source/GLL_Entity_Factory.cpp.s
+
 Source/Location.o: Source/Location.cpp.o
 
 .PHONY : Source/Location.o
@@ -684,33 +711,6 @@ Utility/Random.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.s
 .PHONY : Utility/Random.cpp.s
 
-__/Test/mainTest.o: __/Test/mainTest.cpp.o
-
-.PHONY : __/Test/mainTest.o
-
-# target to build an object file
-__/Test/mainTest.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o
-.PHONY : __/Test/mainTest.cpp.o
-
-__/Test/mainTest.i: __/Test/mainTest.cpp.i
-
-.PHONY : __/Test/mainTest.i
-
-# target to preprocess a source file
-__/Test/mainTest.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.i
-.PHONY : __/Test/mainTest.cpp.i
-
-__/Test/mainTest.s: __/Test/mainTest.cpp.s
-
-.PHONY : __/Test/mainTest.s
-
-# target to generate assembly for a file
-__/Test/mainTest.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.s
-.PHONY : __/Test/mainTest.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -757,6 +757,9 @@ help:
 	@echo "... Source/Entity_Factory_base.o"
 	@echo "... Source/Entity_Factory_base.i"
 	@echo "... Source/Entity_Factory_base.s"
+	@echo "... Source/GLL_Entity_Factory.o"
+	@echo "... Source/GLL_Entity_Factory.i"
+	@echo "... Source/GLL_Entity_Factory.s"
 	@echo "... Source/Location.o"
 	@echo "... Source/Location.i"
 	@echo "... Source/Location.s"
@@ -781,9 +784,6 @@ help:
 	@echo "... Utility/Random.o"
 	@echo "... Utility/Random.i"
 	@echo "... Utility/Random.s"
-	@echo "... __/Test/mainTest.o"
-	@echo "... __/Test/mainTest.i"
-	@echo "... __/Test/mainTest.s"
 .PHONY : help
 
 

@@ -76,6 +76,21 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/incl
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/MoveController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/Source/Entity_Factory_base.cpp
 
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/Utility/Random.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/Bullet.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/Car.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/Entity.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/RacingCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/World.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/EntityTransporter.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/GLL_Entity_Factory.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Location.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/MoveController.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/Source/GLL_Entity_Factory.cpp
+
 GameLogic/CMakeFiles/GLL.dir/Source/Location.cpp.o: ../GameLogic/Source/Location.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Location.cpp.o: ../GameLogic/include/Location.h
 
@@ -112,6 +127,4 @@ GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o: ../GameLogic/Utility/Clock.h
 
 GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.o: ../GameLogic/Utility/Random.cpp
 GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.o: ../GameLogic/Utility/Random.h
-
-GameLogic/CMakeFiles/GLL.dir/__/Test/mainTest.cpp.o: ../Test/mainTest.cpp
 
