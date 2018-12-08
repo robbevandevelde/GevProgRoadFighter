@@ -6,7 +6,7 @@
 #define GEVPROGROADFIGHTER_BONUSCAR_H
 
 namespace roadfighter {
-    class bonusCar {
+    class BonusCar {
 
     };
 }

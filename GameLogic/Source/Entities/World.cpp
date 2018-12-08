@@ -22,10 +22,16 @@ namespace roadfighter {
         }
     }
 
-    void World::update(double dt) {
+    void World::updateMovement(double dt){
+        for(auto& i:m_roadEntities){
+            i->updateMovement(dt);
+        }
+    }
+
+    void World::updateLogic() {
         getNewEntities();
         for(auto& i:m_roadEntities){
-            i.get()->update(dt);
+            i->updateLogic();
         }
     }
 

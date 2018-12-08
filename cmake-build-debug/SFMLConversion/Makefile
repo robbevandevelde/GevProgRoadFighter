@@ -252,6 +252,33 @@ Source/Transformation.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/Transformation.cpp.s
 .PHONY : Source/Transformation.cpp.s
 
+Source/entities/SFMLBonusCar.o: Source/entities/SFMLBonusCar.cpp.o
+
+.PHONY : Source/entities/SFMLBonusCar.o
+
+# target to build an object file
+Source/entities/SFMLBonusCar.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o
+.PHONY : Source/entities/SFMLBonusCar.cpp.o
+
+Source/entities/SFMLBonusCar.i: Source/entities/SFMLBonusCar.cpp.i
+
+.PHONY : Source/entities/SFMLBonusCar.i
+
+# target to preprocess a source file
+Source/entities/SFMLBonusCar.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.i
+.PHONY : Source/entities/SFMLBonusCar.cpp.i
+
+Source/entities/SFMLBonusCar.s: Source/entities/SFMLBonusCar.cpp.s
+
+.PHONY : Source/entities/SFMLBonusCar.s
+
+# target to generate assembly for a file
+Source/entities/SFMLBonusCar.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.s
+.PHONY : Source/entities/SFMLBonusCar.cpp.s
+
 Source/entities/SFMLEntitySprite.o: Source/entities/SFMLEntitySprite.cpp.o
 
 .PHONY : Source/entities/SFMLEntitySprite.o
@@ -278,6 +305,33 @@ Source/entities/SFMLEntitySprite.s: Source/entities/SFMLEntitySprite.cpp.s
 Source/entities/SFMLEntitySprite.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEntitySprite.cpp.s
 .PHONY : Source/entities/SFMLEntitySprite.cpp.s
+
+Source/entities/SFMLPassingCar.o: Source/entities/SFMLPassingCar.cpp.o
+
+.PHONY : Source/entities/SFMLPassingCar.o
+
+# target to build an object file
+Source/entities/SFMLPassingCar.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o
+.PHONY : Source/entities/SFMLPassingCar.cpp.o
+
+Source/entities/SFMLPassingCar.i: Source/entities/SFMLPassingCar.cpp.i
+
+.PHONY : Source/entities/SFMLPassingCar.i
+
+# target to preprocess a source file
+Source/entities/SFMLPassingCar.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.i
+.PHONY : Source/entities/SFMLPassingCar.cpp.i
+
+Source/entities/SFMLPassingCar.s: Source/entities/SFMLPassingCar.cpp.s
+
+.PHONY : Source/entities/SFMLPassingCar.s
+
+# target to generate assembly for a file
+Source/entities/SFMLPassingCar.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.s
+.PHONY : Source/entities/SFMLPassingCar.cpp.s
 
 Source/entities/SFMLPlayerCar.o: Source/entities/SFMLPlayerCar.cpp.o
 
@@ -436,9 +490,15 @@ help:
 	@echo "... Source/Transformation.o"
 	@echo "... Source/Transformation.i"
 	@echo "... Source/Transformation.s"
+	@echo "... Source/entities/SFMLBonusCar.o"
+	@echo "... Source/entities/SFMLBonusCar.i"
+	@echo "... Source/entities/SFMLBonusCar.s"
 	@echo "... Source/entities/SFMLEntitySprite.o"
 	@echo "... Source/entities/SFMLEntitySprite.i"
 	@echo "... Source/entities/SFMLEntitySprite.s"
+	@echo "... Source/entities/SFMLPassingCar.o"
+	@echo "... Source/entities/SFMLPassingCar.i"
+	@echo "... Source/entities/SFMLPassingCar.s"
 	@echo "... Source/entities/SFMLPlayerCar.o"
 	@echo "... Source/entities/SFMLPlayerCar.i"
 	@echo "... Source/entities/SFMLPlayerCar.s"

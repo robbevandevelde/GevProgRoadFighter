@@ -19,9 +19,22 @@ namespace roadfighter{
 
 
     void RoadFighterGame::tick(double dt) {
-        m_world->update(dt);
-        m_Transporter->clear();
+        movementTick(dt);
+        m_logicTick+=dt;
+        while(m_logicTick>1){
+            m_logicTick-=1;
+            logicTick();
+        }
+    }
+
+    void RoadFighterGame::movementTick(double dt) {
+        m_world->updateMovement(dt);
         normalizeWorld(getYvariance());
+    }
+
+    void RoadFighterGame::logicTick() {
+        m_world->updateLogic();
+        m_Transporter->clear();
     }
 
 
@@ -53,13 +66,34 @@ namespace roadfighter{
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
-        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(0,0,1.2,0.02,0.1,100);
+        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(-0.5,0,1.2,0.02,0.1,100);
         m_Transporter->addEntity(player);
         m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
 
-        //create racingcar
-        std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(1,1,1,0.02,0.2);
+        //create racingcar1
+        std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(0.5,-1,1,0.02,0.2);
         m_Transporter->addEntity(enemy1);
+
+        std::shared_ptr<Entity> enemy2=m_Factory->createRacingCar(-0.5,-2,1,0.02,0.2);
+        m_Transporter->addEntity(enemy2);
+
+        std::shared_ptr<Entity> enemy3=m_Factory->createRacingCar(0.5,-3,1,0.02,0.2);
+        m_Transporter->addEntity(enemy3);
+
+        std::shared_ptr<Entity> enemy4=m_Factory->createRacingCar(-0.5,-4,1,0.02,0.2);
+        m_Transporter->addEntity(enemy4);
+
+        std::shared_ptr<Entity> enemy5=m_Factory->createRacingCar(0.5,1,1,0.02,0.2);
+        m_Transporter->addEntity(enemy5);
+
+        std::shared_ptr<Entity> enemy6=m_Factory->createRacingCar(-0.5,2,1,0.02,0.2);
+        m_Transporter->addEntity(enemy6);
+
+        std::shared_ptr<Entity> enemy7=m_Factory->createRacingCar(0.5,3,1,0.02,0.2);
+        m_Transporter->addEntity(enemy7);
+
+        std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,1,0.02,0.2);
+        m_Transporter->addEntity(enemy8);
 
     }
 

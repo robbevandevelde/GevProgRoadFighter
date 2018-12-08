@@ -35,7 +35,7 @@ SET(SRC
         Utility/Random.cpp
         Utility/Random.h
         Utility/Clock.cpp
-        Utility/Clock.h ../Test/mainTest.cpp Source/MoveController.cpp include/MoveController.h Source/EntityTransporter.cpp include/EntityTransporter.h Source/Entities/bonusCar.cpp include/Entities/bonusCar.h)
+        Utility/Clock.h ../Test/mainTest.cpp Source/MoveController.cpp include/MoveController.h Source/EntityTransporter.cpp include/EntityTransporter.h Source/Entities/BonusCar.cpp include/Entities/BonusCar.h)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly

@@ -8,7 +8,9 @@
 namespace roadfighter {
     class Entity {
         public:
-            virtual void update(double dt)=0;
+            virtual void updateLogic()=0;
+
+            virtual void updateMovement(double dt)=0;
 
             virtual void draw()=0;
 

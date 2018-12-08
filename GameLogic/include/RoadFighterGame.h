@@ -63,6 +63,10 @@ namespace roadfighter {
 
         void tick(double dt);
 
+        void movementTick(double dt);
+
+        void logicTick();
+
         void moveLeft();
 
         void stopHorizontalMove();
@@ -96,6 +100,10 @@ namespace roadfighter {
         std::shared_ptr<World> m_world;
 
         std::shared_ptr<Entity_Factory_base> m_Factory;
+
+        //adjusting the movement of cars can be done as much as you want in a tick but logic may only be done once in a tick
+        //this is why this var is kept if it is higher than 1 it means a logicTick needs to be done
+        double m_logicTick;
 
     };
 }

@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o"
+  "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o"
+  "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o"
   "GevProgRoadFighter.pdb"
   "GevProgRoadFighter"
 )

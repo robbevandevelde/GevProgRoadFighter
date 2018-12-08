@@ -23,7 +23,7 @@ namespace roadfighter {
         m_fuel+=amount;
     }
 
-    void PlayerCar::update(double dt) {
+    void PlayerCar::updateMovement(double dt) {
         if(m_moveController->getNextHorMove()==h_left){
             Car::setHorizontalSpeed(-Car::getHorAccel());
         }else if(m_moveController->getNextHorMove()==h_right){
@@ -36,8 +36,10 @@ namespace roadfighter {
         }else if(m_moveController->getNextVertMove()==v_decel){
             Car::setVerticalSpeed(Car::getVerticalSpeed()-(Car::getVertAccel()*dt));
         }
-        Car::update(dt);
+        Car::updateMovement(dt);
     }
+
+    void PlayerCar::updateLogic() {}
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
                          double m_horAccel,std::shared_ptr<MoveController> controller, int fuel)

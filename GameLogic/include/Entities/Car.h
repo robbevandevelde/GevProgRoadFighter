@@ -96,7 +96,7 @@ namespace roadfighter {
          * @param dt the amount of ticks that have passed since the previous one
          * overrided form entity class
          */
-        void update(double dt) override;
+        void updateMovement(double dt) override;
 
         double getHorizontalSpeed() const;
 

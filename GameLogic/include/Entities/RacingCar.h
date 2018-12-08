@@ -50,7 +50,9 @@ namespace roadfighter {
          */
         virtual ~RacingCar()= default;
 
-        void update(double dt) override;
+        void updateMovement(double dt) override;
+
+        void updateLogic() override;
 
     };
 }

@@ -58,10 +58,9 @@ namespace roadfighter {
     }
 
 
-    void Car::update(double dt) {
+    void Car::updateMovement(double dt) {
         horMove(m_horizontalSpeed*dt);
         vertMove(-m_verticalSpeed*dt);
-
     }
 
     double Car::getVertAccel() const {

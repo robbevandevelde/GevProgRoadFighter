@@ -10,6 +10,12 @@
 time.h
 -
 
+../GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
 ../GameLogic/include/Entities/Bullet.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -41,6 +47,8 @@ MoveController.h
 ../GameLogic/include/Entities/RacingCar.h
 Car.h
 ../GameLogic/include/Entities/Car.h
+../../Utility/Random.h
+../GameLogic/Utility/Random.h
 
 ../GameLogic/include/Entities/World.h
 memory
@@ -112,6 +120,20 @@ MoveController.h
 EntityTransporter.h
 ../GameLogic/include/EntityTransporter.h
 
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp
+GLL_Entity_Factory.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+time.h
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
 SFML/Graphics.hpp
 -
@@ -127,6 +149,12 @@ SFML/Graphics.hpp
 -
 SFMLEntitySprite.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
+SFMLEntitySprite.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
+Entities/RacingCar.h
+-
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
 Entities/World.h
@@ -157,12 +185,16 @@ SFML/Graphics.hpp
 -
 memory
 -
+Location.h
+-
 Entities/Entity.h
 -
 Entities/SFMLWorld.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
 Entities/SFMLPlayerCar.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
+Entities/SFMLRacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
 SFML/Graphics.hpp
@@ -174,5 +206,37 @@ Location.h
 ../Include/SFMLRoadFighter.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h
 iostream
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFML_Entity_Factory.cpp
+../Include/SFML_Entity_Factory.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFML_Entity_Factory.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp
+../../Include/Entities/SFMLPlayerCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
+iostream
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLRacingCar.cpp
+../../Include/Entities/SFMLRacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLWorld.cpp
+../../Include/Entities/SFMLWorld.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp
+iostream
+-
+SFML/Graphics.hpp
+-
+../GameLogic/Utility/Clock.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+../GameLogic/Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+Include/SFMLRoadFighter.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h
+memory
 -
 

@@ -61,11 +61,13 @@ namespace roadfighter {
 
         void addEntity(std::shared_ptr<Entity> obj);
 
-        void update(double dt) override;
+        void updateMovement(double dt) override;
 
         void getNewEntities();
 
         void draw() override;
+
+        void updateLogic() override;
 
     private:
 

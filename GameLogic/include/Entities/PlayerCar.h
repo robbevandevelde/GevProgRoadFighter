@@ -65,9 +65,9 @@ namespace roadfighter {
 
         void increaseFuel(const double &amount);
 
-        void update(double dt) override;
+        void updateMovement(double dt) override;
 
-
+        void updateLogic() override;
 
 
     private:
