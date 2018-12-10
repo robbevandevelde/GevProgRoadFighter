@@ -19,11 +19,9 @@ SFMLWorld::SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Tr
 void SFMLWorld::draw() {
     //puts the tickmovement into the y value of a roadfighter location so we get the amount of y pixels have been moved on the screen
     double tickmovemnt=std::get<1>(Transformation::getInstance().locationTransformation(roadfighter::Location(0,getTickMovement()-4)));
-    //get the creenheight trought the same "hack" as the line before this
-    double screenheight=std::get<1>(Transformation::getInstance().locationTransformation(roadfighter::Location(0,4)));
 
-    //if the postion of the sprite is larger than teh screenhaight it means that a full revolution of the sprite has been done thus we set the location back 1 screenheight
-    if(getPosition().y>screenheight)setPosition(getPosition().x,getPosition().y-screenheight);
+    //if the postion of the sprite is larger than teh height of the sprite it means that a full revolution of the sprite has been done thus we set the location back 1 spriteheight
+    if(getPosition().y>getGlobalBounds().height)setPosition(getPosition().x,getPosition().y-getGlobalBounds().height);
     //move the sprite with the amount the playercar has moved since last drawing
     setPosition(getPosition().x,(getPosition().y-tickmovemnt));
     getWindow()->draw(*this);
@@ -31,8 +29,8 @@ void SFMLWorld::draw() {
     //make a copy of the sprite only by splicing so we can draw another one above the current one
     SFMLEntitySprite temp=*this;
 
-    //add a screenheight to the copied sprite so they match up as they should
-    temp.setPosition(getPosition().x,temp.getPosition().y-screenheight);
+    //add a spriteheight to the copied sprite so they match up as they should
+    temp.setPosition(getPosition().x,temp.getPosition().y-getGlobalBounds().height);
     getWindow()->draw(temp);
 
     //drawing the rest of the sprite on top
