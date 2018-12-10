@@ -62,6 +62,13 @@ namespace roadfighter {
         virtual std::shared_ptr<Entity> createBonusCar(double x,double y,double vSpeed)=0;
 
         /**
+          * base factory method for creating a End
+          * @param y coordinate of the end
+          * @return a shared pointer to an entity
+          */
+        virtual std::shared_ptr<Entity> createEnd(double y)=0;
+
+        /**
          * base factory method for creating the world
          * @return a shared pointer to an enityt
          */

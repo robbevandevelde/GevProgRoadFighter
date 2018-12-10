@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o"
-  "CMakeFiles/GLL.dir/Source/Entities/Car.cpp.o"
+  "CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o"
@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o"
   "CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o"
+  "CMakeFiles/GLL.dir/Source/Entities/End.cpp.o"
   "libGLL.pdb"
   "libGLL.a"
 )

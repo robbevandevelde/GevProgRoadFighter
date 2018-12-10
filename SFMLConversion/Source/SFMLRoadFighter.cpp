@@ -15,7 +15,7 @@ SFMLRoadFighter::SFMLRoadFighter() {
     while (window->isOpen())
     {
 
-        if(gameclock.getTimeAsSeconds()>0.033) {
+        if(gameclock.getTimeAsSeconds()>0.016) {
             window->clear();
             draw(window);
             m_game->tick(gameclock.getTimeAsSeconds()/0.1);
@@ -68,6 +68,7 @@ void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
 
     text.setCharacterSize(24);
 
+    //should use setFillColor but that function wont run on travis and pc's at university
     text.setColor(sf::Color::Red);
 
     window->draw(text);

@@ -67,11 +67,11 @@ namespace roadfighter{
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
-        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(-0.5,0,1.2,0.02,0.1,100);
+        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(-0.5,0,1.2,0.02,0.5,100);
         m_Transporter->addEntity(player);
         m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
 
-        //create racingcar1
+        //create racingcars
         std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(0.5,-1,1,0.02,0.2);
         m_Transporter->addEntity(enemy1);
 
@@ -96,6 +96,8 @@ namespace roadfighter{
         std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,1,0.02,0.2);
         m_Transporter->addEntity(enemy8);
 
+        std::shared_ptr<Entity> end=m_Factory->createEnd(-100);
+        m_Transporter->addEntity(end);
     }
 
     void RoadFighterGame::addRandomCars() {
@@ -129,7 +131,7 @@ namespace roadfighter{
     }
 
     double RoadFighterGame::getYvariance() const {
-        return m_Player->getM_loc2().getY()-m_Player->getheight()/2;
+        return m_Player->getLoc2().getY()-m_Player->getheight()/2;
     }
 
     void RoadFighterGame::normalizeWorld(double ySetback) {

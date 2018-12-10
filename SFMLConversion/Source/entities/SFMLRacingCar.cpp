@@ -10,15 +10,15 @@ SFMLRacingCar::SFMLRacingCar(const roadfighter::Location &m_loc1, const roadfigh
                                                                                           m_maxVertSpeed, m_vertAccel,
                                                                                           m_horAccel),
                                                                                 SFMLEntitySprite("../../SFMLConversion/resources/sprites/racing_car.png", window) {
-    std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getM_loc1());
-    std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getM_loc2());
+    std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getLoc1());
+    std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getLoc2());
     SFMLEntitySprite::scale(sf::Vector2f(
             ((std::get<0>(sfmlpos2)-std::get<0>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().width),
             ((std::get<1>(sfmlpos2)-std::get<1>(sfmlpos1))/SFMLEntitySprite::getGlobalBounds().height)));
 }
 
 void SFMLRacingCar::draw() {
-    std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getM_loc1());
+    std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getLoc1());
     setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
     getWindow()->draw(*this);
 }

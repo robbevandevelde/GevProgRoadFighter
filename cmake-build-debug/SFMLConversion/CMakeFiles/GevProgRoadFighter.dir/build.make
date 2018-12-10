@@ -187,6 +187,32 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPassingCar.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.s
 
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/flags.make
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../SFMLConversion/Source/entities/SFMLBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBullet.cpp"
+
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBullet.cpp" > CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.i
+
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBullet.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.s
+
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/flags.make
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../SFMLConversion/Source/entities/SFMLEnd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEnd.cpp"
+
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEnd.cpp" > CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.i
+
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEnd.cpp" -o CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.s
+
 # Object files for target GevProgRoadFighter
 GevProgRoadFighter_OBJECTS = \
 "CMakeFiles/GevProgRoadFighter.dir/main.cpp.o" \
@@ -198,7 +224,9 @@ GevProgRoadFighter_OBJECTS = \
 "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o" \
 "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o" \
-"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o"
+"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o" \
+"CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o"
 
 # External object files for target GevProgRoadFighter
 GevProgRoadFighter_EXTERNAL_OBJECTS =
@@ -213,13 +241,15 @@ SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o
+SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o
+SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make
 SFMLConversion/GevProgRoadFighter: GameLogic/libGLL.a
 SFMLConversion/GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 SFMLConversion/GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 SFMLConversion/GevProgRoadFighter: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 SFMLConversion/GevProgRoadFighter: SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable GevProgRoadFighter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable GevProgRoadFighter"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GevProgRoadFighter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

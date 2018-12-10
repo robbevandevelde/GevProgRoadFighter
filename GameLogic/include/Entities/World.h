@@ -65,17 +65,23 @@ namespace roadfighter {
 
         void getNewEntities();
 
+        void checkCollision();
+
         void draw() override;
 
         void updateLogic() override;
 
         void deleteUnused();
 
+        double getTickMovement() const;
+
     private:
 
         std::vector<std::shared_ptr<Entity> > m_roadEntities;
 
         std::shared_ptr<roadfighter::EntityTransporter> m_Transporter;
+
+        double m_tickMovement;
 
     };
 }

@@ -8,34 +8,80 @@
 #include "../../include/Entities/RacingCar.h"
 namespace roadfighter {
     RacingCar::RacingCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-                         double m_horAccel) : Car(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel) {}
+                         double m_horAccel) : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel) {}
 
     void RacingCar::updateMovement(double dt){
-        Car::accelerate(dt);
+        if(getStatus()==Driving) {
+            MovingObject::accelerate(dt);
+        }
 
-        Car::updateMovement(dt);
+        MovingObject::updateMovement(dt);
     }
 
     void RacingCar::updateLogic() {
-        int rand=Random::getInstance().getRandom(9);
-        switch(rand){
-            case 0:Car::setHorizontalSpeed(-Car::getHorAccel());
-                break;
+        decrementTimeOut();
+        if(getStatus()==Driving) {
+            if(isImmune()&&getTimeOut()==0){
+                setImmune(false);
+            }
+            int rand = Random::getInstance().getRandom(9);
+            switch (rand) {
+                case 0:
+                    MovingObject::setHorizontalSpeed(-MovingObject::getHorAccel());
+                    break;
 
-            case 1:Car::setHorizontalSpeed(0);
-                break;
+                case 1:
+                    MovingObject::setHorizontalSpeed(0);
+                    break;
 
-            case 2:Car::setHorizontalSpeed(Car::getHorAccel());
-                break;
+                case 2:
+                    MovingObject::setHorizontalSpeed(MovingObject::getHorAccel());
+                    break;
 
-            default:
-                break;
-        }
+                default:
+                    break;
+            }
+        }else{
+            if(getTimeOut()==0){
+                setStatus(Driving);
+                setTimeOut(30);
+                setImmune(true);
+            }
+        };
+
 
     }
 
     bool RacingCar::mustDelete() const {
         return false;
+    }
+
+    void RacingCar::collideWith(std::shared_ptr<CollisionObject> &collided) {
+        collided->crash();
+    }
+
+    void RacingCar::crash() {
+        if(!isImmune()) {
+            stop();
+            setStatus(Crashed);
+            setImmune(true);
+            setTimeOut(30);
+        }
+    }
+
+    void RacingCar::shot() {
+        if(!isImmune()) {
+            stop();
+        }
+    }
+
+    void RacingCar::bonus() {
+        //todo
+    }
+
+    void RacingCar::win() {
+        setStatus(Won);
+        stop();
     }
 
 

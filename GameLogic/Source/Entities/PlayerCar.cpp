@@ -20,38 +20,79 @@ namespace roadfighter {
     }
 
     void PlayerCar::updateMovement(double dt) {
-        if(m_moveController->getNextHorMove()==h_left){
-            Car::setHorizontalSpeed(-Car::getHorAccel());
-        }else if(m_moveController->getNextHorMove()==h_right){
-            Car::setHorizontalSpeed(Car::getHorAccel());
-        }else{
-            Car::setHorizontalSpeed(0);
-        }
-        if(m_moveController->getNextVertMove()==v_accel){
-            Car::setVerticalSpeed(Car::getVerticalSpeed()+(Car::getVertAccel()*dt));
-        }else if(m_moveController->getNextVertMove()==v_decel){
-            Car::setVerticalSpeed(Car::getVerticalSpeed()-(Car::getVertAccel()*dt));
-            if(Car::getVerticalSpeed()<0){
-                Car::setVerticalSpeed(0);
+        if(getStatus()==Driving) {
+            if (m_moveController->getNextHorMove() == h_left) {
+                MovingObject::setHorizontalSpeed(-MovingObject::getHorAccel());
+            } else if (m_moveController->getNextHorMove() == h_right) {
+                MovingObject::setHorizontalSpeed(MovingObject::getHorAccel());
+            } else {
+                MovingObject::setHorizontalSpeed(0);
+            }
+            if (m_moveController->getNextVertMove() == v_accel) {
+                MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
+            } else if (m_moveController->getNextVertMove() == v_decel) {
+                MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() - (MovingObject::getVertAccel() * dt));
+                if (MovingObject::getVerticalSpeed() < 0) {
+                    MovingObject::setVerticalSpeed(0);
+                }
             }
         }
-        Car::updateMovement(dt);
+        MovingObject::updateMovement(dt);
     }
 
-    void PlayerCar::updateLogic() {}
+    void PlayerCar::updateLogic() {
+        decrementTimeOut();
+        if(isImmune()&&getTimeOut()==0&&getStatus()==Driving){
+            setImmune(false);
+        }
+        if(getStatus()==Crashed){
+            if(getTimeOut()==0){
+                setStatus(Driving);
+                setTimeOut(30);
+            }
+        }
+    }
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
                          double m_horAccel,std::shared_ptr<MoveController> controller, int fuel)
-                         :m_moveController(std::move(controller)),m_fuel(fuel),Car(Location(-0.25,-0.25),Location(0.25,0.25),
+                         :m_moveController(std::move(controller)),m_fuel(fuel),MovingObject(Location(-0.25,-0.25),Location(0.25,0.25),
                                  m_maxVertSpeed, m_vertAccel, m_horAccel) {}
 
 
     PlayerCar::PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
                          double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController)
-            : Car(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
+            : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
               m_moveController(m_moveController) {}
 
     bool PlayerCar::mustDelete() const {
         return false;
+    }
+
+    void PlayerCar::collideWith(std::shared_ptr<CollisionObject> &collided) {
+        collided->crash();
+    }
+
+    void PlayerCar::crash() {
+        if(!isImmune()) {
+            setImmune(true);
+            stop();
+            setStatus(Crashed);
+            setTimeOut(30);
+        }
+    }
+
+    void PlayerCar::shot() {
+        if(!isImmune()) {
+            stop();
+        }
+    }
+
+    void PlayerCar::bonus() {
+        //todo
+    }
+
+    void PlayerCar::win() {
+        setStatus(Won);
+        stop();
     }
 }

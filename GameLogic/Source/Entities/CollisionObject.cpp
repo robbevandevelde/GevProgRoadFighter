@@ -5,28 +5,34 @@
 #include <Entities/CollisionObject.h>
 namespace roadfighter {
 
-    const Location &CollisionObject::getM_loc1() const {
+    const Location &CollisionObject::getLoc1() const {
         return m_loc1;
     }
 
-    void CollisionObject::setM_loc1(const Location &m_loc1) {
+    void CollisionObject::setLoc1(const Location &m_loc1) {
         CollisionObject::m_loc1 = m_loc1;
     }
 
-    const Location &CollisionObject::getM_loc2() const {
+    const Location &CollisionObject::getLoc2() const {
         return m_loc2;
     }
 
-    void CollisionObject::setM_loc2(const Location &m_loc2) {
+    void CollisionObject::setLoc2(const Location &m_loc2) {
         CollisionObject::m_loc2 = m_loc2;
     }
 
 
     roadfighter::CollisionObject::CollisionObject(const Location &m_loc1, const Location &m_loc2) : m_loc1(m_loc1),
-                                                                                                    m_loc2(m_loc2) {}
+                                                                                                    m_loc2(m_loc2),m_delete(false) {}
 
-    bool CollisionObject::checkCollision(const CollisionObject &check) const {
-        //TODO
+    bool CollisionObject::checkCollision(std::shared_ptr<CollisionObject>& check) const {
+        //check wether the first or second x-location of check is between the the x values of this colkisionobject
+        if((check->getLoc1().getX()>=m_loc1.getX()&&check->getLoc1().getX()<=m_loc2.getX())||
+                (check->getLoc2().getX()>=m_loc1.getX()&&check->getLoc2().getX()<=m_loc2.getX())){
+            //check wether the y coordinates o the firs or second location of check are between the 2 y cooridnates of this object and return that
+            return (check->getLoc1().getY()>=m_loc1.getY()&&check->getLoc1().getY()<=m_loc2.getY())||
+                   (check->getLoc2().getY()>=m_loc1.getY()&&check->getLoc2().getY()<=m_loc2.getY());
+        }
         return false;
     }
 
@@ -61,6 +67,26 @@ namespace roadfighter {
 
     double CollisionObject::getWidth() const {
         return m_loc2.getX()-m_loc1.getX();
+    }
+
+    bool CollisionObject::operator==(const CollisionObject &rhs) const {
+        return m_loc1==rhs.m_loc1&&m_loc2==rhs.m_loc2;
+    }
+
+    bool CollisionObject::operator!=(const CollisionObject &rhs) const {
+        return !(rhs == *this);
+    }
+
+    bool CollisionObject::isDelete() const {
+        return m_delete;
+    }
+
+    void CollisionObject::setDelete(bool m_delete) {
+        CollisionObject::m_delete = m_delete;
+    }
+
+    bool CollisionObject::mustDelete() const {
+        return m_delete;
     }
 
 }

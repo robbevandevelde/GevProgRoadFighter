@@ -230,13 +230,16 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp">
 			<Option target="GLL"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Car.cpp">
-			<Option target="GLL"/>
-		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/CollisionObject.cpp">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/End.cpp">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entity.cpp">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/MovingObject.cpp">
 			<Option target="GLL"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp">
@@ -296,13 +299,16 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h">
 			<Option target="GLL"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Car.h">
-			<Option target="GLL"/>
-		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/End.h">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h">
+			<Option target="GLL"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h">
 			<Option target="GLL"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h">
@@ -347,6 +353,12 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
@@ -381,6 +393,12 @@
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBonusCar.cpp">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBullet.cpp">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEnd.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp">

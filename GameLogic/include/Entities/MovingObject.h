@@ -7,28 +7,28 @@
 
 #include "Entity.h"
 #include "CollisionObject.h"
-
+enum EStatus{Driving,Crashed,Won};
 namespace roadfighter {
-    class Car : public CollisionObject {
+    class MovingObject : public CollisionObject {
     public:
         /**
          * default constructor for Car
          */
-        Car();
+        MovingObject()=default;
 
         /**
          * copy constructor
          * @param copy the other Car that is being copied
          */
-        Car(const Car &copy)= default;
+        MovingObject(const MovingObject &copy)= default;
 
         /**
          * move constructor
          * @param Move the other Car that is being moved in this one
          */
-        Car(Car &&move)= default;
+        MovingObject(MovingObject &&move)= default;
 
-        Car(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
+        MovingObject(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
             double m_horAccel);
 
         /**
@@ -36,7 +36,7 @@ namespace roadfighter {
          * @param other the Car that is being copied
          * @return a new Car that is equal to the other one
          */
-        Car& operator=(Car& other)= default;
+        MovingObject& operator=(MovingObject& other)= default;
 
         /**
          * move assignment for Car
@@ -44,13 +44,13 @@ namespace roadfighter {
          * @return a Car
          * that contains all the data of the first one
          */
-        Car& operator=(Car&& other)= default;
+        MovingObject& operator=(MovingObject&& other)= default;
 
 
         /**
          * destructor for Car
          */
-        virtual ~Car()= default;
+        ~MovingObject() override = default;
 
         /**
          * a function that sets the vertical and horizontal speed to 0
@@ -106,6 +106,21 @@ namespace roadfighter {
 
         double getHorAccel() const;
 
+
+        EStatus getStatus() const;
+
+        void setStatus(EStatus m_status);
+
+        int getTimeOut() const;
+
+        void setTimeOut(int m_timeOut);
+
+        void decrementTimeOut();
+
+        bool isImmune() const;
+
+        void setImmune(bool immune);
+
     private:
         double m_verticalSpeed;
         double m_horizontalSpeed;
@@ -114,6 +129,12 @@ namespace roadfighter {
 
         double m_vertAccel;
         double m_horAccel;
+
+        bool m_immune;
+
+        EStatus m_status;
+
+        int m_timeOut;
     };
 }
 

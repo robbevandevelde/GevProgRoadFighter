@@ -5,9 +5,9 @@
 #ifndef GEVPROGROADFIGHTER_PASSINGCAR_H
 #define GEVPROGROADFIGHTER_PASSINGCAR_H
 
-#include "Car.h"
+#include "MovingObject.h"
 namespace roadfighter {
-    class PassingCar: public Car {
+    class PassingCar: public MovingObject {
     public:
         /**
          * default constructor for PassingCar
@@ -54,6 +54,16 @@ namespace roadfighter {
 
         bool mustDelete() const override;
 
+        void collideWith(std::shared_ptr<CollisionObject> &collided) override;
+
+        void crash() override;
+
+        void shot() override;
+
+        void bonus() override;
+
+
+        void win() override;
     };
 }
 

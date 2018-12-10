@@ -37,3 +37,8 @@ std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createWorld() {
 
 SFML_Entity_Factory::SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window) : window(window) {}
 
+std::shared_ptr<roadfighter::Entity> SFML_Entity_Factory::createEnd(double y) {
+    std::shared_ptr<SFMLEnd> toreturn=std::make_shared<SFMLEnd>(roadfighter::Location(-3,y-0.5),roadfighter::Location(3,y+0.5),window);
+    return toreturn;
+}
+

@@ -5,10 +5,10 @@
 #ifndef GEVPROGROADFIGHTER_BONUSCAR_H
 #define GEVPROGROADFIGHTER_BONUSCAR_H
 
-#include "Car.h"
+#include "MovingObject.h"
 
 namespace roadfighter{
-    class BonusCar: public Car {
+    class BonusCar: public MovingObject {
     public:
 
         /**
@@ -55,6 +55,16 @@ namespace roadfighter{
         void updateMovement(double dt) override;
 
         bool mustDelete()const override;
+
+        void collideWith(std::shared_ptr<CollisionObject> &collided) override;
+
+        void crash() override;
+
+        void shot() override;
+
+        void bonus() override;
+
+        void win() override;
 
 
     };

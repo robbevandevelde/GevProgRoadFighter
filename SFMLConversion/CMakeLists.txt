@@ -32,7 +32,7 @@ SET(SRC main.cpp
         Source/entities/SFMLBonusCar.cpp
         Include/Entities/SFMLBonusCar.h
         Source/entities/SFMLPassingCar.cpp
-        Include/Entities/SFMLPassingCar.h)
+        Include/Entities/SFMLPassingCar.h Source/entities/SFMLBullet.cpp Include/Entities/SFMLBullet.h Source/entities/SFMLEnd.cpp Include/Entities/SFMLEnd.h)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)

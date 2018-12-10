@@ -6,11 +6,11 @@
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
 
 #include <memory>
-#include "Car.h"
+#include "MovingObject.h"
 #include "MoveController.h"
 
 namespace roadfighter {
-    class PlayerCar:public Car {
+    class PlayerCar:public MovingObject {
     public:
         /**
        * default constructor for PlayerCar
@@ -70,6 +70,17 @@ namespace roadfighter {
         void updateLogic() override;
 
         bool mustDelete() const override;
+
+
+        void win() override;
+
+        void collideWith(std::shared_ptr<CollisionObject> &collided) override;
+
+        void crash() override;
+
+        void shot() override;
+
+        void bonus() override;
 
     private:
         double m_fuel;

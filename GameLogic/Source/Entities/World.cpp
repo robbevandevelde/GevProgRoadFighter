@@ -3,7 +3,7 @@
 //
 
 #include <Entities/World.h>
-
+#include <iostream>
 #include "../../include/Entities/World.h"
 namespace roadfighter {
 
@@ -34,6 +34,7 @@ namespace roadfighter {
         for(auto& i:m_roadEntities){
             i->updateLogic();
         }
+        checkCollision();
     }
 
     void World::setBackY(double setback) {
@@ -41,6 +42,7 @@ namespace roadfighter {
             auto temp=std::dynamic_pointer_cast<CollisionObject>(i);
             temp->vertMove(-setback);
         }
+        m_tickMovement+=setback;
     }
 
     void World::addEntity(std::shared_ptr<Entity> obj) {
@@ -52,6 +54,7 @@ namespace roadfighter {
         for(const auto& i:m_roadEntities){
             i->draw();
         }
+        m_tickMovement=0;
     }
 
     void World::deleteUnused() {
@@ -64,4 +67,25 @@ namespace roadfighter {
 
     }
 
+
+    void World::checkCollision() {
+        for(auto& i:m_roadEntities){
+            std::shared_ptr<CollisionObject> checkFor=std::dynamic_pointer_cast<CollisionObject>(i);
+            if(checkFor.get()!=NULL){
+                for(auto& j:m_roadEntities){
+                    std::shared_ptr<CollisionObject> checkWith=std::dynamic_pointer_cast<CollisionObject>(j);
+                    if(checkWith.get()!=NULL&&*checkWith.get()!=*checkFor.get()){
+                        if(checkFor->checkCollision(checkWith)){
+                            checkFor->collideWith(checkWith);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    double World::getTickMovement() const {
+        return m_tickMovement;
+    }
 }

@@ -6,10 +6,12 @@
 #define GEVPROGROADFIGHTER_BULLET_H
 
 #include "Entity.h"
+#include "MovingObject.h"
 #include "CollisionObject.h"
 
 namespace roadfighter {
-    class Bullet: public CollisionObject,Entity {
+    class Bullet: public MovingObject,public Entity {
+    public:
         /**
          * default constructor for Bullet
          */
@@ -26,6 +28,9 @@ namespace roadfighter {
          * @param Move the other Bullet that is being moved in this one
          */
         Bullet(Bullet &&move)= default;
+
+        Bullet(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
+               double m_horAccel);
 
         /**
          * copy assigment for Bullet
@@ -47,6 +52,17 @@ namespace roadfighter {
          * destructor for Bullet
          */
         virtual ~Bullet()= default;
+
+        void collideWith(std::shared_ptr<CollisionObject> &collided) override;
+
+        void crash() override;
+
+        void shot() override;
+
+        void bonus() override;
+
+        void win() override;
+
 
     };
 }

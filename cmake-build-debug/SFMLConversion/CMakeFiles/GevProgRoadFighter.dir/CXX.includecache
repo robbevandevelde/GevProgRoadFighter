@@ -6,39 +6,51 @@
 
 #IncludeRegexTransform: 
 
-../GameLogic/Utility/Random.h
+../GameLogic/include/Entities/CollisionObject.h
+Entity.h
+../GameLogic/include/Entities/Entity.h
 memory
 -
-random
--
-
-../GameLogic/include/Entities/Car.h
-Entity.h
-../GameLogic/include/Entities/Entity.h
-CollisionObject.h
-../GameLogic/include/Entities/CollisionObject.h
-
-../GameLogic/include/Entities/CollisionObject.h
-Entity.h
-../GameLogic/include/Entities/Entity.h
 ../Location.h
 ../GameLogic/include/Location.h
 
 ../GameLogic/include/Entities/Entity.h
 
+../GameLogic/include/Entities/MovingObject.h
+Entity.h
+../GameLogic/include/Entities/Entity.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+
 ../GameLogic/include/Entities/PlayerCar.h
 memory
 -
-Car.h
-../GameLogic/include/Entities/Car.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
 MoveController.h
 ../GameLogic/include/Entities/MoveController.h
 
-../GameLogic/include/Entities/RacingCar.h
-Car.h
-../GameLogic/include/Entities/Car.h
-../../Utility/Random.h
-../GameLogic/Utility/Random.h
+../GameLogic/include/Entities/World.h
+memory
+-
+vector
+-
+Entity.h
+../GameLogic/include/Entities/Entity.h
+PlayerCar.h
+../GameLogic/include/Entities/PlayerCar.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+EntityTransporter.h
+../GameLogic/include/Entities/EntityTransporter.h
+
+../GameLogic/include/EntityTransporter.h
+Entities/Entity.h
+../GameLogic/include/Entities/Entity.h
+memory
+-
+vector
+-
 
 ../GameLogic/include/Location.h
 ostream
@@ -54,19 +66,13 @@ memory
 ../Transformation.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
-Entities/PlayerCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
+Entities/World.h
 -
 SFML/Graphics.hpp
 -
 SFMLEntitySprite.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
-SFMLEntitySprite.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
-Entities/RacingCar.h
--
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
 SFML/Graphics.hpp
@@ -74,13 +80,7 @@ SFML/Graphics.hpp
 Location.h
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp
-../../Include/Entities/SFMLPlayerCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
-iostream
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLRacingCar.cpp
-../../Include/Entities/SFMLRacingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLWorld.cpp
+../../Include/Entities/SFMLWorld.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
 

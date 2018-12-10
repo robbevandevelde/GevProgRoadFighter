@@ -8,8 +8,8 @@ SET(SRC
         include/Entities/Entity.h
         Source/Entities/PlayerCar.cpp
         include/Entities/PlayerCar.h
-        Source/Entities/Car.cpp
-        include/Entities/Car.h
+        Source/Entities/MovingObject.cpp
+        include/Entities/MovingObject.h
         Source/Entities/PassingCar.cpp
         include/Entities/PassingCar.h
         Source/Entities/RacingCar.cpp
@@ -43,7 +43,9 @@ SET(SRC
         Source/Entities/BonusCar.cpp
         include/Entities/BonusCar.h
         Source/GLL_Entity_Factory.cpp
-        include/GLL_Entity_Factory.h)
+        include/GLL_Entity_Factory.h
+        Source/Entities/End.cpp
+        include/Entities/End.h)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly

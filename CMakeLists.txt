@@ -12,8 +12,6 @@ add_subdirectory(GameLogic)
 # run cmakelist in SFMLconversion containing the sfml target
 add_subdirectory(SFMLConversion)
 
-# run cmakelist in Test conatining the test target
+# run cmakelist in Test containing the test target
 add_subdirectory(Test)
-
-#defining compile directory
 

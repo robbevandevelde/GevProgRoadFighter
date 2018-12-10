@@ -75,6 +75,7 @@ namespace roadfighter {
         std::shared_ptr<Entity> createWorld() override;
 
 
+        std::shared_ptr<Entity> createEnd(double y) override;
     };
 }
 

@@ -5,10 +5,10 @@
 #ifndef GEVPROGROADFIGHTER_RACINGCAR_H
 #define GEVPROGROADFIGHTER_RACINGCAR_H
 
-#include "Car.h"
+#include "MovingObject.h"
 #include "../../Utility/Random.h"
 namespace roadfighter {
-    class RacingCar :public Car{
+    class RacingCar :public MovingObject{
     public:
         /**
        * default constructor for RacingCar
@@ -54,8 +54,17 @@ namespace roadfighter {
 
         void updateLogic() override;
 
-
         bool mustDelete() const override;
+
+        void win() override;
+
+        void collideWith(std::shared_ptr<CollisionObject> &collided) override;
+
+        void crash() override;
+
+        void shot() override;
+
+        void bonus() override;
     };
 }
 

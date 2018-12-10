@@ -6,6 +6,7 @@
 #define GEVPROGROADFIGHTER_COLLISIONOBJECT_H
 
 #include "Entity.h"
+#include <memory>
 #include "../Location.h"
 
 namespace  roadfighter {
@@ -56,17 +57,30 @@ namespace  roadfighter {
          */
         virtual ~CollisionObject();
 
-        virtual bool mustDelete() const=0;
+        virtual bool mustDelete() const;
 
-        const Location &getM_loc1() const;
+        const Location &getLoc1() const;
 
-        void setM_loc1(const Location &m_loc1);
+        void setLoc1(const Location &m_loc1);
 
-        const Location &getM_loc2() const;
+        const Location &getLoc2() const;
 
-        void setM_loc2(const Location &m_loc2);
+        void setLoc2(const Location &m_loc2);
 
-        bool checkCollision(const CollisionObject& check) const ;
+        bool checkCollision(std::shared_ptr<CollisionObject>& check) const ;
+
+        virtual void collideWith(std::shared_ptr<CollisionObject>& collided)=0;
+
+        virtual void crash()=0;
+
+        virtual void shot()=0;
+
+        virtual void bonus()=0;
+
+        virtual void win()=0;
+        bool isDelete() const;
+
+        void setDelete(bool m_delete);
 
         void vertMove(double amount);
 
@@ -76,11 +90,16 @@ namespace  roadfighter {
 
         double getWidth() const;
 
+        bool operator==(const CollisionObject &rhs) const;
+
+        bool operator!=(const CollisionObject &rhs) const;
 
 
     private:
         Location m_loc1;
         Location m_loc2;
+
+        bool m_delete;
 
     };
 }

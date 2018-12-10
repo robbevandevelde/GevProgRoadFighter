@@ -279,6 +279,60 @@ Source/entities/SFMLBonusCar.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.s
 .PHONY : Source/entities/SFMLBonusCar.cpp.s
 
+Source/entities/SFMLBullet.o: Source/entities/SFMLBullet.cpp.o
+
+.PHONY : Source/entities/SFMLBullet.o
+
+# target to build an object file
+Source/entities/SFMLBullet.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o
+.PHONY : Source/entities/SFMLBullet.cpp.o
+
+Source/entities/SFMLBullet.i: Source/entities/SFMLBullet.cpp.i
+
+.PHONY : Source/entities/SFMLBullet.i
+
+# target to preprocess a source file
+Source/entities/SFMLBullet.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.i
+.PHONY : Source/entities/SFMLBullet.cpp.i
+
+Source/entities/SFMLBullet.s: Source/entities/SFMLBullet.cpp.s
+
+.PHONY : Source/entities/SFMLBullet.s
+
+# target to generate assembly for a file
+Source/entities/SFMLBullet.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.s
+.PHONY : Source/entities/SFMLBullet.cpp.s
+
+Source/entities/SFMLEnd.o: Source/entities/SFMLEnd.cpp.o
+
+.PHONY : Source/entities/SFMLEnd.o
+
+# target to build an object file
+Source/entities/SFMLEnd.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o
+.PHONY : Source/entities/SFMLEnd.cpp.o
+
+Source/entities/SFMLEnd.i: Source/entities/SFMLEnd.cpp.i
+
+.PHONY : Source/entities/SFMLEnd.i
+
+# target to preprocess a source file
+Source/entities/SFMLEnd.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.i
+.PHONY : Source/entities/SFMLEnd.cpp.i
+
+Source/entities/SFMLEnd.s: Source/entities/SFMLEnd.cpp.s
+
+.PHONY : Source/entities/SFMLEnd.s
+
+# target to generate assembly for a file
+Source/entities/SFMLEnd.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/build.make SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.s
+.PHONY : Source/entities/SFMLEnd.cpp.s
+
 Source/entities/SFMLEntitySprite.o: Source/entities/SFMLEntitySprite.cpp.o
 
 .PHONY : Source/entities/SFMLEntitySprite.o
@@ -466,6 +520,12 @@ help:
 	@echo "... Source/entities/SFMLBonusCar.o"
 	@echo "... Source/entities/SFMLBonusCar.i"
 	@echo "... Source/entities/SFMLBonusCar.s"
+	@echo "... Source/entities/SFMLBullet.o"
+	@echo "... Source/entities/SFMLBullet.i"
+	@echo "... Source/entities/SFMLBullet.s"
+	@echo "... Source/entities/SFMLEnd.o"
+	@echo "... Source/entities/SFMLEnd.i"
+	@echo "... Source/entities/SFMLEnd.s"
 	@echo "... Source/entities/SFMLEntitySprite.o"
 	@echo "... Source/entities/SFMLEntitySprite.i"
 	@echo "... Source/entities/SFMLEntitySprite.s"
