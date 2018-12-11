@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o"

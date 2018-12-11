@@ -8,10 +8,6 @@ Clock::Clock() {
     m_time=clock();
 }
 
-Clock::~Clock() {
-
-}
-
 void Clock::restart() {
     m_time=clock();
 }

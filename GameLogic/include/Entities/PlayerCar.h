@@ -15,7 +15,7 @@ namespace roadfighter {
         /**
        * default constructor for PlayerCar
        */
-        PlayerCar();
+        PlayerCar()= default;
 
         /**
          * constructor with arguments for playerCar
@@ -45,7 +45,7 @@ namespace roadfighter {
          * @param other the PlayerCar that is being copied
          * @return a new PlayerCar that is equal to the other one
          */
-        PlayerCar& operator=(PlayerCar& other)= default;
+        PlayerCar& operator=(const PlayerCar& other)= default;
 
         /**
          * move assignment for PlayerCar
@@ -61,25 +61,59 @@ namespace roadfighter {
          */
         ~PlayerCar() override = default ;
 
+        /**
+         * this function decreases the fuel by the given amount
+         * @param amount
+         */
         void decreasFuel(const double &amount);
 
+        /**
+         * this function increases the fuel by the given amount
+         * @param amount
+         */
         void increaseFuel(const double &amount);
 
+        /**
+         * this function updates the movement by dt ticks, it is also capable of changing the direction
+         * @param dt the amount of a tick the car will move forward
+         */
         void updateMovement(double dt) override;
 
+        /**
+         * this funtion updates the logic of the player car
+         */
         void updateLogic() override;
 
+        /**
+         * this function well say wether the car can be deletet or not
+         * @return playercar can never be deletet so it will always be false
+         */
         bool mustDelete() const override;
 
-
+        /**
+         * this function says what the car will do when it wins
+         */
         void win() override;
 
+        /**
+         * this function will handle the logic about what will happen if another object crashes into it
+         * @param collided the object that crashes into the playercar
+         */
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
+        /**
+         * this function says what will happen if the car crashes
+         */
         void crash() override;
 
+        /**
+         * this function says what will happen if the car gets shot
+         */
         void shot() override;
 
+        /**
+         * this function says what will happen if the car gets a bonus
+         */
         void bonus() override;
 
     private:

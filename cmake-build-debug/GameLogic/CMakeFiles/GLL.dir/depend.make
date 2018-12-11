@@ -26,10 +26,6 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Ent
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/Source/Entities/End.cpp
 
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o: ../GameLogic/include/Entities/Entity.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o: ../GameLogic/Source/Entities/Entity.cpp
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o: ../GameLogic/include/Entities/Entity.h
-
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/MovingObject.h

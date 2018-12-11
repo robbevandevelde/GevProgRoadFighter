@@ -28,7 +28,7 @@ namespace roadfighter {
          * a constructor were the factory that is used to initalise all the objects is given
          * @param factory the factory that will be used to make everything
          */
-        RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
+        explicit RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
 
         /**
          * copy constructor
@@ -128,10 +128,6 @@ namespace roadfighter {
 
     private:
 
-        /**
-         * a function that is used in the constructor to intialize the game
-         * in this function the player car and a bunch of racingccars will be created trought he factory
-         */
         void initialize();
 
         void addRandomCars();

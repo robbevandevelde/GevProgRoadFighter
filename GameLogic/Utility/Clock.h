@@ -11,12 +11,22 @@
  */
 class Clock {
 public:
+    /**
+     * default and only constructor, the time starts teh second this clock is created
+     */
     Clock();
 
-    virtual ~Clock();
+    virtual ~Clock()= default;
 
+    /**
+     * restart the clock
+     */
     void restart();
 
+    /**
+     * gets the amount of time that has passed since construction or last reset
+     * @return this time as seconds in a double
+     */
     double getTimeAsSeconds();
 
 private:

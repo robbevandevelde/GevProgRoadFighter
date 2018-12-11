@@ -19,6 +19,7 @@ namespace roadfighter {
     }
 
     void RacingCar::updateLogic() {
+        //in this function a random number from 0 to 2 willm4 be generated to denote the next horizontal movement
         decrementTimeOut();
         if(getStatus()==Driving) {
             if(isImmune()&&getTimeOut()==0){
@@ -42,7 +43,8 @@ namespace roadfighter {
                     break;
             }
         }else{
-            if(getTimeOut()==0){
+            //if the car is crashed and the time is zero the car can drive again and gets a 30 tick immunity
+            if(getStatus()==Crashed&& getTimeOut()==0){
                 setStatus(Driving);
                 setTimeOut(30);
                 setImmune(true);
@@ -61,6 +63,7 @@ namespace roadfighter {
     }
 
     void RacingCar::crash() {
+        //if this car crashes the same happens as in theplayercar, immunity is set to true and a 30 tick timer starts
         if(!isImmune()) {
             stop();
             setStatus(Crashed);

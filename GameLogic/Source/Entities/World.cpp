@@ -7,14 +7,7 @@
 #include "../../include/Entities/World.h"
 namespace roadfighter {
 
-    World::World() {}
-
     World::World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter) : m_Transporter(m_Transporter) {}
-
-
-    World::~World() {
-
-    }
 
     void World::getNewEntities() {
         for(auto i:m_Transporter->getEntities()){
@@ -45,11 +38,6 @@ namespace roadfighter {
         m_tickMovement+=setback;
     }
 
-    void World::addEntity(std::shared_ptr<Entity> obj) {
-        m_roadEntities.push_back(obj);
-
-    }
-
     void World::draw() {
         for(const auto& i:m_roadEntities){
             i->draw();
@@ -69,12 +57,13 @@ namespace roadfighter {
 
 
     void World::checkCollision() {
+        //in this function all the enitites get downcasted to collisionobject and if that is not possible we cant check collision for it
         for(auto& i:m_roadEntities){
             std::shared_ptr<CollisionObject> checkFor=std::dynamic_pointer_cast<CollisionObject>(i);
-            if(checkFor.get()!=NULL){
+            if(checkFor.get()!= nullptr){
                 for(auto& j:m_roadEntities){
                     std::shared_ptr<CollisionObject> checkWith=std::dynamic_pointer_cast<CollisionObject>(j);
-                    if(checkWith.get()!=NULL&&*checkWith.get()!=*checkFor.get()){
+                    if(checkWith.get()!= nullptr&&*checkWith.get()!=*checkFor.get()){
                         if(checkFor->checkCollision(checkWith)){
                             checkFor->collideWith(checkWith);
                         }

@@ -35,7 +35,7 @@ namespace roadfighter{
          * @param other the BonusCar that is being copied
          * @return a new BonusCar that is equal to the other one
          */
-        BonusCar& operator=(BonusCar& other)= default;
+        BonusCar& operator=(const BonusCar& other)= default;
 
         /**
          * move assignment for BonusCar
@@ -50,20 +50,48 @@ namespace roadfighter{
          */
         ~BonusCar() override = default;
 
+        /**
+         * updates the logic of the bonus car
+         */
         void updateLogic() override;
 
+        /**
+         * updates the movement of the bonus car with dt ticks
+         * @param dt the amount of a tick the car should move forward
+         */
         void updateMovement(double dt) override;
 
+        /**
+         * a function that will return true if the car should be removed from the game
+         * @return a bool
+         */
         bool mustDelete()const override;
 
+        /**
+         * overidden function from collisionobject that handles what should happen must this car collide with another object
+         * for the bous car it means the the collided function gets the bonus function called on them
+         * @param collided another object this car collided with
+         */
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
+        /**
+         * this function handles the crashing of the bonuscar
+         */
         void crash() override;
 
+        /**
+         * this function handles the being shot of the bonuscar
+         */
         void shot() override;
 
+        /**
+         * this function handles the bonus actions of this car
+         */
         void bonus() override;
 
+        /**
+         * this function handles the win condition for this car
+         */
         void win() override;
 
 

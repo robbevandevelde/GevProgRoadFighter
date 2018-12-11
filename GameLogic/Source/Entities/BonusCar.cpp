@@ -8,8 +8,6 @@
 #include <iostream>
 namespace roadfighter{
 
-    void BonusCar::updateLogic() {}
-
     void BonusCar::updateMovement(double dt) {
         MovingObject::updateMovement(dt);
     }
@@ -46,4 +44,6 @@ namespace roadfighter{
     void BonusCar::win() {
         setDelete(true);
     }
+
+    void BonusCar::updateLogic() {}
 }

@@ -11,8 +11,8 @@
 namespace roadfighter {
     class Location {
     private:
-        double x;
-        double y;
+        double x{};
+        double y{};
     public:
         /**
            * default constructor for Location

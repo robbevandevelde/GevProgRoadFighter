@@ -28,7 +28,10 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::movementTick(double dt) {
+        //first all cars move forward then the playercar gets moved back to the center
+        // the amount the playercar had to move is the same all the other object will move back
         m_world->updateMovement(dt);
+
         normalizeWorld(getYvariance());
     }
 
@@ -60,6 +63,7 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::initialize() {
+        //creat transporter/movectonroller and set these into the factory so they can be given to the cars
         m_Transporter=std::make_shared<EntityTransporter>(EntityTransporter());
         m_MoveController=std::make_shared<MoveController>(MoveController());
         m_Factory->setController(m_MoveController);
@@ -71,7 +75,7 @@ namespace roadfighter{
         m_Transporter->addEntity(player);
         m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
 
-        //create racingcars
+        //create 8 racingcars
         std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(0.5,-1,1,0.02,0.2);
         m_Transporter->addEntity(enemy1);
 

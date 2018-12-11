@@ -4,7 +4,6 @@ set(LIB GLL)
 
 #make a source variable conatining all the cpp files
 SET(SRC
-        Source/Entities/Entity.cpp
         include/Entities/Entity.h
         Source/Entities/PlayerCar.cpp
         include/Entities/PlayerCar.h

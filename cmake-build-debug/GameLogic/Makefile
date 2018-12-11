@@ -279,33 +279,6 @@ Source/Entities/End.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.s
 .PHONY : Source/Entities/End.cpp.s
 
-Source/Entities/Entity.o: Source/Entities/Entity.cpp.o
-
-.PHONY : Source/Entities/Entity.o
-
-# target to build an object file
-Source/Entities/Entity.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.o
-.PHONY : Source/Entities/Entity.cpp.o
-
-Source/Entities/Entity.i: Source/Entities/Entity.cpp.i
-
-.PHONY : Source/Entities/Entity.i
-
-# target to preprocess a source file
-Source/Entities/Entity.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.i
-.PHONY : Source/Entities/Entity.cpp.i
-
-Source/Entities/Entity.s: Source/Entities/Entity.cpp.s
-
-.PHONY : Source/Entities/Entity.s
-
-# target to generate assembly for a file
-Source/Entities/Entity.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Entities/Entity.cpp.s
-.PHONY : Source/Entities/Entity.cpp.s
-
 Source/Entities/MovingObject.o: Source/Entities/MovingObject.cpp.o
 
 .PHONY : Source/Entities/MovingObject.o
@@ -763,9 +736,6 @@ help:
 	@echo "... Source/Entities/End.o"
 	@echo "... Source/Entities/End.i"
 	@echo "... Source/Entities/End.s"
-	@echo "... Source/Entities/Entity.o"
-	@echo "... Source/Entities/Entity.i"
-	@echo "... Source/Entities/Entity.s"
 	@echo "... Source/Entities/MovingObject.o"
 	@echo "... Source/Entities/MovingObject.i"
 	@echo "... Source/Entities/MovingObject.s"

@@ -6,7 +6,7 @@
 
 
 Random& Random::getInstance(){
-    //private instnace here gets made staticly so there can only be made once
+    //private instance here gets made staticly so there can only be made once
     static Random instance;
     return instance;
 };

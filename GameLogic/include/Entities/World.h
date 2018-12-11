@@ -18,7 +18,7 @@ namespace roadfighter {
         /**
          * default constructor for World
          */
-        World();
+        World()= default;
 
         /**
          * copy constructor
@@ -39,7 +39,7 @@ namespace roadfighter {
          * @param other the world that is being copied
          * @return a new world that is equal to the other one
          */
-        World& operator=(World& other)= default;
+        World& operator=(const World& other)= default;
 
         /**
          * move assignment for world
@@ -51,7 +51,7 @@ namespace roadfighter {
         /**
          * destructor for World
          */
-        virtual ~World();
+        virtual ~World()= default;
 
         /**
          * this function subtracts the given paramater from all the y values of the m_roadEntities
@@ -59,20 +59,41 @@ namespace roadfighter {
          */
         void setBackY(double setback);
 
-        void addEntity(std::shared_ptr<Entity> obj);
-
+        /**
+         * this function updates the movement of all entities in this world by dt ticks
+         * @param dt the amount of a  tick the locations should be updated with
+         */
         void updateMovement(double dt) override;
 
+        /**
+         * takes all the entities that are currently in the transporter and puts them with the other entities
+         */
         void getNewEntities();
 
+        /**
+         * check the collision for all the entities and does the apropiate action
+         */
         void checkCollision();
 
+        /**
+         * calls the draw function on all entities
+         */
         void draw() override;
 
+        /**
+         * updates the logic of this world and all the entities within
+         */
         void updateLogic() override;
 
+        /**
+         * deletes all unused entities that are currently still in the entitie vectot
+         */
         void deleteUnused();
 
+        /**
+         * gets the amount of ticks that the world had to move loast movementUpdate
+         * @return a double
+         */
         double getTickMovement() const;
 
     private:

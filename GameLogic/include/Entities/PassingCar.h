@@ -33,7 +33,7 @@ namespace roadfighter {
          * @param other the PassingCar that is being copied
          * @return a new PassingCar that is equal to the other one
          */
-        PassingCar& operator=(PassingCar& other)= default;
+        PassingCar& operator=(const PassingCar& other)= default;
 
         /**
          * move assignment for PassingCar
@@ -48,21 +48,47 @@ namespace roadfighter {
          */
         ~PassingCar() override = default;
 
+        /**
+         * update the logic of the passing car
+         */
         void updateLogic() override;
 
+        /**
+         * update the movement of the passing car with dt ticks
+         * @param dt the amount of a tick we need to move the car
+         */
         void updateMovement(double dt) override;
 
+        /**
+         * a function that say whether the car needs to be removed from the game
+         * @returna bool that is true if the car needs to be deletet
+         */
         bool mustDelete() const override;
 
+        /**
+         * a function that will handle what will happen when a object collides with this one
+         * @param collided the object this ones collides with
+         */
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
+        /**
+         * function that handles what happens when this car crashes
+         */
         void crash() override;
 
+        /**
+         * function that handles what happens when this car get shot
+         */
         void shot() override;
 
+        /**
+         * function that handles what happens when this car gets a bonus
+         */
         void bonus() override;
 
-
+        /**
+         * function that handles what happens when this car wins
+         */
         void win() override;
     };
 }

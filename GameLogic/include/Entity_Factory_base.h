@@ -77,7 +77,7 @@ namespace roadfighter {
         /**
          * virtual destructor
          */
-        virtual ~Entity_Factory_base();
+        virtual ~Entity_Factory_base()= default;
 
         /**
          * sets the controller of the factory

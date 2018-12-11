@@ -13,8 +13,12 @@ private:
     /**
      * private initialisor to prevent the creation of another instance
      */
-    Random(){};
+    Random()= default;
 
+
+
+public:
+    //all posible move/copy constructors have been deleted
     Random(const Random &copy)=delete;
 
     Random(const Random &&move)= delete;
@@ -22,8 +26,6 @@ private:
     Random operator=(const Random &other)=delete;
 
     Random operator=(const Random &&other)=delete;
-
-public:
 
     /**
      * a method that gives you an instance

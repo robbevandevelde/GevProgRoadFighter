@@ -36,7 +36,7 @@ namespace roadfighter {
          * @param other the Car that is being copied
          * @return a new Car that is equal to the other one
          */
-        MovingObject& operator=(MovingObject& other)= default;
+        MovingObject& operator=(const MovingObject& other)= default;
 
         /**
          * move assignment for Car
@@ -98,27 +98,69 @@ namespace roadfighter {
          */
         void updateMovement(double dt) override;
 
+        /**
+         * getter for the current horizontalspeed
+         * @return a double
+         */
         double getHorizontalSpeed() const;
 
+        /**
+         * getter for current vertical speed
+         * @return a double
+         */
         double getVerticalSpeed() const;
 
+        /**
+         * getter for vertical acceleration
+         * @return double
+         */
         double getVertAccel() const;
 
+        /**
+         * getter for horizontal acceleration
+         * @return double
+         */
         double getHorAccel() const;
 
-
+        /**
+         * getter for current status of the moving object
+         * @return an EStatus enum
+         */
         EStatus getStatus() const;
 
+        /**
+         * setter for the status
+         * @param m_status an EStatus enum
+         */
         void setStatus(EStatus m_status);
 
+        /**
+         * getter for the current timeOut
+         * @return an int
+         */
         int getTimeOut() const;
 
+        /**
+         * setter for the timeout
+         * @param m_timeOut an int
+         */
         void setTimeOut(int m_timeOut);
 
+        /**
+         * a function that subtracts one of the timeout
+         */
         void decrementTimeOut();
 
+        /**
+         * a getter for the immunity of the object
+         * @return a bool
+         */
         bool isImmune() const;
 
+        /**
+         * setter for the immunity of the object
+         * @param immune a bool
+         */
         void setImmune(bool immune);
 
     private:

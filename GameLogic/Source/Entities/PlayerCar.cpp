@@ -20,6 +20,7 @@ namespace roadfighter {
     }
 
     void PlayerCar::updateMovement(double dt) {
+        //movement only updatet when the car is driving
         if(getStatus()==Driving) {
             if (m_moveController->getNextHorMove() == h_left) {
                 MovingObject::setHorizontalSpeed(-MovingObject::getHorAccel());
@@ -42,9 +43,11 @@ namespace roadfighter {
 
     void PlayerCar::updateLogic() {
         decrementTimeOut();
+        //if its drivin and the timer is 0 then the immunity has run out
         if(isImmune()&&getTimeOut()==0&&getStatus()==Driving){
             setImmune(false);
         }
+        //after the 30 ticks crash timer has run out set another one so you get a 30 tick immunty to get started again
         if(getStatus()==Crashed){
             if(getTimeOut()==0){
                 setStatus(Driving);
@@ -73,6 +76,8 @@ namespace roadfighter {
     }
 
     void PlayerCar::crash() {
+        //when crashed the car will be immune and then it will wait for 30 logicticks
+        //this immunity is so that when another car crashes into this one it wont reset the timer
         if(!isImmune()) {
             setImmune(true);
             stop();

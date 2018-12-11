@@ -37,15 +37,13 @@ namespace roadfighter {
     }
 
 
-    CollisionObject::~CollisionObject() {}
-
-
     void CollisionObject::vertMove(double amount) {
         m_loc1.setY(m_loc1.getY()+amount);
         m_loc2.setY(m_loc2.getY()+amount);
     }
 
     void CollisionObject::horMove(double amount) {
+        //first add the amount then chack if the location does not exceed the -3 3 barrier
         m_loc1.setX(m_loc1.getX()+amount);
         m_loc2.setX(m_loc2.getX()+amount);
         if(m_loc1.getX()<-3){

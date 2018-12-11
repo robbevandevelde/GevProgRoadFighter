@@ -5,9 +5,6 @@
 #include "Entity_Factory_base.h"
 namespace roadfighter {
 
-
-    Entity_Factory_base::~Entity_Factory_base() {}
-
     void Entity_Factory_base::setController(const std::shared_ptr<MoveController> &m_controller) {
         Entity_Factory_base::m_controller = m_controller;
     }
