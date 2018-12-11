@@ -33,6 +33,13 @@ void SFMLWorld::draw() {
     temp.setPosition(getPosition().x,temp.getPosition().y-getGlobalBounds().height);
     getWindow()->draw(temp);
 
+    //make a copy of the sprite only by splicing so we can draw another one above the current one
+    SFMLEntitySprite temp2=temp;
+
+    //add a spriteheight to the copied sprite so they match up as they should
+    temp2.setPosition(getPosition().x,temp.getPosition().y-getGlobalBounds().height);
+    getWindow()->draw(temp2);
+
     //drawing the rest of the sprite on top
     World::draw();
 }

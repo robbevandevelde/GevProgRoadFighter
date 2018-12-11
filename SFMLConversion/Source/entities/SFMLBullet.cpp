@@ -6,7 +6,7 @@
 
 void SFMLBullet::draw() {
     std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getLoc1());
-    setSpriteLocation(std::get<0>(newloc),std::get<1>(newloc));
+    setSpriteLocation(std::get<0>(newloc)+SFMLEntitySprite::getGlobalBounds().width/2,std::get<1>(newloc)+SFMLEntitySprite::getGlobalBounds().height/2);
     setRotation(90);
     getWindow()->draw(*this);
 }

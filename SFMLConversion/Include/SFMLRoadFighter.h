@@ -17,12 +17,16 @@ class SFMLRoadFighter{
 public:
     SFMLRoadFighter();
 
+    void rungame();
+
 
 private:
 
     void draw(std::shared_ptr<sf::RenderWindow> window) ;
 
     std::shared_ptr<roadfighter::RoadFighterGame> m_game;
+
+    std::shared_ptr<sf::RenderWindow> m_window;
 
 
 

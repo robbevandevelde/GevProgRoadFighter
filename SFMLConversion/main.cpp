@@ -10,4 +10,5 @@
 
 int main(int argc, char *argv[]) {
     SFMLRoadFighter game=SFMLRoadFighter();
+    game.rungame();
 }
