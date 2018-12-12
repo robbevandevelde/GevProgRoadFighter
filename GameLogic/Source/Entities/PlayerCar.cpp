@@ -43,6 +43,9 @@ namespace roadfighter {
                     MovingObject::setVerticalSpeed(0);
                 }
             }
+            if(m_moveController->mustShoot()){
+                shoot();
+            }
         }
         MovingObject::updateMovement(dt);
     }
@@ -57,10 +60,11 @@ namespace roadfighter {
         if(getStatus()==Crashed){
             if(getTimeOut()==0){
                 setStatus(Driving);
-                setTimeOut(30);
+                setTimeOut(90);
             }
         }
-        decreasFuel(0.3);
+        decreasefireCountdown();
+        decreasFuel(0.1);
     }
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
@@ -70,9 +74,10 @@ namespace roadfighter {
 
 
     PlayerCar::PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-                         double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController)
+                         double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController,
+                         const std::shared_ptr<EntityTransporter> & transporter,const std::shared_ptr<Entity_Factory_base>& factory)
             : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
-              m_moveController(m_moveController) {}
+              m_moveController(m_moveController),m_transporter(transporter),m_factory(factory) {}
 
     bool PlayerCar::mustDelete() const {
         return false;
@@ -89,7 +94,7 @@ namespace roadfighter {
             setImmune(true);
             stop();
             setStatus(Crashed);
-            setTimeOut(30);
+            setTimeOut(90);
             decreasFuel(5);
         }
     }
@@ -112,6 +117,22 @@ namespace roadfighter {
 
     double PlayerCar::getFuel() const {
         return m_fuel;
+    }
+
+    void PlayerCar::decreasefireCountdown() {
+        m_fireCountdown--;
+        if(m_fireCountdown<0){
+            m_fireCountdown=0;
+        }
+
+    }
+
+    void PlayerCar::shoot() {
+        if(m_fireCountdown==0){
+            m_fireCountdown=15;
+            std::shared_ptr<Entity> bullet= m_factory->createBullet((getLoc1().getX()+getLoc2().getX())/2,getLoc1().getY()-0.1,getVerticalSpeed()+0.5                       );
+            m_transporter->addEntity(bullet);
+        }
     }
 
 }

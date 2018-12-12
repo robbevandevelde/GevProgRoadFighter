@@ -6,9 +6,10 @@
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
 
 #include <memory>
-#include "MovingObject.h"
+#include "Entity_Factory_base.h"
 #include "MoveController.h"
-
+#include "MovingObject.h"
+#include "EntityTransporter.h"
 namespace roadfighter {
     class PlayerCar:public MovingObject {
     public:
@@ -38,7 +39,8 @@ namespace roadfighter {
         PlayerCar(PlayerCar &&move)= default;
 
         PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-                  double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController);
+                  double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController,
+                  const std::shared_ptr<EntityTransporter> & transporter,const std::shared_ptr<Entity_Factory_base>& factory);
 
         /**
          * copy assigment for PlayerCar
@@ -122,10 +124,19 @@ namespace roadfighter {
          */
         double getFuel() const;
 
+        void decreasefireCountdown();
+
+        void shoot();
     private:
         double m_fuel;
 
+        int m_fireCountdown;
+
         std::shared_ptr<MoveController> m_moveController;
+
+        std::shared_ptr<EntityTransporter> m_transporter;
+
+        std::shared_ptr<Entity_Factory_base> m_factory;
 
     };
 }

@@ -12,13 +12,13 @@
 #include "EntityTransporter.h"
 
 namespace roadfighter {
-    class Entity_Factory_base {
+    class Entity_Factory_base: public std::enable_shared_from_this<Entity_Factory_base> {
     public:
         /**
          * base factory method for creating a bullet
          * @return a shared pointer to an Entity
          */
-        virtual std::shared_ptr<Entity> createBullet()=0;
+        virtual std::shared_ptr<Entity> createBullet(double x,double y,double vSpeed)=0;
 
         /**
          * base factory method for creating a PassingCar

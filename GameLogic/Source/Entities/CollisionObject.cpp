@@ -26,13 +26,13 @@ namespace roadfighter {
                                                                                                     m_loc2(m_loc2),m_delete(false) {}
 
     bool CollisionObject::checkCollision(std::shared_ptr<CollisionObject>& check) const {
-        //check wether the first or second x-location of check is between the the x values of this colkisionobject
-        if((check->getLoc1().getX()>=m_loc1.getX()&&check->getLoc1().getX()<=m_loc2.getX())||
-                (check->getLoc2().getX()>=m_loc1.getX()&&check->getLoc2().getX()<=m_loc2.getX())){
-            //check wether the y coordinates o the firs or second location of check are between the 2 y cooridnates of this object and return that
-            return (check->getLoc1().getY()>=m_loc1.getY()&&check->getLoc1().getY()<=m_loc2.getY())||
-                   (check->getLoc2().getY()>=m_loc1.getY()&&check->getLoc2().getY()<=m_loc2.getY());
+    //efficient rectangle collision checker found at https://stackoverflow.com/questions/31022269/collision-detection-between-two-rectangles-in-java
+    if(check->getLoc1().getX()<=getLoc2().getX()&&check->getLoc2().getX()>= getLoc1().getX()){
+        if(check->getLoc1().getY()<=getLoc2().getY()&&check->getLoc2().getY()>getLoc1().getY()){
+            return true;
         }
+    }
+
         return false;
     }
 

@@ -131,6 +131,16 @@ namespace roadfighter {
          */
         double getFuel() const;
 
+        /**
+         * a function that handles the movecontroller to make it shoot
+         */
+        void shoot();
+
+        /**
+         * a function that handles the movementcontrolle rto make it stop shooting
+         */
+        void stopShooting();
+
     private:
 
         void initialize();

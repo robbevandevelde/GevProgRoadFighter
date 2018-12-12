@@ -4,7 +4,7 @@
 
 #include "GLL_Entity_Factory.h"
 namespace roadfighter{
-    std::shared_ptr<Entity>  GLL_Entity_Factory::createBullet() {
+    std::shared_ptr<Entity>  GLL_Entity_Factory::createBullet(double x,double y,double vSpeed) {
         return std::shared_ptr<Entity>(nullptr);
     }
 

@@ -10,7 +10,7 @@
 #include "CollisionObject.h"
 
 namespace roadfighter {
-    class Bullet: public MovingObject,public Entity {
+    class Bullet: public MovingObject{
     public:
         /**
          * default constructor for Bullet
@@ -37,8 +37,7 @@ namespace roadfighter {
          * @param m_vertAccel
          * @param m_horAccel
          */
-        Bullet(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-               double m_horAccel);
+        Bullet(const Location &m_loc1, const Location &m_loc2, double vertspeed);
 
         /**
          * copy assigment for Bullet
@@ -87,6 +86,10 @@ namespace roadfighter {
          * this function handles the win condition of a bullet
          */
         void win() override;
+
+        void updateLogic() override;
+
+        bool mustDelete() const override;
 
 
     };

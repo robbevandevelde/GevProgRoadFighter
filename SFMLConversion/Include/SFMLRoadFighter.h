@@ -25,6 +25,8 @@ private:
 
     void draw(std::shared_ptr<sf::RenderWindow> window) ;
 
+    void checkMovement(sf::Event& event);
+
     std::shared_ptr<roadfighter::RoadFighterGame> m_game;
 
     std::shared_ptr<sf::RenderWindow> m_window;

@@ -11,8 +11,7 @@
 
 class SFMLBullet:public roadfighter::Bullet, public SFMLEntitySprite {
 public:
-    SFMLBullet(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double m_maxVertSpeed,
-               double m_vertAccel, double m_horAccel,
+    SFMLBullet(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertspeed,
                const std::shared_ptr<sf::RenderWindow> &window);
 
     void draw() override;

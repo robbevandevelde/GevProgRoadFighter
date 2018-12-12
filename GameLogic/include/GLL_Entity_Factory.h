@@ -25,7 +25,7 @@ namespace roadfighter {
          * an overrided factory method for creating a bullet
          * @return a shared pointer to an Entity
          */
-        std::shared_ptr<Entity> createBullet() override;
+        std::shared_ptr<Entity> createBullet(double x,double y,double vSpeed) override;
 
         /**
          * an overrided factory method for creating a PassingCar

@@ -33,11 +33,10 @@ namespace roadfighter {
     }
 
     void MovingObject::accelerate(double dt) {
-
         m_verticalSpeed+=m_vertAccel*dt;
         //cannot exceed max vertical speed so check for that
         if(m_verticalSpeed>m_maxVertSpeed){
-            m_verticalSpeed=m_maxVertSpeed;
+            m_verticalSpeed-=m_vertAccel*dt;
         }
     }
 

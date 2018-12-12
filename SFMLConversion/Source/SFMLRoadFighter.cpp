@@ -17,45 +17,55 @@ void SFMLRoadFighter::rungame(){
     while (m_window->isOpen())
     {
 
-        if(gameclock.getTimeAsSeconds()>0.016) {
+        if(gameclock.getTimeAsSeconds()>0.0016) {
             m_window->clear();
             draw(m_window);
-            m_game->tick(gameclock.getTimeAsSeconds()/0.1);
+            m_game->tick(gameclock.getTimeAsSeconds()/0.033 );
             gameclock.restart();
 
         }
         sf::Event event;
         while (m_window->pollEvent(event))
         {
-            // "close requested" event: we close the window
-            if (event.type == sf::Event::Closed)
-                m_window->close();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-                // left key is pressed: move our player to the left
-                m_game->moveLeft();
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-            {
-                // right key is pressed: move our player to the right
-                m_game->moveRight();
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-                m_game->accelerate();
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-            {
-                m_game->decelerate();
-            }
-            if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Left||event.key.code==sf::Keyboard::Right)){
-                m_game->stopHorizontalMove();
-
-            }
-            if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Up||event.key.code==sf::Keyboard::Down)){
-                m_game->stopVerticalMove();
-            }
-
+            checkMovement(event);
         }
         m_window->display();
+    }
+}
+
+void SFMLRoadFighter::checkMovement(sf::Event &event) {
+    // "close requested" event: we close the window
+    if (event.type == sf::Event::Closed)
+        m_window->close();
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+        // left key is pressed: move our player to the left
+        m_game->moveLeft();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
+        // right key is pressed: move our player to the right
+        m_game->moveRight();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+        m_game->accelerate();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+    {
+        m_game->decelerate();
+    }
+    if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Left||event.key.code==sf::Keyboard::Right)){
+        m_game->stopHorizontalMove();
+
+    }
+    if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Up||event.key.code==sf::Keyboard::Down)){
+        m_game->stopVerticalMove();
+    }
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+        m_game->shoot();
+    }
+    if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Space)){
+        m_game->stopShooting();
     }
 }
 

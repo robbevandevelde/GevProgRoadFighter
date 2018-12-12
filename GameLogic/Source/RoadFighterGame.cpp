@@ -71,50 +71,53 @@ namespace roadfighter{
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
-        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(-0.5,0,1.2,0.02,0.5,100);
+        std::shared_ptr<Entity> player=m_Factory->createPlayerCar(-0.5,0,0.4,0.005,0.15,100);
         m_Transporter->addEntity(player);
         m_Player=std::dynamic_pointer_cast<PlayerCar>(player);
 
         //create 8 racingcars
-        std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(0.5,-1,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy1=m_Factory->createRacingCar(0.5,-1,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy1);
 
-        std::shared_ptr<Entity> enemy2=m_Factory->createRacingCar(-0.5,-2,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy2=m_Factory->createRacingCar(-0.5,-2,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy2);
 
-        std::shared_ptr<Entity> enemy3=m_Factory->createRacingCar(0.5,-3,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy3=m_Factory->createRacingCar(0.5,-3,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy3);
 
-        std::shared_ptr<Entity> enemy4=m_Factory->createRacingCar(-0.5,-4,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy4=m_Factory->createRacingCar(-0.5,-4,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy4);
 
-        std::shared_ptr<Entity> enemy5=m_Factory->createRacingCar(0.5,1,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy5=m_Factory->createRacingCar(0.5,1,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy5);
 
-        std::shared_ptr<Entity> enemy6=m_Factory->createRacingCar(-0.5,2,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy6=m_Factory->createRacingCar(-0.5,2,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy6);
 
-        std::shared_ptr<Entity> enemy7=m_Factory->createRacingCar(0.5,3,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy7=m_Factory->createRacingCar(0.5,3,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy7);
 
-        std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,1,0.02,0.2);
+        std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy8);
 
         std::shared_ptr<Entity> end=m_Factory->createEnd(-100);
         m_Transporter->addEntity(end);
+//
+//        auto passing=m_Factory->creatPassingCar(0,-5,0);
+//        m_Transporter->addEntity(passing);
     }
 
     void RoadFighterGame::addRandomCars() {
-        int newCarProb=Random::getInstance().getRandom(5);
+        int newCarProb=Random::getInstance().getRandom(15);
         if(newCarProb==0){
             int bonusorpassing=Random::getInstance().getRandom(5);
             if(bonusorpassing==0){
                 int loc=Random::getInstance().getRandom(6)-3;
-                auto bonus=m_Factory->createBonusCar(loc,-5,-0.5);
+                auto bonus=m_Factory->createBonusCar(loc,-5,-0.15);
                 m_Transporter->addEntity(bonus);
             }else{
                 int loc=Random::getInstance().getRandom(6)-3;
-                auto passing=m_Factory->creatPassingCar(loc,-5,-0.5);
+                auto passing=m_Factory->creatPassingCar(loc,-5,-0.15);
                 m_Transporter->addEntity(passing);
             }
         }
@@ -145,5 +148,14 @@ namespace roadfighter{
 
     double RoadFighterGame::getFuel() const {
         return m_Player->getFuel();
+    }
+
+    void RoadFighterGame::shoot() {
+        m_MoveController->shoot();
+
+    }
+
+    void RoadFighterGame::stopShooting() {
+        m_MoveController->noShoot();
     }
 }

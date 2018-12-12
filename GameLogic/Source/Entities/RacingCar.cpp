@@ -46,12 +46,10 @@ namespace roadfighter {
             //if the car is crashed and the time is zero the car can drive again and gets a 30 tick immunity
             if(getStatus()==Crashed&& getTimeOut()==0){
                 setStatus(Driving);
-                setTimeOut(30);
+                setTimeOut(90);
                 setImmune(true);
             }
         };
-
-
     }
 
     bool RacingCar::mustDelete() const {
@@ -68,7 +66,7 @@ namespace roadfighter {
             stop();
             setStatus(Crashed);
             setImmune(true);
-            setTimeOut(30);
+            setTimeOut(90);
         }
     }
 

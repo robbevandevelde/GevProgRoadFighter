@@ -11,6 +11,7 @@
 #include <Location.h>
 #include <Entities/Entity.h>
 #include "Entities/SFMLWorld.h"
+#include "Entities/SFMLBullet.h"
 #include "Entities/SFMLPlayerCar.h"
 #include "Entities/SFMLRacingCar.h"
 #include "Entities/SFMLBonusCar.h"
@@ -21,7 +22,7 @@ class SFML_Entity_Factory: public roadfighter::Entity_Factory_base {
 public:
     SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
 
-    std::shared_ptr<roadfighter::Entity> createBullet() override;
+    std::shared_ptr<roadfighter::Entity> createBullet(double x,double y,double vSpeed) override;
 
     std::shared_ptr<roadfighter::Entity> creatPassingCar(double x,double y,double vSpeedl) override;
 

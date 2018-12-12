@@ -47,10 +47,24 @@ namespace roadfighter {
          */
         void setNone();
 
+        /*
+         * simple function that sets the shoot bool on true
+         */
+        void shoot();
+
+        /**
+         * simple funtion that sets the shoot bool on false
+         */
+        void noShoot();
+
+        bool mustShoot() const;
+
     private:
         EVertMove m_nextVertMove;
 
         EHorMove m_nextHorMove;
+
+        bool m_shoot;
     };
 }
 
