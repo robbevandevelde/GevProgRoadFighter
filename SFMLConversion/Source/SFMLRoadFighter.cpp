@@ -78,6 +78,4 @@ void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
     auto fuelpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-3));
     fuel.setPosition(std::get<0>(fuelpos),std::get<1>(fuelpos));
     window->draw(fuel);
-
-
 }

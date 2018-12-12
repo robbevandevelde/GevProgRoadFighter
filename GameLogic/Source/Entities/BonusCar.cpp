@@ -41,9 +41,7 @@ namespace roadfighter{
         setDelete(true);
     }
 
-    void BonusCar::win() {
-        setDelete(true);
-    }
+    void BonusCar::win() {}
 
     void BonusCar::updateLogic() {}
 }

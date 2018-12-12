@@ -42,8 +42,6 @@ namespace roadfighter {
         setDelete(true);
     }
 
-    void PassingCar::win() {
-        setDelete(true);
-    }
+    void PassingCar::win() {}
 
 }
