@@ -9,9 +9,11 @@
 namespace roadfighter {
 
     void PlayerCar::decreasFuel(const double &amount) {
-        m_fuel-=amount;
-        if(m_fuel<0){
-            m_fuel=0;
+        if(getStatus()!=Won) {
+            m_fuel -= amount;
+            if (m_fuel < 0) {
+                m_fuel = 0;
+            }
         }
     }
 
@@ -30,7 +32,11 @@ namespace roadfighter {
                 MovingObject::setHorizontalSpeed(0);
             }
             if (m_moveController->getNextVertMove() == v_accel) {
-                MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
+                //if the car is out of fuel it cant accelerate anymore
+                if(m_fuel>0) {
+                    MovingObject::setVerticalSpeed(
+                            MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
+                }
             } else if (m_moveController->getNextVertMove() == v_decel) {
                 MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() - (MovingObject::getVertAccel() * dt));
                 if (MovingObject::getVerticalSpeed() < 0) {
@@ -54,6 +60,7 @@ namespace roadfighter {
                 setTimeOut(30);
             }
         }
+        decreasFuel(0.3);
     }
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
@@ -83,6 +90,7 @@ namespace roadfighter {
             stop();
             setStatus(Crashed);
             setTimeOut(30);
+            decreasFuel(5);
         }
     }
 
@@ -93,11 +101,17 @@ namespace roadfighter {
     }
 
     void PlayerCar::bonus() {
-        //todo
+        m_fuel+=10;
     }
 
     void PlayerCar::win() {
         setStatus(Won);
         stop();
     }
+
+
+    double PlayerCar::getFuel() const {
+        return m_fuel;
+    }
+
 }

@@ -10,6 +10,7 @@
 #include "SFML_Entity_Factory.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
+#include <cmath>
 #include "Entities/SFMLPlayerCar.h"
 
 

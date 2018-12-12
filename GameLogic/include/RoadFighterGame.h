@@ -126,6 +126,11 @@ namespace roadfighter {
          */
         void drawWorld() const;
 
+        /**
+         * getter for the current amount of fuel in the playercar
+         */
+        double getFuel() const;
+
     private:
 
         void initialize();

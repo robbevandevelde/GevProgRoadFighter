@@ -61,17 +61,23 @@ void SFMLRoadFighter::rungame(){
 
 void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
     m_game->drawWorld();
-    sf::Text text;
+    sf::Text speed;
     sf::Font font;
     font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
-    text.setFont(font);
+    speed.setFont(font);
+    speed.setString("speed: "+std::to_string((int)(round(m_game->getsSpeed()*300))));
+    speed.setCharacterSize(24);
+    auto speedpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-4));
+    speed.setPosition(std::get<0>(speedpos),std::get<1>(speedpos));
+    window->draw(speed);
 
-    text.setString(std::to_string(m_game->getsSpeed()));
+    sf::Text fuel;
+    fuel.setFont(font);
+    fuel.setString("Fuel: "+std::to_string((int)(round(m_game->getFuel()))));
+    fuel.setCharacterSize(24);
+    auto fuelpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-3));
+    fuel.setPosition(std::get<0>(fuelpos),std::get<1>(fuelpos));
+    window->draw(fuel);
 
-    text.setCharacterSize(24);
 
-    //should use setFillColor but that function wont run on travis and pc's at university
-    text.setColor(sf::Color::Red);
-
-    window->draw(text);
 }

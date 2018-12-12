@@ -142,4 +142,8 @@ namespace roadfighter{
         m_world->setBackY(ySetback);
     }
 
+
+    double RoadFighterGame::getFuel() const {
+        return m_Player->getFuel();
+    }
 }

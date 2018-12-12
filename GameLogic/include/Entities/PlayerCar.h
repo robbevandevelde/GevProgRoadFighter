@@ -116,6 +116,12 @@ namespace roadfighter {
          */
         void bonus() override;
 
+        /**
+         * getter for the fual of the car
+         * @return a double depicting the fuel
+         */
+        double getFuel() const;
+
     private:
         double m_fuel;
 
