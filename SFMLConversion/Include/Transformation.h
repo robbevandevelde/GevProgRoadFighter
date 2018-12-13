@@ -12,7 +12,7 @@ class Transformation {
 public:
     static Transformation& getInstance();
 
-    std::tuple<int,int> locationTransformation(const roadfighter::Location& loc);
+    std::tuple<double,double> locationTransformation(const roadfighter::Location& loc);
 
     Transformation(const Transformation &copy)=delete;
 

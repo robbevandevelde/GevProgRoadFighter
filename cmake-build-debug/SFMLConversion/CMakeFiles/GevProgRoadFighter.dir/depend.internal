@@ -21,6 +21,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o
  ../GameLogic/include/MoveController.h
  ../GameLogic/include/RoadFighterGame.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPassingCar.h
@@ -34,6 +35,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o
  ../GameLogic/Utility/Random.h
  ../GameLogic/include/Entities/BonusCar.h
+ ../GameLogic/include/Entities/Bullet.h
  ../GameLogic/include/Entities/CollisionObject.h
  ../GameLogic/include/Entities/End.h
  ../GameLogic/include/Entities/Entity.h
@@ -47,6 +49,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.
  ../GameLogic/include/Location.h
  ../GameLogic/include/MoveController.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPassingCar.h
@@ -109,6 +112,8 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.c
  ../GameLogic/include/Entities/Entity.h
  ../GameLogic/include/Entities/MovingObject.h
  ../GameLogic/include/Entities/PlayerCar.h
+ ../GameLogic/include/EntityTransporter.h
+ ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/Location.h
  ../GameLogic/include/MoveController.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
@@ -133,6 +138,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o
  ../GameLogic/include/Entities/PlayerCar.h
  ../GameLogic/include/Entities/World.h
  ../GameLogic/include/EntityTransporter.h
+ ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/Location.h
  ../GameLogic/include/MoveController.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
@@ -161,6 +167,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPassingCar.h

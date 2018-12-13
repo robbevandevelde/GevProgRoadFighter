@@ -3,6 +3,7 @@
 //
 
 #include "../../Include/Entities/SFMLWorld.h"
+#include <iostream>
 
 SFMLWorld::SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
                      const std::shared_ptr<sf::RenderWindow> &window) : World(m_Transporter),
@@ -23,6 +24,7 @@ void SFMLWorld::draw() {
     //if the postion of the sprite is larger than teh height of the sprite it means that a full revolution of the sprite has been done thus we set the location back 1 spriteheight
     if(getPosition().y>getGlobalBounds().height)setPosition(getPosition().x,getPosition().y-getGlobalBounds().height);
     //move the sprite with the amount the playercar has moved since last drawing
+    std::cout<<tickmovemnt<<std::endl;
     setPosition(getPosition().x,(getPosition().y-tickmovemnt));
     getWindow()->draw(*this);
 

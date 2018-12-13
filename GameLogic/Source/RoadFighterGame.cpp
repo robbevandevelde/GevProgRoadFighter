@@ -100,11 +100,8 @@ namespace roadfighter{
         std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy8);
 
-        std::shared_ptr<Entity> end=m_Factory->createEnd(-100);
+        std::shared_ptr<Entity> end=m_Factory->createEnd(-200);
         m_Transporter->addEntity(end);
-//
-//        auto passing=m_Factory->creatPassingCar(0,-5,0);
-//        m_Transporter->addEntity(passing);
     }
 
     void RoadFighterGame::addRandomCars() {

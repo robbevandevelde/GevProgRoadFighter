@@ -16,8 +16,7 @@ void SFMLRoadFighter::rungame(){
     Clock gameclock=Clock();
     while (m_window->isOpen())
     {
-
-        if(gameclock.getTimeAsSeconds()>0.0016) {
+        if(gameclock.getTimeAsSeconds()>0.00833) {
             m_window->clear();
             draw(m_window);
             m_game->tick(gameclock.getTimeAsSeconds()/0.033 );

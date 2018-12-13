@@ -10,7 +10,7 @@ Transformation &Transformation::getInstance() {
     return instance;
 }
 
-std::tuple<int,int> Transformation::locationTransformation(const roadfighter::Location& loc) {
+std::tuple<double,double > Transformation::locationTransformation(const roadfighter::Location& loc) {
     //eleminating the negative numbers
     double x=loc.getX()+3;
     double y=loc.getY()+4;
@@ -21,8 +21,7 @@ std::tuple<int,int> Transformation::locationTransformation(const roadfighter::Lo
     returnx+=(returnx/6)*x;
     returny+=(m_ySize/8)*y;
 
-    //adding 0.5 so that the roundign when casting to int will be correct
-    return std::make_tuple(returnx+0.5,returny+0.5);
+    return std::make_tuple(returnx,returny);
 }
 
 Transformation::Transformation(int x, int y):m_xSize(x),m_ySize(y){}

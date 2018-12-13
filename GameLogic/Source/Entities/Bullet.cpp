@@ -32,7 +32,7 @@ namespace roadfighter {
     }
 
     bool Bullet::mustDelete() const {
-        return false;
+        return isDelete();
     }
 
     void Bullet::updateLogic() {}

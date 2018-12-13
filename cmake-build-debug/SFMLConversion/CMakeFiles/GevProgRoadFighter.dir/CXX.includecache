@@ -55,10 +55,14 @@ MovingObject.h
 ../GameLogic/include/Entities/PlayerCar.h
 memory
 -
-MovingObject.h
-../GameLogic/include/Entities/MovingObject.h
+Entity_Factory_base.h
+../GameLogic/include/Entities/Entity_Factory_base.h
 MoveController.h
 ../GameLogic/include/Entities/MoveController.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+EntityTransporter.h
+../GameLogic/include/Entities/EntityTransporter.h
 
 ../GameLogic/include/Entities/RacingCar.h
 MovingObject.h
@@ -144,6 +148,12 @@ SFMLEntitySprite.h
 Entities/BonusCar.h
 -
 
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
+Entities/Bullet.h
+-
+SFMLEntitySprite.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
+
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
 Entities/End.h
 -
@@ -166,6 +176,10 @@ SFMLEntitySprite.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
 Entities/PlayerCar.h
+-
+EntityTransporter.h
+-
+Entity_Factory_base.h
 -
 SFML/Graphics.hpp
 -
@@ -215,6 +229,8 @@ Entities/Entity.h
 -
 Entities/SFMLWorld.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
+Entities/SFMLBullet.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
 Entities/SFMLPlayerCar.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
 Entities/SFMLRacingCar.h

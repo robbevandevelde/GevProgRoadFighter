@@ -44,6 +44,8 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/EntityTransporter.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/MoveController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/Source/Entities/PlayerCar.cpp
@@ -63,6 +65,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/E
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/World.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/EntityTransporter.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/MoveController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/Source/Entities/World.cpp

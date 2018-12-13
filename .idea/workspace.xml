@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighterTest" />
-      <config projectName="GevProgRoadFighter" targetName="GLL" />
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighter" />
+      <config projectName="GevProgRoadFighter" targetName="GLL" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -13,31 +13,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="">
+    <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="fixed bug causing non player cars to dissapear when hitting finishline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/MoveController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/MoveController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/MoveController.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/MoveController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -53,80 +42,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="132" column="150" selection-start-line="132" selection-start-column="150" selection-end-line="132" selection-end-column="150" />
+            <state relative-caret-position="315">
+              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
               <folding>
-                <element signature="e#62#93#0" expanded="true" />
+                <element signature="e#42#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding>
+                <element signature="e#42#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1335">
+              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+              <folding>
+                <element signature="e#115#134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+              <folding>
+                <element signature="e#133#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="e#42#84#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Entity.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+            <state relative-caret-position="375">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="115" column="65" selection-start-line="115" selection-start-column="65" selection-end-line="115" selection-end-column="65" />
-              <folding>
-                <element signature="e#61#89#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEnd.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEntitySprite.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPassingCar.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="29" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -134,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="1050">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -167,12 +173,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEnd.h" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEnd.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/End.cpp" />
-        <option value="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h" />
-        <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBonusCar.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPassingCar.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLRacingCar.cpp" />
@@ -210,14 +213,17 @@
         <option value="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" />
         <option value="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp" />
-        <option value="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" />
+        <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" />
+        <option value="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" />
+        <option value="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" />
+        <option value="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" />
       </list>
     </option>
   </component>
@@ -233,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,40 +254,20 @@
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="Observer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
               <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
@@ -306,12 +291,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MebTOGroep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -430,6 +416,10 @@
       <workItem from="1544534762468" duration="1046000" />
       <workItem from="1544542936982" duration="9782000" />
       <workItem from="1544618836937" duration="14754000" />
+      <workItem from="1544686897197" duration="1761000" />
+      <workItem from="1544692195320" duration="130000" />
+      <workItem from="1544705457218" duration="772000" />
+      <workItem from="1544709666297" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="added cmakelist, main file, travis.yml and todo file">
       <created>1542482951227</created>
@@ -701,7 +691,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229991000" />
+    <option name="totallyTimeSpent" value="232782000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -716,12 +706,12 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27559492" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2888766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.3099352" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4864416" weight="0.3099352" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997233" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -845,16 +835,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/BonusCar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBonusCar.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEnd.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -864,32 +844,13 @@
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPassingCar.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLRacingCar.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CAr.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CAr.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Car.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Car.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CAr.cpp" />
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CAr.h" />
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Car.cpp" />
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Car.h" />
     <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -944,9 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -954,13 +912,6 @@
           <folding>
             <element signature="e#133#185#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -980,26 +931,6 @@
           <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="e#42#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="8" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-          <folding>
-            <element signature="e#115#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#133#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1033,16 +964,6 @@
           <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding>
             <element signature="e#42#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#42#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1098,16 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -1115,10 +1026,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="1980">
+          <caret line="132" column="150" selection-start-line="132" selection-start-column="150" selection-end-line="132" selection-end-column="150" />
+          <folding>
+            <element signature="e#62#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1131,55 +1059,116 @@
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPassingCar.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="30" selection-end-column="29" />
+          <caret line="30" column="29" selection-start-line="19" selection-start-column="2" selection-end-line="30" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="115" column="65" selection-start-line="115" selection-start-column="65" selection-end-line="115" selection-end-column="65" />
+        <state relative-caret-position="1455">
+          <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
           <folding>
             <element signature="e#61#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp">
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="132" column="150" selection-start-line="132" selection-start-column="150" selection-end-line="132" selection-end-column="150" />
+        <state relative-caret-position="315">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
           <folding>
-            <element signature="e#62#93#0" expanded="true" />
+            <element signature="e#42#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp">
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="1335">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+          <folding>
+            <element signature="e#115#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        <state relative-caret-position="1575">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding>
+            <element signature="e#133#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="e#42#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#42#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Entity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
