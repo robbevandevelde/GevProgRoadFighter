@@ -23,10 +23,20 @@ void SFMLRoadFighter::rungame(){
             gameclock.restart();
 
         }
-        sf::Event event;
+        sf::Event event{};
         while (m_window->pollEvent(event))
         {
             checkMovement(event);
+//            static std::string str;
+//            if (event.type == sf::Event::TextEntered)
+//            {
+//                // Only handle ASCII -- it's up to you if you want to handle other encodings
+//                if (event.text.unicode< 128)
+//                {
+//                    str += static_cast<char>(event.text.unicode);
+//                }
+//            }
+//            drawText(m_window,str,Transformation::getInstance().locationTransformation(roadfighter::Location(0,0)));
         }
         m_window->display();
     }
@@ -74,7 +84,6 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
     if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Space)){
         m_game->stopShooting();
     }
-
 }
 
 void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {

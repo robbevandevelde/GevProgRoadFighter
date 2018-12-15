@@ -44,7 +44,8 @@ SET(SRC
         Source/GLL_Entity_Factory.cpp
         include/GLL_Entity_Factory.h
         Source/Entities/End.cpp
-        include/Entities/End.h)
+        include/Entities/End.h
+        include/parsers/json.hpp)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly
