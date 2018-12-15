@@ -7,7 +7,8 @@
 
 
 class ObserverBase {
-
+public:
+    virtual void update(int amount)=0;
 };
 
 

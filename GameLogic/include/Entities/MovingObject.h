@@ -7,9 +7,10 @@
 
 #include "Entity.h"
 #include "CollisionObject.h"
+#include "Observer/Observable.h"
 enum EStatus{Driving,Crashed,Won};
 namespace roadfighter {
-    class MovingObject : public CollisionObject {
+    class MovingObject : public CollisionObject, public Observable {
     public:
         /**
          * default constructor for Car

@@ -21,4 +21,18 @@ namespace roadfighter {
         return m_Transporter;
     }
 
+    void Entity_Factory_base::setScoreObserver(const std::shared_ptr<ObserverBase> &m_scoreObserver) {
+        Entity_Factory_base::m_scoreObserver = m_scoreObserver;
+    }
+
+    const std::shared_ptr<ObserverBase> &Entity_Factory_base::getScoreObserver() const {
+        return m_scoreObserver;
+    }
+
+    Entity_Factory_base::Entity_Factory_base() {
+        m_Transporter=std::make_shared<EntityTransporter>(EntityTransporter());
+        m_controller=std::make_shared<MoveController>(MoveController());
+        m_scoreObserver=std::make_shared<ScoreObserver>(ScoreObserver());
+    }
+
 }

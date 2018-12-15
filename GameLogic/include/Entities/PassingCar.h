@@ -6,6 +6,7 @@
 #define GEVPROGROADFIGHTER_PASSINGCAR_H
 
 #include "MovingObject.h"
+#include "Observer/Observable.h"
 namespace roadfighter {
     class PassingCar: public MovingObject {
     public:

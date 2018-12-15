@@ -52,6 +52,9 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
     {
         m_game->decelerate();
     }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+        m_game->pauseGame();
+    }
     if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Left||event.key.code==sf::Keyboard::Right)){
         m_game->stopHorizontalMove();
 
@@ -61,11 +64,17 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
-        m_game->shoot();
+        if(m_game->getStatus()==roadfighter::gamePaused){
+            m_game->continueGame();
+        }else {
+            m_game->shoot();
+        }
+
     }
     if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Space)){
         m_game->stopShooting();
     }
+
 }
 
 void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
@@ -87,4 +96,12 @@ void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
     auto fuelpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-3));
     fuel.setPosition(std::get<0>(fuelpos),std::get<1>(fuelpos));
     window->draw(fuel);
+
+    sf::Text score;
+    score.setFont(font);
+    score.setString("score: "+std::to_string(m_game->getScore()));
+    score.setCharacterSize(24);
+    auto scorepos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-2));
+    score.setPosition(std::get<0>(scorepos),std::get<1>(scorepos));
+    window->draw(score);
 }

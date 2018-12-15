@@ -6,6 +6,7 @@
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
 
 #include <memory>
+#include <Observer/Observable.h>
 #include "Entity_Factory_base.h"
 #include "MoveController.h"
 #include "MovingObject.h"

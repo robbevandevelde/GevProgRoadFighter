@@ -8,13 +8,17 @@
 
 #include <memory>
 #include "Entities/Entity.h"
+#include "Observer/ScoreObserver.h"
 #include "MoveController.h"
 #include "EntityTransporter.h"
+#include "Observer/ObserverBase.h"
 
 namespace roadfighter {
     class Entity_Factory_base: public std::enable_shared_from_this<Entity_Factory_base> {
     public:
-        /**
+        Entity_Factory_base();
+
+/**
          * base factory method for creating a bullet
          * @return a shared pointer to an Entity
          */
@@ -103,10 +107,17 @@ namespace roadfighter {
          */
         const std::shared_ptr<EntityTransporter> &getTransporter() const;
 
+
+        const std::shared_ptr<ObserverBase> &getScoreObserver() const;
+
+        void setScoreObserver(const std::shared_ptr<ObserverBase> &m_scoreObserver);
+
     private:
         std::shared_ptr<MoveController> m_controller;
 
         std::shared_ptr<EntityTransporter> m_Transporter;
+
+        std::shared_ptr<ObserverBase> m_scoreObserver;
     };
 }
 

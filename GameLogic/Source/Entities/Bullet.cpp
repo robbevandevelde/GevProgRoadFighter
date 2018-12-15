@@ -33,6 +33,10 @@ namespace roadfighter {
         return isDelete();
     }
 
-    void Bullet::updateLogic() {}
+    void Bullet::updateLogic() {
+        if(getLoc1().getY()<-5){
+            setDelete(true);
+        }
+    }
 
 }

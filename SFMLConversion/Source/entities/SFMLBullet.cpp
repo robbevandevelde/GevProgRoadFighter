@@ -21,7 +21,7 @@ void SFMLBullet::draw() {
 
 SFMLBullet::SFMLBullet(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertspeed,
                        const std::shared_ptr<sf::RenderWindow> &window) : Bullet(m_loc1, m_loc2,vertspeed),
-                                                                          SFMLEntitySprite("../../SFMLConversion/resources/sprites/transport_car.png", window) {
+                                                                          SFMLEntitySprite("../../SFMLConversion/resources/sprites/bullet.png", window) {
     std::tuple<int,int> sfmlpos1=Transformation::getInstance().locationTransformation(getLoc1());
     std::tuple<int,int> sfmlpos2=Transformation::getInstance().locationTransformation(getLoc2());
     setOrigin(SFMLEntitySprite::getGlobalBounds().width/2,SFMLEntitySprite::getGlobalBounds().height/2);

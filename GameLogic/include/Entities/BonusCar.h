@@ -5,6 +5,7 @@
 #ifndef GEVPROGROADFIGHTER_BONUSCAR_H
 #define GEVPROGROADFIGHTER_BONUSCAR_H
 
+#include <Observer/Observable.h>
 #include "MovingObject.h"
 
 namespace roadfighter{

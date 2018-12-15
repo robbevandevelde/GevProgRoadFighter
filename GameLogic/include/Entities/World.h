@@ -96,6 +96,8 @@ namespace roadfighter {
          */
         double getTickMovement() const;
 
+        void dettachAllObservers();
+
     private:
 
         std::vector<std::shared_ptr<Entity> > m_roadEntities;

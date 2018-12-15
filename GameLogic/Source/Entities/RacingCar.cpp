@@ -72,6 +72,7 @@ namespace roadfighter {
     void RacingCar::shot() {
         if(!isImmune()) {
             stop();
+            notify(200);
         }
     }
 
@@ -83,7 +84,8 @@ namespace roadfighter {
         setStatus(Won);
         setMaxVertSpeed(0);
         setHorAccel(0);
-
+        setHorizontalSpeed(0);
+        notify(-1000);
     }
 
 

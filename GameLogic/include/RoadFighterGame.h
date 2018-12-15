@@ -15,7 +15,10 @@
 #include "MoveController.h"
 #include "EntityTransporter.h"
 #include "../Utility/Random.h"
+#include "Observer/ScoreObserver.h"
 namespace roadfighter {
+
+    enum EGameStatus{gameRunning,gameEnd,gamePaused};
 
     class RoadFighterGame {
     public:
@@ -141,7 +144,22 @@ namespace roadfighter {
          */
         void stopShooting();
 
+        unsigned int getScore() const;
+
+        bool hasEnded() const;
+
+        void pauseGame();
+
+        void continueGame();
+
+        EGameStatus getStatus() const;
+
+    //all private functions
     private:
+
+        bool testEnd() const;
+
+        void endGame();
 
         void initialize();
 
@@ -151,6 +169,7 @@ namespace roadfighter {
 
         void normalizeWorld(double ySetback);
 
+    //all private variables
     private:
         std::shared_ptr<PlayerCar> m_Player;
 
@@ -158,9 +177,13 @@ namespace roadfighter {
 
         std::shared_ptr<EntityTransporter> m_Transporter;
 
+        std::shared_ptr<ScoreObserver> m_ScoreObserver;
+
         std::shared_ptr<World> m_world;
 
         std::shared_ptr<Entity_Factory_base> m_Factory;
+
+        EGameStatus m_status;
 
         //adjusting the movement of cars can be done as much as you want in a tick but logic may only be done once in a tick
         //this is why this var is kept if it is higher than 1 it means a logicTick needs to be done

@@ -6,23 +6,25 @@
 #include <RoadFighterGame.h>
 
 namespace roadfighter{
-    RoadFighterGame::RoadFighterGame() {
+    RoadFighterGame::RoadFighterGame():m_status(gameRunning) {
         m_Factory=std::make_shared<GLL_Entity_Factory>(GLL_Entity_Factory());
         initialize();
     }
 
-    RoadFighterGame::RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory) {
+    RoadFighterGame::RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory):m_status(gameRunning) {
         m_Factory= std::move(factory);
         initialize();
     }
 
 
     void RoadFighterGame::tick(double dt) {
-        movementTick(dt);
-        m_logicTick+=dt;
-        while(m_logicTick>1){
-            m_logicTick-=1;
-            logicTick();
+        if(m_status!=gamePaused) {
+            movementTick(dt);
+            m_logicTick += dt;
+            while (m_logicTick > 1) {
+                m_logicTick -= 1;
+                logicTick();
+            }
         }
     }
 
@@ -30,43 +32,58 @@ namespace roadfighter{
         //first all cars move forward then the playercar gets moved back to the center
         // the amount the playercar had to move is the same all the other object will move back
         m_world->updateMovement(dt);
-
         normalizeWorld(getYvariance());
     }
 
     void RoadFighterGame::logicTick() {
-        addRandomCars();
+        if(m_status==gameRunning) {
+            addRandomCars();
+            if(testEnd()){
+                endGame();
+            }
+        }
         m_world->updateLogic();
         m_Transporter->clear();
     }
 
+    bool RoadFighterGame::hasEnded() const {
+
+    }
+
+    bool RoadFighterGame::testEnd() const {
+        return m_Player->getStatus()==Won;
+    }
+
+    void RoadFighterGame::endGame() {
+        m_status=gameEnd;
+        m_world->dettachAllObservers();
+    }
 
     void RoadFighterGame::drawWorld() const{
         m_world->draw();
     }
 
     void RoadFighterGame::moveLeft() {
-        m_MoveController->setHorMove(h_left);
+        if(m_status==gameRunning)m_MoveController->setHorMove(h_left);
     }
 
     void RoadFighterGame::moveRight() {
-        m_MoveController->setHorMove(h_right);
+        if(m_status==gameRunning) m_MoveController->setHorMove(h_right);
     }
 
     void RoadFighterGame::accelerate() {
-        m_MoveController->setVertMove(v_accel);
+        if(m_status==gameRunning)m_MoveController->setVertMove(v_accel);
     }
 
     void RoadFighterGame::decelerate() {
-        m_MoveController->setVertMove(v_decel);
+        if(m_status==gameRunning)m_MoveController->setVertMove(v_decel);
     }
 
     void RoadFighterGame::initialize() {
         //creat transporter/movectonroller and set these into the factory so they can be given to the cars
-        m_Transporter=std::make_shared<EntityTransporter>(EntityTransporter());
-        m_MoveController=std::make_shared<MoveController>(MoveController());
-        m_Factory->setController(m_MoveController);
-        m_Factory->setTransporter(m_Transporter);
+        m_Transporter=m_Factory->getTransporter();
+        m_MoveController=m_Factory->getController();
+        m_ScoreObserver=std::dynamic_pointer_cast<ScoreObserver>(m_Factory->getScoreObserver());
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
@@ -117,7 +134,6 @@ namespace roadfighter{
                 m_Transporter->addEntity(passing);
             }
         }
-
     }
 
 
@@ -147,11 +163,31 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::shoot() {
-        m_MoveController->shoot();
+        if(m_status==gameRunning)m_MoveController->shoot();
 
     }
 
     void RoadFighterGame::stopShooting() {
         m_MoveController->noShoot();
+    }
+
+    unsigned int RoadFighterGame::getScore() const {
+        return m_ScoreObserver->getScore();
+    }
+
+    void RoadFighterGame::pauseGame() {
+        if(m_status!=gameEnd){
+            m_status=gamePaused;
+        }
+    }
+
+    void RoadFighterGame::continueGame() {
+        if(m_status!=gameEnd){
+            m_status=gameRunning;
+        }
+    }
+
+    EGameStatus RoadFighterGame::getStatus() const {
+        return m_status;
     }
 }

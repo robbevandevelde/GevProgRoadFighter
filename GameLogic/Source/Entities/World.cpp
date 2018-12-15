@@ -1,6 +1,8 @@
 //
 // Created by thibaut on 20.11.18.
 //
+#include <Entities/World.h>
+
 #include "../../include/Entities/World.h"
 namespace roadfighter {
 
@@ -74,4 +76,15 @@ namespace roadfighter {
     double World::getTickMovement() const {
         return m_tickMovement;
     }
+
+    void World::dettachAllObservers() {
+        for(auto i:m_roadEntities){
+            auto temp=std::dynamic_pointer_cast<MovingObject>(i);
+            if(temp.get()!= nullptr){
+                temp->detach();
+            }
+        }
+    }
+
 }
+

@@ -33,6 +33,7 @@ namespace roadfighter{
 
     void BonusCar::shot() {
         setDelete(true);
+        notify(-1000);
     }
 
     void BonusCar::bonus() {

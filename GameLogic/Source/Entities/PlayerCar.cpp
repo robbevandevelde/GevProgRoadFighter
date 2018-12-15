@@ -3,7 +3,7 @@
 //
 // Created by thibaut on 20.11.18.
 //
-
+#include <iostream>
 #include <Entities/PlayerCar.h>
 namespace roadfighter {
 
@@ -33,8 +33,7 @@ namespace roadfighter {
             if (m_moveController->getNextVertMove() == v_accel) {
                 //if the car is out of fuel it cant accelerate anymore
                 if(m_fuel>0&&getVerticalSpeed()<getMaxVertSpeed()) {
-                    MovingObject::setVerticalSpeed(
-                            MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
+                    MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
                 }
             } else if (m_moveController->getNextVertMove() == v_decel) {
                 MovingObject::setVerticalSpeedUnbounded(MovingObject::getVerticalSpeed() - (MovingObject::getVertAccel() * dt));
@@ -69,7 +68,7 @@ namespace roadfighter {
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
                          double m_horAccel,std::shared_ptr<MoveController> controller, int fuel)
-                         :m_moveController(std::move(controller)),m_fuel(fuel),MovingObject(Location(-0.25,-0.25),Location(0.25,0.25),
+                         :m_moveController(std::move(controller)),m_fuel(fuel),m_fireCountdown(0),MovingObject(Location(-0.25,-0.25),Location(0.25,0.25),
                                  m_maxVertSpeed, m_vertAccel, m_horAccel) {}
 
 
@@ -77,7 +76,7 @@ namespace roadfighter {
                          double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController,
                          const std::shared_ptr<EntityTransporter> & transporter,const std::shared_ptr<Entity_Factory_base>& factory)
             : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
-              m_moveController(m_moveController),m_transporter(transporter),m_factory(factory) {}
+              m_moveController(m_moveController),m_transporter(transporter),m_factory(factory),m_fireCountdown(0) {}
 
     bool PlayerCar::mustDelete() const {
         return false;
@@ -96,6 +95,7 @@ namespace roadfighter {
             setStatus(Crashed);
             setTimeOut(90);
             decreasFuel(5);
+            notify(-500);
         }
     }
 
@@ -108,12 +108,17 @@ namespace roadfighter {
     void PlayerCar::bonus() {
         m_fuel+=10;
         setVerticalSpeedUnbounded(getVerticalSpeed()*1.2);
+        notify(500);
     }
 
     void PlayerCar::win() {
-        setStatus(Won);
-        setMaxVertSpeed(0);
-        setHorAccel(0);
+        if(getStatus()!=Won) {
+            setStatus(Won);
+            setMaxVertSpeed(0);
+            setHorizontalSpeed(0);
+            notify(5000);
+            notify((int) (m_fuel * 100));
+        }
     }
 
 

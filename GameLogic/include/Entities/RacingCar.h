@@ -6,6 +6,7 @@
 #define GEVPROGROADFIGHTER_RACINGCAR_H
 
 #include "MovingObject.h"
+#include "Observer/Observable.h"
 #include "../../Utility/Random.h"
 namespace roadfighter {
     class RacingCar :public MovingObject{

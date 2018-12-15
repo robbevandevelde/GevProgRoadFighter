@@ -34,6 +34,7 @@ namespace roadfighter {
 
     void PassingCar::shot() {
         setDelete(true);
+        notify(100);
     }
 
     void PassingCar::bonus() {
