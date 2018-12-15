@@ -12,10 +12,6 @@ memory
 random
 -
 
-../GameLogic/include/Entities/BonusCar.h
-MovingObject.h
-../GameLogic/include/Entities/MovingObject.h
-
 ../GameLogic/include/Entities/Bullet.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -39,9 +35,13 @@ Entity.h
 ../GameLogic/include/Entities/Entity.h
 CollisionObject.h
 ../GameLogic/include/Entities/CollisionObject.h
+Observer/Observable.h
+../GameLogic/include/Entities/Observer/Observable.h
 
 ../GameLogic/include/Entities/PlayerCar.h
 memory
+-
+Observer/Observable.h
 -
 Entity_Factory_base.h
 ../GameLogic/include/Entities/Entity_Factory_base.h
@@ -55,6 +55,8 @@ EntityTransporter.h
 ../GameLogic/include/Entities/RacingCar.h
 MovingObject.h
 ../GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+../GameLogic/include/Entities/Observer/Observable.h
 ../../Utility/Random.h
 ../GameLogic/Utility/Random.h
 
@@ -85,10 +87,14 @@ memory
 -
 Entities/Entity.h
 ../GameLogic/include/Entities/Entity.h
+Observer/ScoreObserver.h
+../GameLogic/include/Observer/ScoreObserver.h
 MoveController.h
 ../GameLogic/include/MoveController.h
 EntityTransporter.h
 ../GameLogic/include/EntityTransporter.h
+Observer/ObserverBase.h
+../GameLogic/include/Observer/ObserverBase.h
 
 ../GameLogic/include/GLL_Entity_Factory.h
 memory
@@ -110,6 +116,22 @@ ostream
 
 ../GameLogic/include/MoveController.h
 
+../GameLogic/include/Observer/Observable.h
+memory
+-
+vector
+-
+ObserverBase.h
+../GameLogic/include/Observer/ObserverBase.h
+
+../GameLogic/include/Observer/ObserverBase.h
+
+../GameLogic/include/Observer/ScoreObserver.h
+ObserverBase.h
+../GameLogic/include/Observer/ObserverBase.h
+limits
+-
+
 ../GameLogic/include/RoadFighterGame.h
 memory
 -
@@ -129,36 +151,12 @@ EntityTransporter.h
 ../GameLogic/include/EntityTransporter.h
 ../Utility/Random.h
 ../GameLogic/Utility/Random.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/BonusCar.cpp
-Entities/BonusCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entities/BonusCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp
-../../include/Entities/Bullet.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/MovingObject.cpp
-Entities/MovingObject.h
--
-Entities/MovingObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entities/MovingObject.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp
-../../include/Entities/PassingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PlayerCar.cpp
-utility
--
-Entities/PlayerCar.h
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp
-../../include/Entities/RacingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
+Observer/ScoreObserver.h
+../GameLogic/include/Observer/ScoreObserver.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp
+Entities/World.h
+-
 ../../include/Entities/World.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h
 
@@ -171,58 +169,6 @@ utility
 -
 RoadFighterGame.h
 -
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
-memory
--
-random
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h
-Entity.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-MovingObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
-CollisionObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
-Entity.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-memory
--
-../Location.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
-Entity.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
-CollisionObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h
-MovingObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PlayerCar.h
-memory
--
-Entity_Factory_base.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity_Factory_base.h
-MoveController.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MoveController.h
-MovingObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
-EntityTransporter.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/EntityTransporter.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
-MovingObject.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
-../../Utility/Random.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h
 memory
@@ -237,8 +183,4 @@ CollisionObject.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
 EntityTransporter.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/EntityTransporter.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
-ostream
--
 

@@ -25,6 +25,13 @@ private:
 
     void draw(std::shared_ptr<sf::RenderWindow> window) ;
 
+    void drawSideStats(std::shared_ptr<sf::RenderWindow> window);
+
+    void drawPaused(std::shared_ptr<sf::RenderWindow> window);
+
+    void drawText(std::shared_ptr<sf::RenderWindow> window,std::string text,std::tuple<int,int> position,
+            sf::Color color=sf::Color(255,255,255),int size=24);
+
     void checkMovement(sf::Event& event);
 
     std::shared_ptr<roadfighter::RoadFighterGame> m_game;

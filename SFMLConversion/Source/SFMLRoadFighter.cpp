@@ -79,29 +79,56 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
 
 void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
     m_game->drawWorld();
-    sf::Text speed;
+    drawSideStats(window);
+    if(m_game->getStatus()==roadfighter::gamePaused){
+        drawPaused(window);
+    }
+
+}
+
+void SFMLRoadFighter::drawSideStats(std::shared_ptr<sf::RenderWindow> window) {
+    auto speedpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-4));
+    drawText(window,"speed: "+std::to_string((int)(round(m_game->getsSpeed()*300))),speedpos);
+
+    auto fuelpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-3));
+    drawText(window,"Fuel: "+std::to_string((int)(round(m_game->getFuel()))),fuelpos);
+
+    auto scorepos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-2));
+    drawText(window,"score: "+std::to_string(m_game->getScore()),scorepos);
+
+}
+
+void SFMLRoadFighter::drawPaused(std::shared_ptr<sf::RenderWindow> window) {
+    sf::RectangleShape transparenrect(sf::Vector2f(window->getSize().x,window->getSize().y));
+    transparenrect.setFillColor(sf::Color(0,0,0,200));
+    window->draw(transparenrect);
+
     sf::Font font;
     font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
-    speed.setFont(font);
-    speed.setString("speed: "+std::to_string((int)(round(m_game->getsSpeed()*300))));
-    speed.setCharacterSize(24);
-    auto speedpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-4));
-    speed.setPosition(std::get<0>(speedpos),std::get<1>(speedpos));
-    window->draw(speed);
 
-    sf::Text fuel;
-    fuel.setFont(font);
-    fuel.setString("Fuel: "+std::to_string((int)(round(m_game->getFuel()))));
-    fuel.setCharacterSize(24);
-    auto fuelpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-3));
-    fuel.setPosition(std::get<0>(fuelpos),std::get<1>(fuelpos));
-    window->draw(fuel);
+    auto pausepos=Transformation::getInstance().locationTransformation(roadfighter::Location(-1.1,-1));
+    drawText(window,"game has been paused",pausepos,sf::Color(128,128,128),24);
 
-    sf::Text score;
-    score.setFont(font);
-    score.setString("score: "+std::to_string(m_game->getScore()));
-    score.setCharacterSize(24);
-    auto scorepos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-2));
-    score.setPosition(std::get<0>(scorepos),std::get<1>(scorepos));
-    window->draw(score);
+
+    auto spacePos=Transformation::getInstance().locationTransformation(roadfighter::Location(-1,-0.5));
+    drawText(window,"press space to continue",spacePos,sf::Color(128,128,128),20);
+}
+
+void
+SFMLRoadFighter::drawText(std::shared_ptr<sf::RenderWindow> window, std::string text, std::tuple<int, int> position,
+                          sf::Color color, int size) {
+    sf::Font font;
+    font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
+
+    sf::Text towrite;
+    towrite.setFont(font);
+    towrite.setString(text);
+    towrite.setCharacterSize(size);
+    auto scorepos=Transformation::getInstance().locationTransformation(roadfighter::Location(-1,-1));
+    towrite.setPosition(std::get<0>(position),std::get<1>(position));
+
+    //setcolor is used instead of setFillcolor because new function wont run on travis/labo pc's
+    towrite.setColor(color);
+    window->draw(towrite);
+
 }
