@@ -2,10 +2,8 @@
 // Created by thibaut on 07.12.18.
 //
 
-#include <Entities/BonusCar.h>
-
 #include "Entities/BonusCar.h"
-#include <iostream>
+
 namespace roadfighter{
 
     void BonusCar::updateMovement(double dt) {

@@ -86,6 +86,12 @@ namespace roadfighter {
         void setVerticalSpeed(double m_VerticalSpeed);
 
         /**
+         * setter for vertivalspeed were there is no check if you are above the macvertspeed
+         * @param m_VerticalSpeed the new verticalspeed
+         */
+        void setVerticalSpeedUnbounded(double m_VerticalSpeed);
+
+        /**
          * setter for horizontalspeed
          * @param m_HorizontalSpeed the new horizontalspeed
          */
@@ -162,6 +168,14 @@ namespace roadfighter {
          * @param immune a bool
          */
         void setImmune(bool immune);
+
+        void updateLogic() override;
+
+        void setMaxVertSpeed(double m_maxVertSpeed);
+
+        void setHorAccel(double m_horAccel);
+
+        void setVertAccel(double m_vertAccel);
 
     private:
         double m_verticalSpeed;

@@ -2,8 +2,6 @@
 // Created by thibaut on 20.11.18.
 //
 
-#include <Entities/RacingCar.h>
-#include <iostream>
 
 #include "../../include/Entities/RacingCar.h"
 namespace roadfighter {
@@ -19,7 +17,8 @@ namespace roadfighter {
     }
 
     void RacingCar::updateLogic() {
-        //in this function a random number from 0 to 2 willm4 be generated to denote the next horizontal movement
+        MovingObject::updateLogic();
+        //in this function a random number from 0 to 2 will be generated to denote the next horizontal movement
         decrementTimeOut();
         if(getStatus()==Driving) {
             if(isImmune()&&getTimeOut()==0){
@@ -77,12 +76,14 @@ namespace roadfighter {
     }
 
     void RacingCar::bonus() {
-        //todo
+        setVerticalSpeedUnbounded(getVerticalSpeed()*1.2);
     }
 
     void RacingCar::win() {
         setStatus(Won);
-        stop();
+        setMaxVertSpeed(0);
+        setHorAccel(0);
+
     }
 
 

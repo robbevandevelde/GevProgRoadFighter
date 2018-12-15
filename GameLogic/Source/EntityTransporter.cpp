@@ -1,9 +1,6 @@
 //
 // Created by thibaut on 06.12.18.
 //
-
-#include <EntityTransporter.h>
-
 #include "EntityTransporter.h"
 
 void roadfighter::EntityTransporter::addEntity(std::shared_ptr<roadfighter::Entity> toAdd) {

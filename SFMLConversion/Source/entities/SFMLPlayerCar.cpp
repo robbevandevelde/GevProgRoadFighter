@@ -3,8 +3,6 @@
 //
 
 #include "../../Include/Entities/SFMLPlayerCar.h"
-#include <iostream>
-
 
 void SFMLPlayerCar::draw() {
     std::tuple<int,int> newloc=Transformation::getInstance().locationTransformation(this->getLoc1());

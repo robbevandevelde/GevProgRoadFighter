@@ -5,7 +5,6 @@
 //
 
 #include <Entities/PlayerCar.h>
-#include <iostream>
 namespace roadfighter {
 
     void PlayerCar::decreasFuel(const double &amount) {
@@ -51,6 +50,7 @@ namespace roadfighter {
     }
 
     void PlayerCar::updateLogic() {
+        MovingObject::updateLogic();
         decrementTimeOut();
         //if its drivin and the timer is 0 then the immunity has run out
         if(isImmune()&&getTimeOut()==0&&getStatus()==Driving){
@@ -107,11 +107,13 @@ namespace roadfighter {
 
     void PlayerCar::bonus() {
         m_fuel+=10;
+        setVerticalSpeedUnbounded(getVerticalSpeed()*1.2);
     }
 
     void PlayerCar::win() {
         setStatus(Won);
-        stop();
+        setMaxVertSpeed(0);
+        setHorAccel(0);
     }
 
 

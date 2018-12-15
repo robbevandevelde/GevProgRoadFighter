@@ -3,7 +3,7 @@
 //
 
 #include <Entities/MovingObject.h>
-#include <iostream>
+
 #include "Entities/MovingObject.h"
 namespace roadfighter {
 
@@ -12,6 +12,10 @@ namespace roadfighter {
         if(m_VerticalSpeed>m_maxVertSpeed){
             MovingObject::m_verticalSpeed =m_maxVertSpeed;
         }
+    }
+
+    void MovingObject::setVerticalSpeedUnbounded(double m_VerticalSpeed) {
+        MovingObject::m_verticalSpeed = m_VerticalSpeed;
     }
 
     void MovingObject::setHorizontalSpeed(double HorizontalSpeed) {
@@ -40,12 +44,29 @@ namespace roadfighter {
         }
     }
 
+    void MovingObject::updateLogic() {
+        if(m_verticalSpeed>m_maxVertSpeed){
+            m_verticalSpeed=m_verticalSpeed-0.5*m_vertAccel;
+            if(m_verticalSpeed<0){
+                m_verticalSpeed=0;
+            }
+        }
+    }
+
+    void MovingObject::setMaxVertSpeed(double m_maxVertSpeed) {
+        MovingObject::m_maxVertSpeed = m_maxVertSpeed;
+    }
+
     void MovingObject::decelerate(double dt) {
         //speed can not go under 0 so check for that
         m_verticalSpeed-=m_vertAccel*dt;
         if(m_verticalSpeed<0){
             m_verticalSpeed=0;
         }
+    }
+
+    void MovingObject::setHorAccel(double m_horAccel) {
+        MovingObject::m_horAccel = m_horAccel;
     }
 
 
@@ -96,6 +117,10 @@ namespace roadfighter {
 
     bool MovingObject::isImmune() const {
         return m_immune;
+    }
+
+    void MovingObject::setVertAccel(double m_vertAccel) {
+        MovingObject::m_vertAccel = m_vertAccel;
     }
 
     void MovingObject::setImmune(bool immune) {

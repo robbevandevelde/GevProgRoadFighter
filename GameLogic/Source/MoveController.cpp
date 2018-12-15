@@ -2,7 +2,6 @@
 // Created by thibaut on 06.12.18.
 //
 
-#include <MoveController.h>
 
 #include "MoveController.h"
 namespace roadfighter{

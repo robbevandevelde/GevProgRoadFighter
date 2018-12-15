@@ -3,8 +3,6 @@
 //
 
 #include "../../include/Entities/Bullet.h"
-
-#include <iostream>
 namespace roadfighter {
 
     void Bullet::collideWith(std::shared_ptr<CollisionObject> &collided) {
