@@ -32,13 +32,12 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/in
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/Source/Entities/MovingObject.cpp
 
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/Source/Entities/PassingCar.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Location.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/Source/Entities/PassingCar.cpp
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/Entity.h
@@ -50,26 +49,25 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/MoveController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/Source/Entities/PlayerCar.cpp
 
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/Source/Entities/RacingCar.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/Utility/Random.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/RacingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Location.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/Source/Entities/RacingCar.cpp
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/RacingCar.h
 
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/Entity.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/EntityTransporter.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/MoveController.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/Source/Entities/World.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/World.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/EntityTransporter.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Location.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/MoveController.h
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/Source/Entities/World.cpp
-GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/World.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/EntityTransporter.h

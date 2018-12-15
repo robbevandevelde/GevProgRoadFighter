@@ -177,6 +177,8 @@ namespace roadfighter {
 
         void setVertAccel(double m_vertAccel);
 
+        double getMaxVertSpeed() const;
+
     private:
         double m_verticalSpeed;
         double m_horizontalSpeed;

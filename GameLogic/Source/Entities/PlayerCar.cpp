@@ -32,12 +32,12 @@ namespace roadfighter {
             }
             if (m_moveController->getNextVertMove() == v_accel) {
                 //if the car is out of fuel it cant accelerate anymore
-                if(m_fuel>0) {
+                if(m_fuel>0&&getVerticalSpeed()<getMaxVertSpeed()) {
                     MovingObject::setVerticalSpeed(
                             MovingObject::getVerticalSpeed() + (MovingObject::getVertAccel() * dt));
                 }
             } else if (m_moveController->getNextVertMove() == v_decel) {
-                MovingObject::setVerticalSpeed(MovingObject::getVerticalSpeed() - (MovingObject::getVertAccel() * dt));
+                MovingObject::setVerticalSpeedUnbounded(MovingObject::getVerticalSpeed() - (MovingObject::getVertAccel() * dt));
                 if (MovingObject::getVerticalSpeed() < 0) {
                     MovingObject::setVerticalSpeed(0);
                 }
@@ -90,7 +90,7 @@ namespace roadfighter {
     void PlayerCar::crash() {
         //when crashed the car will be immune and then it will wait for 30 logicticks
         //this immunity is so that when another car crashes into this one it wont reset the timer
-        if(!isImmune()) {
+        if(!isImmune()&&getStatus()==Driving) {
             setImmune(true);
             stop();
             setStatus(Crashed);

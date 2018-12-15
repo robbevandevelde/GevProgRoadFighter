@@ -61,7 +61,7 @@ namespace roadfighter {
 
     void RacingCar::crash() {
         //if this car crashes the same happens as in theplayercar, immunity is set to true and a 30 tick timer starts
-        if(!isImmune()) {
+        if(!isImmune()&&getStatus()==Driving) {
             stop();
             setStatus(Crashed);
             setImmune(true);

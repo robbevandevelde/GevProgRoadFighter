@@ -106,17 +106,16 @@ namespace roadfighter{
     void RoadFighterGame::addRandomCars() {
         int newCarProb=Random::getInstance().getRandom(15);
         if(newCarProb==0){
-            int bonusorpassing=Random::getInstance().getRandom(0);
+            int bonusorpassing=Random::getInstance().getRandom(5);
             if(bonusorpassing==0){
                 int loc=Random::getInstance().getRandom(6)-3;
                 auto bonus=m_Factory->createBonusCar(loc,-5,-0.15);
                 m_Transporter->addEntity(bonus);
+            }else{
+                int loc=Random::getInstance().getRandom(6)-3;
+                auto passing=m_Factory->creatPassingCar(loc,-5,-0.15);
+                m_Transporter->addEntity(passing);
             }
-//            else{
-//                int loc=Random::getInstance().getRandom(6)-3;
-//                auto passing=m_Factory->creatPassingCar(loc,-5,-0.15);
-//                m_Transporter->addEntity(passing);
-//            }
         }
 
     }

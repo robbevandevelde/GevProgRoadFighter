@@ -99,6 +99,10 @@ namespace roadfighter {
         return m_verticalSpeed;
     }
 
+    double MovingObject::getMaxVertSpeed() const {
+        return m_maxVertSpeed;
+    }
+
     EStatus MovingObject::getStatus() const {
         return m_status;
     }
