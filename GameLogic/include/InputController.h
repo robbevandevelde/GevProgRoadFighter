@@ -7,16 +7,17 @@
 #ifndef GEVPROGROADFIGHTER_MOVECONTROLLER_H
 #define GEVPROGROADFIGHTER_MOVECONTROLLER_H
 
+#include <iostream>
 enum EVertMove{v_none,v_accel,v_decel};
 enum EHorMove{h_none,h_left,h_right};
 
 namespace roadfighter {
-    class MoveController {
+    class InputController {
     public:
         /**
          * default constructor
          */
-        MoveController()= default;
+        InputController()= default;
 
         /**
          * setter for the verticalmove
@@ -59,12 +60,18 @@ namespace roadfighter {
 
         bool mustShoot() const;
 
+        void setText(const std::string& newtext);
+
+        std::string getText() const;
+
     private:
         EVertMove m_nextVertMove;
 
         EHorMove m_nextHorMove;
 
         bool m_shoot;
+
+        std::string m_textInput;
     };
 }
 

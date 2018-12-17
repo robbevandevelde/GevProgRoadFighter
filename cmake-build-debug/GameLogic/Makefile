@@ -495,6 +495,60 @@ Source/GLL_Entity_Factory.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.s
 .PHONY : Source/GLL_Entity_Factory.cpp.s
 
+Source/HighScoreManager.o: Source/HighScoreManager.cpp.o
+
+.PHONY : Source/HighScoreManager.o
+
+# target to build an object file
+Source/HighScoreManager.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o
+.PHONY : Source/HighScoreManager.cpp.o
+
+Source/HighScoreManager.i: Source/HighScoreManager.cpp.i
+
+.PHONY : Source/HighScoreManager.i
+
+# target to preprocess a source file
+Source/HighScoreManager.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.i
+.PHONY : Source/HighScoreManager.cpp.i
+
+Source/HighScoreManager.s: Source/HighScoreManager.cpp.s
+
+.PHONY : Source/HighScoreManager.s
+
+# target to generate assembly for a file
+Source/HighScoreManager.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.s
+.PHONY : Source/HighScoreManager.cpp.s
+
+Source/InputController.o: Source/InputController.cpp.o
+
+.PHONY : Source/InputController.o
+
+# target to build an object file
+Source/InputController.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/InputController.cpp.o
+.PHONY : Source/InputController.cpp.o
+
+Source/InputController.i: Source/InputController.cpp.i
+
+.PHONY : Source/InputController.i
+
+# target to preprocess a source file
+Source/InputController.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/InputController.cpp.i
+.PHONY : Source/InputController.cpp.i
+
+Source/InputController.s: Source/InputController.cpp.s
+
+.PHONY : Source/InputController.s
+
+# target to generate assembly for a file
+Source/InputController.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/InputController.cpp.s
+.PHONY : Source/InputController.cpp.s
+
 Source/Location.o: Source/Location.cpp.o
 
 .PHONY : Source/Location.o
@@ -521,33 +575,6 @@ Source/Location.s: Source/Location.cpp.s
 Source/Location.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Location.cpp.s
 .PHONY : Source/Location.cpp.s
-
-Source/MoveController.o: Source/MoveController.cpp.o
-
-.PHONY : Source/MoveController.o
-
-# target to build an object file
-Source/MoveController.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o
-.PHONY : Source/MoveController.cpp.o
-
-Source/MoveController.i: Source/MoveController.cpp.i
-
-.PHONY : Source/MoveController.i
-
-# target to preprocess a source file
-Source/MoveController.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.i
-.PHONY : Source/MoveController.cpp.i
-
-Source/MoveController.s: Source/MoveController.cpp.s
-
-.PHONY : Source/MoveController.s
-
-# target to generate assembly for a file
-Source/MoveController.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.s
-.PHONY : Source/MoveController.cpp.s
 
 Source/Observer/Observable.o: Source/Observer/Observable.cpp.o
 
@@ -760,12 +787,15 @@ help:
 	@echo "... Source/GLL_Entity_Factory.o"
 	@echo "... Source/GLL_Entity_Factory.i"
 	@echo "... Source/GLL_Entity_Factory.s"
+	@echo "... Source/HighScoreManager.o"
+	@echo "... Source/HighScoreManager.i"
+	@echo "... Source/HighScoreManager.s"
+	@echo "... Source/InputController.o"
+	@echo "... Source/InputController.i"
+	@echo "... Source/InputController.s"
 	@echo "... Source/Location.o"
 	@echo "... Source/Location.i"
 	@echo "... Source/Location.s"
-	@echo "... Source/MoveController.o"
-	@echo "... Source/MoveController.i"
-	@echo "... Source/MoveController.s"
 	@echo "... Source/Observer/Observable.o"
 	@echo "... Source/Observer/Observable.i"
 	@echo "... Source/Observer/Observable.s"

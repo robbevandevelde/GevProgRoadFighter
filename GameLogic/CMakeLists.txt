@@ -35,8 +35,8 @@ SET(SRC
         Utility/Random.h
         Utility/Clock.cpp
         Utility/Clock.h
-        Source/MoveController.cpp
-        include/MoveController.h
+        Source/InputController.cpp
+        include/InputController.h
         Source/EntityTransporter.cpp
         include/EntityTransporter.h
         Source/Entities/BonusCar.cpp
@@ -45,7 +45,7 @@ SET(SRC
         include/GLL_Entity_Factory.h
         Source/Entities/End.cpp
         include/Entities/End.h
-        include/parsers/json.hpp)
+        include/parsers/json.hpp Source/HighScoreManager.cpp include/HighScoreManager.h)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly

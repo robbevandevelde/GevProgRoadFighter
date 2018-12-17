@@ -9,7 +9,7 @@
 #include <memory>
 #include "Entities/Entity.h"
 #include "Observer/ScoreObserver.h"
-#include "MoveController.h"
+#include "InputController.h"
 #include "EntityTransporter.h"
 #include "Observer/ObserverBase.h"
 
@@ -87,7 +87,7 @@ namespace roadfighter {
          * sets the controller of the factory
          * @param m_controller a movecontroller that will be given to all playercars created with this factory
          */
-        void setController(const std::shared_ptr<MoveController> &m_controller);
+        void setController(const std::shared_ptr<InputController> &m_controller);
 
         /**
          * setter for the transporter
@@ -99,7 +99,7 @@ namespace roadfighter {
          * getter for the controller
          * @return a shared pointer to the movecontroller
          */
-        const std::shared_ptr<MoveController> &getController() const;
+        const std::shared_ptr<InputController> &getController() const;
 
         /**
          * getter for the transporter
@@ -113,7 +113,7 @@ namespace roadfighter {
         void setScoreObserver(const std::shared_ptr<ObserverBase> &m_scoreObserver);
 
     private:
-        std::shared_ptr<MoveController> m_controller;
+        std::shared_ptr<InputController> m_controller;
 
         std::shared_ptr<EntityTransporter> m_Transporter;
 

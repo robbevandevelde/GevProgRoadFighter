@@ -5,11 +5,11 @@
 #include "Entity_Factory_base.h"
 namespace roadfighter {
 
-    void Entity_Factory_base::setController(const std::shared_ptr<MoveController> &m_controller) {
+    void Entity_Factory_base::setController(const std::shared_ptr<InputController> &m_controller) {
         Entity_Factory_base::m_controller = m_controller;
     }
 
-    const std::shared_ptr<MoveController> &Entity_Factory_base::getController() const {
+    const std::shared_ptr<InputController> &Entity_Factory_base::getController() const {
         return m_controller;
     }
 
@@ -31,7 +31,7 @@ namespace roadfighter {
 
     Entity_Factory_base::Entity_Factory_base() {
         m_Transporter=std::make_shared<EntityTransporter>(EntityTransporter());
-        m_controller=std::make_shared<MoveController>(MoveController());
+        m_controller=std::make_shared<InputController>(InputController());
         m_scoreObserver=std::make_shared<ScoreObserver>(ScoreObserver());
     }
 

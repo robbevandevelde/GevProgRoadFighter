@@ -17,12 +17,14 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/GLL_Entity_Factory.h
+ ../GameLogic/include/HighScoreManager.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
  ../GameLogic/include/RoadFighterGame.h
+ ../GameLogic/include/parsers/json.hpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
@@ -49,8 +51,8 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.
  ../GameLogic/include/Entities/World.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
@@ -126,8 +128,8 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.c
  ../GameLogic/include/Entities/PlayerCar.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
@@ -156,8 +158,8 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o
  ../GameLogic/include/Entities/World.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
@@ -181,12 +183,14 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/GLL_Entity_Factory.h
+ ../GameLogic/include/HighScoreManager.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
  ../GameLogic/include/RoadFighterGame.h
+ ../GameLogic/include/parsers/json.hpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h

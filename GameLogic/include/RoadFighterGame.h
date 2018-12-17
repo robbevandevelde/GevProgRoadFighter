@@ -12,13 +12,14 @@
 #include "Entities/PlayerCar.h"
 #include "GLL_Entity_Factory.h"
 #include "Entities/Entity.h"
-#include "MoveController.h"
+#include "InputController.h"
 #include "EntityTransporter.h"
 #include "../Utility/Random.h"
 #include "Observer/ScoreObserver.h"
+#include "HighScoreManager.h"
 namespace roadfighter {
 
-    enum EGameStatus{gameRunning,gameEnd,gamePaused};
+    enum EGameStatus{gameRunning,gameEnding,gameEnded,gamePaused};
 
     class RoadFighterGame {
     public:
@@ -154,6 +155,10 @@ namespace roadfighter {
 
         EGameStatus getStatus() const;
 
+        bool ispaused() const;
+
+        void setText(const std::string& text);
+
     //all private functions
     private:
 
@@ -173,7 +178,7 @@ namespace roadfighter {
     private:
         std::shared_ptr<PlayerCar> m_Player;
 
-        std::shared_ptr<MoveController> m_MoveController;
+        std::shared_ptr<InputController> m_MoveController;
 
         std::shared_ptr<EntityTransporter> m_Transporter;
 

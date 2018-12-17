@@ -54,8 +54,8 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o
  ../GameLogic/include/Entities/PlayerCar.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
@@ -78,8 +78,8 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o
  ../GameLogic/include/Entities/World.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
@@ -93,7 +93,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o
  ../GameLogic/include/Entities/Entity.h
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
- ../GameLogic/include/MoveController.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entity_Factory_base.cpp
@@ -109,18 +109,22 @@ GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/GLL_Entity_Factory.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp
+GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o
+ ../GameLogic/include/HighScoreManager.h
+ ../GameLogic/include/parsers/json.hpp
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/HighScoreManager.cpp
+GameLogic/CMakeFiles/GLL.dir/Source/InputController.cpp.o
+ ../GameLogic/include/InputController.h
+ /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/InputController.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Location.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Location.cpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
-GameLogic/CMakeFiles/GLL.dir/Source/MoveController.cpp.o
- ../GameLogic/include/MoveController.h
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/MoveController.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.o
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
@@ -145,12 +149,14 @@ GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o
  ../GameLogic/include/EntityTransporter.h
  ../GameLogic/include/Entity_Factory_base.h
  ../GameLogic/include/GLL_Entity_Factory.h
+ ../GameLogic/include/HighScoreManager.h
+ ../GameLogic/include/InputController.h
  ../GameLogic/include/Location.h
- ../GameLogic/include/MoveController.h
  ../GameLogic/include/Observer/Observable.h
  ../GameLogic/include/Observer/ObserverBase.h
  ../GameLogic/include/Observer/ScoreObserver.h
  ../GameLogic/include/RoadFighterGame.h
+ ../GameLogic/include/parsers/json.hpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/RoadFighterGame.cpp
 GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp

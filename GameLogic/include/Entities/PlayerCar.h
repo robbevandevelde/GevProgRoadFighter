@@ -8,7 +8,7 @@
 #include <memory>
 #include <Observer/Observable.h>
 #include "Entity_Factory_base.h"
-#include "MoveController.h"
+#include "InputController.h"
 #include "MovingObject.h"
 #include "EntityTransporter.h"
 namespace roadfighter {
@@ -25,7 +25,7 @@ namespace roadfighter {
          * @param fuel the amount of fuel the car will use (default at 100)
          */
         PlayerCar(double m_maxVertSpeed, double m_vertAccel,
-                  double m_horAccel,std::shared_ptr<MoveController> controller,int fuel=100);
+                  double m_horAccel,std::shared_ptr<InputController> controller,int fuel=100);
 
         /**
          * copy constructor
@@ -40,7 +40,7 @@ namespace roadfighter {
         PlayerCar(PlayerCar &&move)= default;
 
         PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-                  double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController,
+                  double m_horAccel, double m_fuel, const std::shared_ptr<InputController> &m_moveController,
                   const std::shared_ptr<EntityTransporter> & transporter,const std::shared_ptr<Entity_Factory_base>& factory);
 
         /**
@@ -133,7 +133,7 @@ namespace roadfighter {
 
         int m_fireCountdown;
 
-        std::shared_ptr<MoveController> m_moveController;
+        std::shared_ptr<InputController> m_moveController;
 
         std::shared_ptr<EntityTransporter> m_transporter;
 

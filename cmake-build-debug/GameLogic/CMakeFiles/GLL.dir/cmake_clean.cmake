@@ -14,11 +14,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o"
   "CMakeFiles/GLL.dir/Utility/Random.cpp.o"
   "CMakeFiles/GLL.dir/Utility/Clock.cpp.o"
-  "CMakeFiles/GLL.dir/Source/MoveController.cpp.o"
+  "CMakeFiles/GLL.dir/Source/InputController.cpp.o"
   "CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o"
   "CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o"
   "CMakeFiles/GLL.dir/Source/Entities/End.cpp.o"
+  "CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o"
   "libGLL.pdb"
   "libGLL.a"
 )

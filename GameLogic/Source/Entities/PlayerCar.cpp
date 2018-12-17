@@ -67,13 +67,13 @@ namespace roadfighter {
     }
 
     PlayerCar::PlayerCar(double m_maxVertSpeed, double m_vertAccel,
-                         double m_horAccel,std::shared_ptr<MoveController> controller, int fuel)
+                         double m_horAccel,std::shared_ptr<InputController> controller, int fuel)
                          :m_moveController(std::move(controller)),m_fuel(fuel),m_fireCountdown(0),MovingObject(Location(-0.25,-0.25),Location(0.25,0.25),
                                  m_maxVertSpeed, m_vertAccel, m_horAccel) {}
 
 
     PlayerCar::PlayerCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
-                         double m_horAccel, double m_fuel, const std::shared_ptr<MoveController> &m_moveController,
+                         double m_horAccel, double m_fuel, const std::shared_ptr<InputController> &m_moveController,
                          const std::shared_ptr<EntityTransporter> & transporter,const std::shared_ptr<Entity_Factory_base>& factory)
             : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel), m_fuel(m_fuel),
               m_moveController(m_moveController),m_transporter(transporter),m_factory(factory),m_fireCountdown(0) {}

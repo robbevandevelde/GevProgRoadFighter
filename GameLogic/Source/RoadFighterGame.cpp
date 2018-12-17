@@ -42,12 +42,23 @@ namespace roadfighter{
                 endGame();
             }
         }
-        m_world->updateLogic();
-        m_Transporter->clear();
+        if(m_status!=gameEnded) {
+            m_world->updateLogic();
+            m_Transporter->clear();
+            if (m_status == gameEnding) {
+                if (m_Player->getVerticalSpeed() == 0) {
+                    m_status = gameEnded;
+                }
+            }
+        }
+        if(m_status==gameEnded&&!m_MoveController->getText().empty()){
+            HighScoreManager::addHighScore(m_MoveController->getText(),m_ScoreObserver->getScore());
+            m_MoveController->setNone();
+        }
     }
 
     bool RoadFighterGame::hasEnded() const {
-
+        return m_status==gameEnded;
     }
 
     bool RoadFighterGame::testEnd() const {
@@ -55,7 +66,7 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::endGame() {
-        m_status=gameEnd;
+        m_status=gameEnding;
         m_world->dettachAllObservers();
     }
 
@@ -116,7 +127,7 @@ namespace roadfighter{
         std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy8);
 
-        std::shared_ptr<Entity> end=m_Factory->createEnd(-200);
+        std::shared_ptr<Entity> end=m_Factory->createEnd(-10);
         m_Transporter->addEntity(end);
     }
 
@@ -176,18 +187,26 @@ namespace roadfighter{
     }
 
     void RoadFighterGame::pauseGame() {
-        if(m_status!=gameEnd){
+        if(m_status!=gameEnding){
             m_status=gamePaused;
         }
     }
 
     void RoadFighterGame::continueGame() {
-        if(m_status!=gameEnd){
+        if(m_status!=gameEnding){
             m_status=gameRunning;
         }
     }
 
     EGameStatus RoadFighterGame::getStatus() const {
         return m_status;
+    }
+
+    bool RoadFighterGame::ispaused() const {
+        return m_status==gamePaused;
+    }
+
+    void RoadFighterGame::setText(const std::string &text) {
+        m_MoveController->setText(text);
     }
 }

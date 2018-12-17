@@ -9,6 +9,7 @@ SFMLRoadFighter::SFMLRoadFighter() {
     m_window=std::make_shared<sf::RenderWindow>(sf::VideoMode::getDesktopMode(), "ROADFIGHTER");
     std::shared_ptr<SFML_Entity_Factory> factory=std::make_shared<SFML_Entity_Factory>(SFML_Entity_Factory(m_window));
     m_game=std::make_shared<roadfighter::RoadFighterGame>(roadfighter::RoadFighterGame(factory));
+    m_nameGiven=false;
 
 }
 
@@ -26,26 +27,31 @@ void SFMLRoadFighter::rungame(){
         sf::Event event{};
         while (m_window->pollEvent(event))
         {
-            checkMovement(event);
-//            static std::string str;
-//            if (event.type == sf::Event::TextEntered)
-//            {
-//                // Only handle ASCII -- it's up to you if you want to handle other encodings
-//                if (event.text.unicode< 128)
-//                {
-//                    str += static_cast<char>(event.text.unicode);
-//                }
-//            }
-//            drawText(m_window,str,Transformation::getInstance().locationTransformation(roadfighter::Location(0,0)));
+            if (event.type == sf::Event::Closed)
+                m_window->close();
+            if(!m_game->hasEnded()&&!m_game->ispaused()) {
+                MovementEvent(event);
+            }else if(m_game->ispaused()){
+                pauseScreenEvent(event);
+            }else if(m_game->hasEnded()&&!m_nameGiven){
+                askNameEvent(event);
+            }else{
+                endGameEvent(event);
+            }
+//
         }
         m_window->display();
     }
 }
 
-void SFMLRoadFighter::checkMovement(sf::Event &event) {
-    // "close requested" event: we close the window
-    if (event.type == sf::Event::Closed)
+void SFMLRoadFighter::endGameEvent(sf::Event &event) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         m_window->close();
+    }
+}
+
+void SFMLRoadFighter::MovementEvent(sf::Event &event) {
+
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         // left key is pressed: move our player to the left
         m_game->moveLeft();
@@ -74,11 +80,7 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
-        if(m_game->getStatus()==roadfighter::gamePaused){
-            m_game->continueGame();
-        }else {
-            m_game->shoot();
-        }
+        m_game->shoot();
 
     }
     if(event.type ==sf::Event::KeyReleased&&(event.key.code==sf::Keyboard::Space)){
@@ -86,16 +88,46 @@ void SFMLRoadFighter::checkMovement(sf::Event &event) {
     }
 }
 
-void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow> window) {
+void SFMLRoadFighter::pauseScreenEvent(sf::Event &event) {
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+        m_game->continueGame();
+    }
+}
+
+void SFMLRoadFighter::askNameEvent(sf::Event &event) {
+    if (event.type == sf::Event::TextEntered)
+    {
+        if (event.text.unicode< 128)
+        {
+            m_endName += static_cast<char>(event.text.unicode);
+        }
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace)){
+        m_endName= m_endName.substr(0, m_endName.size()-1);
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)){
+        m_game->setText(m_endName);
+        m_nameGiven=true;
+    }
+    if(m_endName.size()>3){
+        m_endName= m_endName.substr(0, m_endName.size()-1);
+    }
+}
+
+
+void SFMLRoadFighter::draw(std::shared_ptr<sf::RenderWindow>& window) {
     m_game->drawWorld();
     drawSideStats(window);
-    if(m_game->getStatus()==roadfighter::gamePaused){
+    if(m_game->ispaused()){
         drawPaused(window);
+    }
+    if(m_game->hasEnded()){
+        drawEnded(window);
     }
 
 }
 
-void SFMLRoadFighter::drawSideStats(std::shared_ptr<sf::RenderWindow> window) {
+void SFMLRoadFighter::drawSideStats(std::shared_ptr<sf::RenderWindow>& window) {
     auto speedpos=Transformation::getInstance().locationTransformation(roadfighter::Location(6,-4));
     drawText(window,"speed: "+std::to_string((int)(round(m_game->getsSpeed()*300))),speedpos);
 
@@ -107,7 +139,7 @@ void SFMLRoadFighter::drawSideStats(std::shared_ptr<sf::RenderWindow> window) {
 
 }
 
-void SFMLRoadFighter::drawPaused(std::shared_ptr<sf::RenderWindow> window) {
+void SFMLRoadFighter::drawPaused(std::shared_ptr<sf::RenderWindow>& window) {
     sf::RectangleShape transparenrect(sf::Vector2f(window->getSize().x,window->getSize().y));
     transparenrect.setFillColor(sf::Color(0,0,0,200));
     window->draw(transparenrect);
@@ -123,8 +155,7 @@ void SFMLRoadFighter::drawPaused(std::shared_ptr<sf::RenderWindow> window) {
     drawText(window,"press space to continue",spacePos,sf::Color(128,128,128),20);
 }
 
-void
-SFMLRoadFighter::drawText(std::shared_ptr<sf::RenderWindow> window, std::string text, std::tuple<int, int> position,
+void SFMLRoadFighter::drawText(std::shared_ptr<sf::RenderWindow>& window, std::string text, std::tuple<int, int> position,
                           sf::Color color, int size) {
     sf::Font font;
     font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
@@ -139,5 +170,29 @@ SFMLRoadFighter::drawText(std::shared_ptr<sf::RenderWindow> window, std::string 
     //setcolor is used instead of setFillcolor because new function wont run on travis/labo pc's
     towrite.setColor(color);
     window->draw(towrite);
+
+}
+
+void SFMLRoadFighter::drawEnded(std::shared_ptr<sf::RenderWindow> &window) {
+    sf::RectangleShape transparenrect(sf::Vector2f(window->getSize().x,window->getSize().y));
+    transparenrect.setFillColor(sf::Color(0,0,0,200));
+    window->draw(transparenrect);
+
+    if(!m_nameGiven){
+        auto textpos=Transformation::getInstance().locationTransformation(roadfighter::Location(-2.5,-1.0));
+        drawText(window,"please enter your name",textpos,sf::Color(255,255,255),50);
+        for(int i=0;i<m_endName.size();i++){
+            auto charpos=Transformation::getInstance().locationTransformation(roadfighter::Location(-1+i,0));
+            drawText(window,std::string(1,m_endName[i]),charpos,sf::Color(255,255,255),50);
+        }
+    }else{
+        auto highscores=roadfighter::HighScoreManager::gethighScores();
+        for(int i=0;i<highscores.size();i++){
+            auto textpos=Transformation::getInstance().locationTransformation(roadfighter::Location(-1,-2.5+(0.5*i)));
+            drawText(window,std::to_string(i+1)+": "+highscores[i].name+" "+std::to_string(highscores[i].score),textpos,sf::Color(255,255,255),50);
+        }
+        auto textpos=Transformation::getInstance().locationTransformation(roadfighter::Location(-9,-4));
+        drawText(window,"press escape to quit",textpos,sf::Color(128,128,128),20);
+    }
 
 }
