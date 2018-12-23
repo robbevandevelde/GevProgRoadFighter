@@ -17,30 +17,33 @@
 #include "Entities/SFMLBonusCar.h"
 #include "Entities/SFMLPassingCar.h"
 #include "Entities/SFMLEnd.h"
+namespace roadfighterSFML {
+    class SFML_Entity_Factory : public roadfighter::Entity_Factory_base {
+    public:
+        SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
 
-class SFML_Entity_Factory: public roadfighter::Entity_Factory_base {
-public:
-    SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
+        std::shared_ptr<roadfighter::Entity> createBullet(double x, double y, double vSpeed) override;
 
-    std::shared_ptr<roadfighter::Entity> createBullet(double x,double y,double vSpeed) override;
-
-    std::shared_ptr<roadfighter::Entity> creatPassingCar(double x,double y,double vSpeedl) override;
-
-
-    std::shared_ptr<roadfighter::Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
-
-    std::shared_ptr<roadfighter::Entity> createRacingCar(double x,double y,double max,double vAccel,double hAccel) override;
-
-    std::shared_ptr<roadfighter::Entity> createWorld() override;
-
-    std::shared_ptr<roadfighter::Entity> createBonusCar(double x, double y, double vSpeed) override;
-
-    std::shared_ptr<roadfighter::Entity> createEnd(double y) override;
+        std::shared_ptr<roadfighter::Entity> creatPassingCar(double x, double y, double vSpeedl) override;
 
 
-private:
-    std::shared_ptr<sf::RenderWindow> window;
-};
+        std::shared_ptr<roadfighter::Entity>
+        createPlayerCar(double x, double y, double max, double vAccel, double hAccel, double fuel) override;
+
+        std::shared_ptr<roadfighter::Entity>
+        createRacingCar(double x, double y, double max, double vAccel, double hAccel) override;
+
+        std::shared_ptr<roadfighter::Entity> createWorld() override;
+
+        std::shared_ptr<roadfighter::Entity> createBonusCar(double x, double y, double vSpeed) override;
+
+        std::shared_ptr<roadfighter::Entity> createEnd(double y) override;
+
+
+    private:
+        std::shared_ptr<sf::RenderWindow> window;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_SFML_ENTITY_FACTORY_H

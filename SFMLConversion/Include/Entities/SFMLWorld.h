@@ -8,14 +8,15 @@
 #include <Entities/World.h>
 #include <SFML/Graphics.hpp>
 #include "SFMLEntitySprite.h"
+namespace roadfighterSFML {
+    class SFMLWorld : public roadfighter::World, public SFMLEntitySprite {
+    public:
+        SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
+                  const std::shared_ptr<sf::RenderWindow> &window);
 
-class SFMLWorld: public roadfighter::World, public SFMLEntitySprite {
-public:
-    SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
-              const std::shared_ptr<sf::RenderWindow> &window);
-
-    void draw() override;
-};
+        void draw() override;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_SFMLWORLD_H

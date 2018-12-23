@@ -1,7 +1,3 @@
-//
-// Created by thibaut on 07.12.18.
-//
-
 #ifndef GEVPROGROADFIGHTER_BONUSCAR_H
 #define GEVPROGROADFIGHTER_BONUSCAR_H
 
@@ -32,7 +28,7 @@ namespace roadfighter{
         BonusCar(BonusCar &&move)= default;
 
         /**
-         * copy assigment for BonusCar
+         * copy assignment for BonusCar
          * @param other the BonusCar that is being copied
          * @return a new BonusCar that is equal to the other one
          */
@@ -70,7 +66,7 @@ namespace roadfighter{
 
         /**
          * overidden function from collisionobject that handles what should happen must this car collide with another object
-         * for the bous car it means the the collided function gets the bonus function called on them
+         * for the bonus car it means the the collided function gets the bonus function called on them
          * @param collided another object this car collided with
          */
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;

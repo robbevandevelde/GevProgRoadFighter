@@ -1,7 +1,3 @@
-//
-// Created by thibaut on 20.11.18.
-//
-
 #ifndef GEVPROGROADFIGHTER_CAR_H
 #define GEVPROGROADFIGHTER_CAR_H
 

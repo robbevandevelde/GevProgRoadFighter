@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.12)
 set(LIB GLL)
 
@@ -45,7 +44,9 @@ SET(SRC
         include/GLL_Entity_Factory.h
         Source/Entities/End.cpp
         include/Entities/End.h
-        include/parsers/json.hpp Source/HighScoreManager.cpp include/HighScoreManager.h)
+        include/parsers/json.hpp
+        Source/HighScoreManager.cpp
+        include/HighScoreManager.h)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly

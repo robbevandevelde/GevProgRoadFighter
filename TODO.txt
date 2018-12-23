@@ -1,0 +1,9 @@
+-write the report
+-documentation in sfml implementation
+-a bit of documentation in gll
+-encapsulating the sfml class in a namespace
+-write a lot of tests!!!!
+-get rid of all the clang tidy errors
+-test the project again on ua pc's
+-add ini file to denote settings (mayby with a seperates settings reader singleton class)
+-make to game a bit easier and make it so it doesnt only make random 1 way enemy cars

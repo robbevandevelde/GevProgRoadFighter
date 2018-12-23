@@ -1,7 +1,3 @@
-//
-// Created by thibaut on 10.12.18.
-//
-
 #ifndef GEVPROGROADFIGHTER_END_H
 #define GEVPROGROADFIGHTER_END_H
 

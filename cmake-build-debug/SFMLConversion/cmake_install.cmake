@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter")
+  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter"
+         FILE "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter")
+   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter")
-  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter")
+file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter")
+  if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/bin/GevProgRoadFighter")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter")
     endif()
   endif()
 endif()

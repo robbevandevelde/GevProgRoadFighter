@@ -7,28 +7,31 @@
 
 #include <SFML/Graphics.hpp>
 #include <Location.h>
+namespace roadfighterSFML {
+    class Transformation {
+    public:
+        static Transformation &getInstance();
 
-class Transformation {
-public:
-    static Transformation& getInstance();
+        std::tuple<double, double> locationTransformation(const roadfighter::Location &loc);
 
-    std::tuple<double,double> locationTransformation(const roadfighter::Location& loc);
+        Transformation(const Transformation &copy) = delete;
 
-    Transformation(const Transformation &copy)=delete;
+        Transformation(const Transformation &&move) = delete;
 
-    Transformation(const Transformation &&move)= delete;
+        Transformation operator=(const Transformation &other) = delete;
 
-    Transformation operator=(const Transformation &other)=delete;
+        Transformation operator=(const Transformation &&other) = delete;
 
-    Transformation operator=(const Transformation &&other)=delete;
-private:
+    private:
 
 
-    Transformation(int x,int y);
-    int m_xSize;
-    int m_ySize;
+        Transformation(int x, int y);
 
-};
+        int m_xSize;
+        int m_ySize;
+
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_TRANSFORMATION_H

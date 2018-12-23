@@ -8,14 +8,15 @@
 
 #include <Entities/PassingCar.h>
 #include "SFMLEntitySprite.h"
+namespace roadfighterSFML {
+    class SFMLPassingCar : public SFMLEntitySprite, public roadfighter::PassingCar {
+    public:
+        SFMLPassingCar(const std::shared_ptr<sf::RenderWindow> &window,
+                       const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertSpeed);
 
-class SFMLPassingCar: public SFMLEntitySprite, public roadfighter::PassingCar {
-public:
-    SFMLPassingCar(const std::shared_ptr<sf::RenderWindow> &window,
-                   const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertSpeed);
-
-    void draw() override;
-};
+        void draw() override;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_SFMLPASSINGCAR_H

@@ -9,6 +9,6 @@
 #include <memory>
 
 int main(int argc, char *argv[]) {
-    SFMLRoadFighter game=SFMLRoadFighter();
+    roadfighterSFML::SFMLRoadFighter game=roadfighterSFML::SFMLRoadFighter();
     game.rungame();
 }

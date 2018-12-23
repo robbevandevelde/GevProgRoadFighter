@@ -8,14 +8,15 @@
 
 #include "SFMLEntitySprite.h"
 #include <Entities/BonusCar.h>
+namespace roadfighterSFML {
+    class SFMLBonusCar : public SFMLEntitySprite, public roadfighter::BonusCar {
+    public:
+        SFMLBonusCar(const std::shared_ptr<sf::RenderWindow> &window,
+                     const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertSpeed);
 
-class SFMLBonusCar: public SFMLEntitySprite, public roadfighter::BonusCar {
-public:
-    SFMLBonusCar(const std::shared_ptr<sf::RenderWindow> &window,
-                 const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double vertSpeed);
-
-    void draw() override;
-};
+        void draw() override;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_SFMLBONUSCAR_H

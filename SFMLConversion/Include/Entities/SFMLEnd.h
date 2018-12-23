@@ -7,14 +7,15 @@
 
 #include <Entities/End.h>
 #include "SFMLEntitySprite.h"
+namespace roadfighterSFML {
+    class SFMLEnd : public roadfighter::End, public SFMLEntitySprite {
+    public:
+        SFMLEnd(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
+                const std::shared_ptr<sf::RenderWindow> &window);
 
-class SFMLEnd:public roadfighter::End, public SFMLEntitySprite {
-public:
-    SFMLEnd(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
-            const std::shared_ptr<sf::RenderWindow> &window);
-
-    void draw() override;
-};
+        void draw() override;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_SFMLEND_H
