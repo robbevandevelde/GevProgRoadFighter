@@ -1,6 +1,6 @@
-//
-// Created by thibaut on 07.12.18.
-//
+/**
+ * @file header for SFMLRacingCar class
+ */
 
 #ifndef GEVPROGROADFIGHTER_SFMLRACINGCAR_H
 #define GEVPROGROADFIGHTER_SFMLRACINGCAR_H
@@ -10,10 +10,11 @@
 namespace roadfighterSFML {
     class SFMLRacingCar : public roadfighter::RacingCar, public SFMLEntitySprite {
     public:
+        //constructor with parameters
         SFMLRacingCar(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2, double m_maxVertSpeed,
                       double m_vertAccel, double m_horAccel,
                       const std::shared_ptr<sf::RenderWindow> &window);
-
+        //draw function overrided from roadfighter::entity
         void draw() override;
     };
 }

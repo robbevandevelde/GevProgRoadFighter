@@ -1,10 +1,19 @@
-//
-// Created by thibaut on 06.12.18.
-//
+/**
+ *@file
+ * implementation of the SFMLWorld class
+ */
 
 #include "../../Include/Entities/SFMLWorld.h"
 
 namespace roadfighterSFML {
+
+    /**
+     * constructor for the sfmlWorld class
+     * @param m_Transporter the entity transporter that the world will use to get it's entities from
+     * @param window the renderwindow that will be sued to draw the world one
+     * @return none
+     * @exception none
+     */
     SFMLWorld::SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
                          const std::shared_ptr<sf::RenderWindow> &window) : World(m_Transporter),
                                                                             SFMLEntitySprite(
@@ -20,6 +29,11 @@ namespace roadfighterSFML {
                 ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
+    /**
+   * draw function that is overriden from roadfighter::entity
+   * @return none
+   * @exception none
+   */
     void SFMLWorld::draw() {
         //puts the tickmovement into the y value of a roadfighter location so we get the amount of y pixels have been moved on the screen
         double tickmovemnt = std::get<1>(

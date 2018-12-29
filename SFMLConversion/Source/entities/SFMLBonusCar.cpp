@@ -1,9 +1,19 @@
-//
-// Created by thibaut on 08.12.18.
-//
+/**
+ *@file
+ * implementation of the sfmlBonusCar class
+ */
 
 #include "../../Include/Entities/SFMLBonusCar.h"
 namespace roadfighterSFML {
+    /**
+     * constructor for the sfmlBonusCar
+     * @param window the sfml renderwindow that is going to be used to draw in
+     * @param m_loc1 first location of the car
+     * @param m_loc2 second location of the car
+     * @param vertSpeed the verticalspeed of the car
+     * @return none
+     * @exception none
+     */
     SFMLBonusCar::SFMLBonusCar(const std::shared_ptr<sf::RenderWindow> &window,
                                const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
                                double vertSpeed)
@@ -17,6 +27,11 @@ namespace roadfighterSFML {
                 ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
+    /**
+     * draw function that is overriden from roadfighter::entity
+     * @return none
+     * @exception none
+     */
     void SFMLBonusCar::draw() {
         std::tuple<int, int> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
         setSpriteLocation(std::get<0>(newloc) + SFMLEntitySprite::getGlobalBounds().width / 2,

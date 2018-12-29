@@ -1,6 +1,6 @@
-//
-// Created by thibaut on 10.12.18.
-//
+/**
+ * @file header for SFMLEnd class
+ */
 
 #ifndef GEVPROGROADFIGHTER_SFMLEND_H
 #define GEVPROGROADFIGHTER_SFMLEND_H
@@ -10,9 +10,10 @@
 namespace roadfighterSFML {
     class SFMLEnd : public roadfighter::End, public SFMLEntitySprite {
     public:
+        //constructor with parameters
         SFMLEnd(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
                 const std::shared_ptr<sf::RenderWindow> &window);
-
+        //draw function overrided from roadfighter::entity
         void draw() override;
     };
 }

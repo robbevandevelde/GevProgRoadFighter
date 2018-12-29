@@ -1,9 +1,22 @@
-//
-// Created by thibaut on 07.12.18.
-//
+/**
+ *@file
+ * implementation of the SFMLRacingCar class
+ */
 
 #include "../../Include/Entities/SFMLRacingCar.h"
 namespace roadfighterSFML {
+
+    /**
+     * constructor for teh sfmlRacingCar class
+     * @param m_loc1 first location of the car
+     * @param m_loc2 second location of the car
+     * @param m_maxVertSpeed the maximum vertical speed of the car
+     * @param m_vertAccel the vertical acceleration of the car
+     * @param m_horAccel the horizontal acceleration of the car
+     * @param window the renderwindow that will be used to draw on
+     * @return none
+     * @exception none
+     */
     SFMLRacingCar::SFMLRacingCar(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
                                  double m_maxVertSpeed, double m_vertAccel, double m_horAccel,
                                  const std::shared_ptr<sf::RenderWindow> &window) : RacingCar(m_loc1, m_loc2,
@@ -21,6 +34,11 @@ namespace roadfighterSFML {
                 ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
+    /**
+   * draw function that is overriden from roadfighter::entity
+   * @return none
+   * @exception none
+   */
     void SFMLRacingCar::draw() {
         std::tuple<int, int> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
         setSpriteLocation(std::get<0>(newloc) + SFMLEntitySprite::getGlobalBounds().width / 2,

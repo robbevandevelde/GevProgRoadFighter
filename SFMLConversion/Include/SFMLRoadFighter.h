@@ -1,6 +1,6 @@
-//
-// Created by thibaut on 28.11.18.
-//
+/**
+ * @file header for the SFMLRoadfighter class
+ */
 
 #ifndef GEVPROGROADFIGHTER_SFMLROADFIGHTER_H
 #define GEVPROGROADFIGHTER_SFMLROADFIGHTER_H
@@ -17,12 +17,15 @@
 namespace roadfighterSFML {
     class SFMLRoadFighter {
     public:
+        //default constructor
         SFMLRoadFighter();
 
+        //function that starts the game
         void rungame();
 
 
     private:
+        //here are a bunch of helper function to help draw the screen
 
         void draw(std::shared_ptr<sf::RenderWindow> &window);
 
@@ -35,6 +38,8 @@ namespace roadfighterSFML {
         void drawText(std::shared_ptr<sf::RenderWindow> &window, std::string text, std::tuple<int, int> position,
                       sf::Color color = sf::Color(255, 255, 255), int size = 24);
 
+
+        //here are a bunch of helper function to handle sfml events (mostly keyboardinput)
         void MovementEvent(sf::Event &event);
 
         void pauseScreenEvent(sf::Event &event);

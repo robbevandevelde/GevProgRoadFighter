@@ -1,9 +1,18 @@
-//
-// Created by thibaut on 08.12.18.
-//
+/**
+ *@file
+ * implementation of the SFMLPassingCar class
+ */
 
 #include "../../Include/Entities/SFMLPassingCar.h"
 namespace roadfighterSFML {
+
+    /**
+     * constructor for the sfmlPassingCar
+     * @param window the renderwindow that is used to draw on
+     * @param m_loc1 the first location of the car
+     * @param m_loc2 the second location of the car
+     * @param vertSpeed the vertical speed of the car
+     */
     SFMLPassingCar::SFMLPassingCar(const std::shared_ptr<sf::RenderWindow> &window,
                                    const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
                                    double vertSpeed) : SFMLEntitySprite(
@@ -17,6 +26,11 @@ namespace roadfighterSFML {
                 ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
+    /**
+      * draw function that is overriden from roadfighter::entity
+      * @return none
+      * @exception none
+      */
     void SFMLPassingCar::draw() {
         std::tuple<int, int> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
         setSpriteLocation(std::get<0>(newloc) + SFMLEntitySprite::getGlobalBounds().width / 2,

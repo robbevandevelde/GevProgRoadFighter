@@ -1,6 +1,7 @@
-//
-// Created by thibaut on 06.12.18.
-//
+/**
+ * @file header for SFMLWorld class
+ */
+
 
 #ifndef GEVPROGROADFIGHTER_SFMLWORLD_H
 #define GEVPROGROADFIGHTER_SFMLWORLD_H
@@ -11,9 +12,10 @@
 namespace roadfighterSFML {
     class SFMLWorld : public roadfighter::World, public SFMLEntitySprite {
     public:
+        //constructor with parameters
         SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
                   const std::shared_ptr<sf::RenderWindow> &window);
-
+        //draw function overrided from roadfighter::entity
         void draw() override;
     };
 }

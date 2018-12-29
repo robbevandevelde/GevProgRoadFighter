@@ -1,6 +1,7 @@
-//
-// Created by thibaut on 01.12.18.
-//
+
+/**
+ * @file header for the SFMLEntitySprite class
+ */
 
 #ifndef GEVPROGROADFIGHTER_SFMLENTITY_H
 #define GEVPROGROADFIGHTER_SFMLENTITY_H
@@ -12,16 +13,17 @@ namespace roadfighterSFML {
     class SFMLEntitySprite : public sf::Sprite {
     public:
 
-        SFMLEntitySprite();
-
+        //default constructor
+        SFMLEntitySprite()= default;
+        //constructor with parameters
         SFMLEntitySprite(const std::string &path, std::shared_ptr<sf::RenderWindow> window);
-
+        //setter for sprite location
         void setSpriteLocation(double x, double y);
-
+        //setter for spritesize
         void setSpriteSize(double width, double height);
-
+        //loads a sprite
         void loadSprite(const std::string &path);
-
+        //getter for the gamewindow
         const std::shared_ptr<sf::RenderWindow> &getWindow() const;
 
     private:

@@ -1,15 +1,27 @@
-//
-// Created by thibaut on 02.12.18.
-//
+/**
+ *@file
+ * implementation of the singleton Transformation class
+ */
 
 #include "../Include/Transformation.h"
 #include <iostream>
 namespace roadfighterSFML {
+    /**
+     * function that gets the instance of the transfomation class and creates one if it doesnt yet excist
+     * @return reference to the Transformation
+     * @exception none
+     */
     Transformation &Transformation::getInstance() {
         static Transformation instance(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height);
         return instance;
     }
 
+    /**
+     *  function that does the transformation from gll locations to screen pixels
+     * @param loc the roadfighter::location that will be transformed
+     * @return std::tuple<double, double> containing the new screen coordinates
+     * @exception none
+     */
     std::tuple<double, double> Transformation::locationTransformation(const roadfighter::Location &loc) {
         //eleminating the negative numbers
         double x = loc.getX() + 3;

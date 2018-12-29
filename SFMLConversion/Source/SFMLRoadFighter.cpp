@@ -1,10 +1,16 @@
-//
-// Created by thibaut on 28.11.18.
-//
+/**
+ *@file
+ * implementation of the SFMLroadfighter class
+ */
 
 #include "../Include/SFMLRoadFighter.h"
 #include <iostream>
 namespace roadfighterSFML {
+    /**
+     * constructor for the SFMLRoadfighter game
+     * @return none
+     * @exception none
+     */
     SFMLRoadFighter::SFMLRoadFighter() {
         m_window = std::make_shared<sf::RenderWindow>(sf::VideoMode::getDesktopMode(), "ROADFIGHTER");
         std::shared_ptr<SFML_Entity_Factory> factory = std::make_shared<SFML_Entity_Factory>(
@@ -14,6 +20,11 @@ namespace roadfighterSFML {
 
     }
 
+    /**
+     * function that runs the entire game
+     * @return none
+     * @exception none
+     */
     void SFMLRoadFighter::rungame() {
         Clock gameclock = Clock();
         while (m_window->isOpen()) {
