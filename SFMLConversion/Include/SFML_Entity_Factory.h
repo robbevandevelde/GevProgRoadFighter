@@ -22,7 +22,7 @@ namespace roadfighterSFML {
     class SFML_Entity_Factory : public roadfighter::Entity_Factory_base {
     public:
         //constructor with only window parameter
-        SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
+        explicit SFML_Entity_Factory(const std::shared_ptr<sf::RenderWindow> &window);
 
         //function that creates an entity from a sfmlBullet, function is inherited from entity_factory_base
         std::shared_ptr<roadfighter::Entity> createBullet(double x, double y, double vSpeed) override;

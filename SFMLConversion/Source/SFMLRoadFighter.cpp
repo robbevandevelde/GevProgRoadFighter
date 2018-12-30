@@ -172,8 +172,7 @@ namespace roadfighterSFML {
         sf::Text towrite;
         towrite.setFont(font);
         towrite.setString(text);
-        towrite.setCharacterSize(size);
-        auto scorepos = Transformation::getInstance().locationTransformation(roadfighter::Location(-1, -1));
+        towrite.setCharacterSize(static_cast<unsigned int>(size));
         towrite.setPosition(std::get<0>(position), std::get<1>(position));
 
         //setcolor is used instead of setFillcolor because new function wont run on travis/labo pc's

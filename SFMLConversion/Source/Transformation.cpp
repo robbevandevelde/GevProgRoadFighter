@@ -27,11 +27,11 @@ namespace roadfighterSFML {
         double x = loc.getX() + 3;
         double y = loc.getY() + 4;
 
-        double returnx = m_xSize / 3;
+        double returnx = m_xSize / 3.0;
         double returny = 0;
 
-        returnx += (returnx / 6) * x;
-        returny += (m_ySize / 8) * y;
+        returnx += (returnx / 6.0) * x;
+        returny += (m_ySize / 8.0) * y;
 
         return std::make_tuple(returnx, returny);
     }

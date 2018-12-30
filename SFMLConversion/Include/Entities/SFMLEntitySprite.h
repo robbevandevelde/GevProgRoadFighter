@@ -19,8 +19,6 @@ namespace roadfighterSFML {
         SFMLEntitySprite(const std::string &path, std::shared_ptr<sf::RenderWindow> window);
         //setter for sprite location
         void setSpriteLocation(double x, double y);
-        //setter for spritesize
-        void setSpriteSize(double width, double height);
         //loads a sprite
         void loadSprite(const std::string &path);
         //getter for the gamewindow

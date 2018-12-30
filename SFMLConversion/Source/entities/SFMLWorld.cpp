@@ -25,7 +25,7 @@ namespace roadfighterSFML {
                 roadfighter::Location(3, 4));
 
         SFMLEntitySprite::scale(sf::Vector2f(
-                ((std::get<0>(sfmlpos2) - std::get<0>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().width * 1.10),
+                static_cast<float>((std::get<0>(sfmlpos2) - std::get<0>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().width * 1.10),
                 ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
@@ -43,7 +43,7 @@ namespace roadfighterSFML {
         if (getPosition().y > getGlobalBounds().height)
             setPosition(getPosition().x, getPosition().y - getGlobalBounds().height);
         //move the sprite with the amount the playercar has moved since last drawing
-        setPosition(getPosition().x, (getPosition().y - tickmovemnt));
+        setPosition(getPosition().x, static_cast<float>(getPosition().y - tickmovemnt));
         getWindow()->draw(*this);
 
         //make a copy of the sprite only by splicing so we can draw another one above the current one

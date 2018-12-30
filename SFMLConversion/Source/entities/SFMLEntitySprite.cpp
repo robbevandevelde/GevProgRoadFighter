@@ -31,18 +31,7 @@ namespace roadfighterSFML {
      * @exception none
      */
     void SFMLEntitySprite::setSpriteLocation(double x, double y) {
-        this->setPosition(x, y);
-    }
-
-    /**
-     * setter for the sprite size
-     * @param width
-     * @param height
-     * @return none
-     * @exception none
-     */
-    void SFMLEntitySprite::setSpriteSize(double width, double height) {
-
+        this->setPosition(static_cast<float>(x), static_cast<float>(y));
     }
 
     /**
