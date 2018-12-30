@@ -332,6 +332,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GLL_Entity_Factory.h">
 			<Option target="GLL"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h">
+			<Option target="GLL"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/HighScoreManager.h">
 			<Option target="GLL"/>
 		</Unit>

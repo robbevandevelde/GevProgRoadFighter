@@ -32,7 +32,6 @@ namespace roadfighter {
             return true;
         }
     }
-
         return false;
     }
 
@@ -42,6 +41,12 @@ namespace roadfighter {
         m_loc2.setY(m_loc2.getY()+amount);
     }
 
+    /**
+     * function that moces the collisionobject horizonatly
+     * @param amount the amount it must forwar/backward
+     * @return none
+     * @exception GllException
+     */
     void CollisionObject::horMove(double amount) {
         //first add the amount then chack if the location does not exceed the -3 3 barrier
         m_loc1.setX(m_loc1.getX()+amount);
@@ -55,6 +60,9 @@ namespace roadfighter {
             double moveBack = m_loc2.getX() - 3;
             m_loc1.setX(m_loc1.getX() - moveBack);
             m_loc2.setX(m_loc2.getX() - moveBack);
+        }
+        if(m_loc1.getX()<-3||m_loc2.getX()>3){
+            throw GllException("error happened at horizontal move of a collisionobject, after movement the object was out of bounds");
         }
     }
 

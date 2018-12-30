@@ -9,6 +9,9 @@ namespace roadfighter {
     World::World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter) : m_Transporter(m_Transporter) {}
 
     void World::getNewEntities() {
+        if(m_Transporter==nullptr){
+            throw GllException("tried accessing entitytransporter in world but none found");
+        }
         for(auto i:m_Transporter->getEntities()){
             m_roadEntities.emplace_back(i);
         }
@@ -59,15 +62,14 @@ namespace roadfighter {
         //in this function all the enitites get downcasted to collisionobject and if that is not possible we cant check collision for it
         for(auto& i:m_roadEntities){
             std::shared_ptr<CollisionObject> checkFor=std::dynamic_pointer_cast<CollisionObject>(i);
-            if(checkFor.get()!= nullptr){
+            if(checkFor!= nullptr){
                 for(auto& j:m_roadEntities){
                     std::shared_ptr<CollisionObject> checkWith=std::dynamic_pointer_cast<CollisionObject>(j);
-                    if(checkWith.get()!= nullptr&&*checkWith.get()!=*checkFor.get()){
+                    if(checkWith!= nullptr&&checkWith!=checkFor){
                         if(checkFor->checkCollision(checkWith)){
                             checkFor->collideWith(checkWith);
                         }
                     }
-
                 }
             }
         }
@@ -78,9 +80,9 @@ namespace roadfighter {
     }
 
     void World::dettachAllObservers() {
-        for(auto i:m_roadEntities){
+        for(const auto &i:m_roadEntities){
             auto temp=std::dynamic_pointer_cast<MovingObject>(i);
-            if(temp.get()!= nullptr){
+            if(temp!= nullptr){
                 temp->detach();
             }
         }

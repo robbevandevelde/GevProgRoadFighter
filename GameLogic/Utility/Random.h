@@ -7,39 +7,39 @@
 
 #include <memory>
 #include <random>
+namespace  roadfighter {
+    class Random {
+    private:
+        /**
+         * private initialisor to prevent the creation of another instance
+         */
+        Random() = default;
 
-class Random {
-private:
-    /**
-     * private initialisor to prevent the creation of another instance
-     */
-    Random()= default;
 
+    public:
+        //all posible move/copy constructors have been deleted
+        Random(const Random &copy) = delete;
 
+        Random(const Random &&move) = delete;
 
-public:
-    //all posible move/copy constructors have been deleted
-    Random(const Random &copy)=delete;
+        Random operator=(const Random &other) = delete;
 
-    Random(const Random &&move)= delete;
+        Random operator=(const Random &&other) = delete;
 
-    Random operator=(const Random &other)=delete;
+        /**
+         * a method that gives you an instance
+         * @return a weak ptr to the instance (which is a shared ptr)
+         */
+        static Random &getInstance();
 
-    Random operator=(const Random &&other)=delete;
-
-    /**
-     * a method that gives you an instance
-     * @return a weak ptr to the instance (which is a shared ptr)
-     */
-    static Random& getInstance();
-
-    /**
-     * function that returns a random variable ranging from  0 to "to"
-     * @param to the max possible int that the random int will go to
-     * @return a random int ranging from 0 to "to"
-     */
-    int getRandom(const int to) const;
-};
+        /**
+         * function that returns a random variable ranging from  0 to "to"
+         * @param to the max possible int that the random int will go to
+         * @return a random int ranging from 0 to "to"
+         */
+        int getRandom(const int to) const;
+    };
+}
 
 
 #endif //GEVPROGROADFIGHTER_RANDOM_H

@@ -2,6 +2,7 @@
 #ifndef GEVPROGROADFIGHTER_ENTITY_H
 #define GEVPROGROADFIGHTER_ENTITY_H
 
+#include "../GllException.h"
 namespace roadfighter {
     class Entity {
         public:

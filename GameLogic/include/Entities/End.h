@@ -13,21 +13,6 @@ namespace roadfighter {
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
         /**
-         * this function handles what will happen when this object crashes
-         */
-        void crash() override;
-
-        /**
-         * this function handles what will happen when this object gets shot
-         */
-        void shot() override;
-
-        /**
-         * this function handles what will happen when this object gets a bonus
-         */
-        void bonus() override;
-
-        /**
          * this function updates the logic of the end object
          * nothing at the moment
          */
@@ -38,11 +23,6 @@ namespace roadfighter {
          * @param dt the amount of a tick this objecct will move forward with
          */
         void updateMovement(double dt) override;
-
-        /**
-         * this function handles what will happen when this object wins
-         */
-        void win() override;
 
         /**
          * constructor by value

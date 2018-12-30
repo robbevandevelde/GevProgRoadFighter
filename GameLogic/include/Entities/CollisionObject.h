@@ -91,30 +91,35 @@ namespace  roadfighter {
         bool checkCollision(std::shared_ptr<CollisionObject>& check) const ;
 
         /**
-         * a function that must be overriden that will say what will happen to an objec tlust it collide with this one
+         * a function that can be overriden that will say what will happen to an objec tlust it collide with this one
          * @param collided the object this one collided with
+         * it will do nothing by default
          */
-        virtual void collideWith(std::shared_ptr<CollisionObject>& collided)=0;
+        virtual void collideWith(std::shared_ptr<CollisionObject>& collided){};
 
         /**
-         * a function that must be overriden that will say what the object will do must it crash
+         * a function that can be overriden that will say what the object will do must it crash
+         * it will do nothing by default
          */
-        virtual void crash()=0;
+        virtual void crash(){};
 
         /**
-        * a function that must be overriden that will say what the object will do must it been shot
+        * a function that can be overriden that will say what the object will do must it been shot
+         * it will do nothing by default
         */
-        virtual void shot()=0;
+        virtual void shot(){};
 
         /**
-        * a function that must be overriden that will say what the object will do must it get a bonus
+        * a function that can be overriden that will say what the object will do must it get a bonus
+         * it will do nothing by default
         */
-        virtual void bonus()=0;
+        virtual void bonus(){};
 
         /**
-        * a function that must be overriden that will say what the object will do must it win
+        * a function that can be overriden that will say what the object will do must it win
+         * it will do nothing by default
         */
-        virtual void win()=0;
+        virtual void win(){};
 
         /**
          * getter for m_delete

@@ -66,7 +66,7 @@ namespace roadfighter{
     */
     void BonusCar::shot() {
         setDelete(true);
-        notify(-1000);
+        notify(-100);
     }
 
     /**

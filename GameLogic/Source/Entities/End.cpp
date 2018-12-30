@@ -6,20 +6,11 @@
 
 void roadfighter::End::collideWith(std::shared_ptr<roadfighter::CollisionObject> &collided) {
     collided->win();
-
 }
-
-void roadfighter::End::crash() {}
-
-void roadfighter::End::shot() {}
-
-void roadfighter::End::bonus() {}
 
 void roadfighter::End::updateLogic() {}
 
 void roadfighter::End::updateMovement(double dt) {}
-
-void roadfighter::End::win() {}
 
 
 

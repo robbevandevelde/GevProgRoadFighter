@@ -52,7 +52,7 @@ namespace roadfighter{
         m_textInput="";
     }
 
-    /*
+    /**
      * simple function that sets the shoot bool on true
      * @return none
      * @exception none

@@ -16,6 +16,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: .
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/EntityTransporter.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/GLL_Entity_Factory.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/HighScoreManager.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/InputController.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFMLRoadFighter.cpp.o: ../GameLogic/include/Location.h
@@ -50,6 +51,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/Entities/World.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/EntityTransporter.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/InputController.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/SFML_Entity_Factory.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -75,6 +77,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cp
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Observer/Observable.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBonusCar.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -87,6 +90,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Entities/Entity.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Observer/Observable.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -98,6 +102,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../GameLogic/include/Entities/End.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../GameLogic/include/Entities/Entity.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../SFMLConversion/Include/Entities/SFMLEnd.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o: ../SFMLConversion/Include/Entities/SFMLEntitySprite.h
@@ -113,6 +118,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Entities/PassingCar.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Observer/Observable.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -127,6 +133,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.c
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/EntityTransporter.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/InputController.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPlayerCar.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -142,6 +149,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.c
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Entities/RacingCar.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Observer/Observable.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLRacingCar.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -157,6 +165,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/Entities/World.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/EntityTransporter.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/InputController.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/Location.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLWorld.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -182,6 +191,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/includ
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/EntityTransporter.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/GLL_Entity_Factory.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/HighScoreManager.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/InputController.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/Location.h
@@ -192,6 +202,7 @@ SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/includ
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/parsers/json.hpp
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/Utility/Clock.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/Utility/Random.h
+SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../GameLogic/include/GllException.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../SFMLConversion/Include/Entities/SFMLBonusCar.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../SFMLConversion/Include/Entities/SFMLBullet.h
 SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/main.cpp.o: ../SFMLConversion/Include/Entities/SFMLEnd.h

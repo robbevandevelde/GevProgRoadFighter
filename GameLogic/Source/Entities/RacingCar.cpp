@@ -42,7 +42,7 @@ namespace roadfighter {
                     break;
             }
         }else{
-            //if the car is crashed and the time is zero the car can drive again and gets a 30 tick immunity
+            //if the car is crashed and the time is zero the car can drive again and gets a 90 tick immunity
             if(getStatus()==Crashed&& getTimeOut()==0){
                 setStatus(Driving);
                 setTimeOut(90);

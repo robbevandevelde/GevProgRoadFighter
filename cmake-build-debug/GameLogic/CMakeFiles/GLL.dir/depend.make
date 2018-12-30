@@ -5,6 +5,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/includ
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Observer/Observable.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/BonusCar.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -17,22 +18,26 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/Bullet.cpp.o: ../GameLogic/include/Location.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/CollisionObject.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/CollisionObject.cpp.o: ../GameLogic/include/Entities/Entity.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/CollisionObject.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/CollisionObject.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/CollisionObject.cpp.o: ../GameLogic/Source/Entities/CollisionObject.cpp
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Entities/End.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Entities/Entity.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/End.cpp.o: ../GameLogic/Source/Entities/End.cpp
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Observer/Observable.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/MovingObject.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
@@ -45,6 +50,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/incl
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Entities/PassingCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PassingCar.cpp.o: ../GameLogic/include/Location.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
@@ -53,6 +59,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/InputController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/PlayerCar.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -68,6 +75,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Entities/RacingCar.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/RacingCar.cpp.o: ../GameLogic/include/Location.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
@@ -77,6 +85,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/E
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entities/World.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/InputController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -87,11 +96,13 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entities/World.cpp.o: ../GameLogic/include/E
 
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/EntityTransporter.h
+GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/EntityTransporter.cpp.o: ../GameLogic/Source/EntityTransporter.cpp
 
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/Entity_Factory_base.h
+GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/InputController.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/include/Observer/ScoreObserver.h
@@ -108,6 +119,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/GLL_Entity_Factory.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/InputController.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Location.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Observer/Observable.h
@@ -115,6 +127,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/inclu
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Observer/ScoreObserver.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/Source/GLL_Entity_Factory.cpp
 
+GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o: ../GameLogic/include/HighScoreManager.h
 GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o: ../GameLogic/include/parsers/json.hpp
 GameLogic/CMakeFiles/GLL.dir/Source/HighScoreManager.cpp.o: ../GameLogic/Source/HighScoreManager.cpp
@@ -148,6 +161,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/EntityTransporter.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entity_Factory_base.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/GLL_Entity_Factory.h
+GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/GllException.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/HighScoreManager.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/InputController.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Location.h
@@ -160,6 +174,7 @@ GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/Source/R
 
 GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o: ../GameLogic/Utility/Clock.cpp
 GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o: ../GameLogic/Utility/Clock.h
+GameLogic/CMakeFiles/GLL.dir/Utility/Clock.cpp.o: ../GameLogic/include/GllException.h
 
 GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.o: ../GameLogic/Utility/Random.cpp
 GameLogic/CMakeFiles/GLL.dir/Utility/Random.cpp.o: ../GameLogic/Utility/Random.h

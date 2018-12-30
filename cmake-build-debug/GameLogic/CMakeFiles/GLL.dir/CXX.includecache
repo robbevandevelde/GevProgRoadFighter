@@ -29,6 +29,8 @@ memory
 ../GameLogic/include/Location.h
 
 ../GameLogic/include/Entities/Entity.h
+../GllException.h
+../GameLogic/include/GllException.h
 
 ../GameLogic/include/Entities/MovingObject.h
 Entity.h
@@ -109,6 +111,12 @@ Entities/RacingCar.h
 ../GameLogic/include/Entities/RacingCar.h
 Entities/World.h
 ../GameLogic/include/Entities/World.h
+
+../GameLogic/include/GllException.h
+exception
+-
+iostream
+-
 
 ../GameLogic/include/HighScoreManager.h
 iostream
@@ -444,17 +452,77 @@ vector
 utility
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/HighScoreManager.cpp
-sys/stat.h
--
-iostream
--
-HighScoreManager.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/HighScoreManager.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp
+../../include/Entities/RacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp
+GLL_Entity_Factory.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/RoadFighterGame.cpp
 utility
 -
 RoadFighterGame.h
+-
+GllException.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GllException.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.cpp
+Clock.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
+time.h
+-
+../include/GllException.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.cpp
+Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+memory
+-
+../Location.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+../GllException.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+CollisionObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+Observer/Observable.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Observer/Observable.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
+MovingObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Observer/Observable.h
+../../Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h
+exception
+-
+iostream
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
+ostream
 -
 

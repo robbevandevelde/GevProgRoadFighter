@@ -9,6 +9,8 @@
 ../GameLogic/Utility/Clock.h
 time.h
 -
+../include/GllException.h
+../GameLogic/include/GllException.h
 
 ../GameLogic/Utility/Random.h
 memory
@@ -43,6 +45,8 @@ CollisionObject.h
 ../GameLogic/include/Entities/CollisionObject.h
 
 ../GameLogic/include/Entities/Entity.h
+../GllException.h
+../GameLogic/include/GllException.h
 
 ../GameLogic/include/Entities/MovingObject.h
 Entity.h
@@ -129,6 +133,12 @@ Entities/RacingCar.h
 ../GameLogic/include/Entities/RacingCar.h
 Entities/World.h
 ../GameLogic/include/Entities/World.h
+
+../GameLogic/include/GllException.h
+exception
+-
+iostream
+-
 
 ../GameLogic/include/HighScoreManager.h
 iostream
@@ -464,16 +474,6 @@ vector
 utility
 -
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
-time.h
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
-memory
--
-random
--
-
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
 SFMLEntitySprite.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
@@ -586,37 +586,5 @@ Location.h
 ../Include/SFMLRoadFighter.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h
 iostream
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFML_Entity_Factory.cpp
-../Include/SFML_Entity_Factory.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFML_Entity_Factory.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/Transformation.cpp
-../Include/Transformation.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
-iostream
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp
-../../Include/Entities/SFMLPlayerCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLWorld.cpp
-../../Include/Entities/SFMLWorld.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp
-iostream
--
-SFML/Graphics.hpp
--
-../GameLogic/Utility/Clock.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Clock.h
-../GameLogic/Utility/Random.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
-Include/SFMLRoadFighter.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h
-memory
 -
 

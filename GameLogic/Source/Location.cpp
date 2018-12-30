@@ -84,8 +84,8 @@ namespace roadfighter {
      * @exception none
      */
     Location &Location::operator=(Location &&other) noexcept{
-        x=std::move(other.x);
-        y=std::move(other.y);
+        x= other.x;
+        y= other.y;
         return *this;
     }
 

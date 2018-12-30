@@ -6,12 +6,11 @@
 /**
 * add an entity to the transporter
 * @param toAdd a shared pointer to an entity
-*@return none
+* @return none
 * @exception none
 */
 void roadfighter::EntityTransporter::addEntity(std::shared_ptr<roadfighter::Entity> toAdd) {
     m_entities.push_back(toAdd);
-
 }
 
 /**

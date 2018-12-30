@@ -46,7 +46,8 @@ SET(SRC
         include/Entities/End.h
         include/parsers/json.hpp
         Source/HighScoreManager.cpp
-        include/HighScoreManager.h)
+        include/HighScoreManager.h
+        include/GllException.h)
 
 
 #Create a library named GameLogic containing all files of SRC that can be linked staticly

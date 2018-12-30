@@ -5,6 +5,7 @@
 
 #include "../Include/SFMLRoadFighter.h"
 #include <iostream>
+using Clock=roadfighter::Clock;
 namespace roadfighterSFML {
     /**
      * constructor for the SFMLRoadfighter game
@@ -30,8 +31,8 @@ namespace roadfighterSFML {
         while (m_window->isOpen()) {
             if (gameclock.getTimeAsSeconds() > 0.00833) {
                 m_window->clear();
-                draw(m_window);
                 m_game->tick(gameclock.getTimeAsSeconds() / 0.033);
+                draw(m_window);
                 gameclock.restart();
 
             }

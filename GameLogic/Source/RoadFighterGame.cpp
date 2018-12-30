@@ -4,6 +4,7 @@
 // Created by thibaut on 01.12.18.
 //
 #include <RoadFighterGame.h>
+#include "GllException.h"
 
 namespace roadfighter{
     /**
@@ -105,6 +106,9 @@ namespace roadfighter{
      * @exception none
      */
     bool RoadFighterGame::testEnd() const {
+        if(m_status==gameEnded){
+            throw GllException("tried to test end game that has already ended");
+        }
         return m_Player->getStatus()==Won;
     }
 
@@ -114,6 +118,9 @@ namespace roadfighter{
      * @exception none
      */
     void RoadFighterGame::endGame() {
+        if(m_status==gameEnded){
+            throw GllException("tried to end game that has already ended");
+        }
         m_status=gameEnding;
         m_world->dettachAllObservers();
     }
@@ -165,10 +172,13 @@ namespace roadfighter{
 
     //private function used in constructor
     void RoadFighterGame::initialize() {
-        //creat transporter/movectonroller and set these into the factory so they can be given to the cars
+        //creat transporter/movecontroller and set these into the factory so they can be given to the cars
         m_Transporter=m_Factory->getTransporter();
         m_MoveController=m_Factory->getController();
         m_ScoreObserver=std::dynamic_pointer_cast<ScoreObserver>(m_Factory->getScoreObserver());
+        if(m_Transporter== nullptr||m_MoveController== nullptr||m_ScoreObserver== nullptr){
+            throw GllException("no transporter, movecontroller or scoreobserver found while initialising");
+        }
         m_world=std::dynamic_pointer_cast<World>(m_Factory->createWorld());
 
         //create player
@@ -251,7 +261,11 @@ namespace roadfighter{
 
     //private funtion used to calculate the middle of a vehicle
     double RoadFighterGame::getYvariance() const {
-        return m_Player->getLoc2().getY()-m_Player->getheight()/2;
+        double toreturn= m_Player->getLoc2().getY()-m_Player->getheight()/2;
+        if(toreturn>0){
+            throw GllException("playercar with positive yvariance occured,this should always be negative or 0");
+        }
+        return toreturn;
     }
 
     //private function used to set the player back to the middle of the screen
@@ -276,7 +290,6 @@ namespace roadfighter{
     */
     void RoadFighterGame::shoot() {
         if(m_status==gameRunning)m_MoveController->shoot();
-
     }
 
     /**

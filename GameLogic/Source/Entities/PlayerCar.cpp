@@ -14,6 +14,9 @@ namespace roadfighter {
                 m_fuel = 0;
             }
         }
+        if(m_fuel<0){
+            throw GllException("fuel of playercar dropped below 0");
+        }
     }
 
     void PlayerCar::increaseFuel(const double &amount) {
@@ -21,14 +24,16 @@ namespace roadfighter {
     }
 
     void PlayerCar::updateMovement(double dt) {
-        //movement only updatet when the car is driving
+        //movement only updated when the car is driving
         if(getStatus()==Driving) {
             if (m_moveController->getNextHorMove() == h_left) {
                 MovingObject::setHorizontalSpeed(-MovingObject::getHorAccel());
             } else if (m_moveController->getNextHorMove() == h_right) {
                 MovingObject::setHorizontalSpeed(MovingObject::getHorAccel());
-            } else {
+            } else if(m_moveController->getNextHorMove()==h_none){
                 MovingObject::setHorizontalSpeed(0);
+            }else{
+                throw GllException("unknown horizontal move for playercar");
             }
             if (m_moveController->getNextVertMove() == v_accel) {
                 //if the car is out of fuel it cant accelerate anymore
@@ -40,6 +45,8 @@ namespace roadfighter {
                 if (MovingObject::getVerticalSpeed() < 0) {
                     MovingObject::setVerticalSpeed(0);
                 }
+            } else if(m_moveController->getNextVertMove() != v_none){
+                throw GllException("unknown vertical move for playercar");
             }
             if(m_moveController->mustShoot()){
                 shoot();
@@ -51,7 +58,7 @@ namespace roadfighter {
     void PlayerCar::updateLogic() {
         MovingObject::updateLogic();
         decrementTimeOut();
-        //if its drivin and the timer is 0 then the immunity has run out
+        //if its driving and the timer is 0 then the immunity has run out
         if(isImmune()&&getTimeOut()==0&&getStatus()==Driving){
             setImmune(false);
         }
@@ -60,6 +67,7 @@ namespace roadfighter {
             if(getTimeOut()==0){
                 setStatus(Driving);
                 setTimeOut(90);
+                setImmune(true);
             }
         }
         decreasefireCountdown();
@@ -90,7 +98,6 @@ namespace roadfighter {
         //when crashed the car will be immune and then it will wait for 30 logicticks
         //this immunity is so that when another car crashes into this one it wont reset the timer
         if(!isImmune()&&getStatus()==Driving) {
-            setImmune(true);
             stop();
             setStatus(Crashed);
             setTimeOut(90);
@@ -135,6 +142,12 @@ namespace roadfighter {
     }
 
     void PlayerCar::shoot() {
+        if(m_factory== nullptr){
+            throw GllException("tried accessing entity factory in playercar but none found");
+        }
+        if(m_transporter== nullptr){
+            throw GllException("tried accessing entity transporter in car but none found");
+        }
         if(m_fireCountdown==0){
             m_fireCountdown=15;
             std::shared_ptr<Entity> bullet= m_factory->createBullet((getLoc1().getX()+getLoc2().getX())/2,getLoc1().getY()-0.1,getVerticalSpeed()+0.5                       );

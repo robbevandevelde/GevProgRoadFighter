@@ -3,9 +3,11 @@
 //
 
 #include <sys/stat.h>
+#include <stdio.h>
 #include <iostream>
-
 #include "HighScoreManager.h"
+
+#include "GllException.h"
 namespace roadfighter {
     /**
      * this function adds a possible new highscores
@@ -17,13 +19,13 @@ namespace roadfighter {
      * @exception none
      */
     void HighScoreManager::addHighScore(const std::string &name, unsigned int score) {
-        std::vector<highScore> scores=gethighScores();
-
+        std::vector<highScore> scores;
+        scores = gethighScores();
         //quick lambda function to sort the vector of highscores
        auto sortLambda=[](const highScore & a, const highScore & b) -> bool
-             {
-                 return a.score > b.score;
-             };
+         {
+             return a.score > b.score;
+         };
 
        //add the new score, sort the vector adn then cutt of anything past index then before writing back to the file
         scores.emplace_back(name,score);
@@ -52,7 +54,13 @@ namespace roadfighter {
         //parsing using the nohlmann json parser
         std::ifstream i("highScores.json");
         json j;
+        try{
         i >> j;
+        }catch (std::exception& e){
+            std::cerr<<"an error occured while reading the highscores file\n";
+            std::cerr<<"highscore file will be removed\n";
+            std::remove("highScores.json");
+        }
         for (const auto& it : j["Scores"].items()) {
             std::string name=it.value()["name"];
             unsigned int score=it.value()["score"];
