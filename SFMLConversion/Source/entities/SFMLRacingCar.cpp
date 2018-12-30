@@ -43,11 +43,6 @@ namespace roadfighterSFML {
         std::tuple<int, int> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
         setSpriteLocation(std::get<0>(newloc) + SFMLEntitySprite::getGlobalBounds().width / 2,
                           std::get<1>(newloc) + SFMLEntitySprite::getGlobalBounds().height / 2);
-
-        sf::RectangleShape rectangle(
-                sf::Vector2f(SFMLEntitySprite::getGlobalBounds().width, SFMLEntitySprite::getGlobalBounds().height));
-        rectangle.setPosition(std::get<0>(newloc), std::get<1>(newloc));
-        getWindow()->draw(rectangle);
         getWindow()->draw(*this);
     }
 }

@@ -55,15 +55,34 @@ namespace roadfighter {
         return os;
     }
 
-
+    /**
+     * constructor by value
+     * @param x
+     * @param y
+     * @return none
+     * @excetpion none
+     */
     Location::Location(double x, double y) : x(x), y(y) {}
 
+    /**
+     * copy assigment for Location
+     * @param other the Location that is being copied
+     * @return a new Location that is equal to the other one
+     * @exception none
+     */
     Location &Location::operator=(const Location &other) {
         x=other.x;
         y=other.y;
         return *this;
     }
 
+    /**
+     * move assignment for Location
+     * @param other other Location that is being moved
+     * @return a Location
+     * that contains all the data of the first one
+     * @exception none
+     */
     Location &Location::operator=(Location &&other) noexcept{
         x=std::move(other.x);
         y=std::move(other.y);

@@ -21,60 +21,25 @@ namespace roadfighter {
          */
         GLL_Entity_Factory()= default;
 
-        /**
-         * an overrided factory method for creating a bullet
-         * @return a shared pointer to an Entity
-         */
+        //overridden function to create buller
         std::shared_ptr<Entity> createBullet(double x,double y,double vSpeed) override;
 
-        /**
-         * an overrided factory method for creating a PassingCar
-         * @param x coordinate of the passing car (the middle)
-         * @param y coordinate of the passing car (the middle)
-         * @param vSpeed the set speed of the passingcar
-         * @return a shared pointer to an entity
-         */
+        //overridden function to create passing car
         std::shared_ptr<Entity> creatPassingCar(double x,double y,double vSpeed) override;
 
-        /**
-         * an overrided factory method for crating the player car
-         * @param x xoordinate of the player car (the middle)
-         * @param y coordinate of the player car (the middle)
-         * @param max the max vertical speed
-         * @param vAccel the vertical acceleration per tick
-         * @param hAccel the horizontal acceleration per tick
-         * @param fuel the starting fuel of the car
-         * @return a shared pointer to an entity
-         */
+       //overridden fucntion to create player car
         std::shared_ptr<Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
 
-        /**
-        * an overrided factory method for crating a racing car
-        * @param x xoordinate of the racing car (the middle)
-        * @param y coordinate of the racing car (the middle)
-        * @param max the max vertical speed
-        * @param vAccel the vertical acceleration per tick
-        * @param hAccel the horizontal acceleration per tick
-        * @return a shared pointer to an entity
-        */
+        //overridden function to create racing car
         std::shared_ptr<Entity> createRacingCar(double x,double y,double max,double vAccel,double hAccel) override;
 
-        /**
-          * an overrided factory method for creating a BonusCar
-          * @param x coordinate of the bonus car (the middle)
-          * @param y coordinate of the passing bonus car (the middle)
-          * @param vSpeed the set speed of the passingcar
-          * @return a shared pointer to an entity
-          */
+        //overridden function to create bonus car
         std::shared_ptr<Entity> createBonusCar(double x,double y,double vSpeed) override;
 
-        /**
-         * an overrided factory method for creating the world
-         * @return a shared pointer to an entity
-         */
+        //overridden function to create the gameworld
         std::shared_ptr<Entity> createWorld() override;
 
-
+        //overridden function to create an end object
         std::shared_ptr<Entity> createEnd(double y) override;
     };
 }

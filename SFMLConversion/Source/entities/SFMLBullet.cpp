@@ -42,11 +42,6 @@ namespace roadfighterSFML {
         } else {
             SFMLEntitySprite::setRotation(0);
         }
-
-        sf::RectangleShape rectangle(
-                sf::Vector2f(SFMLEntitySprite::getGlobalBounds().width, SFMLEntitySprite::getGlobalBounds().height));
-        rectangle.setPosition(std::get<0>(newloc), std::get<1>(newloc));
-        getWindow()->draw(rectangle);
         getWindow()->draw(*this);
     }
 }

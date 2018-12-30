@@ -23,15 +23,11 @@ namespace roadfighter {
 
     class RoadFighterGame {
     public:
-        /**
-         * default constructor for RoadFighterGame
-         */
+
+        //default constructor
         RoadFighterGame();
 
-        /**
-         * a constructor were the factory that is used to initalise all the objects is given
-         * @param factory the factory that will be used to make everything
-         */
+        //constructor with the entity factory given
         explicit RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
 
         /**
@@ -67,96 +63,61 @@ namespace roadfighter {
          */
         virtual ~RoadFighterGame()= default;
 
-        /**
-         * a function that will tick the whole game with dt ticks
-         * @param dt the amount of ticks the game should move (should be 1 or lower otherwise it's possible more gameticks occur in 1 tick)
-         *
-         * in this function the position of the objects will always be updated by dt ticks
-         * but the gamelogic will only be done if 1 tick has passed
-         * so if you call this function with dt being 0.5 twice it will update only the positions the first time,
-         * but the second time it will update both the positions and the gamelogic
-         */
+       //a function that ticks the game with dt ticks (dt should be below 1)
         void tick(double dt);
 
-        /**
-         * a function that updates the movement of all entities by dt ticks
-         * @param dt amount of a tick the postions must be updated with
-         */
-        void movementTick(double dt);
-
-        /**
-         * a function that does a logic tick which will update the logic of all entities and possibly add new cars to the world
-         */
-        void logicTick();
-
-        /**
-         * a function that will set the movementcontroller to go left next tick
-         */
+        //function thta sets the movementcontroller to left
         void moveLeft();
 
-        /**
-         * a fucntion that sets the movementcontroller to none for the horizontal move
-         */
+        //function that sets the horoziontal movement to none
         void stopHorizontalMove();
 
-        /**
-         * a function that will set the movementcontroller to go right next tick
-         */
+        //function that sets the horizontal movement to the right
         void moveRight();
 
-        /**
-         * a function that will set the movementcontroller to accelerate in the vertical direction next tick
-         */
+        //function that sets the movement to accelerate
         void accelerate();
 
-        /**
-         * a fucntion that sets the movementcontroller to none for the vertical move
-         */
+        //function that sets the vertical movement to none
         void stopVerticalMove();
 
-        /**
-        * a function that will set the movementcontroller to decelerate in the vertical direction next tick
-        */
+        //function that sets the vertical movement to decelerate
         void decelerate();
 
-        /**
-         * gets the current speed of the playercar
-         * @return a double represeting the speed of the playercar
-         */
+        //getter for the speed
         double getsSpeed() const;
 
-        /**
-         * a function that calls the draw function on the world which will then call the draw function on all its entities
-         */
+        //function that calls the draw function on the world
         void drawWorld() const;
 
-        /**
-         * getter for the current amount of fuel in the playercar
-         */
+        //getter for the fuel
         double getFuel() const;
 
-        /**
-         * a function that handles the movecontroller to make it shoot
-         */
+        //function that sets the movementcontroller to true
         void shoot();
 
-        /**
-         * a function that handles the movementcontrolle rto make it stop shooting
-         */
+        //function that sets the movementcontroller to stop shooting
         void stopShooting();
 
+        //getter for the score
         unsigned int getScore() const;
 
+        //getter for the ended bool
         bool hasEnded() const;
 
+        //getter for wether the game is paused
         void pauseGame();
 
+        //function that continues the game after it was paused
         void continueGame();
 
+        //getter for the game status
         EGameStatus getStatus() const;
 
+        //getter for the paused bool
         bool ispaused() const;
 
+        //setter for the text of the movementcontrolelr
         void setText(const std::string& text);
 
     //all private functions
@@ -173,6 +134,10 @@ namespace roadfighter {
         double getYvariance() const;
 
         void normalizeWorld(double ySetback);
+
+        void movementTick(double dt);
+
+        void logicTick();
 
     //all private variables
     private:

@@ -36,5 +36,10 @@ namespace roadfighterSFML {
         return std::make_tuple(returnx, returny);
     }
 
+    /**
+     * pricate constructor
+     * @param x x size of the screen
+     * @param y y size of the screen
+     */
     Transformation::Transformation(int x, int y) : m_xSize(x), m_ySize(y) {}
 }

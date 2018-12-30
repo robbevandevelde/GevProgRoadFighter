@@ -15,13 +15,12 @@
 
 namespace roadfighter {
     class Entity_Factory_base: public std::enable_shared_from_this<Entity_Factory_base> {
+//here are all the pure virual function that should always be overridden in each class inheriting from this one
     public:
-        Entity_Factory_base();
-
-/**
-         * base factory method for creating a bullet
-         * @return a shared pointer to an Entity
-         */
+        /**
+       * base factory method for creating a bullet
+       * @return a shared pointer to an Entity
+       */
         virtual std::shared_ptr<Entity> createBullet(double x,double y,double vSpeed)=0;
 
         /**
@@ -83,33 +82,27 @@ namespace roadfighter {
          */
         virtual ~Entity_Factory_base()= default;
 
-        /**
-         * sets the controller of the factory
-         * @param m_controller a movecontroller that will be given to all playercars created with this factory
-         */
+        //here are a bunch of non virtual function that should keep the smae functionality over all classe that inherit form this one
+    public:
+
+        //constructor
+        Entity_Factory_base();
+        //setter for the movementcontroller
         void setController(const std::shared_ptr<InputController> &m_controller);
 
-        /**
-         * setter for the transporter
-         * @param m_Transporter an entitytransporter that will be given to the world
-         */
+        //setter for the entity transporter
         void setTransporter(const std::shared_ptr<EntityTransporter> &m_Transporter);
 
-        /**
-         * getter for the controller
-         * @return a shared pointer to the movecontroller
-         */
+        //getter for the controller
         const std::shared_ptr<InputController> &getController() const;
 
-        /**
-         * getter for the transporter
-         * @return a shared pointer to the entitytransporter
-         */
+        //getter for the entity transporter
         const std::shared_ptr<EntityTransporter> &getTransporter() const;
 
-
+        //getter for the score observer
         const std::shared_ptr<ObserverBase> &getScoreObserver() const;
 
+        //setter for the score observer
         void setScoreObserver(const std::shared_ptr<ObserverBase> &m_scoreObserver);
 
     private:

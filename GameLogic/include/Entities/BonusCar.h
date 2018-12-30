@@ -13,6 +13,14 @@ namespace roadfighter{
          */
         BonusCar()= default;
 
+        /**
+         * constructor where location and speed is given
+         * @param m_loc1 first location
+         * @param m_loc2 second location
+         * @param vertSpeed
+         * @return none
+         * @exception none
+         */
         BonusCar(const Location &m_loc1, const Location &m_loc2, double vertSpeed);
 
         /**

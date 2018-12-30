@@ -12,21 +12,14 @@
 namespace roadfighter {
     class EntityTransporter {
     public:
-        /**
-         * add an entity to the transporter
-         * @param toAdd a shared pointer to an entity
-         */
+
+        //function that adds an entity
         void addEntity(std::shared_ptr<Entity> toAdd);
 
-        /**
-         * gets all the entities currently in the transporter
-         * @return a vector of shard pointers to entities
-         */
+        //function that gets all entities currently in the transporter
         std::vector<std::shared_ptr<Entity>>& getEntities();
 
-        /**
-         * removes all teh enities that are currently in the vector
-         */
+        //function that removes all entities currently in the transporter
         void clear();
 
     private:

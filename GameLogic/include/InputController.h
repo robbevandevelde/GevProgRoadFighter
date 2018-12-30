@@ -19,49 +19,34 @@ namespace roadfighter {
          */
         InputController()= default;
 
-        /**
-         * setter for the verticalmove
-         * @param move a EVertmove enum
-         */
+        //function to set vertical movement
         void setVertMove(EVertMove move);
 
-        /**
-         * setter for the horizontal move
-         * @param move a EHorMove enum
-         */
+        //function to set horizontal movement
         void setHorMove(EHorMove move);
 
-        /**
-         * getter for the vertivalmove
-         * @return an EVertMove enum
-         */
+        //function to get next vertical move
         EVertMove getNextVertMove() const;
 
-        /**
-         * a getter for the horizontalmove
-         * @return an EHorMove enum
-         */
+        //function to get next horizontal move
         EHorMove getNextHorMove() const;
 
-        /**
-         * a function that sets both the vertival and horizontal mvoe to none
-         */
+        //function to clear all current input
         void setNone();
 
-        /*
-         * simple function that sets the shoot bool on true
-         */
+        //simple function that sets the shoot bool to true
         void shoot();
 
-        /**
-         * simple funtion that sets the shoot bool on false
-         */
+        // simple funtion that sets the shoot bool on false
         void noShoot();
 
+        //getter for the shoot bool
         bool mustShoot() const;
 
+        //setter for the text string
         void setText(const std::string& newtext);
 
+        //getter for the text string
         std::string getText() const;
 
     private:

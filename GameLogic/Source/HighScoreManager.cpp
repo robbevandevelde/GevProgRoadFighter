@@ -7,6 +7,15 @@
 
 #include "HighScoreManager.h"
 namespace roadfighter {
+    /**
+     * this function adds a possible new highscores
+     * in this function all the higshcores will be read from a json file, your highscore will be added and then the score will be sorted
+     * after that the scores will be writen back to the json file
+     * @param name a string denoting the name for the new score
+     * @param score an int denoting the score itself
+     * @return none
+     * @exception none
+     */
     void HighScoreManager::addHighScore(const std::string &name, unsigned int score) {
         std::vector<highScore> scores=gethighScores();
 
@@ -27,6 +36,12 @@ namespace roadfighter {
 
     }
 
+    /**
+     * function that reads the higshcores from a json file
+     * for this the nlohmann json parser is used
+     * @return a vector of highscores
+     * @exception none
+     */
     std::vector<highScore> HighScoreManager::gethighScores() {
         //test if the file exists
         std::vector<highScore> scores;
@@ -47,6 +62,12 @@ namespace roadfighter {
 
     }
 
+    /**
+     * function that writes a vector of highscores to a json file
+     * @param towrite the vector of highscores that will be writen to the json file
+     * @return none
+     * @exception none
+     */
     void HighScoreManager::writeHighScores(std::vector<highScore> &towrite) {
         //checking if the file exists and then clearing it so we can wrtie all the scores to it
         struct stat buffer{};

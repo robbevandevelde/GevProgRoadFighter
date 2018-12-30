@@ -15,14 +15,16 @@ namespace roadfighter {
         double y{};
     public:
         /**
-           * default constructor for Location
-           */
+          * default constructor for Location
+          */
         Location()= default;
         /**
-         * constructor by value
-         * @param x
-         * @param y
-         */
+        * constructor by value
+        * @param x
+        * @param y
+        * @return none
+        * @excetpion none
+        */
         Location(double x, double y);
 
 
@@ -39,10 +41,11 @@ namespace roadfighter {
         Location(Location &&move) = default;
 
         /**
-         * copy assigment for Location
-         * @param other the Location that is being copied
-         * @return a new Location that is equal to the other one
-         */
+        * copy assigment for Location
+        * @param other the Location that is being copied
+        * @return a new Location that is equal to the other one
+        * @exception none
+        */
         Location &operator=(const Location &other);
 
         /**
@@ -83,7 +86,7 @@ namespace roadfighter {
         void setY(double y);
 
         /**
-         * esuality operators
+         * equality operators
          * @param rhs the location you are comparing to
          * @return a bool
          */
