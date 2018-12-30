@@ -4,7 +4,7 @@
  */
 
 #include "../Include/SFMLRoadFighter.h"
-#include <iostream>
+
 using Clock=roadfighter::Clock;
 namespace roadfighterSFML {
     /**
