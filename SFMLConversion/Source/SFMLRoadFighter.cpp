@@ -153,9 +153,6 @@ namespace roadfighterSFML {
         transparenrect.setFillColor(sf::Color(0, 0, 0, 200));
         window->draw(transparenrect);
 
-        sf::Font font;
-        font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
-
         auto pausepos = Transformation::getInstance().locationTransformation(roadfighter::Location(-1.1, -1));
         drawText(window, "game has been paused", pausepos, sf::Color(128, 128, 128), 24);
 
@@ -168,7 +165,9 @@ namespace roadfighterSFML {
                                    std::tuple<int, int> position,
                                    sf::Color color, int size) {
         sf::Font font;
-        font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
+        if(!font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf")){
+            throw SFMLConversionException("could not find font to draw text at ../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
+        }
 
         sf::Text towrite;
         towrite.setFont(font);

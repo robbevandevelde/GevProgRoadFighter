@@ -11,7 +11,10 @@ namespace roadfighter{
      * @exception none
      */
     std::shared_ptr<Entity>  GLL_Entity_Factory::createBullet(double x,double y,double vSpeed) {
-        return std::shared_ptr<Entity>(nullptr);
+        std::shared_ptr<Bullet> toreturn = std::make_shared<Bullet>(roadfighter::Location(x - 0.05, y - 0.05),
+                                                                            roadfighter::Location(x + 0.05, y + 0.05),
+                                                                            vSpeed);
+        return toreturn;
     }
 
     /**
@@ -23,7 +26,13 @@ namespace roadfighter{
      * @exception none
      */
     std::shared_ptr<Entity>  GLL_Entity_Factory::creatPassingCar(double x,double y,double vSpeed) {
-        return nullptr;
+        std::shared_ptr<PassingCar> toreturn = std::make_shared<PassingCar>(roadfighter::Location(x - 0.25,
+                                                                                                          y - 0.25),
+                                                                                    roadfighter::Location(x + 0.25,
+                                                                                                          y + 0.25),
+                                                                                    vSpeed);
+        toreturn->attach(getScoreObserver());
+        return toreturn;
     }
     /**
     * an overrided factory method for crating the player car
@@ -37,7 +46,11 @@ namespace roadfighter{
      * @exception none
     */
     std::shared_ptr<Entity>  GLL_Entity_Factory::createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) {
-        return nullptr;
+        std::shared_ptr<PlayerCar> toreturn = std::make_shared<PlayerCar>(
+                roadfighter::Location(x - 0.25, y - 0.25), roadfighter::Location(x + 0.25, y + 0.25),
+                max, vAccel, hAccel, fuel, getController(), getTransporter(), shared_from_this());
+        toreturn->attach(getScoreObserver());
+        return toreturn;
     }
     /**
     * an overrided factory method for crating a racing car
@@ -50,7 +63,11 @@ namespace roadfighter{
      * @exception none
     */
     std::shared_ptr<Entity>  GLL_Entity_Factory::createRacingCar(double x,double y,double max,double vAccel,double hAccel) {
-        return nullptr;
+        std::shared_ptr<RacingCar> toreturn = std::make_shared<RacingCar>(
+                roadfighter::Location(x - 0.25, y - 0.25), roadfighter::Location(x + 0.25, y + 0.25), max, vAccel,
+                hAccel);
+        toreturn->attach(getScoreObserver());
+        return toreturn;
     }
 
     /**
@@ -59,7 +76,8 @@ namespace roadfighter{
      * @exception none
     */
     std::shared_ptr<Entity>  GLL_Entity_Factory::createWorld() {
-        return nullptr;
+        std::shared_ptr<World> toreturn = std::make_shared<World>(getTransporter());
+        return toreturn;
     }
 
     /**
@@ -71,7 +89,13 @@ namespace roadfighter{
       * @exception none
       */
     std::shared_ptr<Entity> GLL_Entity_Factory::createBonusCar(double x, double y, double vSpeed) {
-        return std::shared_ptr<Entity>();
+        std::shared_ptr<BonusCar> toreturn = std::make_shared<BonusCar>(roadfighter::Location(x - 0.25,
+                                                                                                              y - 0.25),
+                                                                                roadfighter::Location(x + 0.25,
+                                                                                                      y + 0.25),
+                                                                                vSpeed);
+        toreturn->attach(getScoreObserver());
+        return toreturn;
     }
 
     /**
@@ -81,6 +105,8 @@ namespace roadfighter{
      * @exception none
      */
     std::shared_ptr<Entity> GLL_Entity_Factory::createEnd(double y) {
-        return std::shared_ptr<Entity>();
+        std::shared_ptr<End> toreturn = std::make_shared<End>(roadfighter::Location(-3, y - 0.5),
+                                                                      roadfighter::Location(3, y + 0.5));
+        return toreturn;
     }
 }

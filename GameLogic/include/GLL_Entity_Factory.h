@@ -12,7 +12,10 @@
 #include "Entities/Bullet.h"
 #include "Entities/PlayerCar.h"
 #include "Entities/RacingCar.h"
+#include "Entities/PassingCar.h"
 #include "Entities/World.h"
+#include "Entities/BonusCar.h"
+#include "Entities/End.h"
 namespace roadfighter {
     class GLL_Entity_Factory : public Entity_Factory_base{
     public:
