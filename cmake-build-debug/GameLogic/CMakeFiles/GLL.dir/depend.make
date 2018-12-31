@@ -109,10 +109,13 @@ GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/incl
 GameLogic/CMakeFiles/GLL.dir/Source/Entity_Factory_base.cpp.o: ../GameLogic/Source/Entity_Factory_base.cpp
 
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/Utility/Random.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/BonusCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/Bullet.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/End.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/RacingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/GLL_Entity_Factory.cpp.o: ../GameLogic/include/Entities/World.h
@@ -151,10 +154,13 @@ GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o: ../GameLogic/i
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o: ../GameLogic/include/Observer/ScoreObserver.h
 
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/Utility/Random.h
+GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/BonusCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/Bullet.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/End.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/Entity.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/MovingObject.h
+GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/RacingCar.h
 GameLogic/CMakeFiles/GLL.dir/Source/RoadFighterGame.cpp.o: ../GameLogic/include/Entities/World.h

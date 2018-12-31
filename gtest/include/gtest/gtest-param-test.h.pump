@@ -244,7 +244,7 @@ internal::ParamGenerator<T> Range(T start, T end, IncrementT step) {
 }
 
 template <typename T>
-internal::ParamGenerator<T> Range(T restart, T end) {
+internal::ParamGenerator<T> Range(T start, T end) {
   return Range(start, end, 1);
 }
 

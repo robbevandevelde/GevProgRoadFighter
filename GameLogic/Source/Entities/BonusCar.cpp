@@ -22,7 +22,7 @@ namespace roadfighter{
     * @exception none
     */
     BonusCar::BonusCar(const Location &m_loc1, const Location &m_loc2, double vertSpeed)
-    : MovingObject(m_loc1, m_loc2,100 , 0, 0) {
+    : MovingObject(m_loc1, m_loc2,vertSpeed , 0, 0) {
         MovingObject::setVerticalSpeed(vertSpeed);
     }
 

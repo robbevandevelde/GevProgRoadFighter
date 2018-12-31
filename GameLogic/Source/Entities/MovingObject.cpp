@@ -12,6 +12,9 @@ namespace roadfighter {
         if(m_VerticalSpeed>m_maxVertSpeed){
             MovingObject::m_verticalSpeed =m_maxVertSpeed;
         }
+        if(m_VerticalSpeed<-m_maxVertSpeed){
+            MovingObject::m_verticalSpeed=-m_maxVertSpeed;
+        }
     }
 
     void MovingObject::setVerticalSpeedUnbounded(double m_VerticalSpeed) {
@@ -89,6 +92,9 @@ namespace roadfighter {
                                   m_vertAccel(m_vertAccel), m_horAccel(m_horAccel),m_status(Driving) {
         m_horizontalSpeed=0;
         m_verticalSpeed=0;
+        m_status=Driving;
+        m_timeOut=0;
+        m_immune=false;
     }
 
     double MovingObject::getHorizontalSpeed() const {

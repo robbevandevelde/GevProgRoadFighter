@@ -171,6 +171,33 @@ GevProgRoadFighterTest/fast:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/build
 .PHONY : GevProgRoadFighterTest/fast
 
+EntityUnitTests.o: EntityUnitTests.cpp.o
+
+.PHONY : EntityUnitTests.o
+
+# target to build an object file
+EntityUnitTests.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o
+.PHONY : EntityUnitTests.cpp.o
+
+EntityUnitTests.i: EntityUnitTests.cpp.i
+
+.PHONY : EntityUnitTests.i
+
+# target to preprocess a source file
+EntityUnitTests.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.i
+.PHONY : EntityUnitTests.cpp.i
+
+EntityUnitTests.s: EntityUnitTests.cpp.s
+
+.PHONY : EntityUnitTests.s
+
+# target to generate assembly for a file
+EntityUnitTests.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.s
+.PHONY : EntityUnitTests.cpp.s
+
 mainTest.o: mainTest.cpp.o
 
 .PHONY : mainTest.o
@@ -211,6 +238,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... EntityUnitTests.o"
+	@echo "... EntityUnitTests.i"
+	@echo "... EntityUnitTests.s"
 	@echo "... mainTest.o"
 	@echo "... mainTest.i"
 	@echo "... mainTest.s"

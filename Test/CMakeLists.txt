@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.12)
 project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
-#extra compile flags to make srue code conventions are followed
-#set(CMAKE_CXX_FLAGS "-Wall -Werror")
 
+#pthread flag is needed to make gtest run on linux
+set(CMAKE_EXE_LINKER_FLAGS -pthread)
 
 #set include dir for gtest
 include_directories(../gtest/include)
@@ -17,7 +17,8 @@ link_directories(../gtest/lib)
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "../cmake/Modules")
 
 #making a debug targer to link gtest to
-SET(SRC mainTest.cpp)
+SET(SRC mainTest.cpp
+        EntityUnitTests.cpp)
 
 # adding a test executable to test he library
 ADD_EXECUTABLE(GevProgRoadFighterTest ${SRC})
