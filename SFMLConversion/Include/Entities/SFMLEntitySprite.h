@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include "../Transformation.h"
+#include "../SFMLconversionException.h"
 namespace roadfighterSFML {
     class SFMLEntitySprite : public sf::Sprite {
     public:
@@ -27,7 +28,7 @@ namespace roadfighterSFML {
     private:
         std::shared_ptr<sf::RenderWindow> m_window;
 
-        sf::Texture *m_texture;
+        sf::Texture *m_texture{};
 
     };
 }

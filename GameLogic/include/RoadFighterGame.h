@@ -27,8 +27,8 @@ namespace roadfighter {
         //default constructor
         RoadFighterGame();
 
-        //constructor with the entity factory given
-        explicit RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory);
+        //constructor with the entity factory given and the ticks per second
+        explicit RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory,double ticksPerSec);
 
         /**
          * copy constructor
@@ -158,6 +158,9 @@ namespace roadfighter {
         //adjusting the movement of cars can be done as much as you want in a tick but logic may only be done once in a tick
         //this is why this var is kept if it is higher than 1 it means a logicTick needs to be done
         double m_logicTick;
+
+        //this varianle denotes the amount of time goes before another logic ticks should be done
+        double m_logicTickSpeed;
 
     };
 }

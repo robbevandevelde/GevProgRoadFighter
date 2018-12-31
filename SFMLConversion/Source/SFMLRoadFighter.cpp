@@ -16,7 +16,7 @@ namespace roadfighterSFML {
         m_window = std::make_shared<sf::RenderWindow>(sf::VideoMode::getDesktopMode(), "ROADFIGHTER");
         std::shared_ptr<SFML_Entity_Factory> factory = std::make_shared<SFML_Entity_Factory>(
                 SFML_Entity_Factory(m_window));
-        m_game = std::make_shared<roadfighter::RoadFighterGame>(roadfighter::RoadFighterGame(factory));
+        m_game = std::make_shared<roadfighter::RoadFighterGame>(roadfighter::RoadFighterGame(factory,30));
         m_nameGiven = false;
 
     }
@@ -31,7 +31,7 @@ namespace roadfighterSFML {
         while (m_window->isOpen()) {
             if (gameclock.getTimeAsSeconds() > 0.00833) {
                 m_window->clear();
-                m_game->tick(gameclock.getTimeAsSeconds() / 0.033);
+                m_game->tick(gameclock.getTimeAsSeconds());
                 draw(m_window);
                 gameclock.restart();
 

@@ -19,7 +19,8 @@ namespace roadfighterSFML {
             std::move(
                     window)) {
         m_texture = new sf::Texture();
-        m_texture->loadFromFile(path);
+        if(!m_texture->loadFromFile(path)) throw SFMLConversionException("could not load the image from "+path);
+
         setTexture(*m_texture);
     }
 

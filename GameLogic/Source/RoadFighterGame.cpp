@@ -23,14 +23,15 @@ namespace roadfighter{
      * @return none
      * @exception none
      */
-    RoadFighterGame::RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory):m_status(gameRunning) {
+    RoadFighterGame::RoadFighterGame(std::shared_ptr<Entity_Factory_base> factory,double ticksPerSec):m_status(gameRunning) {
+        m_logicTickSpeed=1/ticksPerSec;
         m_Factory= std::move(factory);
         initialize();
     }
 
     /**
     * a function that will tick the whole game with dt ticks
-    * @param dt the amount of ticks the game should move (should be 1 or lower otherwise it's possible more gameticks occur in 1 tick)
+    * @param dt the amount of ticks the game should move (should be lower or equal to the logictickspeed otherwise it's possible more gameticks occur in 1 tick)
     *
     * in this function the position of the objects will always be updated by dt ticks
     * but the gamelogic will only be done if 1 tick has passed
@@ -42,10 +43,10 @@ namespace roadfighter{
     */
     void RoadFighterGame::tick(double dt) {
         if(m_status!=gamePaused) {
-            movementTick(dt);
+            movementTick(dt/m_logicTickSpeed);
             m_logicTick += dt;
-            while (m_logicTick > 1) {
-                m_logicTick -= 1;
+            while (m_logicTick > m_logicTickSpeed) {
+                m_logicTick -= m_logicTickSpeed;
                 logicTick();
             }
         }
@@ -211,7 +212,7 @@ namespace roadfighter{
         std::shared_ptr<Entity> enemy8=m_Factory->createRacingCar(-0.5,4,0.3333,0.005,0.15);
         m_Transporter->addEntity(enemy8);
 
-        std::shared_ptr<Entity> end=m_Factory->createEnd(-10);
+        std::shared_ptr<Entity> end=m_Factory->createEnd(-100);
         m_Transporter->addEntity(end);
     }
 

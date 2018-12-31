@@ -389,6 +389,9 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFML_Entity_Factory.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLconversionException.h">
+			<Option target="GevProgRoadFighter"/>
+		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>

@@ -36,7 +36,7 @@ SET(SRC main.cpp
         Source/entities/SFMLBullet.cpp
         Include/Entities/SFMLBullet.h
         Source/entities/SFMLEnd.cpp
-        Include/Entities/SFMLEnd.h)
+        Include/Entities/SFMLEnd.h Include/SFMLconversionException.h)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
