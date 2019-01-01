@@ -92,6 +92,42 @@ TEST_F(EntityunitTests,MovingObject_GetterSetters_Tests){
     ASSERT_EQ(testobject->getheight(),-1);
 }
 
+TEST_F(EntityunitTests,MovingObject_function_Tests) {
+    std::shared_ptr<MovingObject> testobject = std::make_shared<MovingObject>(Location(0, 0), Location(1, 0), 100, 10,10);
+    testobject->updateMovement(1);
+    ASSERT_EQ(testobject->getLoc1(),Location(0,0));
+    ASSERT_EQ(testobject->getLoc2(),Location(1,0));
+
+    testobject->setVerticalSpeed(10);
+    testobject->setHorizontalSpeed(1);
+    testobject->updateMovement(1);
+    ASSERT_EQ(testobject->getLoc1(),Location(1,-10));
+    ASSERT_EQ(testobject->getLoc2(),Location(2,-10));
+
+    testobject->updateMovement(1);
+    ASSERT_EQ(testobject->getLoc1(),Location(2,-20));
+    ASSERT_EQ(testobject->getLoc2(),Location(3,-20));
+
+    testobject->updateMovement(1);
+    ASSERT_EQ(testobject->getLoc1(),Location(2,-30));
+    ASSERT_EQ(testobject->getLoc2(),Location(3,-30));
+
+    testobject->setVerticalSpeed(10);
+    testobject->updateLogic();
+    ASSERT_EQ(testobject->getVerticalSpeed(),10);
+
+    testobject->setVerticalSpeedUnbounded(110);
+    testobject->updateLogic();
+    ASSERT_EQ(testobject->getVerticalSpeed(),105);
+
+    testobject->updateLogic();
+    ASSERT_EQ(testobject->getVerticalSpeed(),100);
+
+    testobject->updateLogic();
+    ASSERT_EQ(testobject->getVerticalSpeed(),100);
+
+}
+
 TEST_F(EntityunitTests,Bullet_Init_Tests){
     std::shared_ptr<Bullet> testobject=std::make_shared<Bullet>(Location(0,0),Location(1,0),10);
     ASSERT_EQ(testobject->getWidth(),1);
