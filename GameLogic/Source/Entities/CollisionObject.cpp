@@ -28,7 +28,7 @@ namespace roadfighter {
     bool CollisionObject::checkCollision(std::shared_ptr<CollisionObject>& check) const {
     //efficient rectangle collision checker found at https://stackoverflow.com/questions/31022269/collision-detection-between-two-rectangles-in-java
     if(check->getLoc1().getX()<=getLoc2().getX()&&check->getLoc2().getX()>= getLoc1().getX()){
-        if(check->getLoc1().getY()<=getLoc2().getY()&&check->getLoc2().getY()>getLoc1().getY()){
+        if(check->getLoc1().getY()<=getLoc2().getY()&&check->getLoc2().getY()>=getLoc1().getY()){
             return true;
         }
     }

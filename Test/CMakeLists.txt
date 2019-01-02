@@ -18,7 +18,7 @@ SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "../cmake/Modules")
 
 #making a debug targer to link gtest to
 SET(SRC mainTest.cpp
-        EntityUnitTests.cpp)
+        EntityTests.cpp OberserTests.cpp HighScoreTests.cpp InputTests.cpp)
 
 # adding a test executable to test he library
 ADD_EXECUTABLE(GevProgRoadFighterTest ${SRC})

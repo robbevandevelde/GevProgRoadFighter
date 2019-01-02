@@ -434,7 +434,16 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/main.cpp">
 			<Option target="GevProgRoadFighter"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityUnitTests.cpp">
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityTests.cpp">
+			<Option target="GevProgRoadFighterTest"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/HighScoreTests.cpp">
+			<Option target="GevProgRoadFighterTest"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/InputTests.cpp">
+			<Option target="GevProgRoadFighterTest"/>
+		</Unit>
+		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/OberserTests.cpp">
 			<Option target="GevProgRoadFighterTest"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp">

@@ -64,7 +64,6 @@ namespace roadfighter {
         if(!isImmune()&&getStatus()==Driving) {
             stop();
             setStatus(Crashed);
-            setImmune(true);
             setTimeOut(90);
         }
     }

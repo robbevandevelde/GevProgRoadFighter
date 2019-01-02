@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityUnitTests.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityTests.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/HighScoreTests.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/InputTests.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o"
+  "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/OberserTests.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o"
   "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp" "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

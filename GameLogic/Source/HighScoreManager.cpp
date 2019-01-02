@@ -60,6 +60,7 @@ namespace roadfighter {
             std::cerr<<"an error occured while reading the highscores file\n";
             std::cerr<<"highscore file will be removed\n";
             std::remove("highScores.json");
+            return {};
         }
         for (const auto& it : j["Scores"].items()) {
             std::string name=it.value()["name"];
@@ -86,14 +87,22 @@ namespace roadfighter {
         }else{
             scoreFile=std::ofstream("highScores.json");
         }
-        scoreFile<<"{\n"
-                   "  \"Scores\":["<<std::endl;
-        for(unsigned int i=0;i<towrite.size()-1;i++){
-            scoreFile<< R"( {"name": ")" +towrite[i].name+ R"(","score":)" +std::to_string(towrite[i].score)+"},"<<std::endl;
+
+            scoreFile << "{\n"
+                         "  \"Scores\":[" << std::endl;
+        if(towrite.size()!=0) {
+            for (unsigned int i = 0; i < towrite.size() - 1; i++) {
+                scoreFile << R"( {"name": ")" + towrite[i].name + R"(","score":)" + std::to_string(towrite[i].score) +
+                             "}," << std::endl;
+            }
+
+            scoreFile
+                    << R"( {"name": ")" + towrite.back().name + R"(","score":)" + std::to_string(towrite.back().score) +
+                       "}" << std::endl;
         }
-        scoreFile<< R"( {"name": ")" +towrite.back().name+ R"(","score":)" +std::to_string(towrite.back().score)+"}"<<std::endl;
-        scoreFile<<"]\n"
-                   "}";
+            scoreFile << "]\n"
+                         "}";
+
     }
 
     highScore::highScore(const std::string &name, unsigned int score) : name(name), score(score) {}

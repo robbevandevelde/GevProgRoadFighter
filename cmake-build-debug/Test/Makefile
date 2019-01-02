@@ -171,32 +171,113 @@ GevProgRoadFighterTest/fast:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/build
 .PHONY : GevProgRoadFighterTest/fast
 
-EntityUnitTests.o: EntityUnitTests.cpp.o
+EntityTests.o: EntityTests.cpp.o
 
-.PHONY : EntityUnitTests.o
+.PHONY : EntityTests.o
 
 # target to build an object file
-EntityUnitTests.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o
-.PHONY : EntityUnitTests.cpp.o
+EntityTests.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o
+.PHONY : EntityTests.cpp.o
 
-EntityUnitTests.i: EntityUnitTests.cpp.i
+EntityTests.i: EntityTests.cpp.i
 
-.PHONY : EntityUnitTests.i
+.PHONY : EntityTests.i
 
 # target to preprocess a source file
-EntityUnitTests.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.i
-.PHONY : EntityUnitTests.cpp.i
+EntityTests.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.i
+.PHONY : EntityTests.cpp.i
 
-EntityUnitTests.s: EntityUnitTests.cpp.s
+EntityTests.s: EntityTests.cpp.s
 
-.PHONY : EntityUnitTests.s
+.PHONY : EntityTests.s
 
 # target to generate assembly for a file
-EntityUnitTests.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.s
-.PHONY : EntityUnitTests.cpp.s
+EntityTests.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.s
+.PHONY : EntityTests.cpp.s
+
+HighScoreTests.o: HighScoreTests.cpp.o
+
+.PHONY : HighScoreTests.o
+
+# target to build an object file
+HighScoreTests.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o
+.PHONY : HighScoreTests.cpp.o
+
+HighScoreTests.i: HighScoreTests.cpp.i
+
+.PHONY : HighScoreTests.i
+
+# target to preprocess a source file
+HighScoreTests.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.i
+.PHONY : HighScoreTests.cpp.i
+
+HighScoreTests.s: HighScoreTests.cpp.s
+
+.PHONY : HighScoreTests.s
+
+# target to generate assembly for a file
+HighScoreTests.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.s
+.PHONY : HighScoreTests.cpp.s
+
+InputTests.o: InputTests.cpp.o
+
+.PHONY : InputTests.o
+
+# target to build an object file
+InputTests.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o
+.PHONY : InputTests.cpp.o
+
+InputTests.i: InputTests.cpp.i
+
+.PHONY : InputTests.i
+
+# target to preprocess a source file
+InputTests.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.i
+.PHONY : InputTests.cpp.i
+
+InputTests.s: InputTests.cpp.s
+
+.PHONY : InputTests.s
+
+# target to generate assembly for a file
+InputTests.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.s
+.PHONY : InputTests.cpp.s
+
+OberserTests.o: OberserTests.cpp.o
+
+.PHONY : OberserTests.o
+
+# target to build an object file
+OberserTests.cpp.o:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o
+.PHONY : OberserTests.cpp.o
+
+OberserTests.i: OberserTests.cpp.i
+
+.PHONY : OberserTests.i
+
+# target to preprocess a source file
+OberserTests.cpp.i:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.i
+.PHONY : OberserTests.cpp.i
+
+OberserTests.s: OberserTests.cpp.s
+
+.PHONY : OberserTests.s
+
+# target to generate assembly for a file
+OberserTests.cpp.s:
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.s
+.PHONY : OberserTests.cpp.s
 
 mainTest.o: mainTest.cpp.o
 
@@ -238,9 +319,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... EntityUnitTests.o"
-	@echo "... EntityUnitTests.i"
-	@echo "... EntityUnitTests.s"
+	@echo "... EntityTests.o"
+	@echo "... EntityTests.i"
+	@echo "... EntityTests.s"
+	@echo "... HighScoreTests.o"
+	@echo "... HighScoreTests.i"
+	@echo "... HighScoreTests.s"
+	@echo "... InputTests.o"
+	@echo "... InputTests.i"
+	@echo "... InputTests.s"
+	@echo "... OberserTests.o"
+	@echo "... OberserTests.i"
+	@echo "... OberserTests.s"
 	@echo "... mainTest.o"
 	@echo "... mainTest.i"
 	@echo "... mainTest.s"

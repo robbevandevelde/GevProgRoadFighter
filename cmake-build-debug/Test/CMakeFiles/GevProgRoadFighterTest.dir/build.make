@@ -70,33 +70,78 @@ Test/CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.s"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/mainTest.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.s
 
-Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o: Test/CMakeFiles/GevProgRoadFighterTest.dir/flags.make
-Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o: ../Test/EntityUnitTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityUnitTests.cpp"
+Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o: Test/CMakeFiles/GevProgRoadFighterTest.dir/flags.make
+Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o: ../Test/EntityTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityTests.cpp"
 
-Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.i"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityUnitTests.cpp" > CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.i
+Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityTests.cpp" > CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.i
 
-Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.s"
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityUnitTests.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.s
+Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/EntityTests.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.s
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o: Test/CMakeFiles/GevProgRoadFighterTest.dir/flags.make
+Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o: ../Test/OberserTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/OberserTests.cpp"
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/OberserTests.cpp" > CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.i
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/OberserTests.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.s
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: Test/CMakeFiles/GevProgRoadFighterTest.dir/flags.make
+Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../Test/HighScoreTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/HighScoreTests.cpp"
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/HighScoreTests.cpp" > CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.i
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/HighScoreTests.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.s
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: Test/CMakeFiles/GevProgRoadFighterTest.dir/flags.make
+Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../Test/InputTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o -c "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/InputTests.cpp"
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.i"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/InputTests.cpp" > CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.i
+
+Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.s"
+	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/InputTests.cpp" -o CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.s
 
 # Object files for target GevProgRoadFighterTest
 GevProgRoadFighterTest_OBJECTS = \
 "CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.o" \
-"CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o"
+"CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o" \
+"CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o" \
+"CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o" \
+"CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o"
 
 # External object files for target GevProgRoadFighterTest
 GevProgRoadFighterTest_EXTERNAL_OBJECTS =
 
 Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/mainTest.cpp.o
-Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityUnitTests.cpp.o
+Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/EntityTests.cpp.o
+Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o
+Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o
+Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o
 Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make
 Test/GevProgRoadFighterTest: GameLogic/libGLL.a
 Test/GevProgRoadFighterTest: Test/CMakeFiles/GevProgRoadFighterTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GevProgRoadFighterTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GevProgRoadFighterTest"
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GevProgRoadFighterTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
