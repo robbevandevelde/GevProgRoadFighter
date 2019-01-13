@@ -5,18 +5,39 @@
 #include "../include/Location.h"
 namespace roadfighter {
 
+    /**
+   * getter for the x coordinate
+   * @return a double
+     * @exception none
+   */
     double Location::getX() const {
         return x;
     }
-
+    /**
+     * setter for the x coordinate
+     * @param x a double
+     * @return none
+     * @exception none
+     */
     void Location::setX(double x) {
         Location::x = x;
     }
 
+    /**
+    * getter for the y coordinate
+    * @return a double
+     * @exception none
+    */
     double Location::getY() const {
         return y;
     }
 
+    /**
+     * setter for the y coordinate
+     * @param y a double
+     * @return none
+     * @exception none
+     */
     void Location::setY(double y) {
         Location::y = y;
     }

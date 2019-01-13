@@ -61,6 +61,17 @@ namespace roadfighterSFML {
             }
         }
         getWindow()->draw(*this);
+
+        //if the car is immune then a shield is drawn around it
+        if(isImmune()){
+            sf::CircleShape shield;
+            float raduis=SFMLEntitySprite::getGlobalBounds().width;
+            shield.setRadius(raduis);
+            shield.setOrigin(SFMLEntitySprite::getOrigin());
+            shield.setFillColor(sf::Color(0,0,255,128));
+            shield.setPosition(SFMLEntitySprite::getPosition().x-3*SFMLEntitySprite::getLocalBounds().width,SFMLEntitySprite::getPosition().y-3*SFMLEntitySprite::getLocalBounds().height);
+            getWindow()->draw(shield);
+        }
     }
 
 }

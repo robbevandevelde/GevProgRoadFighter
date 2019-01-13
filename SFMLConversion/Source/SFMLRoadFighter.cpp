@@ -207,7 +207,7 @@ namespace roadfighterSFML {
                          textpos, sf::Color(255, 255, 255), 50);
             }
             auto textpos = Transformation::getInstance().locationTransformation(roadfighter::Location(-9, -4));
-            drawText(window, "press escape to quit", textpos, sf::Color(128, 128, 128), 20);
+            drawText(window, "press escape to quit", textpos, sf::Color(150, 150, 150), 20);
         }
 
     }

@@ -12,9 +12,6 @@ namespace roadfighter {
         if(m_VerticalSpeed>m_maxVertSpeed){
             MovingObject::m_verticalSpeed =m_maxVertSpeed;
         }
-        if(m_VerticalSpeed<-m_maxVertSpeed){
-            MovingObject::m_verticalSpeed=-m_maxVertSpeed;
-        }
     }
 
     void MovingObject::setVerticalSpeedUnbounded(double m_VerticalSpeed) {

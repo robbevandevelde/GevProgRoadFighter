@@ -28,6 +28,7 @@ namespace roadfighter {
          */
         World(World &&move)= default;
 
+        //constructor with entity transporter
         explicit World(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter);
 
         /**
@@ -49,49 +50,32 @@ namespace roadfighter {
          */
         virtual ~World()= default;
 
-        /**
-         * this function subtracts the given paramater from all the y values of the m_roadEntities
-         * @param setback the amount all entities should be setback
-         */
+        //function that sets back all the entieis in world with double setback
         void setBackY(double setback);
 
-        /**
-         * this function updates the movement of all entities in this world by dt ticks
-         * @param dt the amount of a  tick the locations should be updated with
-         */
+        //function that updates the movement for allt eh entities
         void updateMovement(double dt) override;
 
-        /**
-         * takes all the entities that are currently in the transporter and puts them with the other entities
-         */
+        //gets new entities out of the transporter
         void getNewEntities();
 
-        /**
-         * check the collision for all the entities and does the apropiate action
-         */
+        //checks collision for all entities
         void checkCollision();
 
-        /**
-         * calls the draw function on all entities
-         */
+        //calls draw funtionnon all entities
         void draw() override;
 
-        /**
-         * updates the logic of this world and all the entities within
-         */
+        //updates all logic for the entities
         void updateLogic() override;
 
-        /**
-         * deletes all unused entities that are currently still in the entitie vectot
-         */
+        //deletes all entities whose mustdelete function returns true
         void deleteUnused();
 
-        /**
-         * gets the amount of ticks that the world had to move loast movementUpdate
-         * @return a double
-         */
+        //get the amount of y variance has been moved since last movementtick
+        //this can be used to make the background scroll
         double getTickMovement() const;
 
+        //function that calls the dettach function on all entities that inherit from the observable class
         void dettachAllObservers();
 
     private:

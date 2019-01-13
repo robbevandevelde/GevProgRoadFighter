@@ -18,13 +18,8 @@ namespace roadfighter {
           * default constructor for Location
           */
         Location()= default;
-        /**
-        * constructor by value
-        * @param x
-        * @param y
-        * @return none
-        * @excetpion none
-        */
+
+        //constructor with 2 positions given
         Location(double x, double y);
 
 
@@ -61,28 +56,16 @@ namespace roadfighter {
          */
         virtual ~Location()= default;
 
-        /**
-         * getter for the x coordinate
-         * @return a double
-         */
+        //getter for x
         double getX() const;
 
-        /**
-         * seeter for the x coordinate
-         * @param x a double
-         */
+        //setter for x
         void setX(double x);
 
-        /**
-         * getter for the y coordinate
-         * @return a double
-         */
+        //getter for y
         double getY() const;
 
-        /**
-         * setter for the y coordinate
-         * @param y a double
-         */
+        //setter for y
         void setY(double y);
 
         /**

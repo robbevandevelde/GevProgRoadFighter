@@ -24,6 +24,7 @@ namespace roadfighter {
          */
         RacingCar(RacingCar &&move)= default;
 
+        //constructor with all the variables given
         RacingCar(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
                   double m_horAccel);
 
@@ -47,47 +48,28 @@ namespace roadfighter {
          */
         ~RacingCar() override = default;
 
-        /**
-         * this function will update the postion of the car by dt ticks
-         * @param dt the amount of a tick the car will be moved forwar
-         */
+       //updates the movement of this class by dt ticks
         void updateMovement(double dt) override;
 
-        /**
-         * this function will update the logic of the racing car
-         * here it also can cahnge the direction
-         */
+       //updates the logic of the car
         void updateLogic() override;
 
-        /*
-         * this function denotes whether the car can be removed or not
-         */
+        //a function that says wether this car must be deletete or not
         bool mustDelete() const override;
 
-        /**
-         * this function will handle what happens when the car wins
-         */
+        //an overidden fucntion that says what must happen if this car wins
         void win() override;
 
-        /**
-         * this function handles what happens when another object collides with the playercar
-         * @param collided the object that collides with the playercar
-         */
+        //functiont hat handles the logic for wath happens when something collides with this
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
-        /**
-         * this function will handle what happens when the car gets crashes
-         */
+        //handles the crashing for this car
         void crash() override;
 
-        /**
-         * this function will handle what happens when the car gets shot
-         */
+        //handles getting shot for this car
         void shot() override;
 
-        /**
-         * this function will handle what happens when the car gets a bonus
-         */
+        //handles the bonus for this car
         void bonus() override;
     };
 }

@@ -599,8 +599,6 @@ Location.h
 -
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFMLRoadFighter.cpp
-iostream
--
 ../Include/SFMLRoadFighter.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h
 
