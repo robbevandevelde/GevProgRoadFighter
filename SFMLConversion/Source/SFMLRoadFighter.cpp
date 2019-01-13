@@ -30,10 +30,7 @@ namespace roadfighterSFML {
         Clock gameclock = Clock();
         while (m_window->isOpen()) {
             if (gameclock.getTimeAsSeconds() > 0.00833) {
-                m_window->clear();
-                m_game->tick(gameclock.getTimeAsSeconds());
-                draw(m_window);
-                gameclock.restart();
+                //get possible input
                 sf::Event event{};
                 if (m_window->pollEvent(event)) {
                     if (event.type == sf::Event::Closed)
@@ -49,8 +46,14 @@ namespace roadfighterSFML {
                     }
 //
                 }
-                m_window->display();
 
+                //clear the window, tick the game and redraw the window
+                m_window->clear();
+                m_game->tick(gameclock.getTimeAsSeconds());
+                draw(m_window);
+                gameclock.restart();
+
+                m_window->display();
             }
 
         }
