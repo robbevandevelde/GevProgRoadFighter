@@ -5,6 +5,8 @@ project(GevProgRoadFighter)
 set(CMAKE_CXX_STANDARD 14)
 
 #pthread flag is needed to make gtest run on linux
+set(CMAKE_CXX_FLAGS -pthread)
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 set(CMAKE_EXE_LINKER_FLAGS -pthread)
 
 #set include dir for gtest

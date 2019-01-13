@@ -17,7 +17,7 @@ namespace roadfighterSFML {
     SFMLWorld::SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
                          const std::shared_ptr<sf::RenderWindow> &window) : World(m_Transporter),
                                                                             SFMLEntitySprite(
-                                                                                    "../../SFMLConversion/resources/sprites/background.png",
+                                                                                    "./resources/sprites/background.png",
                                                                                     window) {
 
         std::tuple<int, int> sfmlpos1 = std::make_tuple(0, 0);

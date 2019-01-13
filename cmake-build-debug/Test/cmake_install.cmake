@@ -52,7 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/bin" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/GevProgRoadFighterTest")
+file(INSTALL DESTINATION "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/bin" TYPE EXECUTABLE FILES "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/GevProgRoadFighterTest")
   if(EXISTS "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/bin/GevProgRoadFighterTest" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/bin/GevProgRoadFighterTest")
     file(RPATH_CHANGE

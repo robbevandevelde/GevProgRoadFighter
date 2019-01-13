@@ -29,7 +29,7 @@ namespace roadfighterSFML {
                                  const std::shared_ptr<sf::RenderWindow> &window) : PlayerCar(
             m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel, m_fuel, m_moveController, transporter, factory),
                                                                                     SFMLEntitySprite(
-                                                                                            "../../SFMLConversion/resources/sprites/player_car.png",
+                                                                                            "./resources/sprites/player_car.png",
                                                                                             window) {
         std::tuple<int, int> sfmlpos1 = Transformation::getInstance().locationTransformation(getLoc1());
         std::tuple<int, int> sfmlpos2 = Transformation::getInstance().locationTransformation(getLoc2());

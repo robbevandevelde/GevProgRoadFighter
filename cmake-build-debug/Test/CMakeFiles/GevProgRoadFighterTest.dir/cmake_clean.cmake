@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GevProgRoadFighterTest.dir/OberserTests.cpp.o"
   "CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o"
   "CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o"
-  "GevProgRoadFighterTest.pdb"
-  "GevProgRoadFighterTest"
+  "../../Test/GevProgRoadFighterTest.pdb"
+  "../../Test/GevProgRoadFighterTest"
 )
 
 # Per-language clean rules from dependency scanning.

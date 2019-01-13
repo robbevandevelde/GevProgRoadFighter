@@ -1,10 +1,13 @@
 #setting cmake version and project name
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.6)
 project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
 #extra compile flags to make srue code conventions are followed
 #set(CMAKE_CXX_FLAGS "-Wall -Werror")
+set(CMAKE_CXX_FLAGS -pthread)
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
+set(CMAKE_EXE_LINKER_FLAGS -pthread)
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules

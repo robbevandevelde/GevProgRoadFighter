@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLPassingCar.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLBullet.cpp.o"
   "CMakeFiles/GevProgRoadFighter.dir/Source/entities/SFMLEnd.cpp.o"
-  "GevProgRoadFighter.pdb"
-  "GevProgRoadFighter"
+  "../../SFMLConversion/GevProgRoadFighter.pdb"
+  "../../SFMLConversion/GevProgRoadFighter"
 )
 
 # Per-language clean rules from dependency scanning.

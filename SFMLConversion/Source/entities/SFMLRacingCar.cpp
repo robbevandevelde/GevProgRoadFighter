@@ -24,7 +24,7 @@ namespace roadfighterSFML {
                                                                                               m_vertAccel,
                                                                                               m_horAccel),
                                                                                     SFMLEntitySprite(
-                                                                                            "../../SFMLConversion/resources/sprites/racing_car.png",
+                                                                                            "./resources/sprites/racing_car.png",
                                                                                             window) {
         std::tuple<int, int> sfmlpos1 = Transformation::getInstance().locationTransformation(getLoc1());
         std::tuple<int, int> sfmlpos2 = Transformation::getInstance().locationTransformation(getLoc2());

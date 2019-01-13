@@ -34,24 +34,25 @@ namespace roadfighterSFML {
                 m_game->tick(gameclock.getTimeAsSeconds());
                 draw(m_window);
                 gameclock.restart();
+                sf::Event event{};
+                if (m_window->pollEvent(event)) {
+                    if (event.type == sf::Event::Closed)
+                        m_window->close();
+                    if (!m_game->hasEnded() && !m_game->ispaused()) {
+                        MovementEvent(event);
+                    } else if (m_game->ispaused()) {
+                        pauseScreenEvent(event);
+                    } else if (m_game->hasEnded() && !m_nameGiven) {
+                        askNameEvent(event);
+                    } else {
+                        endGameEvent(event);
+                    }
+//
+                }
+                m_window->display();
 
             }
-            sf::Event event{};
-            while (m_window->pollEvent(event)) {
-                if (event.type == sf::Event::Closed)
-                    m_window->close();
-                if (!m_game->hasEnded() && !m_game->ispaused()) {
-                    MovementEvent(event);
-                } else if (m_game->ispaused()) {
-                    pauseScreenEvent(event);
-                } else if (m_game->hasEnded() && !m_nameGiven) {
-                    askNameEvent(event);
-                } else {
-                    endGameEvent(event);
-                }
-//
-            }
-            m_window->display();
+
         }
     }
 
@@ -165,7 +166,7 @@ namespace roadfighterSFML {
                                    std::tuple<int, int> position,
                                    sf::Color color, int size) {
         sf::Font font;
-        if(!font.loadFromFile("../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf")){
+        if(!font.loadFromFile("./resources/open-sans/OpenSans-Regular.ttf")){
             throw SFMLConversionException("could not find font to draw text at ../../SFMLConversion/resources/open-sans/OpenSans-Regular.ttf");
         }
 

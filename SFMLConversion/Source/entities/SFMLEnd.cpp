@@ -16,7 +16,7 @@ namespace roadfighterSFML {
     SFMLEnd::SFMLEnd(const roadfighter::Location &m_loc1, const roadfighter::Location &m_loc2,
                      const std::shared_ptr<sf::RenderWindow> &window) : End(m_loc1, m_loc2),
                                                                         SFMLEntitySprite(
-                                                                                "../../SFMLConversion/resources/sprites/Finishline.png",
+                                                                                "./resources/sprites/Finishline.png",
                                                                                 window) {
         std::tuple<int, int> sfmlpos1 = Transformation::getInstance().locationTransformation(getLoc1());
         std::tuple<int, int> sfmlpos2 = Transformation::getInstance().locationTransformation(getLoc2());
