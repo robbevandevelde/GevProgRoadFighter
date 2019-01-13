@@ -1,0 +1,253 @@
+\hypertarget{classroadfighter_1_1Entity__Factory__base}{}\section{roadfighter\+:\+:Entity\+\_\+\+Factory\+\_\+base Class Reference}
+\label{classroadfighter_1_1Entity__Factory__base}\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+
+
+Inheritance diagram for roadfighter\+:\+:Entity\+\_\+\+Factory\+\_\+base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classroadfighter_1_1Entity__Factory__base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for roadfighter\+:\+:Entity\+\_\+\+Factory\+\_\+base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classroadfighter_1_1Entity__Factory__base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_a5241bdb886a9f1b086d009a0f6478045}{create\+Bullet} (double x, double y, double v\+Speed)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_aa21b8cb23696844b7349ccf2c87d10fa}{creat\+Passing\+Car} (double x, double y, double v\+Speed)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_a3021f69b62b9df33706096381664d58f}{create\+Player\+Car} (double x, double y, double max, double v\+Accel, double h\+Accel, double fuel)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_a17b9c30501b8a11624bee8f1c24a6b7e}{create\+Racing\+Car} (double x, double y, double max, double v\+Accel, double h\+Accel)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_a888f537d2deed2d90a391c1900e9fdb6}{create\+Bonus\+Car} (double x, double y, double v\+Speed)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_a791574991ccbe7ff95f28e5651ed2cb1}{create\+End} (double y)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hyperlink{classroadfighter_1_1Entity__Factory__base_aa24de6bbeb80c25e96f3e24d6bcb5169}{create\+World} ()=0
+\item 
+virtual \hyperlink{classroadfighter_1_1Entity__Factory__base_a19ec21ceb4fd132712ef1bf131b4be9b}{$\sim$\+Entity\+\_\+\+Factory\+\_\+base} ()=default
+\item 
+void \hyperlink{classroadfighter_1_1Entity__Factory__base_a6c9363d763f34f39a44eaf02c6cb9f87}{set\+Controller} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1InputController}{Input\+Controller} $>$ \&m\+\_\+controller)
+\item 
+void \hyperlink{classroadfighter_1_1Entity__Factory__base_ab3338a586002c58ad7581e1046be9ba5}{set\+Transporter} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1EntityTransporter}{Entity\+Transporter} $>$ \&m\+\_\+\+Transporter)
+\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1InputController}{Input\+Controller} $>$ \& \hyperlink{classroadfighter_1_1Entity__Factory__base_a3ea098a47127d87d64a6a8623035007a}{get\+Controller} () const
+\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1EntityTransporter}{Entity\+Transporter} $>$ \& \hyperlink{classroadfighter_1_1Entity__Factory__base_a4a8d467738722cfb4f343de72a4a355a}{get\+Transporter} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a7b45161be0cda25b24375f6e99594bcc}\label{classroadfighter_1_1Entity__Factory__base_a7b45161be0cda25b24375f6e99594bcc}} 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classObserverBase}{Observer\+Base} $>$ \& {\bfseries get\+Score\+Observer} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a59240ab3a76f6d54b051bc560b6d3aa1}\label{classroadfighter_1_1Entity__Factory__base_a59240ab3a76f6d54b051bc560b6d3aa1}} 
+void {\bfseries set\+Score\+Observer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classObserverBase}{Observer\+Base} $>$ \&m\+\_\+score\+Observer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a19ec21ceb4fd132712ef1bf131b4be9b}\label{classroadfighter_1_1Entity__Factory__base_a19ec21ceb4fd132712ef1bf131b4be9b}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!````~Entity\+\_\+\+Factory\+\_\+base@{$\sim$\+Entity\+\_\+\+Factory\+\_\+base}}
+\index{````~Entity\+\_\+\+Factory\+\_\+base@{$\sim$\+Entity\+\_\+\+Factory\+\_\+base}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{$\sim$\+Entity\+\_\+\+Factory\+\_\+base()}{~Entity\_Factory\_base()}}
+{\footnotesize\ttfamily virtual roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::$\sim$\+Entity\+\_\+\+Factory\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+virtual destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a888f537d2deed2d90a391c1900e9fdb6}\label{classroadfighter_1_1Entity__Factory__base_a888f537d2deed2d90a391c1900e9fdb6}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+Bonus\+Car@{create\+Bonus\+Car}}
+\index{create\+Bonus\+Car@{create\+Bonus\+Car}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+Bonus\+Car()}{createBonusCar()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+Bonus\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for creating a \hyperlink{classroadfighter_1_1BonusCar}{Bonus\+Car} 
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate of the bonus car (the middle) \\
+\hline
+{\em y} & coordinate of the passing bonus car (the middle) \\
+\hline
+{\em v\+Speed} & the set speed of the passingcar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to an entity 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_a2a6a8d397d43c48894adb6c9d9ed0947}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_af6fb01565b73487c90d93bc820603ca2}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a5241bdb886a9f1b086d009a0f6478045}\label{classroadfighter_1_1Entity__Factory__base_a5241bdb886a9f1b086d009a0f6478045}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+Bullet@{create\+Bullet}}
+\index{create\+Bullet@{create\+Bullet}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+Bullet()}{createBullet()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+Bullet (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for creating a bullet \begin{DoxyReturn}{Returns}
+a shared pointer to an \hyperlink{classroadfighter_1_1Entity}{Entity} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_a7fcd57b8a2ae18240476f6dc64216822}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_ab80783626b22a7746a8e9dd49e48e898}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a791574991ccbe7ff95f28e5651ed2cb1}\label{classroadfighter_1_1Entity__Factory__base_a791574991ccbe7ff95f28e5651ed2cb1}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+End@{create\+End}}
+\index{create\+End@{create\+End}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+End()}{createEnd()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+End (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for creating a \hyperlink{classroadfighter_1_1End}{End} 
+\begin{DoxyParams}{Parameters}
+{\em y} & coordinate of the end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to an entity 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_ae26222829d8295cef0aa708a7ee909b7}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_af484c4ae7c9a82c171eb047fb05aa350}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a3021f69b62b9df33706096381664d58f}\label{classroadfighter_1_1Entity__Factory__base_a3021f69b62b9df33706096381664d58f}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+Player\+Car@{create\+Player\+Car}}
+\index{create\+Player\+Car@{create\+Player\+Car}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+Player\+Car()}{createPlayerCar()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+Player\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{max,  }\item[{double}]{v\+Accel,  }\item[{double}]{h\+Accel,  }\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for crating the player car 
+\begin{DoxyParams}{Parameters}
+{\em x} & xoordinate of the player car (the middle) \\
+\hline
+{\em y} & coordinate of the player car (the middle) \\
+\hline
+{\em max} & the max vertical speed \\
+\hline
+{\em v\+Accel} & the vertical acceleration per tick \\
+\hline
+{\em h\+Accel} & the horizontal acceleration per tick \\
+\hline
+{\em fuel} & the starting fuel of the car \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to an entity 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_a45992523d105bd284b7aeed6cb41ce8a}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_a3c45cdbbfb31525bcdbee0ce87948236}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a17b9c30501b8a11624bee8f1c24a6b7e}\label{classroadfighter_1_1Entity__Factory__base_a17b9c30501b8a11624bee8f1c24a6b7e}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+Racing\+Car@{create\+Racing\+Car}}
+\index{create\+Racing\+Car@{create\+Racing\+Car}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+Racing\+Car()}{createRacingCar()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+Racing\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{max,  }\item[{double}]{v\+Accel,  }\item[{double}]{h\+Accel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for crating a racing car 
+\begin{DoxyParams}{Parameters}
+{\em x} & xoordinate of the racing car (the middle) \\
+\hline
+{\em y} & coordinate of the racing car (the middle) \\
+\hline
+{\em max} & the max vertical speed \\
+\hline
+{\em v\+Accel} & the vertical acceleration per tick \\
+\hline
+{\em h\+Accel} & the horizontal acceleration per tick \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to an entity 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_a81737f6acc8d3c460b4d244cf06baeec}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_ac65176cfefa77f5f4af79f88ed244478}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_aa24de6bbeb80c25e96f3e24d6bcb5169}\label{classroadfighter_1_1Entity__Factory__base_aa24de6bbeb80c25e96f3e24d6bcb5169}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!create\+World@{create\+World}}
+\index{create\+World@{create\+World}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{create\+World()}{createWorld()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::create\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for creating the world \begin{DoxyReturn}{Returns}
+a shared pointer to an enityt 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_a80f9f647f1192ddc098b2aa4f0172168}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_a3a6743085eb4c1793be523fe07724328}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_aa21b8cb23696844b7349ccf2c87d10fa}\label{classroadfighter_1_1Entity__Factory__base_aa21b8cb23696844b7349ccf2c87d10fa}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!creat\+Passing\+Car@{creat\+Passing\+Car}}
+\index{creat\+Passing\+Car@{creat\+Passing\+Car}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{creat\+Passing\+Car()}{creatPassingCar()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classroadfighter_1_1Entity}{Entity}$>$ roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::creat\+Passing\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+base factory method for creating a \hyperlink{classroadfighter_1_1PassingCar}{Passing\+Car} 
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate of the passing car (the middle) \\
+\hline
+{\em y} & coordinate of the passing car (the middle) \\
+\hline
+{\em v\+Speed} & the set speed of the passingcar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to an entity 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classroadfighter_1_1GLL__Entity__Factory_aa176b2bec6007989c5cf3658840123c7}{roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory}, and \hyperlink{classSFML__Entity__Factory_afe1acae3b9c6d07ac30426a72ad390d0}{S\+F\+M\+L\+\_\+\+Entity\+\_\+\+Factory}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a3ea098a47127d87d64a6a8623035007a}\label{classroadfighter_1_1Entity__Factory__base_a3ea098a47127d87d64a6a8623035007a}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!get\+Controller@{get\+Controller}}
+\index{get\+Controller@{get\+Controller}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{get\+Controller()}{getController()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1InputController}{Input\+Controller} $>$ \& roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::get\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the controller \begin{DoxyReturn}{Returns}
+a shared pointer to the movecontroller 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a4a8d467738722cfb4f343de72a4a355a}\label{classroadfighter_1_1Entity__Factory__base_a4a8d467738722cfb4f343de72a4a355a}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!get\+Transporter@{get\+Transporter}}
+\index{get\+Transporter@{get\+Transporter}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{get\+Transporter()}{getTransporter()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1EntityTransporter}{Entity\+Transporter} $>$ \& roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::get\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the transporter \begin{DoxyReturn}{Returns}
+a shared pointer to the entitytransporter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_a6c9363d763f34f39a44eaf02c6cb9f87}\label{classroadfighter_1_1Entity__Factory__base_a6c9363d763f34f39a44eaf02c6cb9f87}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!set\+Controller@{set\+Controller}}
+\index{set\+Controller@{set\+Controller}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{set\+Controller()}{setController()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::set\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1InputController}{Input\+Controller} $>$ \&}]{m\+\_\+controller }\end{DoxyParamCaption})}
+
+sets the controller of the factory 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+controller} & a movecontroller that will be given to all playercars created with this factory \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1Entity__Factory__base_ab3338a586002c58ad7581e1046be9ba5}\label{classroadfighter_1_1Entity__Factory__base_ab3338a586002c58ad7581e1046be9ba5}} 
+\index{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}!set\+Transporter@{set\+Transporter}}
+\index{set\+Transporter@{set\+Transporter}!roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base@{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}}
+\subsubsection{\texorpdfstring{set\+Transporter()}{setTransporter()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base\+::set\+Transporter (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1EntityTransporter}{Entity\+Transporter} $>$ \&}]{m\+\_\+\+Transporter }\end{DoxyParamCaption})}
+
+setter for the transporter 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Transporter} & an entitytransporter that will be given to the world \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\hyperlink{Entity__Factory__base_8h}{Entity\+\_\+\+Factory\+\_\+base.\+h}\item 
+Game\+Logic/\+Source/Entity\+\_\+\+Factory\+\_\+base.\+cpp\end{DoxyCompactItemize}

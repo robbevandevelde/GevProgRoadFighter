@@ -1,0 +1,63 @@
+\hypertarget{classroadfighter_1_1Entity}{}\section{roadfighter\+:\+:Entity Class Reference}
+\label{classroadfighter_1_1Entity}\index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
+
+
+Inheritance diagram for roadfighter\+:\+:Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classroadfighter_1_1Entity__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}{update\+Logic} ()=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}{update\+Movement} (double dt)=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}{draw} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}\label{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}} 
+\index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!draw@{draw}}
+\index{draw@{draw}!roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Entity\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual void function that is used to draw the entity this function is not overriden in the game logic itself and should be implemented by the creator of the graphics implementation 
+
+Implemented in \hyperlink{classroadfighter_1_1World_a90534263a154d6d7c1e8aef4e0138881}{roadfighter\+::\+World}, \hyperlink{classSFMLPlayerCar_ab4adedb2554e5f5eb59b7565a592c2b2}{S\+F\+M\+L\+Player\+Car}, \hyperlink{classSFMLBonusCar_a95d6a17fdbd099db1fe080da1581da20}{S\+F\+M\+L\+Bonus\+Car}, \hyperlink{classSFMLBullet_a2b774898d1f369ab6d1e58659dab389a}{S\+F\+M\+L\+Bullet}, \hyperlink{classSFMLPassingCar_ad860ff5f0eea98fffaa51381c9424e8d}{S\+F\+M\+L\+Passing\+Car}, \hyperlink{classSFMLRacingCar_a2b1c8b9ad2b80c9e18990cb078d2d62d}{S\+F\+M\+L\+Racing\+Car}, \hyperlink{classSFMLWorld_aa0e1deda989ca494937054c5f5b139b0}{S\+F\+M\+L\+World}, and \hyperlink{classSFMLEnd_aee51982a63f9c1c6495f539528683989}{S\+F\+M\+L\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}\label{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}} 
+\index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!update\+Logic@{update\+Logic}}
+\index{update\+Logic@{update\+Logic}!roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
+\subsubsection{\texorpdfstring{update\+Logic()}{updateLogic()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Entity\+::update\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual void function that should be used to update the logic of the entity 
+
+Implemented in \hyperlink{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}{roadfighter\+::\+Moving\+Object}, \hyperlink{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}{roadfighter\+::\+Bullet}, \hyperlink{classroadfighter_1_1PlayerCar_a01480487ca7978a50a3c6609f1ebe6df}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1World_a066592a75c8a38e241013707b429206c}{roadfighter\+::\+World}, \hyperlink{classroadfighter_1_1RacingCar_af3f3b4c368ba61c13dc9b99004895c5d}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_a21d55ad1e1595ac6c86ca20f8819778b}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ac3fe3087290121bf44880f94efa3a916}{roadfighter\+::\+Passing\+Car}, and \hyperlink{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}{roadfighter\+::\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}\label{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}} 
+\index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!update\+Movement@{update\+Movement}}
+\index{update\+Movement@{update\+Movement}!roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
+\subsubsection{\texorpdfstring{update\+Movement()}{updateMovement()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Entity\+::update\+Movement (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual void function that should be used to update the movement of the entity 
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classroadfighter_1_1MovingObject_ac1918d96dac118c4bd7d99168d92867c}{roadfighter\+::\+Moving\+Object}, \hyperlink{classroadfighter_1_1PlayerCar_aa1dcbec01dde1b212e4919b61338edde}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1World_a880776b589376b1b4fd5ed4f26de4482}{roadfighter\+::\+World}, \hyperlink{classroadfighter_1_1BonusCar_a2d3d584ca34a5df3b3c833123a9bbc30}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ade5ebca5d7dbdb75bd9eee5817972363}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a2e8f3c63381a1fe432cddcc1f34fb935}{roadfighter\+::\+Racing\+Car}, and \hyperlink{classroadfighter_1_1End_a6ea4afe8b07f96801fb2a67b82d6b71c}{roadfighter\+::\+End}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\+Entities/Entity.\+h\end{DoxyCompactItemize}

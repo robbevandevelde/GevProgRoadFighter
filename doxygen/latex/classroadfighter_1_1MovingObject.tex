@@ -1,0 +1,374 @@
+\hypertarget{classroadfighter_1_1MovingObject}{}\section{roadfighter\+:\+:Moving\+Object Class Reference}
+\label{classroadfighter_1_1MovingObject}\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+
+
+Inheritance diagram for roadfighter\+:\+:Moving\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classroadfighter_1_1MovingObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for roadfighter\+:\+:Moving\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classroadfighter_1_1MovingObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classroadfighter_1_1MovingObject_acd1afb2c2845299fc2b6a7e729368ba9}{Moving\+Object} ()=default
+\item 
+\hyperlink{classroadfighter_1_1MovingObject_ae9c48dc389d0a594ea7bd108849e467f}{Moving\+Object} (const \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&copy)=default
+\item 
+\hyperlink{classroadfighter_1_1MovingObject_a759ad597bca6a44c49adf7082fe44469}{Moving\+Object} (\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&\&move)=default
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a5da76d54101b6f2847dc9cdde8dd40cf}\label{classroadfighter_1_1MovingObject_a5da76d54101b6f2847dc9cdde8dd40cf}} 
+{\bfseries Moving\+Object} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc1, const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc2, double m\+\_\+max\+Vert\+Speed, double m\+\_\+vert\+Accel, double m\+\_\+hor\+Accel)
+\item 
+\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \& \hyperlink{classroadfighter_1_1MovingObject_a46d710b11219a0e973eb1e4d3b375851}{operator=} (const \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&other)=default
+\item 
+\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \& \hyperlink{classroadfighter_1_1MovingObject_ae2150a0937d9e1b978bcdf2ba1628677}{operator=} (\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&\&other)=default
+\item 
+\hyperlink{classroadfighter_1_1MovingObject_aabb801baf353d53a36998983abbb803a}{$\sim$\+Moving\+Object} () override=default
+\item 
+virtual void \hyperlink{classroadfighter_1_1MovingObject_ac9f197ee0e91754d2fd653c0b8c84c57}{stop} ()
+\item 
+virtual void \hyperlink{classroadfighter_1_1MovingObject_a50bde99947cf9b5de95aeb58bd49ff9f}{move\+Left} ()
+\item 
+virtual void \hyperlink{classroadfighter_1_1MovingObject_a11dee0cb3d69fbc252a56ad3efef4226}{move\+Right} ()
+\item 
+virtual void \hyperlink{classroadfighter_1_1MovingObject_ab516489c0569b625c41a1bb9cac19d97}{accelerate} (double dt)
+\item 
+virtual void \hyperlink{classroadfighter_1_1MovingObject_a8183bcad61477b6cba13b70d6dbf6b84}{decelerate} (double dt)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a7382aeb5c2e7254dde2cc571c85a8fbb}{set\+Vertical\+Speed} (double m\+\_\+\+Vertical\+Speed)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a9aa56ab17060aabcae8604633993323f}{set\+Vertical\+Speed\+Unbounded} (double m\+\_\+\+Vertical\+Speed)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a20321fab6dfee452486f80d744d7002d}{set\+Horizontal\+Speed} (double Horizontal\+Speed)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_ac1918d96dac118c4bd7d99168d92867c}{update\+Movement} (double dt) override
+\item 
+double \hyperlink{classroadfighter_1_1MovingObject_a26e23531dea4a66777f7a3fd61fa4a21}{get\+Horizontal\+Speed} () const
+\item 
+double \hyperlink{classroadfighter_1_1MovingObject_a50a29cec3ac0234325691f2efd0e7fe1}{get\+Vertical\+Speed} () const
+\item 
+double \hyperlink{classroadfighter_1_1MovingObject_a299e4d456864595ba066c89f7de58afe}{get\+Vert\+Accel} () const
+\item 
+double \hyperlink{classroadfighter_1_1MovingObject_a00ed8d1d735142a802792954089e2081}{get\+Hor\+Accel} () const
+\item 
+E\+Status \hyperlink{classroadfighter_1_1MovingObject_a05cbcd45fb2827a26f54500a897862b4}{get\+Status} () const
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_ab1f380b45e20697c45b6ed7b466ca0e9}{set\+Status} (E\+Status m\+\_\+status)
+\item 
+int \hyperlink{classroadfighter_1_1MovingObject_a447e1cfbdca177040016cd25f736d7df}{get\+Time\+Out} () const
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a3e0c64a4f67f03e84fc388127123c2df}{set\+Time\+Out} (int m\+\_\+time\+Out)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_aa968b69523ee3cfe64fcd5342732ba5a}{decrement\+Time\+Out} ()
+\item 
+bool \hyperlink{classroadfighter_1_1MovingObject_a25573bdb03d697a1ea65e207a9ff471a}{is\+Immune} () const
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a4b37b0c2ab03b681e9515db6f029186f}{set\+Immune} (bool immune)
+\item 
+void \hyperlink{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}{update\+Logic} () override
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a193dbc310915e3f81071170b3250516e}\label{classroadfighter_1_1MovingObject_a193dbc310915e3f81071170b3250516e}} 
+void {\bfseries set\+Max\+Vert\+Speed} (double m\+\_\+max\+Vert\+Speed)
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a47bcc94c24b3b6b047ecf45c22574d09}\label{classroadfighter_1_1MovingObject_a47bcc94c24b3b6b047ecf45c22574d09}} 
+void {\bfseries set\+Hor\+Accel} (double m\+\_\+hor\+Accel)
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a52313182d28796bf27762047c8b289fd}\label{classroadfighter_1_1MovingObject_a52313182d28796bf27762047c8b289fd}} 
+void {\bfseries set\+Vert\+Accel} (double m\+\_\+vert\+Accel)
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a5291cd441cc9b4f4650ff14c584f28d2}\label{classroadfighter_1_1MovingObject_a5291cd441cc9b4f4650ff14c584f28d2}} 
+double {\bfseries get\+Max\+Vert\+Speed} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_acd1afb2c2845299fc2b6a7e729368ba9}\label{classroadfighter_1_1MovingObject_acd1afb2c2845299fc2b6a7e729368ba9}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!Moving\+Object@{Moving\+Object}}
+\index{Moving\+Object@{Moving\+Object}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{Moving\+Object()}{MovingObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily roadfighter\+::\+Moving\+Object\+::\+Moving\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+default constructor for Car \mbox{\Hypertarget{classroadfighter_1_1MovingObject_ae9c48dc389d0a594ea7bd108849e467f}\label{classroadfighter_1_1MovingObject_ae9c48dc389d0a594ea7bd108849e467f}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!Moving\+Object@{Moving\+Object}}
+\index{Moving\+Object@{Moving\+Object}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{Moving\+Object()}{MovingObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily roadfighter\+::\+Moving\+Object\+::\+Moving\+Object (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em copy} & the other Car that is being copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a759ad597bca6a44c49adf7082fe44469}\label{classroadfighter_1_1MovingObject_a759ad597bca6a44c49adf7082fe44469}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!Moving\+Object@{Moving\+Object}}
+\index{Moving\+Object@{Moving\+Object}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{Moving\+Object()}{MovingObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily roadfighter\+::\+Moving\+Object\+::\+Moving\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&\&}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move constructor 
+\begin{DoxyParams}{Parameters}
+{\em Move} & the other Car that is being moved in this one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_aabb801baf353d53a36998983abbb803a}\label{classroadfighter_1_1MovingObject_aabb801baf353d53a36998983abbb803a}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!````~Moving\+Object@{$\sim$\+Moving\+Object}}
+\index{````~Moving\+Object@{$\sim$\+Moving\+Object}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Moving\+Object()}{~MovingObject()}}
+{\footnotesize\ttfamily roadfighter\+::\+Moving\+Object\+::$\sim$\+Moving\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+destructor for Car 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_ab516489c0569b625c41a1bb9cac19d97}\label{classroadfighter_1_1MovingObject_ab516489c0569b625c41a1bb9cac19d97}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{accelerate()}{accelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::accelerate (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that accelrates the car with the verticalaccel$\ast$dt 
+\begin{DoxyParams}{Parameters}
+{\em dt} & teh amount of a tick that has passed since previous one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a8183bcad61477b6cba13b70d6dbf6b84}\label{classroadfighter_1_1MovingObject_a8183bcad61477b6cba13b70d6dbf6b84}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!decelerate@{decelerate}}
+\index{decelerate@{decelerate}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{decelerate()}{decelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::decelerate (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that decelerates the car with the verticalaccel$\ast$dt 
+\begin{DoxyParams}{Parameters}
+{\em dt} & teh amount of a tick that has passed since previous one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_aa968b69523ee3cfe64fcd5342732ba5a}\label{classroadfighter_1_1MovingObject_aa968b69523ee3cfe64fcd5342732ba5a}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!decrement\+Time\+Out@{decrement\+Time\+Out}}
+\index{decrement\+Time\+Out@{decrement\+Time\+Out}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{decrement\+Time\+Out()}{decrementTimeOut()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::decrement\+Time\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that subtracts one of the timeout \mbox{\Hypertarget{classroadfighter_1_1MovingObject_a00ed8d1d735142a802792954089e2081}\label{classroadfighter_1_1MovingObject_a00ed8d1d735142a802792954089e2081}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Hor\+Accel@{get\+Hor\+Accel}}
+\index{get\+Hor\+Accel@{get\+Hor\+Accel}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Hor\+Accel()}{getHorAccel()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Moving\+Object\+::get\+Hor\+Accel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for horizontal acceleration \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a26e23531dea4a66777f7a3fd61fa4a21}\label{classroadfighter_1_1MovingObject_a26e23531dea4a66777f7a3fd61fa4a21}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Horizontal\+Speed@{get\+Horizontal\+Speed}}
+\index{get\+Horizontal\+Speed@{get\+Horizontal\+Speed}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Horizontal\+Speed()}{getHorizontalSpeed()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Moving\+Object\+::get\+Horizontal\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the current horizontalspeed \begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a05cbcd45fb2827a26f54500a897862b4}\label{classroadfighter_1_1MovingObject_a05cbcd45fb2827a26f54500a897862b4}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Status()}{getStatus()}}
+{\footnotesize\ttfamily E\+Status roadfighter\+::\+Moving\+Object\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for current status of the moving object \begin{DoxyReturn}{Returns}
+an E\+Status enum 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a447e1cfbdca177040016cd25f736d7df}\label{classroadfighter_1_1MovingObject_a447e1cfbdca177040016cd25f736d7df}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Time\+Out@{get\+Time\+Out}}
+\index{get\+Time\+Out@{get\+Time\+Out}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Time\+Out()}{getTimeOut()}}
+{\footnotesize\ttfamily int roadfighter\+::\+Moving\+Object\+::get\+Time\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the current time\+Out \begin{DoxyReturn}{Returns}
+an int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a299e4d456864595ba066c89f7de58afe}\label{classroadfighter_1_1MovingObject_a299e4d456864595ba066c89f7de58afe}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Vert\+Accel@{get\+Vert\+Accel}}
+\index{get\+Vert\+Accel@{get\+Vert\+Accel}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Vert\+Accel()}{getVertAccel()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Moving\+Object\+::get\+Vert\+Accel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for vertical acceleration \begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a50a29cec3ac0234325691f2efd0e7fe1}\label{classroadfighter_1_1MovingObject_a50a29cec3ac0234325691f2efd0e7fe1}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!get\+Vertical\+Speed@{get\+Vertical\+Speed}}
+\index{get\+Vertical\+Speed@{get\+Vertical\+Speed}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{get\+Vertical\+Speed()}{getVerticalSpeed()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Moving\+Object\+::get\+Vertical\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for current vertical speed \begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a25573bdb03d697a1ea65e207a9ff471a}\label{classroadfighter_1_1MovingObject_a25573bdb03d697a1ea65e207a9ff471a}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!is\+Immune@{is\+Immune}}
+\index{is\+Immune@{is\+Immune}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{is\+Immune()}{isImmune()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Moving\+Object\+::is\+Immune (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a getter for the immunity of the object \begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a50bde99947cf9b5de95aeb58bd49ff9f}\label{classroadfighter_1_1MovingObject_a50bde99947cf9b5de95aeb58bd49ff9f}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that substracts the horizontalaccel from the horizontalspeed \mbox{\Hypertarget{classroadfighter_1_1MovingObject_a11dee0cb3d69fbc252a56ad3efef4226}\label{classroadfighter_1_1MovingObject_a11dee0cb3d69fbc252a56ad3efef4226}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that add the horizontalaccel from the horizontalspeed \mbox{\Hypertarget{classroadfighter_1_1MovingObject_a46d710b11219a0e973eb1e4d3b375851}\label{classroadfighter_1_1MovingObject_a46d710b11219a0e973eb1e4d3b375851}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object}\& roadfighter\+::\+Moving\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy assigment for Car 
+\begin{DoxyParams}{Parameters}
+{\em other} & the Car that is being copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new Car that is equal to the other one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_ae2150a0937d9e1b978bcdf2ba1628677}\label{classroadfighter_1_1MovingObject_ae2150a0937d9e1b978bcdf2ba1628677}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object}\& roadfighter\+::\+Moving\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1MovingObject}{Moving\+Object} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move assignment for Car 
+\begin{DoxyParams}{Parameters}
+{\em other} & other Car that is being moved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Car that contains all the data of the first one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a20321fab6dfee452486f80d744d7002d}\label{classroadfighter_1_1MovingObject_a20321fab6dfee452486f80d744d7002d}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Horizontal\+Speed@{set\+Horizontal\+Speed}}
+\index{set\+Horizontal\+Speed@{set\+Horizontal\+Speed}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Horizontal\+Speed()}{setHorizontalSpeed()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Horizontal\+Speed (\begin{DoxyParamCaption}\item[{double}]{Horizontal\+Speed }\end{DoxyParamCaption})}
+
+setter for horizontalspeed 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Horizontal\+Speed} & the new horizontalspeed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a4b37b0c2ab03b681e9515db6f029186f}\label{classroadfighter_1_1MovingObject_a4b37b0c2ab03b681e9515db6f029186f}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Immune@{set\+Immune}}
+\index{set\+Immune@{set\+Immune}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Immune()}{setImmune()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Immune (\begin{DoxyParamCaption}\item[{bool}]{immune }\end{DoxyParamCaption})}
+
+setter for the immunity of the object 
+\begin{DoxyParams}{Parameters}
+{\em immune} & a bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_ab1f380b45e20697c45b6ed7b466ca0e9}\label{classroadfighter_1_1MovingObject_ab1f380b45e20697c45b6ed7b466ca0e9}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Status@{set\+Status}}
+\index{set\+Status@{set\+Status}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Status()}{setStatus()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Status (\begin{DoxyParamCaption}\item[{E\+Status}]{m\+\_\+status }\end{DoxyParamCaption})}
+
+setter for the status 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+status} & an E\+Status enum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a3e0c64a4f67f03e84fc388127123c2df}\label{classroadfighter_1_1MovingObject_a3e0c64a4f67f03e84fc388127123c2df}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Time\+Out@{set\+Time\+Out}}
+\index{set\+Time\+Out@{set\+Time\+Out}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Time\+Out()}{setTimeOut()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Time\+Out (\begin{DoxyParamCaption}\item[{int}]{m\+\_\+time\+Out }\end{DoxyParamCaption})}
+
+setter for the timeout 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+time\+Out} & an int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a7382aeb5c2e7254dde2cc571c85a8fbb}\label{classroadfighter_1_1MovingObject_a7382aeb5c2e7254dde2cc571c85a8fbb}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Vertical\+Speed@{set\+Vertical\+Speed}}
+\index{set\+Vertical\+Speed@{set\+Vertical\+Speed}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Vertical\+Speed()}{setVerticalSpeed()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Vertical\+Speed (\begin{DoxyParamCaption}\item[{double}]{m\+\_\+\+Vertical\+Speed }\end{DoxyParamCaption})}
+
+setter for vertivalspeed 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Vertical\+Speed} & the new verticalspeed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_a9aa56ab17060aabcae8604633993323f}\label{classroadfighter_1_1MovingObject_a9aa56ab17060aabcae8604633993323f}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!set\+Vertical\+Speed\+Unbounded@{set\+Vertical\+Speed\+Unbounded}}
+\index{set\+Vertical\+Speed\+Unbounded@{set\+Vertical\+Speed\+Unbounded}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{set\+Vertical\+Speed\+Unbounded()}{setVerticalSpeedUnbounded()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::set\+Vertical\+Speed\+Unbounded (\begin{DoxyParamCaption}\item[{double}]{m\+\_\+\+Vertical\+Speed }\end{DoxyParamCaption})}
+
+setter for vertivalspeed were there is no check if you are above the macvertspeed 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Vertical\+Speed} & the new verticalspeed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_ac9f197ee0e91754d2fd653c0b8c84c57}\label{classroadfighter_1_1MovingObject_ac9f197ee0e91754d2fd653c0b8c84c57}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!stop@{stop}}
+\index{stop@{stop}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that sets the vertical and horizontal speed to 0 \mbox{\Hypertarget{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}\label{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!update\+Logic@{update\+Logic}}
+\index{update\+Logic@{update\+Logic}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{update\+Logic()}{updateLogic()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::update\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+virtual void function that should be used to update the logic of the entity 
+
+Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}{roadfighter\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classroadfighter_1_1PlayerCar_a01480487ca7978a50a3c6609f1ebe6df}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_af3f3b4c368ba61c13dc9b99004895c5d}{roadfighter\+::\+Racing\+Car}, and \hyperlink{classroadfighter_1_1PassingCar_ac3fe3087290121bf44880f94efa3a916}{roadfighter\+::\+Passing\+Car}.
+
+\mbox{\Hypertarget{classroadfighter_1_1MovingObject_ac1918d96dac118c4bd7d99168d92867c}\label{classroadfighter_1_1MovingObject_ac1918d96dac118c4bd7d99168d92867c}} 
+\index{roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}!update\+Movement@{update\+Movement}}
+\index{update\+Movement@{update\+Movement}!roadfighter\+::\+Moving\+Object@{roadfighter\+::\+Moving\+Object}}
+\subsubsection{\texorpdfstring{update\+Movement()}{updateMovement()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Moving\+Object\+::update\+Movement (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+a function that updates the car 
+\begin{DoxyParams}{Parameters}
+{\em dt} & the amount of ticks that have passed since the previous one overrided form entity class \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}{roadfighter\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classroadfighter_1_1PlayerCar_aa1dcbec01dde1b212e4919b61338edde}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ade5ebca5d7dbdb75bd9eee5817972363}{roadfighter\+::\+Passing\+Car}, and \hyperlink{classroadfighter_1_1RacingCar_a2e8f3c63381a1fe432cddcc1f34fb935}{roadfighter\+::\+Racing\+Car}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\+Entities/Moving\+Object.\+h\item 
+Game\+Logic/\+Source/\+Entities/Moving\+Object.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+<map id="GameLogic/include/RoadFighterGame.h" name="GameLogic/include/RoadFighterGame.h">
+<area shape="rect" id="node3" href="$Entity__Factory__base_8h.html" title="Entity_Factory_base.h" alt="" coords="1051,319,1205,345"/>
+<area shape="rect" id="node4" href="$Entity_8h_source.html" title="Entities/Entity.h" alt="" coords="199,468,313,495"/>
+<area shape="rect" id="node5" href="$ScoreObserver_8h_source.html" title="Observer/ScoreObserver.h" alt="" coords="1227,393,1405,420"/>
+<area shape="rect" id="node8" href="$InputController_8h.html" title="InputController.h" alt="" coords="1429,393,1547,420"/>
+<area shape="rect" id="node10" href="$EntityTransporter_8h.html" title="EntityTransporter.h" alt="" coords="392,393,525,420"/>
+<area shape="rect" id="node12" href="$World_8h_source.html" title="Entities/World.h" alt="" coords="429,169,544,196"/>
+<area shape="rect" id="node13" href="$PlayerCar_8h_source.html" title="PlayerCar.h" alt="" coords="717,244,808,271"/>
+<area shape="rect" id="node17" href="$GLL__Entity__Factory_8h.html" title="GLL_Entity_Factory.h" alt="" coords="688,95,837,121"/>
+<area shape="rect" id="node20" href="$Random_8h_source.html" title="../../Utility/Random.h" alt="" coords="883,319,1027,345"/>
+<area shape="rect" id="node22" href="$HighScoreManager_8h_source.html" title="HighScoreManager.h" alt="" coords="2271,393,2415,420"/>
+<area shape="rect" id="node6" href="$ObserverBase_8h_source.html" title="ObserverBase.h" alt="" coords="1018,468,1134,495"/>
+<area shape="rect" id="node16" href="$CollisionObject_8h_source.html" title="CollisionObject.h" alt="" coords="195,393,317,420"/>
+<area shape="rect" id="node14" href="$Observable_8h_source.html" title="Observer/Observable.h" alt="" coords="601,393,757,420"/>
+<area shape="rect" id="node15" href="$MovingObject_8h_source.html" title="MovingObject.h" alt="" coords="411,319,525,345"/>
+<area shape="rect" id="node18" href="$Bullet_8h_source.html" title="Entities/Bullet.h" alt="" coords="309,244,424,271"/>
+<area shape="rect" id="node19" href="$RacingCar_8h_source.html" title="Entities/RacingCar.h" alt="" coords="550,244,693,271"/>
+</map>

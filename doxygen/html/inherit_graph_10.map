@@ -1,0 +1,21 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classroadfighter_1_1Entity.html" title="roadfighter::Entity" alt="" coords="5,153,131,180"/>
+<area shape="rect" id="node2" href="$classroadfighter_1_1CollisionObject.html" title="roadfighter::CollisionObject" alt="" coords="179,204,357,231"/>
+<area shape="rect" id="node16" href="$classroadfighter_1_1World.html" title="roadfighter::World" alt="" coords="428,52,553,79"/>
+<area shape="rect" id="node3" href="$classroadfighter_1_1End.html" title="roadfighter::End" alt="" coords="847,305,962,332"/>
+<area shape="rect" id="node5" href="$classroadfighter_1_1MovingObject.html" title="roadfighter::MovingObject" alt="" coords="405,153,576,180"/>
+<area shape="rect" id="node4" href="$classSFMLEnd.html" title="SFMLEnd" alt="" coords="1252,305,1332,332"/>
+<area shape="rect" id="node6" href="$classroadfighter_1_1BonusCar.html" title="roadfighter::BonusCar" alt="" coords="626,153,775,180"/>
+<area shape="rect" id="node8" href="$classroadfighter_1_1Bullet.html" title="roadfighter::Bullet" alt="" coords="1045,255,1169,281"/>
+<area shape="rect" id="node10" href="$classroadfighter_1_1PassingCar.html" title="roadfighter::PassingCar" alt="" coords="825,52,984,79"/>
+<area shape="rect" id="node12" href="$classroadfighter_1_1PlayerCar.html" title="roadfighter::PlayerCar" alt="" coords="1032,103,1181,129"/>
+<area shape="rect" id="node14" href="$classroadfighter_1_1RacingCar.html" title="roadfighter::RacingCar" alt="" coords="624,204,777,231"/>
+<area shape="rect" id="node7" href="$classSFMLBonusCar.html" title="Sprite" alt="" coords="877,153,933,180"/>
+<area shape="rect" id="node19" href="$classSFMLEntitySprite.html" title="SFMLEntitySprite" alt="" coords="1044,153,1169,180"/>
+<area shape="rect" id="node9" href="$classSFMLBullet.html" title="SFMLBullet" alt="" coords="1247,255,1337,281"/>
+<area shape="rect" id="node11" href="$classSFMLPassingCar.html" title="SFMLPassingCar" alt="" coords="1229,59,1355,85"/>
+<area shape="rect" id="node13" href="$classSFMLPlayerCar.html" title="SFMLPlayerCar" alt="" coords="1235,116,1349,143"/>
+<area shape="rect" id="node15" href="$classSFMLRacingCar.html" title="SFMLRacingCar" alt="" coords="1233,179,1351,205"/>
+<area shape="rect" id="node17" href="$classSFMLWorld.html" title="SFMLWorld" alt="" coords="1247,5,1337,32"/>
+<area shape="rect" id="node18" href="$classObservable.html" title="Observable" alt="" coords="224,153,312,180"/>
+</map>

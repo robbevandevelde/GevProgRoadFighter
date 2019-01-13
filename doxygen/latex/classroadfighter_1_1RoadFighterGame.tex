@@ -1,0 +1,250 @@
+\hypertarget{classroadfighter_1_1RoadFighterGame}{}\section{roadfighter\+:\+:Road\+Fighter\+Game Class Reference}
+\label{classroadfighter_1_1RoadFighterGame}\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame_a53d3c84fb27feef4e698e5d0e9f0a59a}{Road\+Fighter\+Game} ()
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame_acb54c946b0897a01fe2c165ea7e6e386}{Road\+Fighter\+Game} (std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity__Factory__base}{Entity\+\_\+\+Factory\+\_\+base} $>$ factory)
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame_a972a332abf53705ac2e6b11cf4c446aa}{Road\+Fighter\+Game} (const \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&copy)=default
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame_ad5801b8550efd5b3c8b2029b5b11bd34}{Road\+Fighter\+Game} (\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&\&move)=default
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \& \hyperlink{classroadfighter_1_1RoadFighterGame_a2bfbab81a2304aa6c1e27571720ec431}{operator=} (\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&other)=default
+\item 
+\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \& \hyperlink{classroadfighter_1_1RoadFighterGame_a8887e487ce6d91da4c380eee1d3d7051}{operator=} (\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&\&other)=default
+\item 
+virtual \hyperlink{classroadfighter_1_1RoadFighterGame_ab7e8842d97c76acc3898eaab6ebacb69}{$\sim$\+Road\+Fighter\+Game} ()=default
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a1bbb706a128d1f98e06ea5e0f6ab1581}{tick} (double dt)
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_aa9b7ba207f49c736dd933b51096a25a9}{movement\+Tick} (double dt)
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a93f5ff51df58787f464e2e5109e8b362}{logic\+Tick} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_abfcb2aefc8031e61e7911dec0a1e0d5f}{move\+Left} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a712030e123bd2fbaa7b02144229540bf}{stop\+Horizontal\+Move} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a13918572292880c85b13fe2a367dde22}{move\+Right} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a2f0316e59725124039c8a6800a20461f}{accelerate} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a032a6ec15e1752cae23559063e35d3cd}{stop\+Vertical\+Move} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_aa0d5fb2446d3d1c9ec320dcc79924fa7}{decelerate} ()
+\item 
+double \hyperlink{classroadfighter_1_1RoadFighterGame_afd3d3d025119a6f730667b4924a3a42a}{gets\+Speed} () const
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a404d5a9afcad9e907ffd7edb589ae6cd}{draw\+World} () const
+\item 
+double \hyperlink{classroadfighter_1_1RoadFighterGame_a0915aa65c2ba6aeab74207d17cab1cd4}{get\+Fuel} () const
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a2776c4c29f08c2435cb2e35dfba1bf74}{shoot} ()
+\item 
+void \hyperlink{classroadfighter_1_1RoadFighterGame_a1e44b4f8942d91413920fffbd5a8b13c}{stop\+Shooting} ()
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a842fda5659dc00e28dcad71bbee02e22}\label{classroadfighter_1_1RoadFighterGame_a842fda5659dc00e28dcad71bbee02e22}} 
+unsigned int {\bfseries get\+Score} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a0d14deca7704a246c4953c08a26d411d}\label{classroadfighter_1_1RoadFighterGame_a0d14deca7704a246c4953c08a26d411d}} 
+bool {\bfseries has\+Ended} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a524013650ed53899e8ec56b54e31f1c7}\label{classroadfighter_1_1RoadFighterGame_a524013650ed53899e8ec56b54e31f1c7}} 
+void {\bfseries pause\+Game} ()
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a2fbb9632b4e3e143486cfef5f06c17a1}\label{classroadfighter_1_1RoadFighterGame_a2fbb9632b4e3e143486cfef5f06c17a1}} 
+void {\bfseries continue\+Game} ()
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_ab7eebd30a7e7cf819977e696e960cea3}\label{classroadfighter_1_1RoadFighterGame_ab7eebd30a7e7cf819977e696e960cea3}} 
+E\+Game\+Status {\bfseries get\+Status} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a2458b6d49a2bbbb974d9924d87cf0206}\label{classroadfighter_1_1RoadFighterGame_a2458b6d49a2bbbb974d9924d87cf0206}} 
+bool {\bfseries ispaused} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_afed3c0b1a04726d8e653badda9b684b8}\label{classroadfighter_1_1RoadFighterGame_afed3c0b1a04726d8e653badda9b684b8}} 
+void {\bfseries set\+Text} (const std\+::string \&text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a53d3c84fb27feef4e698e5d0e9f0a59a}\label{classroadfighter_1_1RoadFighterGame_a53d3c84fb27feef4e698e5d0e9f0a59a}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!Road\+Fighter\+Game@{Road\+Fighter\+Game}}
+\index{Road\+Fighter\+Game@{Road\+Fighter\+Game}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{Road\+Fighter\+Game()}{RoadFighterGame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Road\+Fighter\+Game\+::\+Road\+Fighter\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor for \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_acb54c946b0897a01fe2c165ea7e6e386}\label{classroadfighter_1_1RoadFighterGame_acb54c946b0897a01fe2c165ea7e6e386}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!Road\+Fighter\+Game@{Road\+Fighter\+Game}}
+\index{Road\+Fighter\+Game@{Road\+Fighter\+Game}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{Road\+Fighter\+Game()}{RoadFighterGame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Road\+Fighter\+Game\+::\+Road\+Fighter\+Game (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity__Factory__base}{Entity\+\_\+\+Factory\+\_\+base} $>$}]{factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+a constructor were the factory that is used to initalise all the objects is given 
+\begin{DoxyParams}{Parameters}
+{\em factory} & the factory that will be used to make everything \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a972a332abf53705ac2e6b11cf4c446aa}\label{classroadfighter_1_1RoadFighterGame_a972a332abf53705ac2e6b11cf4c446aa}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!Road\+Fighter\+Game@{Road\+Fighter\+Game}}
+\index{Road\+Fighter\+Game@{Road\+Fighter\+Game}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{Road\+Fighter\+Game()}{RoadFighterGame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Road\+Fighter\+Game\+::\+Road\+Fighter\+Game (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em copy} & the other \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that is being copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_ad5801b8550efd5b3c8b2029b5b11bd34}\label{classroadfighter_1_1RoadFighterGame_ad5801b8550efd5b3c8b2029b5b11bd34}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!Road\+Fighter\+Game@{Road\+Fighter\+Game}}
+\index{Road\+Fighter\+Game@{Road\+Fighter\+Game}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{Road\+Fighter\+Game()}{RoadFighterGame()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Road\+Fighter\+Game\+::\+Road\+Fighter\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&\&}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move constructor 
+\begin{DoxyParams}{Parameters}
+{\em Move} & the other \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that is being moved in this one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_ab7e8842d97c76acc3898eaab6ebacb69}\label{classroadfighter_1_1RoadFighterGame_ab7e8842d97c76acc3898eaab6ebacb69}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!````~Road\+Fighter\+Game@{$\sim$\+Road\+Fighter\+Game}}
+\index{````~Road\+Fighter\+Game@{$\sim$\+Road\+Fighter\+Game}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{$\sim$\+Road\+Fighter\+Game()}{~RoadFighterGame()}}
+{\footnotesize\ttfamily virtual roadfighter\+::\+Road\+Fighter\+Game\+::$\sim$\+Road\+Fighter\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+destructor for \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a2f0316e59725124039c8a6800a20461f}\label{classroadfighter_1_1RoadFighterGame_a2f0316e59725124039c8a6800a20461f}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{accelerate()}{accelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::accelerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that will set the movementcontroller to accelerate in the vertical direction next tick \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_aa0d5fb2446d3d1c9ec320dcc79924fa7}\label{classroadfighter_1_1RoadFighterGame_aa0d5fb2446d3d1c9ec320dcc79924fa7}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!decelerate@{decelerate}}
+\index{decelerate@{decelerate}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{decelerate()}{decelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::decelerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that will set the movementcontroller to decelerate in the vertical direction next tick \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a404d5a9afcad9e907ffd7edb589ae6cd}\label{classroadfighter_1_1RoadFighterGame_a404d5a9afcad9e907ffd7edb589ae6cd}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!draw\+World@{draw\+World}}
+\index{draw\+World@{draw\+World}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{draw\+World()}{drawWorld()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::draw\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a function that calls the draw function on the world which will then call the draw function on all its entities \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a0915aa65c2ba6aeab74207d17cab1cd4}\label{classroadfighter_1_1RoadFighterGame_a0915aa65c2ba6aeab74207d17cab1cd4}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!get\+Fuel@{get\+Fuel}}
+\index{get\+Fuel@{get\+Fuel}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{get\+Fuel()}{getFuel()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Road\+Fighter\+Game\+::get\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the current amount of fuel in the playercar \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_afd3d3d025119a6f730667b4924a3a42a}\label{classroadfighter_1_1RoadFighterGame_afd3d3d025119a6f730667b4924a3a42a}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!gets\+Speed@{gets\+Speed}}
+\index{gets\+Speed@{gets\+Speed}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{gets\+Speed()}{getsSpeed()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Road\+Fighter\+Game\+::gets\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+gets the current speed of the playercar \begin{DoxyReturn}{Returns}
+a double represeting the speed of the playercar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a93f5ff51df58787f464e2e5109e8b362}\label{classroadfighter_1_1RoadFighterGame_a93f5ff51df58787f464e2e5109e8b362}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!logic\+Tick@{logic\+Tick}}
+\index{logic\+Tick@{logic\+Tick}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{logic\+Tick()}{logicTick()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::logic\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that does a logic tick which will update the logic of all entities and possibly add new cars to the world \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_abfcb2aefc8031e61e7911dec0a1e0d5f}\label{classroadfighter_1_1RoadFighterGame_abfcb2aefc8031e61e7911dec0a1e0d5f}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that will set the movementcontroller to go left next tick \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_aa9b7ba207f49c736dd933b51096a25a9}\label{classroadfighter_1_1RoadFighterGame_aa9b7ba207f49c736dd933b51096a25a9}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!movement\+Tick@{movement\+Tick}}
+\index{movement\+Tick@{movement\+Tick}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{movement\+Tick()}{movementTick()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::movement\+Tick (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+a function that updates the movement of all entities by dt ticks 
+\begin{DoxyParams}{Parameters}
+{\em dt} & amount of a tick the postions must be updated with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a13918572292880c85b13fe2a367dde22}\label{classroadfighter_1_1RoadFighterGame_a13918572292880c85b13fe2a367dde22}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that will set the movementcontroller to go right next tick \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a2bfbab81a2304aa6c1e27571720ec431}\label{classroadfighter_1_1RoadFighterGame_a2bfbab81a2304aa6c1e27571720ec431}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game}\& roadfighter\+::\+Road\+Fighter\+Game\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy assigment for \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} 
+\begin{DoxyParams}{Parameters}
+{\em other} & the \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that is being copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that is equal to the other one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a8887e487ce6d91da4c380eee1d3d7051}\label{classroadfighter_1_1RoadFighterGame_a8887e487ce6d91da4c380eee1d3d7051}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game}\& roadfighter\+::\+Road\+Fighter\+Game\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move assignment for \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} 
+\begin{DoxyParams}{Parameters}
+{\em other} & other \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that is being moved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classroadfighter_1_1RoadFighterGame}{Road\+Fighter\+Game} that contains all the data of the first one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a2776c4c29f08c2435cb2e35dfba1bf74}\label{classroadfighter_1_1RoadFighterGame_a2776c4c29f08c2435cb2e35dfba1bf74}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!shoot@{shoot}}
+\index{shoot@{shoot}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that handles the movecontroller to make it shoot \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a712030e123bd2fbaa7b02144229540bf}\label{classroadfighter_1_1RoadFighterGame_a712030e123bd2fbaa7b02144229540bf}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!stop\+Horizontal\+Move@{stop\+Horizontal\+Move}}
+\index{stop\+Horizontal\+Move@{stop\+Horizontal\+Move}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{stop\+Horizontal\+Move()}{stopHorizontalMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::stop\+Horizontal\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a fucntion that sets the movementcontroller to none for the horizontal move \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a1e44b4f8942d91413920fffbd5a8b13c}\label{classroadfighter_1_1RoadFighterGame_a1e44b4f8942d91413920fffbd5a8b13c}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!stop\+Shooting@{stop\+Shooting}}
+\index{stop\+Shooting@{stop\+Shooting}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{stop\+Shooting()}{stopShooting()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::stop\+Shooting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a function that handles the movementcontrolle rto make it stop shooting \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a032a6ec15e1752cae23559063e35d3cd}\label{classroadfighter_1_1RoadFighterGame_a032a6ec15e1752cae23559063e35d3cd}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!stop\+Vertical\+Move@{stop\+Vertical\+Move}}
+\index{stop\+Vertical\+Move@{stop\+Vertical\+Move}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{stop\+Vertical\+Move()}{stopVerticalMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::stop\+Vertical\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a fucntion that sets the movementcontroller to none for the vertical move \mbox{\Hypertarget{classroadfighter_1_1RoadFighterGame_a1bbb706a128d1f98e06ea5e0f6ab1581}\label{classroadfighter_1_1RoadFighterGame_a1bbb706a128d1f98e06ea5e0f6ab1581}} 
+\index{roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}!tick@{tick}}
+\index{tick@{tick}!roadfighter\+::\+Road\+Fighter\+Game@{roadfighter\+::\+Road\+Fighter\+Game}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Road\+Fighter\+Game\+::tick (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+a function that will tick the whole game with dt ticks 
+\begin{DoxyParams}{Parameters}
+{\em dt} & the amount of ticks the game should move (should be 1 or lower otherwise it\textquotesingle{}s possible more gameticks occur in 1 tick)\\
+\hline
+\end{DoxyParams}
+in this function the position of the objects will always be updated by dt ticks but the gamelogic will only be done if 1 tick has passed so if you call this function with dt being 0.\+5 twice it will update only the positions the first time, but the second time it will update both the positions and the gamelogic 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\hyperlink{RoadFighterGame_8h}{Road\+Fighter\+Game.\+h}\item 
+Game\+Logic/\+Source/Road\+Fighter\+Game.\+cpp\end{DoxyCompactItemize}

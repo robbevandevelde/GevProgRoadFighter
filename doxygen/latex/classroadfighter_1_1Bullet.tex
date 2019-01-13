@@ -1,0 +1,222 @@
+\hypertarget{classroadfighter_1_1Bullet}{}\section{roadfighter\+:\+:Bullet Class Reference}
+\label{classroadfighter_1_1Bullet}\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+
+
+Inheritance diagram for roadfighter\+:\+:Bullet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classroadfighter_1_1Bullet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for roadfighter\+:\+:Bullet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classroadfighter_1_1Bullet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classroadfighter_1_1Bullet_abae3f231af0b423fc6ca0d0d5639fed5}{Bullet} ()=default
+\item 
+\hyperlink{classroadfighter_1_1Bullet_a5ee7b1e8b458efef1c60ed1acebb8e9e}{Bullet} (const \hyperlink{classroadfighter_1_1Bullet}{Bullet} \&copy)=default
+\item 
+\hyperlink{classroadfighter_1_1Bullet_a20d663e607a956782dcaee5fc514da5c}{Bullet} (\hyperlink{classroadfighter_1_1Bullet}{Bullet} \&\&move)=default
+\item 
+\hyperlink{classroadfighter_1_1Bullet_a15ab9848b269b1ef463defbb6967deb0}{Bullet} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc1, const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc2, double vertspeed)
+\item 
+\hyperlink{classroadfighter_1_1Bullet}{Bullet} \& \hyperlink{classroadfighter_1_1Bullet_ab507000db2f726b8906ced3ea4c7782f}{operator=} (const \hyperlink{classroadfighter_1_1Bullet}{Bullet} \&other)=default
+\item 
+\hyperlink{classroadfighter_1_1Bullet}{Bullet} \& \hyperlink{classroadfighter_1_1Bullet_a7c63a2a326738605af30ad850272d3b7}{operator=} (\hyperlink{classroadfighter_1_1Bullet}{Bullet} \&\&other)=default
+\item 
+\hyperlink{classroadfighter_1_1Bullet_a297de09c51315af09bd676801cc4e2bd}{$\sim$\+Bullet} () override=default
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}{collide\+With} (std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&collided) override
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}{crash} () override
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_acaacd303f1f4e55c5029d4a4cbe1d9b1}{shot} () override
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_a642ca8467a0ffea844d18d4917b2f49e}{bonus} () override
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_a566adb0235665312365cd65536c2aafc}{win} () override
+\item 
+void \hyperlink{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}{update\+Logic} () override
+\item 
+bool \hyperlink{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}{must\+Delete} () const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_abae3f231af0b423fc6ca0d0d5639fed5}\label{classroadfighter_1_1Bullet_abae3f231af0b423fc6ca0d0d5639fed5}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Bullet\+::\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+default constructor for \hyperlink{classroadfighter_1_1Bullet}{Bullet} \mbox{\Hypertarget{classroadfighter_1_1Bullet_a5ee7b1e8b458efef1c60ed1acebb8e9e}\label{classroadfighter_1_1Bullet_a5ee7b1e8b458efef1c60ed1acebb8e9e}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Bullet}{Bullet} \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em copy} & the other \hyperlink{classroadfighter_1_1Bullet}{Bullet} that is being copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a20d663e607a956782dcaee5fc514da5c}\label{classroadfighter_1_1Bullet_a20d663e607a956782dcaee5fc514da5c}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1Bullet}{Bullet} \&\&}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move constructor 
+\begin{DoxyParams}{Parameters}
+{\em Move} & the other \hyperlink{classroadfighter_1_1Bullet}{Bullet} that is being moved in this one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a15ab9848b269b1ef463defbb6967deb0}\label{classroadfighter_1_1Bullet_a15ab9848b269b1ef463defbb6967deb0}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc1,  }\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc2,  }\item[{double}]{vertspeed }\end{DoxyParamCaption})}
+
+constructor by values 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+loc1} & first gamelocation(upper left corner) \\
+\hline
+{\em m\+\_\+loc2} & second gamelocation (upper right corner) \\
+\hline
+{\em m\+\_\+max\+Vert\+Speed} & \\
+\hline
+{\em m\+\_\+vert\+Accel} & \\
+\hline
+{\em m\+\_\+hor\+Accel} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a297de09c51315af09bd676801cc4e2bd}\label{classroadfighter_1_1Bullet_a297de09c51315af09bd676801cc4e2bd}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!````~Bullet@{$\sim$\+Bullet}}
+\index{````~Bullet@{$\sim$\+Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{$\sim$\+Bullet()}{~Bullet()}}
+{\footnotesize\ttfamily roadfighter\+::\+Bullet\+::$\sim$\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+destructor for \hyperlink{classroadfighter_1_1Bullet}{Bullet} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a642ca8467a0ffea844d18d4917b2f49e}\label{classroadfighter_1_1Bullet_a642ca8467a0ffea844d18d4917b2f49e}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!bonus@{bonus}}
+\index{bonus@{bonus}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{bonus()}{bonus()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function handles the bonus function of the bullet 
+
+Implements \hyperlink{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}{roadfighter\+::\+Collision\+Object}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}\label{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!collide\+With@{collide\+With}}
+\index{collide\+With@{collide\+With}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{collide\+With()}{collideWith()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::collide\+With (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&}]{collided }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function handles what should happen must a object colldie with this bullet here it means the object get shot 
+\begin{DoxyParams}{Parameters}
+{\em collided} & the object the bullet collides with \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}{roadfighter\+::\+Collision\+Object}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}\label{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!crash@{crash}}
+\index{crash@{crash}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{crash()}{crash()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::crash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function handles the crash of a bullet 
+
+Implements \hyperlink{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}{roadfighter\+::\+Collision\+Object}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}\label{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!must\+Delete@{must\+Delete}}
+\index{must\+Delete@{must\+Delete}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{must\+Delete()}{mustDelete()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Bullet\+::must\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+a function that should be overriden and is used to denote wether an object should be deletet or not \begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a738071cd7b1b8cd4c8d455b5e552bd4c}{roadfighter\+::\+Collision\+Object}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_ab507000db2f726b8906ced3ea4c7782f}\label{classroadfighter_1_1Bullet_ab507000db2f726b8906ced3ea4c7782f}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1Bullet}{Bullet}\& roadfighter\+::\+Bullet\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Bullet}{Bullet} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy assigment for \hyperlink{classroadfighter_1_1Bullet}{Bullet} 
+\begin{DoxyParams}{Parameters}
+{\em other} & the \hyperlink{classroadfighter_1_1Bullet}{Bullet} that is being copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new \hyperlink{classroadfighter_1_1Bullet}{Bullet} that is equal to the other one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a7c63a2a326738605af30ad850272d3b7}\label{classroadfighter_1_1Bullet_a7c63a2a326738605af30ad850272d3b7}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1Bullet}{Bullet}\& roadfighter\+::\+Bullet\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1Bullet}{Bullet} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move assignment for \hyperlink{classroadfighter_1_1Bullet}{Bullet} 
+\begin{DoxyParams}{Parameters}
+{\em other} & other \hyperlink{classroadfighter_1_1Bullet}{Bullet} that is being moved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classroadfighter_1_1Bullet}{Bullet} that contains all the data of the first one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_acaacd303f1f4e55c5029d4a4cbe1d9b1}\label{classroadfighter_1_1Bullet_acaacd303f1f4e55c5029d4a4cbe1d9b1}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!shot@{shot}}
+\index{shot@{shot}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{shot()}{shot()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function handles the shot logic of the bullet 
+
+Implements \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}{roadfighter\+::\+Collision\+Object}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}\label{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!update\+Logic@{update\+Logic}}
+\index{update\+Logic@{update\+Logic}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{update\+Logic()}{updateLogic()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::update\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+virtual void function that should be used to update the logic of the entity 
+
+Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}{roadfighter\+::\+Entity}.
+
+\mbox{\Hypertarget{classroadfighter_1_1Bullet_a566adb0235665312365cd65536c2aafc}\label{classroadfighter_1_1Bullet_a566adb0235665312365cd65536c2aafc}} 
+\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!win@{win}}
+\index{win@{win}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
+\subsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function handles the win condition of a bullet 
+
+Implements \hyperlink{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}{roadfighter\+::\+Collision\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\+Entities/Bullet.\+h\item 
+Game\+Logic/\+Source/\+Entities/Bullet.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{classRandom}{}\section{Random Class Reference}
+\label{classRandom}\index{Random@{Random}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRandom_add681ff260733a7075cebcec23a4f596}\label{classRandom_add681ff260733a7075cebcec23a4f596}} 
+{\bfseries Random} (const \hyperlink{classRandom}{Random} \&copy)=delete
+\item 
+\mbox{\Hypertarget{classRandom_a2d93c9ddddcc84379bf1476b584d5793}\label{classRandom_a2d93c9ddddcc84379bf1476b584d5793}} 
+{\bfseries Random} (const \hyperlink{classRandom}{Random} \&\&move)=delete
+\item 
+\mbox{\Hypertarget{classRandom_a8dd76f36034c5f247db2a4f191081deb}\label{classRandom_a8dd76f36034c5f247db2a4f191081deb}} 
+\hyperlink{classRandom}{Random} {\bfseries operator=} (const \hyperlink{classRandom}{Random} \&other)=delete
+\item 
+\mbox{\Hypertarget{classRandom_a51effd8a6f7ca0cf4e11c447401fde54}\label{classRandom_a51effd8a6f7ca0cf4e11c447401fde54}} 
+\hyperlink{classRandom}{Random} {\bfseries operator=} (const \hyperlink{classRandom}{Random} \&\&other)=delete
+\item 
+int \hyperlink{classRandom_a8d04412a06213d3c3b279bbd54e2981e}{get\+Random} (const int to) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRandom}{Random} \& \hyperlink{classRandom_a2aa30d2f678fc76f75efc60356c6ea4d}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandom_a2aa30d2f678fc76f75efc60356c6ea4d}\label{classRandom_a2aa30d2f678fc76f75efc60356c6ea4d}} 
+\index{Random@{Random}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Random@{Random}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{classRandom}{Random} \& Random\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+a method that gives you an instance \begin{DoxyReturn}{Returns}
+a weak ptr to the instance (which is a shared ptr) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRandom_a8d04412a06213d3c3b279bbd54e2981e}\label{classRandom_a8d04412a06213d3c3b279bbd54e2981e}} 
+\index{Random@{Random}!get\+Random@{get\+Random}}
+\index{get\+Random@{get\+Random}!Random@{Random}}
+\subsubsection{\texorpdfstring{get\+Random()}{getRandom()}}
+{\footnotesize\ttfamily int Random\+::get\+Random (\begin{DoxyParamCaption}\item[{const int}]{to }\end{DoxyParamCaption}) const}
+
+function that returns a random variable ranging from 0 to \char`\"{}to\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em to} & the max possible int that the random int will go to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a random int ranging from 0 to \char`\"{}to\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/\+Utility/Random.\+h\item 
+Game\+Logic/\+Utility/Random.\+cpp\end{DoxyCompactItemize}

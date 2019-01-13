@@ -1,0 +1,11 @@
+<map id="GameLogic/include/EntityTransporter.h" name="GameLogic/include/EntityTransporter.h">
+<area shape="rect" id="node2" href="$PlayerCar_8h_source.html" title="GameLogic/include/Entities\l/PlayerCar.h" alt="" coords="144,184,325,225"/>
+<area shape="rect" id="node3" href="$World_8h_source.html" title="GameLogic/include/Entities\l/World.h" alt="" coords="93,273,275,315"/>
+<area shape="rect" id="node5" href="$RoadFighterGame_8h.html" title="GameLogic/include/RoadFighter\lGame.h" alt="" coords="111,452,319,493"/>
+<area shape="rect" id="node9" href="$SFMLPlayerCar_8h_source.html" title="SFMLConversion/Include\l/Entities/SFMLPlayerCar.h" alt="" coords="451,273,629,315"/>
+<area shape="rect" id="node10" href="$Entity__Factory__base_8h.html" title="GameLogic/include/Entity\l_Factory_base.h" alt="" coords="299,95,469,136"/>
+<area shape="rect" id="node4" href="$GLL__Entity__Factory_8h.html" title="GameLogic/include/GLL\l_Entity_Factory.h" alt="" coords="193,363,354,404"/>
+<area shape="rect" id="node7" href="$SFMLWorld_8h_source.html" title="SFMLConversion/Include\l/Entities/SFMLWorld.h" alt="" coords="430,363,599,404"/>
+<area shape="rect" id="node6" href="$SFMLRoadFighter_8h_source.html" title="SFMLConversion/Include\l/SFMLRoadFighter.h" alt="" coords="531,541,701,583"/>
+<area shape="rect" id="node8" href="$SFML__Entity__Factory_8h_source.html" title="SFMLConversion/Include\l/SFML_Entity_Factory.h" alt="" coords="531,452,701,493"/>
+</map>

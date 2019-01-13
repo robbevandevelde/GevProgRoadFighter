@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighterTest" />
-      <config projectName="GevProgRoadFighter" targetName="GLL" />
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighter" />
+      <config projectName="GevProgRoadFighter" targetName="GLL" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,32 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/EntityTests.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/HighScoreTests.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/InputTests.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/OberserTests.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doxconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/highScores.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/EntityUnitTests.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GevProgRoadFighter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GevProgRoadFighter.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/GameLogic/cmake-build-debug/" />
@@ -70,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/EntityTests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11923">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="244">
+              <caret line="832" column="37" selection-start-line="832" selection-start-column="37" selection-end-line="832" selection-end-column="37" />
               <folding>
                 <element signature="e#71#95#0" expanded="true" />
               </folding>
@@ -80,68 +56,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/OberserTests.cpp">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" selection-start-line="13" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <element signature="e#73#97#0" expanded="true" />
+                <element signature="e#41#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/mainTest.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/HighScoreTests.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="30" selection-end-column="2" />
+            <state relative-caret-position="180">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
-                <element signature="e#74#98#0" expanded="true" />
+                <element signature="e#146#174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/InputTests.cpp">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
-              <folding>
-                <element signature="e#84#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doxconfig">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+              <folding>
+                <element signature="e#61#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/include/InputController.h">
+        <entry file="file://$PROJECT_DIR$/doxconfig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-            </state>
+            <state relative-caret-position="-135" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="240">
               <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
@@ -150,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="1215">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#42#63#0" expanded="true" />
@@ -162,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="465">
               <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
@@ -253,9 +231,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="656" />
-    <option name="y" value="85" />
-    <option name="width" value="917" />
+    <option name="x" value="579" />
+    <option name="y" value="27" />
+    <option name="width" value="907" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectView">
@@ -263,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,9 +262,20 @@
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="Observer" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
@@ -298,6 +286,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GevProgRoadFighterTest">
+  <component name="RunManager" selected="Application.GevProgRoadFighter">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -449,14 +438,8 @@
       <workItem from="1546254692194" duration="17784000" />
       <workItem from="1546280267736" duration="195000" />
       <workItem from="1546351244232" duration="3013000" />
-      <workItem from="1546432824711" duration="19696000" />
-    </task>
-    <task id="LOCAL-00005" summary="Another travis with sfml attempt">
-      <created>1542573144842</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1542573144842</updated>
+      <workItem from="1546432824711" duration="19708000" />
+      <workItem from="1547375758404" duration="265000" />
     </task>
     <task id="LOCAL-00006" summary="Testing to see if travis will work withour sfml">
       <created>1542573444623</created>
@@ -794,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546371916296</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="added even more tests">
+      <created>1546459234345</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1546459234346</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353394000" />
+    <option name="totallyTimeSpent" value="353671000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -810,14 +800,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="378" y="27" width="907" height="789" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15273935" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3240418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.3099352" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4864416" weight="0.4348485" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997233" weight="0.4211663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -939,11 +929,6 @@
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h</url>
-          <line>11</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/GameLogic/include/GllException.h</url>
           <line>10</line>
           <option name="timeStamp" value="78" />
@@ -971,16 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="161" column="97" selection-start-line="161" selection-start-column="97" selection-end-line="161" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-          <folding>
-            <element signature="e#61#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,26 +996,6 @@
           <caret line="9" selection-start-line="9" selection-end-line="29" selection-end-column="6" />
           <folding>
             <element signature="e#103#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#146#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1113,13 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14535">
           <caret line="969" selection-start-line="969" selection-end-line="969" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1214,13 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1256,36 +1197,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+    <entry file="file://$PROJECT_DIR$/Test/OberserTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="33" selection-end-column="2" />
           <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/EntityTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11923">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#71#95#0" expanded="true" />
+            <element signature="e#73#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1299,34 +1216,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/HighScoreTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="30" selection-end-column="2" />
           <folding>
             <element signature="e#74#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/OberserTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" selection-start-line="13" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="e#73#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/InputController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/InputTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="1065">
           <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
           <folding>
             <element signature="e#84#108#0" expanded="true" />
@@ -1334,8 +1234,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/InputController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#42#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doxconfig">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/EntityTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="832" column="37" selection-start-line="832" selection-start-column="37" selection-end-line="832" selection-end-column="37" />
+          <folding>
+            <element signature="e#71#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#146#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#61#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

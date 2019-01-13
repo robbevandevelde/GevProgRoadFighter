@@ -1,0 +1,346 @@
+\hypertarget{classroadfighter_1_1CollisionObject}{}\section{roadfighter\+:\+:Collision\+Object Class Reference}
+\label{classroadfighter_1_1CollisionObject}\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+
+
+Inheritance diagram for roadfighter\+:\+:Collision\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classroadfighter_1_1CollisionObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for roadfighter\+:\+:Collision\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classroadfighter_1_1CollisionObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject_aa627fcee5f0f313b29d601452dadc3b0}{Collision\+Object} ()=default
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject_a79e8e65670d1b424f1c4fadf1adde094}{Collision\+Object} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc1, const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc2)
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject_ac19de6256e1421e1c91e98e3ba136326}{Collision\+Object} (const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&copy)=default
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject_a45af317bbabd99cf64e0ba87241df509}{Collision\+Object} (\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&\&move)=default
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \& \hyperlink{classroadfighter_1_1CollisionObject_a880034efde5a30ccc98c2ff3a2dc7c84}{operator=} (const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&other)=default
+\item 
+\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \& \hyperlink{classroadfighter_1_1CollisionObject_a68b62353ad431b65f2dbacee983b6660}{operator=} (\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&\&other)=default
+\item 
+virtual \hyperlink{classroadfighter_1_1CollisionObject_aabc3bc7bef3a50923856fd82e39f59a1}{$\sim$\+Collision\+Object} ()=default
+\item 
+virtual bool \hyperlink{classroadfighter_1_1CollisionObject_a738071cd7b1b8cd4c8d455b5e552bd4c}{must\+Delete} () const
+\item 
+const \hyperlink{classroadfighter_1_1Location}{Location} \& \hyperlink{classroadfighter_1_1CollisionObject_a73baa1faea7a399a944e6a6f1d04ad86}{get\+Loc1} () const
+\item 
+void \hyperlink{classroadfighter_1_1CollisionObject_a3e0d924b453c9003a4992046fa3c52e1}{set\+Loc1} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc1)
+\item 
+const \hyperlink{classroadfighter_1_1Location}{Location} \& \hyperlink{classroadfighter_1_1CollisionObject_aa7412cf56663bc98b1454a8ae54ac2b0}{get\+Loc2} () const
+\item 
+void \hyperlink{classroadfighter_1_1CollisionObject_a8f566d1ea28f2ed16723572617abd583}{set\+Loc2} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc2)
+\item 
+bool \hyperlink{classroadfighter_1_1CollisionObject_a426a06907212c866a22cba7ec84ebe65}{check\+Collision} (std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&check) const
+\item 
+virtual void \hyperlink{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}{collide\+With} (std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&collided)=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}{crash} ()=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}{shot} ()=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}{bonus} ()=0
+\item 
+virtual void \hyperlink{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}{win} ()=0
+\item 
+bool \hyperlink{classroadfighter_1_1CollisionObject_a2891183d9769adbc9a9c0dc65db1af10}{is\+Delete} () const
+\item 
+void \hyperlink{classroadfighter_1_1CollisionObject_a454547da963cd4d7e09f57bc64a0f984}{set\+Delete} (bool m\+\_\+delete)
+\item 
+void \hyperlink{classroadfighter_1_1CollisionObject_aaf92d0fe335daa016b5131835602bc1d}{vert\+Move} (double amount)
+\item 
+void \hyperlink{classroadfighter_1_1CollisionObject_a907fbb9f4a45996690b4f35bc4256e47}{hor\+Move} (double amount)
+\item 
+double \hyperlink{classroadfighter_1_1CollisionObject_a0c83b40afb7be4ed3b501a79c2a81b9b}{getheight} () const
+\item 
+double \hyperlink{classroadfighter_1_1CollisionObject_ab8692ffb0324d39a96f31c780f7a8172}{get\+Width} () const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_ad93e53a2b4fdc7c7882a566b74cecfad}\label{classroadfighter_1_1CollisionObject_ad93e53a2b4fdc7c7882a566b74cecfad}} 
+bool {\bfseries operator==} (const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&rhs) const
+\item 
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_ada8d62684274b10fc4f19e441413da23}\label{classroadfighter_1_1CollisionObject_ada8d62684274b10fc4f19e441413da23}} 
+bool {\bfseries operator!=} (const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&rhs) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_aa627fcee5f0f313b29d601452dadc3b0}\label{classroadfighter_1_1CollisionObject_aa627fcee5f0f313b29d601452dadc3b0}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\index{Collision\+Object@{Collision\+Object}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+default constructor for \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a79e8e65670d1b424f1c4fadf1adde094}\label{classroadfighter_1_1CollisionObject_a79e8e65670d1b424f1c4fadf1adde094}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\index{Collision\+Object@{Collision\+Object}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc1,  }\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc2 }\end{DoxyParamCaption})}
+
+a non default constructor for collsion\+Object where both postions are given 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+loc1} & first location \\
+\hline
+{\em m\+\_\+loc2} & second location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_ac19de6256e1421e1c91e98e3ba136326}\label{classroadfighter_1_1CollisionObject_ac19de6256e1421e1c91e98e3ba136326}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\index{Collision\+Object@{Collision\+Object}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em copy} & the other \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that is being copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a45af317bbabd99cf64e0ba87241df509}\label{classroadfighter_1_1CollisionObject_a45af317bbabd99cf64e0ba87241df509}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\index{Collision\+Object@{Collision\+Object}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily roadfighter\+::\+Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&\&}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move constructor 
+\begin{DoxyParams}{Parameters}
+{\em Move} & the other \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that is being moved in this one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_aabc3bc7bef3a50923856fd82e39f59a1}\label{classroadfighter_1_1CollisionObject_aabc3bc7bef3a50923856fd82e39f59a1}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!````~Collision\+Object@{$\sim$\+Collision\+Object}}
+\index{````~Collision\+Object@{$\sim$\+Collision\+Object}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Object()}{~CollisionObject()}}
+{\footnotesize\ttfamily virtual roadfighter\+::\+Collision\+Object\+::$\sim$\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+destructor for \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}\label{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!bonus@{bonus}}
+\index{bonus@{bonus}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{bonus()}{bonus()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Collision\+Object\+::bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+a function that must be overriden that will say what the object will do must it get a bonus 
+
+Implemented in \hyperlink{classroadfighter_1_1PlayerCar_a0f0626a6ea7d25e3ba01a8289d54acac}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a5858dd3f2c7bb49782b29c0a90846a6c}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_a3d2d15df036c419cd9ad4fbc6fcd4ad9}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_a43d55e28efe840d81c1b87216920eb69}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1Bullet_a642ca8467a0ffea844d18d4917b2f49e}{roadfighter\+::\+Bullet}, and \hyperlink{classroadfighter_1_1End_a501a09cafb9de82e3a6af39e9524eb3d}{roadfighter\+::\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a426a06907212c866a22cba7ec84ebe65}\label{classroadfighter_1_1CollisionObject_a426a06907212c866a22cba7ec84ebe65}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{check\+Collision()}{checkCollision()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Collision\+Object\+::check\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&}]{check }\end{DoxyParamCaption}) const}
+
+this function checks wether 2 collisionobjects collide 
+\begin{DoxyParams}{Parameters}
+{\em check} & the collsionobject you are cheking with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that is true if they collide 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}\label{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!collide\+With@{collide\+With}}
+\index{collide\+With@{collide\+With}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{collide\+With()}{collideWith()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Collision\+Object\+::collide\+With (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&}]{collided }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+a function that must be overriden that will say what will happen to an objec tlust it collide with this one 
+\begin{DoxyParams}{Parameters}
+{\em collided} & the object this one collided with \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classroadfighter_1_1PlayerCar_ab62e40d949ac12f402fdaaab15c69b81}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a1de00cf7c8df548e8ab57a27cefb7345}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_ad1ce65b53e5652eac482a7b00c9a1d51}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_a04ee71b75c90f21efef591756855bf37}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}{roadfighter\+::\+Bullet}, and \hyperlink{classroadfighter_1_1End_a56dfbe6f0c760a5728b58fc9d9f40486}{roadfighter\+::\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}\label{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!crash@{crash}}
+\index{crash@{crash}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{crash()}{crash()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Collision\+Object\+::crash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+a function that must be overriden that will say what the object will do must it crash 
+
+Implemented in \hyperlink{classroadfighter_1_1PlayerCar_a330d071af729d7afbfcfd7ef92516544}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a2f5018f17852d75682afd78e806b8e4c}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_aad0a2a41a1b84c6487c1fc204b5f7cb7}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_a5c437fb5164d2735881a469650db048d}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}{roadfighter\+::\+Bullet}, and \hyperlink{classroadfighter_1_1End_af88fbaf5ebd266bd153d0ba3f32ba0f8}{roadfighter\+::\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a0c83b40afb7be4ed3b501a79c2a81b9b}\label{classroadfighter_1_1CollisionObject_a0c83b40afb7be4ed3b501a79c2a81b9b}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!getheight@{getheight}}
+\index{getheight@{getheight}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{getheight()}{getheight()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Collision\+Object\+::getheight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+this function calculates and returns the height of the object \begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a73baa1faea7a399a944e6a6f1d04ad86}\label{classroadfighter_1_1CollisionObject_a73baa1faea7a399a944e6a6f1d04ad86}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!get\+Loc1@{get\+Loc1}}
+\index{get\+Loc1@{get\+Loc1}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{get\+Loc1()}{getLoc1()}}
+{\footnotesize\ttfamily const \hyperlink{classroadfighter_1_1Location}{Location} \& roadfighter\+::\+Collision\+Object\+::get\+Loc1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for loc1 \begin{DoxyReturn}{Returns}
+a gamelocation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_aa7412cf56663bc98b1454a8ae54ac2b0}\label{classroadfighter_1_1CollisionObject_aa7412cf56663bc98b1454a8ae54ac2b0}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!get\+Loc2@{get\+Loc2}}
+\index{get\+Loc2@{get\+Loc2}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{get\+Loc2()}{getLoc2()}}
+{\footnotesize\ttfamily const \hyperlink{classroadfighter_1_1Location}{Location} \& roadfighter\+::\+Collision\+Object\+::get\+Loc2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for loc2 \begin{DoxyReturn}{Returns}
+a gamelocation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_ab8692ffb0324d39a96f31c780f7a8172}\label{classroadfighter_1_1CollisionObject_ab8692ffb0324d39a96f31c780f7a8172}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily double roadfighter\+::\+Collision\+Object\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+this function calculates and returns the width of the object \begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a907fbb9f4a45996690b4f35bc4256e47}\label{classroadfighter_1_1CollisionObject_a907fbb9f4a45996690b4f35bc4256e47}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!hor\+Move@{hor\+Move}}
+\index{hor\+Move@{hor\+Move}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{hor\+Move()}{horMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Collision\+Object\+::hor\+Move (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+this function moves the object sideways by \char`\"{}amount\char`\"{} space 
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount it is moving (negative is to the left) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a2891183d9769adbc9a9c0dc65db1af10}\label{classroadfighter_1_1CollisionObject_a2891183d9769adbc9a9c0dc65db1af10}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!is\+Delete@{is\+Delete}}
+\index{is\+Delete@{is\+Delete}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{is\+Delete()}{isDelete()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Collision\+Object\+::is\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for m\+\_\+delete \begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a738071cd7b1b8cd4c8d455b5e552bd4c}\label{classroadfighter_1_1CollisionObject_a738071cd7b1b8cd4c8d455b5e552bd4c}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!must\+Delete@{must\+Delete}}
+\index{must\+Delete@{must\+Delete}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{must\+Delete()}{mustDelete()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Collision\+Object\+::must\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a function that should be overriden and is used to denote wether an object should be deletet or not \begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classroadfighter_1_1PlayerCar_aaf4dc181a4d21e544aecd7a8e538cfd6}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}{roadfighter\+::\+Bullet}, \hyperlink{classroadfighter_1_1BonusCar_a19d01e92134634a82ae53f0d017956aa}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a300bccb330cc8e84834edd5f85354a10}{roadfighter\+::\+Racing\+Car}, and \hyperlink{classroadfighter_1_1PassingCar_a96b365c19d4e6e940d3827319434a022}{roadfighter\+::\+Passing\+Car}.
+
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a880034efde5a30ccc98c2ff3a2dc7c84}\label{classroadfighter_1_1CollisionObject_a880034efde5a30ccc98c2ff3a2dc7c84}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object}\& roadfighter\+::\+Collision\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+copy assigment for \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} 
+\begin{DoxyParams}{Parameters}
+{\em other} & the \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that is being copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that is equal to the other one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a68b62353ad431b65f2dbacee983b6660}\label{classroadfighter_1_1CollisionObject_a68b62353ad431b65f2dbacee983b6660}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object}\& roadfighter\+::\+Collision\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+move assignment for \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} 
+\begin{DoxyParams}{Parameters}
+{\em other} & other \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that is being moved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} that contains all the data of the first one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a454547da963cd4d7e09f57bc64a0f984}\label{classroadfighter_1_1CollisionObject_a454547da963cd4d7e09f57bc64a0f984}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!set\+Delete@{set\+Delete}}
+\index{set\+Delete@{set\+Delete}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{set\+Delete()}{setDelete()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Collision\+Object\+::set\+Delete (\begin{DoxyParamCaption}\item[{bool}]{m\+\_\+delete }\end{DoxyParamCaption})}
+
+setter for m\+\_\+delete 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+delete} & a bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a3e0d924b453c9003a4992046fa3c52e1}\label{classroadfighter_1_1CollisionObject_a3e0d924b453c9003a4992046fa3c52e1}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!set\+Loc1@{set\+Loc1}}
+\index{set\+Loc1@{set\+Loc1}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{set\+Loc1()}{setLoc1()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Collision\+Object\+::set\+Loc1 (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc1 }\end{DoxyParamCaption})}
+
+setter for loc1 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+loc1} & a gamelocation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a8f566d1ea28f2ed16723572617abd583}\label{classroadfighter_1_1CollisionObject_a8f566d1ea28f2ed16723572617abd583}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!set\+Loc2@{set\+Loc2}}
+\index{set\+Loc2@{set\+Loc2}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{set\+Loc2()}{setLoc2()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Collision\+Object\+::set\+Loc2 (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc2 }\end{DoxyParamCaption})}
+
+setter for loc2 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+loc2} & a gamelocation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}\label{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!shot@{shot}}
+\index{shot@{shot}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{shot()}{shot()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Collision\+Object\+::shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+a function that must be overriden that will say what the object will do must it been shot 
+
+Implemented in \hyperlink{classroadfighter_1_1PlayerCar_a592556a1c6326c9d9a70691f036eaafc}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_a20c4363a1d31cc17d7d82c8f9a219d2d}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_a02edcd22a86c1f98642c3703ef8dfb16}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ac04b801b789bf880011d5cdb1ffdec59}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1Bullet_acaacd303f1f4e55c5029d4a4cbe1d9b1}{roadfighter\+::\+Bullet}, and \hyperlink{classroadfighter_1_1End_af81f5e854c8504a60afa11ea826aaec8}{roadfighter\+::\+End}.
+
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_aaf92d0fe335daa016b5131835602bc1d}\label{classroadfighter_1_1CollisionObject_aaf92d0fe335daa016b5131835602bc1d}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!vert\+Move@{vert\+Move}}
+\index{vert\+Move@{vert\+Move}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{vert\+Move()}{vertMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Collision\+Object\+::vert\+Move (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+this function moves the object forwar/backwar by \char`\"{}amount\char`\"{} space 
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount it is moving (negative is forward!!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}\label{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}} 
+\index{roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}!win@{win}}
+\index{win@{win}!roadfighter\+::\+Collision\+Object@{roadfighter\+::\+Collision\+Object}}
+\subsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Collision\+Object\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+a function that must be overriden that will say what the object will do must it win 
+
+Implemented in \hyperlink{classroadfighter_1_1PlayerCar_a12f0da24565a4fe64a7bf17fc7c37152}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1BonusCar_afb2d142de799694db896ba875d7d0c27}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_a365d8befb1c2fd34337fc25665ccc73f}{roadfighter\+::\+Passing\+Car}, \hyperlink{classroadfighter_1_1Bullet_a566adb0235665312365cd65536c2aafc}{roadfighter\+::\+Bullet}, \hyperlink{classroadfighter_1_1RacingCar_a24293ac56920da01d29fe99aee8d3ea6}{roadfighter\+::\+Racing\+Car}, and \hyperlink{classroadfighter_1_1End_abcf20b9e8a2dda73a9215eb8c01c4aef}{roadfighter\+::\+End}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Logic/include/\+Entities/Collision\+Object.\+h\item 
+Game\+Logic/\+Source/\+Entities/Collision\+Object.\+cpp\end{DoxyCompactItemize}

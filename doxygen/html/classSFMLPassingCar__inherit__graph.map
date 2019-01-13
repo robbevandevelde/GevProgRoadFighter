@@ -1,0 +1,8 @@
+<map id="SFMLPassingCar" name="SFMLPassingCar">
+<area shape="rect" id="node2" href="$classSFMLEntitySprite.html" title="SFMLEntitySprite" alt="" coords="5,229,131,256"/>
+<area shape="rect" id="node4" href="$classroadfighter_1_1PassingCar.html" title="roadfighter::PassingCar" alt="" coords="155,229,314,256"/>
+<area shape="rect" id="node5" href="$classroadfighter_1_1MovingObject.html" title="roadfighter::MovingObject" alt="" coords="149,155,320,181"/>
+<area shape="rect" id="node6" href="$classroadfighter_1_1CollisionObject.html" title="roadfighter::CollisionObject" alt="" coords="67,80,245,107"/>
+<area shape="rect" id="node7" href="$classroadfighter_1_1Entity.html" title="roadfighter::Entity" alt="" coords="93,5,219,32"/>
+<area shape="rect" id="node8" href="$classObservable.html" title="Observable" alt="" coords="269,80,357,107"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="roadfighter::Entity" name="roadfighter::Entity">
+<area shape="rect" id="node2" href="$classroadfighter_1_1CollisionObject.html" title="roadfighter::CollisionObject" alt="" coords="179,132,357,159"/>
+<area shape="rect" id="node16" href="$classroadfighter_1_1World.html" title="roadfighter::World" alt="" coords="205,183,331,209"/>
+<area shape="rect" id="node3" href="$classroadfighter_1_1End.html" title="roadfighter::End" alt="" coords="433,44,548,71"/>
+<area shape="rect" id="node5" href="$classroadfighter_1_1MovingObject.html" title="roadfighter::MovingObject" alt="" coords="405,132,576,159"/>
+<area shape="rect" id="node4" href="$classSFMLEnd.html" title="SFMLEnd" alt="" coords="663,5,743,32"/>
+<area shape="rect" id="node6" href="$classroadfighter_1_1BonusCar.html" title="roadfighter::BonusCar" alt="" coords="629,56,778,83"/>
+<area shape="rect" id="node8" href="$classroadfighter_1_1Bullet.html" title="roadfighter::Bullet" alt="" coords="641,107,765,133"/>
+<area shape="rect" id="node10" href="$classroadfighter_1_1PassingCar.html" title="roadfighter::PassingCar" alt="" coords="624,157,783,184"/>
+<area shape="rect" id="node12" href="$classroadfighter_1_1PlayerCar.html" title="roadfighter::PlayerCar" alt="" coords="629,208,778,235"/>
+<area shape="rect" id="node14" href="$classroadfighter_1_1RacingCar.html" title="roadfighter::RacingCar" alt="" coords="627,259,780,285"/>
+<area shape="rect" id="node7" href="$classSFMLBonusCar.html" title="SFMLBonusCar" alt="" coords="836,56,951,83"/>
+<area shape="rect" id="node9" href="$classSFMLBullet.html" title="SFMLBullet" alt="" coords="848,107,939,133"/>
+<area shape="rect" id="node11" href="$classSFMLPassingCar.html" title="SFMLPassingCar" alt="" coords="831,157,956,184"/>
+<area shape="rect" id="node13" href="$classSFMLPlayerCar.html" title="SFMLPlayerCar" alt="" coords="836,208,951,235"/>
+<area shape="rect" id="node15" href="$classSFMLRacingCar.html" title="SFMLRacingCar" alt="" coords="834,259,953,285"/>
+<area shape="rect" id="node17" href="$classSFMLWorld.html" title="SFMLWorld" alt="" coords="445,183,536,209"/>
+</map>
