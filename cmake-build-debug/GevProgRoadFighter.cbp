@@ -126,8 +126,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GevProgRoadFighter">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion"/>
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -150,8 +150,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GevProgRoadFighter/fast">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion"/>
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion/GevProgRoadFighter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/SFMLConversion"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -174,8 +174,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GevProgRoadFighterTest">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test"/>
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -199,8 +199,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GevProgRoadFighterTest/fast">
-				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/Test"/>
+				<Option output="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test/GevProgRoadFighterTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug/Test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -293,110 +293,8 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h">
 			<Option target="GLL"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/BonusCar.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/End.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/EntityInclude.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PlayerCar.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/EntityTransporter.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entity_Factory_base.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GLL_Entity_Factory.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/HighScoreManager.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/InputController.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/Observable.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/ObserverBase.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/ScoreObserver.h">
-			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/RoadFighterGame.h">
-			<Option target="GLL"/>
-		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/parsers/json.hpp">
 			<Option target="GLL"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPassingCar.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLWorld.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLRoadFighter.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFML_Entity_Factory.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFMLconversionException.h">
-			<Option target="GevProgRoadFighter"/>
-		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h">
-			<Option target="GevProgRoadFighter"/>
 		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/SFMLRoadFighter.cpp">
 			<Option target="GevProgRoadFighter"/>

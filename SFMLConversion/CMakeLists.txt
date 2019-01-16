@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 #extra compile flags to make srue code conventions are followed
 #set(CMAKE_CXX_FLAGS "-Wall -Werror")
 set(CMAKE_CXX_FLAGS -pthread)
-SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 set(CMAKE_EXE_LINKER_FLAGS -pthread)
 
 # Extend the CMake module path to find the FindSFML.cmake
@@ -19,27 +18,17 @@ FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
 # The source files to compile
 SET(SRC main.cpp
         Source/SFMLRoadFighter.cpp
-        Include/SFMLRoadFighter.h
         Source/entities/SFMLPlayerCar.cpp
-        Include/Entities/SFMLPlayerCar.h
         Source/entities/SFMLEntitySprite.cpp
-        Include/Entities/SFMLEntitySprite.h
         Source/Transformation.cpp
-        Include/Transformation.h
         Source/SFML_Entity_Factory.cpp
-        Include/SFML_Entity_Factory.h
         Source/entities/SFMLWorld.cpp
-        Include/Entities/SFMLWorld.h
         Source/entities/SFMLRacingCar.cpp
-        Include/Entities/SFMLRacingCar.h
         Source/entities/SFMLBonusCar.cpp
-        Include/Entities/SFMLBonusCar.h
         Source/entities/SFMLPassingCar.cpp
-        Include/Entities/SFMLPassingCar.h
         Source/entities/SFMLBullet.cpp
-        Include/Entities/SFMLBullet.h
         Source/entities/SFMLEnd.cpp
-        Include/Entities/SFMLEnd.h Include/SFMLconversionException.h)
+        )
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)
@@ -51,9 +40,8 @@ ADD_EXECUTABLE(GevProgRoadFighter ${SRC})
 #Link the gamelogic library to main targer
 TARGET_LINK_LIBRARIES(GevProgRoadFighter LINK_PUBLIC GLL ${SFML_LIBRARIES})
 
-## Link target to SFML libs
-## (The SFML_LIBRARIES variable is defined by FindSFML.cmake, if SFML was found)
-#TARGET_LINK_LIBRARIES(GevProgRoadFighter  ${SFML_LIBRARIES})
+#add resources like images and fonts to the build directory
+FILE(COPY resources DESTINATION "${CMAKE_BINARY_DIR}/SFMLConversion")
 
 #defining compile directory
 INSTALL(TARGETS GevProgRoadFighter DESTINATION ${PROJECT_SOURCE_DIR})

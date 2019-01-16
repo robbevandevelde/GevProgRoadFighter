@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
+../GameLogic/include/Entities/BonusCar.h
+Observer/Observable.h
+-
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+
+../GameLogic/include/Entities/Bullet.h
+Entity.h
+../GameLogic/include/Entities/Entity.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+
 ../GameLogic/include/Entities/CollisionObject.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -13,6 +33,10 @@ memory
 -
 ../Location.h
 ../GameLogic/include/Location.h
+
+../GameLogic/include/Entities/End.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
 
 ../GameLogic/include/Entities/Entity.h
 ../GllException.h
@@ -26,9 +50,107 @@ CollisionObject.h
 Observer/Observable.h
 ../GameLogic/include/Entities/Observer/Observable.h
 
+../GameLogic/include/Entities/PassingCar.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+../GameLogic/include/Entities/Observer/Observable.h
+
+../GameLogic/include/Entities/PlayerCar.h
+memory
+-
+Observer/Observable.h
+-
+Entity_Factory_base.h
+../GameLogic/include/Entities/Entity_Factory_base.h
+InputController.h
+../GameLogic/include/Entities/InputController.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+EntityTransporter.h
+../GameLogic/include/Entities/EntityTransporter.h
+
+../GameLogic/include/Entities/RacingCar.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+../GameLogic/include/Entities/Observer/Observable.h
+../../Utility/Random.h
+../GameLogic/Utility/Random.h
+
+../GameLogic/include/Entities/World.h
+memory
+-
+vector
+-
+Entity.h
+../GameLogic/include/Entities/Entity.h
+PlayerCar.h
+../GameLogic/include/Entities/PlayerCar.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+EntityTransporter.h
+../GameLogic/include/Entities/EntityTransporter.h
+
+../GameLogic/include/EntityTransporter.h
+Entities/Entity.h
+../GameLogic/include/Entities/Entity.h
+memory
+-
+vector
+-
+
+../GameLogic/include/Entity_Factory_base.h
+memory
+-
+Entities/Entity.h
+../GameLogic/include/Entities/Entity.h
+Observer/ScoreObserver.h
+../GameLogic/include/Observer/ScoreObserver.h
+InputController.h
+../GameLogic/include/InputController.h
+EntityTransporter.h
+../GameLogic/include/EntityTransporter.h
+Observer/ObserverBase.h
+../GameLogic/include/Observer/ObserverBase.h
+
+../GameLogic/include/GLL_Entity_Factory.h
+memory
+-
+Entity_Factory_base.h
+../GameLogic/include/Entity_Factory_base.h
+Entities/Bullet.h
+../GameLogic/include/Entities/Bullet.h
+Entities/PlayerCar.h
+../GameLogic/include/Entities/PlayerCar.h
+Entities/RacingCar.h
+../GameLogic/include/Entities/RacingCar.h
+Entities/PassingCar.h
+../GameLogic/include/Entities/PassingCar.h
+Entities/World.h
+../GameLogic/include/Entities/World.h
+Entities/BonusCar.h
+../GameLogic/include/Entities/BonusCar.h
+Entities/End.h
+../GameLogic/include/Entities/End.h
+
 ../GameLogic/include/GllException.h
 exception
 -
+iostream
+-
+
+../GameLogic/include/HighScoreManager.h
+iostream
+-
+vector
+-
+fstream
+-
+parsers/json.hpp
+../GameLogic/include/parsers/json.hpp
+
+../GameLogic/include/InputController.h
 iostream
 -
 
@@ -46,9 +168,441 @@ ObserverBase.h
 
 ../GameLogic/include/Observer/ObserverBase.h
 
+../GameLogic/include/Observer/ScoreObserver.h
+ObserverBase.h
+../GameLogic/include/Observer/ObserverBase.h
+limits
+-
+
+../GameLogic/include/RoadFighterGame.h
+memory
+-
+Entity_Factory_base.h
+../GameLogic/include/Entity_Factory_base.h
+Entities/World.h
+../GameLogic/include/Entities/World.h
+Entities/PlayerCar.h
+../GameLogic/include/Entities/PlayerCar.h
+GLL_Entity_Factory.h
+../GameLogic/include/GLL_Entity_Factory.h
+Entities/Entity.h
+../GameLogic/include/Entities/Entity.h
+InputController.h
+../GameLogic/include/InputController.h
+EntityTransporter.h
+../GameLogic/include/EntityTransporter.h
+../Utility/Random.h
+../GameLogic/Utility/Random.h
+Observer/ScoreObserver.h
+../GameLogic/include/Observer/ScoreObserver.h
+HighScoreManager.h
+../GameLogic/include/HighScoreManager.h
+
+../GameLogic/include/parsers/json.hpp
+algorithm
+-
+cassert
+-
+ciso646
+-
+cstddef
+-
+functional
+-
+initializer_list
+-
+iosfwd
+-
+iterator
+-
+numeric
+-
+string
+-
+utility
+-
+cstdint
+-
+map
+-
+memory
+-
+string
+-
+vector
+-
+ciso646
+-
+cstddef
+-
+limits
+-
+type_traits
+-
+utility
+-
+exception
+-
+stdexcept
+-
+string
+-
+array
+-
+ciso646
+-
+cstddef
+-
+cstdint
+-
+algorithm
+-
+array
+-
+ciso646
+-
+forward_list
+-
+iterator
+-
+string
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+ciso646
+-
+iterator
+-
+tuple
+-
+type_traits
+-
+utility
+-
+valarray
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cstddef
+-
+cstring
+-
+ios
+-
+istream
+-
+iterator
+-
+memory
+-
+numeric
+-
+string
+-
+type_traits
+-
+utility
+-
+clocale
+-
+cstddef
+-
+cstdlib
+-
+initializer_list
+-
+ios
+-
+iomanip
+-
+sstream
+-
+string
+-
+vector
+-
+cassert
+-
+cmath
+-
+cstdint
+-
+functional
+-
+string
+-
+utility
+-
+cstddef
+-
+limits
+-
+ciso646
+-
+iterator
+-
+type_traits
+-
+cstddef
+-
+string
+-
+cstddef
+-
+iterator
+-
+utility
+-
+algorithm
+-
+cstddef
+-
+ios
+-
+iterator
+-
+memory
+-
+ostream
+-
+string
+-
+vector
+-
+algorithm
+-
+array
+-
+cassert
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstring
+-
+iomanip
+-
+ios
+-
+iterator
+-
+limits
+-
+sstream
+-
+string
+-
+utility
+-
+algorithm
+-
+array
+-
+cstdint
+-
+cstring
+-
+limits
+-
+algorithm
+-
+array
+-
+cassert
+-
+ciso646
+-
+clocale
+-
+cmath
+-
+cstddef
+-
+cstdint
+-
+cstdio
+-
+iomanip
+-
+iterator
+-
+limits
+-
+string
+-
+sstream
+-
+type_traits
+-
+cassert
+-
+ciso646
+-
+cmath
+-
+cstdint
+-
+cstring
+-
+initializer_list
+-
+utility
+-
+cassert
+-
+numeric
+-
+string
+-
+vector
+-
+utility
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/BonusCar.cpp
+Entities/BonusCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entities/BonusCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Bullet.cpp
+../../include/Entities/Bullet.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/CollisionObject.cpp
+Entities/CollisionObject.h
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/End.cpp
+Entities/End.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entities/End.h
+
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/MovingObject.cpp
 Entities/MovingObject.h
 -
 Entities/MovingObject.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/Entities/MovingObject.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PassingCar.cpp
+../../include/Entities/PassingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/PlayerCar.cpp
+utility
+-
+iostream
+-
+Entities/PlayerCar.h
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/RacingCar.cpp
+../../include/Entities/RacingCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Entities/World.cpp
+Entities/World.h
+-
+../../include/Entities/World.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.cpp
+GLL_Entity_Factory.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GLL_Entity_Factory.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Location.cpp
+../include/Location.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/RoadFighterGame.cpp
+utility
+-
+RoadFighterGame.h
+-
+GllException.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/GllException.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+memory
+-
+random
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Bullet.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+MovingObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+CollisionObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+memory
+-
+../Location.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+../GllException.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+CollisionObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+Observer/Observable.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Observer/Observable.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PassingCar.h
+MovingObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Observer/Observable.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/RacingCar.h
+MovingObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/MovingObject.h
+Observer/Observable.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Observer/Observable.h
+../../Utility/Random.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Utility/Random.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/World.h
+memory
+-
+vector
+-
+Entity.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/Entity.h
+PlayerCar.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/PlayerCar.h
+CollisionObject.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/CollisionObject.h
+EntityTransporter.h
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Entities/EntityTransporter.h
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/GllException.h
+exception
+-
+iostream
+-
+
+/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Location.h
+ostream
+-
 

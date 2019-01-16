@@ -1,12 +1,11 @@
 #setting cmake version and project name
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.6)
 project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
 
 #pthread flag is needed to make gtest run on linux
 set(CMAKE_CXX_FLAGS -pthread)
-SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 set(CMAKE_EXE_LINKER_FLAGS -pthread)
 
 #set include dir for gtest
@@ -20,7 +19,10 @@ SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "../cmake/Modules")
 
 #making a debug targer to link gtest to
 SET(SRC mainTest.cpp
-        EntityTests.cpp OberserTests.cpp HighScoreTests.cpp InputTests.cpp)
+        EntityTests.cpp
+        OberserTests.cpp
+        HighScoreTests.cpp
+        InputTests.cpp)
 
 # adding a test executable to test he library
 ADD_EXECUTABLE(GevProgRoadFighterTest ${SRC})
