@@ -48,6 +48,26 @@ CollisionObject.h
 ../GllException.h
 ../GameLogic/include/GllException.h
 
+../GameLogic/include/Entities/EntityInclude.h
+BonusCar.h
+../GameLogic/include/Entities/BonusCar.h
+Bullet.h
+../GameLogic/include/Entities/Bullet.h
+CollisionObject.h
+../GameLogic/include/Entities/CollisionObject.h
+End.h
+../GameLogic/include/Entities/End.h
+MovingObject.h
+../GameLogic/include/Entities/MovingObject.h
+PassingCar.h
+../GameLogic/include/Entities/PassingCar.h
+PlayerCar.h
+../GameLogic/include/Entities/PlayerCar.h
+RacingCar.h
+../GameLogic/include/Entities/RacingCar.h
+World.h
+../GameLogic/include/Entities/World.h
+
 ../GameLogic/include/Entities/MovingObject.h
 Entity.h
 ../GameLogic/include/Entities/Entity.h
@@ -125,20 +145,8 @@ memory
 -
 Entity_Factory_base.h
 ../GameLogic/include/Entity_Factory_base.h
-Entities/Bullet.h
-../GameLogic/include/Entities/Bullet.h
-Entities/PlayerCar.h
-../GameLogic/include/Entities/PlayerCar.h
-Entities/RacingCar.h
-../GameLogic/include/Entities/RacingCar.h
-Entities/PassingCar.h
-../GameLogic/include/Entities/PassingCar.h
-Entities/World.h
-../GameLogic/include/Entities/World.h
-Entities/BonusCar.h
-../GameLogic/include/Entities/BonusCar.h
-Entities/End.h
-../GameLogic/include/Entities/End.h
+Entities/EntityInclude.h
+../GameLogic/include/Entities/EntityInclude.h
 
 ../GameLogic/include/GllException.h
 exception
@@ -606,41 +614,9 @@ Location.h
 ../Include/SFML_Entity_Factory.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/SFML_Entity_Factory.h
 
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/Transformation.cpp
-../Include/Transformation.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Transformation.h
-iostream
--
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBonusCar.cpp
-../../Include/Entities/SFMLBonusCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBonusCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLBullet.cpp
-../../Include/Entities/SFMLBullet.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLBullet.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEnd.cpp
-../../Include/Entities/SFMLEnd.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEnd.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLEntitySprite.cpp
-utility
--
-../../Include/Entities/SFMLEntitySprite.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLEntitySprite.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPassingCar.cpp
-../../Include/Entities/SFMLPassingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPassingCar.h
-
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLPlayerCar.cpp
 ../../Include/Entities/SFMLPlayerCar.h
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLPlayerCar.h
-
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLRacingCar.cpp
-../../Include/Entities/SFMLRacingCar.h
-/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Include/Entities/SFMLRacingCar.h
 
 /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/SFMLConversion/Source/entities/SFMLWorld.cpp
 ../../Include/Entities/SFMLWorld.h

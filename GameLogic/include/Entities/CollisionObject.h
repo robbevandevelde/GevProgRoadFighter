@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class CollsionObject and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_COLLISIONOBJECT_H
 #define GEVPROGROADFIGHTER_COLLISIONOBJECT_H
 
@@ -13,11 +17,6 @@ namespace  roadfighter {
          */
         CollisionObject()=default;
 
-        /**
-         * a non default constructor for collsionObject where both postions are given
-         * @param m_loc1 first location
-         * @param m_loc2 second location
-         */
         CollisionObject(const Location &m_loc1, const Location &m_loc2);
 
         /**
@@ -53,41 +52,22 @@ namespace  roadfighter {
          */
         virtual ~CollisionObject()= default;
 
-        /**
-         * a function that should be overriden and is used to denote wether an object should be deletet or not
-         * @return a bool
-         */
+        //function that says whether the objects must be removed or not
         virtual bool mustDelete() const;
 
-        /**
-         * getter for loc1
-         * @return a gamelocation
-         */
+        //getter for the first location
         const Location &getLoc1() const;
 
-        /**
-         * setter for loc1
-         * @param m_loc1  a gamelocation
-         */
+        //setter for the first location
         void setLoc1(const Location &m_loc1);
 
-        /**
-         * getter for loc2
-         * @return  a gamelocation
-         */
+        //getter for the second location
         const Location &getLoc2() const;
 
-        /**
-         * setter for loc2
-         * @param m_loc2 a gamelocation
-         */
+        //setter for the second location
         void setLoc2(const Location &m_loc2);
 
-        /**
-         * this function checks wether 2 collisionobjects collide
-         * @param check the collsionobject you are cheking with
-         * @return a bool that is true if they collide
-         */
+        //checks the collision of this object with another
         bool checkCollision(std::shared_ptr<CollisionObject>& check) const ;
 
         /**
@@ -121,40 +101,22 @@ namespace  roadfighter {
         */
         virtual void win(){};
 
-        /**
-         * getter for m_delete
-         * @return a bool
-         */
+        //getter for the delete bool
         bool isDelete() const;
 
-        /**
-         * setter for m_delete
-         * @param m_delete a bool
-         */
+        //setter for the delete bool
         void setDelete(bool m_delete);
 
-        /**
-         * this function moves the object forwar/backwar by "amount" space
-         * @param amount the amount it is moving (negative is forward!!)
-         */
+        //move the object bij "amount" vertically
         void vertMove(double amount);
 
-        /**
-         * this function moves the object sideways by "amount" space
-         * @param amount the amount it is moving (negative is to the left)
-         */
+        //move the object bij "amount" horizontally
         void horMove(double amount);
 
-        /**
-         * this function calculates and returns the height of the object
-         * @return a double
-         */
+        //getter for the height
         double getheight() const;
 
-        /**
-         * this function calculates and returns the width of the object
-         * @return a double
-         */
+        //getter for the width
         double getWidth() const;
 
         //equality operators

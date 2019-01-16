@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class World and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_WORLD_H
 #define GEVPROGROADFIGHTER_WORLD_H
 

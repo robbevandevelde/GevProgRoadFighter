@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class Bullet car and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_BULLET_H
 #define GEVPROGROADFIGHTER_BULLET_H
 
@@ -56,37 +60,26 @@ namespace roadfighter {
          */
         ~Bullet() override = default;
 
-        /**
-         * this function handles what should happen must a object colldie with this bullet
-         * here it means the object get shot
-         * @param collided the object the bullet collides with
-         */
+        //function that handles what must happen if something collides with this bullet
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
-        /**
-         * this function handles the crash of a bullet
-         */
+        //handles crashing of the bullet
         void crash() override;
 
-        /**
-         * this function handles the shot logic of the bullet
-         */
+        //handles the bullet getting shot
         void shot() override;
 
-        /**
-         * this function handles the bonus function of the bullet
-         */
+        //handles the bullet getting a bonus
         void bonus() override;
 
-        /**
-         * this function handles the win condition of a bullet
-         */
+        //handles the bullet getting a win
         void win() override;
 
+        //updates the logic of the bullet
         void updateLogic() override;
 
+        //says wetehr the bullet msut be deletet or not
         bool mustDelete() const override;
-
 
     };
 }

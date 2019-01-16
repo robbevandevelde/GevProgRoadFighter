@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class PassingCar and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_PASSINGCAR_H
 #define GEVPROGROADFIGHTER_PASSINGCAR_H
 
@@ -45,47 +49,28 @@ namespace roadfighter {
          */
         ~PassingCar() override = default;
 
-        /**
-         * update the logic of the passing car
-         */
+        //updates the logic of the car
         void updateLogic() override;
 
-        /**
-         * update the movement of the passing car with dt ticks
-         * @param dt the amount of a tick we need to move the car
-         */
+        //updates the movement of the car
         void updateMovement(double dt) override;
 
-        /**
-         * a function that say whether the car needs to be removed from the game
-         * @returna bool that is true if the car needs to be deletet
-         */
+        //a function that says if this car must be deleted
         bool mustDelete() const override;
 
-        /**
-         * a function that will handle what will happen when a object collides with this one
-         * @param collided the object this ones collides with
-         */
+        //function that handles what happens if a car was to collide with this one
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
-        /**
-         * function that handles what happens when this car crashes
-         */
+        //handles the crashing of this car
         void crash() override;
 
-        /**
-         * function that handles what happens when this car get shot
-         */
+        //function that handles everything when this car gets shot
         void shot() override;
 
-        /**
-         * function that handles what happens when this car gets a bonus
-         */
+        //handles this car getting a bonus
         void bonus() override;
 
-        /**
-         * function that handles what happens when this car wins
-         */
+        //handles this car getting a win
         void win() override;
     };
 }

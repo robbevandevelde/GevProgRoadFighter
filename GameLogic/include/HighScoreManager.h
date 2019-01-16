@@ -1,6 +1,6 @@
-//
-// Created by thibaut on 17.12.18.
-//
+/**
+ * this file contains the declaration of the highscoremanager which handles the reading from and writing to a json file that has the highscores
+ */
 
 #ifndef GEVPROGROADFIGHTER_HIGHSCOREMANAGER_H
 #define GEVPROGROADFIGHTER_HIGHSCOREMANAGER_H

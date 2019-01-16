@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class End and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_END_H
 #define GEVPROGROADFIGHTER_END_H
 
@@ -6,29 +10,16 @@ namespace roadfighter {
     class End : public CollisionObject {
     public:
 
-        /**
-         * a function that will handle what will happen when an object collides with this one
-         * @param collided the object it collides with
-         */
+        //function that handles what happens must an object collide with this one
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
-        /**
-         * this function updates the logic of the end object
-         * nothing at the moment
-         */
+        //updates the logic of the end object
         void updateLogic() override;
 
-        /**
-         * this function can update the movement of a collisionobject but as the end object doesnt move the function will do nothing
-         * @param dt the amount of a tick this objecct will move forward with
-         */
+        //updates the movement of this end object
         void updateMovement(double dt) override;
 
-        /**
-         * constructor by value
-         * @param m_loc1
-         * @param m_loc2
-         */
+        //cosntructor where all the values are given
         End(const Location &m_loc1, const Location &m_loc2);
     };
 }

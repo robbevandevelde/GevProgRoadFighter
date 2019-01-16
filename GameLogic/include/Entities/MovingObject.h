@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class MovingObject and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_CAR_H
 #define GEVPROGROADFIGHTER_CAR_H
 
@@ -25,6 +29,7 @@ namespace roadfighter {
          */
         MovingObject(MovingObject &&move)= default;
 
+        //constructor where all variables are given
         MovingObject(const Location &m_loc1, const Location &m_loc2, double m_maxVertSpeed, double m_vertAccel,
             double m_horAccel);
 
@@ -49,131 +54,70 @@ namespace roadfighter {
          */
         ~MovingObject() override = default;
 
-        /**
-         * a function that sets the vertical and horizontal speed to 0
-         */
+        //stops all movement of this object
         virtual void stop();
 
-        /**
-         * a function that substracts the horizontalaccel from the horizontalspeed
-         */
-        virtual void moveLeft();
-
-        /**
-         * a function that add the horizontalaccel from the horizontalspeed
-         */
-        virtual void moveRight();
-
-        /**
-         * a function that accelrates the car with the verticalaccel*dt
-         * @param dt teh amount of a tick that has passed since previous one
-         */
+        //accelerates the object by the vertaccle*dt
         virtual void accelerate(double dt);
 
-        /**
-        * a function that decelerates the car with the verticalaccel*dt
-        * @param dt teh amount of a tick that has passed since previous one
-        */
-        virtual void decelerate(double dt);
-
-        /**
-         * setter for vertivalspeed
-         * @param m_VerticalSpeed the new verticalspeed
-         */
+        //setter for the vertical speed
         void setVerticalSpeed(double m_VerticalSpeed);
 
-        /**
-         * setter for vertivalspeed were there is no check if you are above the macvertspeed
-         * @param m_VerticalSpeed the new verticalspeed
-         */
+        //setter the vertical speed without the maximum vertical speed check
         void setVerticalSpeedUnbounded(double m_VerticalSpeed);
 
-        /**
-         * setter for horizontalspeed
-         * @param m_HorizontalSpeed the new horizontalspeed
-         */
+        //setter for the horizontal speed
         void setHorizontalSpeed(double HorizontalSpeed);
 
-        /**
-         * a function that updates the car
-         * @param dt the amount of ticks that have passed since the previous one
-         * overrided form entity class
-         */
+        //updates the movement
         void updateMovement(double dt) override;
 
-        /**
-         * getter for the current horizontalspeed
-         * @return a double
-         */
+        //getter for the horizontal speed
         double getHorizontalSpeed() const;
 
-        /**
-         * getter for current vertical speed
-         * @return a double
-         */
+        //getter fot he vertical speed
         double getVerticalSpeed() const;
 
-        /**
-         * getter for vertical acceleration
-         * @return double
-         */
+        //getter for the vertical acceleration
         double getVertAccel() const;
 
-        /**
-         * getter for horizontal acceleration
-         * @return double
-         */
+        //getter for the horizontal acceleration
         double getHorAccel() const;
 
-        /**
-         * getter for current status of the moving object
-         * @return an EStatus enum
-         */
+        //gets the current status of this object (Driving/Crashed/Won)
         EStatus getStatus() const;
 
-        /**
-         * setter for the status
-         * @param m_status an EStatus enum
-         */
+        //setter for the status
         void setStatus(EStatus m_status);
 
-        /**
-         * getter for the current timeOut
-         * @return an int
-         */
+        //getter for the current timeOut of this object
         int getTimeOut() const;
 
-        /**
-         * setter for the timeout
-         * @param m_timeOut an int
-         */
+        //setter for the timeOut
         void setTimeOut(int m_timeOut);
 
-        /**
-         * a function that subtracts one of the timeout
-         */
+        //function that decrements the timeOut with 1
         void decrementTimeOut();
 
-        /**
-         * a getter for the immunity of the object
-         * @return a bool
-         */
+        //getter for the immunity of this object
         bool isImmune() const;
 
-        /**
-         * setter for the immunity of the object
-         * @param immune a bool
-         */
+        //setetr for the immunity
         void setImmune(bool immune);
 
+        //updates the logic of the object
         void updateLogic() override;
 
+        //setter for the maximum speed
         void setMaxVertSpeed(double m_maxVertSpeed);
 
+        //setter for the horizontal acceleration
         void setHorAccel(double m_horAccel);
 
+        //setter for the vertical acceleration
         void setVertAccel(double m_vertAccel);
 
+        //getter for the maximumspeed
         double getMaxVertSpeed() const;
 
     private:

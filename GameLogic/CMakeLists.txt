@@ -13,7 +13,6 @@ SET(SRC
         Source/Location.cpp
         Source/Entities/CollisionObject.cpp
         Source/Observer/Observable.cpp
-        Source/Observer/ObserverBase.cpp
         Source/Observer/ScoreObserver.cpp
         Source/RoadFighterGame.cpp
         Utility/Random.cpp

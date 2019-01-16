@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class Racing car and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_RACINGCAR_H
 #define GEVPROGROADFIGHTER_RACINGCAR_H
 

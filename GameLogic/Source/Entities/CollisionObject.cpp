@@ -5,26 +5,59 @@
 #include <Entities/CollisionObject.h>
 namespace roadfighter {
 
+    /**
+     * getter for loc1
+     * @return a gamelocation
+     * @exception none
+     */
     const Location &CollisionObject::getLoc1() const {
         return m_loc1;
     }
 
+    /**
+     * setter for loc1
+     * @param m_loc1  a gamelocation
+     * @return none
+     * @exception none
+     */
     void CollisionObject::setLoc1(const Location &m_loc1) {
         CollisionObject::m_loc1 = m_loc1;
     }
 
+    /**
+    * getter for loc2
+    * @return  a gamelocation
+     * @exception none
+    */
     const Location &CollisionObject::getLoc2() const {
         return m_loc2;
     }
 
+    /**
+      * setter for loc2
+      * @param m_loc2 a gamelocation
+      * @return none
+      * @exception none
+      */
     void CollisionObject::setLoc2(const Location &m_loc2) {
         CollisionObject::m_loc2 = m_loc2;
     }
 
-
+    /**
+     * a non default constructor for collsionObject where both postions are given
+     * @param m_loc1 first location
+     * @param m_loc2 second location
+     * @return none
+     * @exception none
+     */
     roadfighter::CollisionObject::CollisionObject(const Location &m_loc1, const Location &m_loc2) : m_loc1(m_loc1),
                                                                                                     m_loc2(m_loc2),m_delete(false) {}
-
+    /**
+     * this function checks wether 2 collisionobjects collide
+     * @param check the collsionobject you are cheking with
+     * @return a bool that is true if they collide
+     * @exception none
+     */
     bool CollisionObject::checkCollision(std::shared_ptr<CollisionObject>& check) const {
     //efficient rectangle collision checker found at https://stackoverflow.com/questions/31022269/collision-detection-between-two-rectangles-in-java
     if(check->getLoc1().getX()<=getLoc2().getX()&&check->getLoc2().getX()>= getLoc1().getX()){
@@ -35,7 +68,12 @@ namespace roadfighter {
         return false;
     }
 
-
+    /**
+     * this function moves the object forwar/backwar by "amount" space
+     * @param amount the amount it is moving (negative is forward!!)
+     * @return none
+     * @exception none
+     */
     void CollisionObject::vertMove(double amount) {
         m_loc1.setY(m_loc1.getY()+amount);
         m_loc2.setY(m_loc2.getY()+amount);
@@ -66,31 +104,67 @@ namespace roadfighter {
         }
     }
 
-
+    /**
+     * this function calculates and returns the height of the object
+     * @return a double
+     * @exception none
+     */
     double CollisionObject::getheight() const {
         return m_loc2.getY()-m_loc1.getY();
     }
 
+    /**
+     * this function calculates and returns the width of the object
+     * @return a double
+     * @exception none
+     */
     double CollisionObject::getWidth() const {
         return m_loc2.getX()-m_loc1.getX();
     }
 
+    /**
+     * equality operator
+     * @param rhs object you are comparing to
+     * @return bool that says whether they are equal or not
+     */
     bool CollisionObject::operator==(const CollisionObject &rhs) const {
         return m_loc1==rhs.m_loc1&&m_loc2==rhs.m_loc2;
     }
 
+
+    /**
+     * unequality operator
+     * @param rhs object you are comparing to
+     * @return bool that says whether they are not equal or equal
+     */
     bool CollisionObject::operator!=(const CollisionObject &rhs) const {
         return !(rhs == *this);
     }
 
+    /**
+     * getter for m_delete
+     * @return a bool
+     * @exception none
+     */
     bool CollisionObject::isDelete() const {
         return m_delete;
     }
-
+    /**
+     *
+     * setter for m_delete
+     * @param m_delete a bool
+     * @return none
+     * @exception none
+     */
     void CollisionObject::setDelete(bool m_delete) {
         CollisionObject::m_delete = m_delete;
     }
 
+    /**
+     * a function that should be overriden and is used to denote wether an object should be deletet or not
+     * @return a bool
+     * @exception none
+     */
     bool CollisionObject::mustDelete() const {
         return m_delete;
     }

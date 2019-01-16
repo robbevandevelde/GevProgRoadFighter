@@ -1,6 +1,6 @@
 /**
  * @file
- * this is an interface header that conatins a class entity implemented by all world objects of the game logic library
+ * this is an interface header that contains a class entity implemented by all world objects of the game logic library
  */
 #ifndef GEVPROGROADFIGHTER_ENTITY_H
 #define GEVPROGROADFIGHTER_ENTITY_H

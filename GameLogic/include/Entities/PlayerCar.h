@@ -1,3 +1,7 @@
+/**
+ * @file
+ * this file is the declaration of the class Player Car and all it members
+ */
 #ifndef GEVPROGROADFIGHTER_PLAYERCAR_H
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
 
@@ -15,11 +19,7 @@ namespace roadfighter {
        */
         PlayerCar()= default;
 
-        /**
-         * constructor with arguments for playerCar
-         * @param controller a shared pointer to the move controller the car will use
-         * @param fuel the amount of fuel the car will use (default at 100)
-         */
+        //constructor where all variables are given
         PlayerCar(double m_maxVertSpeed, double m_vertAccel,
                   double m_horAccel,std::shared_ptr<InputController> controller,int fuel=100);
 
@@ -60,69 +60,40 @@ namespace roadfighter {
          */
         ~PlayerCar() override = default ;
 
-        /**
-         * this function decreases the fuel by the given amount
-         * @param amount
-         */
+        //decrease the fuel of this car with "amount"
         void decreasFuel(const double &amount);
 
-        /**
-         * this function increases the fuel by the given amount
-         * @param amount
-         */
-        void increaseFuel(const double &amount);
-
-        /**
-         * this function updates the movement by dt ticks, it is also capable of changing the direction
-         * @param dt the amount of a tick the car will move forward
-         */
+        //updates the position of this car with dt time, here is also checked if there is new input
         void updateMovement(double dt) override;
 
-        /**
-         * this funtion updates the logic of the player car
-         */
+        //updates the logic of the car
         void updateLogic() override;
 
-        /**
-         * this function well say wether the car can be deletet or not
-         * @return playercar can never be deletet so it will always be false
-         */
+        //function that says if this car must be deleted (will always be false here)
         bool mustDelete() const override;
 
-        /**
-         * this function says what the car will do when it wins
-         */
+        //handles this car getting a win
         void win() override;
 
-        /**
-         * this function will handle the logic about what will happen if another object crashes into it
-         * @param collided the object that crashes into the playercar
-         */
+        //handles what happens if an object was tho collide with this one
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
-        /**
-         * this function says what will happen if the car crashes
-         */
+        //handles the crashing of this car
         void crash() override;
 
-        /**
-         * this function says what will happen if the car gets shot
-         */
+        //handles this car getting shot
         void shot() override;
 
-        /**
-         * this function says what will happen if the car gets a bonus
-         */
+        //handles this car getting a bonus
         void bonus() override;
 
-        /**
-         * getter for the fual of the car
-         * @return a double depicting the fuel
-         */
+        //getter for the fuel
         double getFuel() const;
 
+        //decrease the firecoundown which says how many ticks need to pass till you can shoot again
         void decreasefireCountdown();
 
+        //function that shoots if the firecountdown is 0
         void shoot();
     private:
         double m_fuel;

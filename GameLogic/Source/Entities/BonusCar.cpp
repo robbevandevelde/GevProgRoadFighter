@@ -9,6 +9,8 @@ namespace roadfighter{
     /**
      * updates the movement of the bonus car with dt ticks
      * @param dt the amount of a tick the car should move forward
+     * @return none
+     * @exception none
      */
     void BonusCar::updateMovement(double dt) {
         MovingObject::updateMovement(dt);
