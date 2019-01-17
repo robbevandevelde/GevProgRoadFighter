@@ -1,8 +1,9 @@
 
 <p align="center">
-    <h1>RoadFighter</h1>
-    <img src="readmeFiles/roadfighterScreenshot.png">
+    <h1>RoadFighter</h1><br>
 </p>
+<img src="readmeFiles/roadfighterScreenshot.png" width="512" )
+
 [![Build Status](https://travis-ci.com/thibautvangoethem/GevProgRoadFighter.svg?token=eqCtdW2odoztZxrP7EYN&branch=master)](https://travis-ci.com/thibautvangoethem/GevProgRoadFighter)
 
 This is a project made by Thibaut Van Goethem for the course "gevorderd programmeren"
