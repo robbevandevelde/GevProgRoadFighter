@@ -125,6 +125,12 @@ namespace  roadfighter {
 
         bool operator!=(const CollisionObject &rhs) const;
 
+        //getter for the immunity of this object
+        bool isImmune() const;
+
+        //seter for the immunity
+        void setImmune(bool immune);
+
 
     private:
         Location m_loc1;
@@ -132,6 +138,8 @@ namespace  roadfighter {
         Location m_loc2;
 
         bool m_delete;
+
+        bool m_immune;
 
     };
 }

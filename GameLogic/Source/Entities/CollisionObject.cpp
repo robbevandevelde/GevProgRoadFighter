@@ -171,4 +171,23 @@ namespace roadfighter {
         return m_delete;
     }
 
+    /**
+     * a getter for the immunity of the object
+     * @return a bool
+     * @exception none
+     */
+    bool CollisionObject::isImmune() const {
+        return m_immune;
+    }
+
+    /**
+     * setter for the immunity of the object
+     * @param immune a bool
+     * @return none
+     * @exception none
+     */
+    void CollisionObject::setImmune(bool immune) {
+        CollisionObject::m_immune = immune;
+    }
+
 }

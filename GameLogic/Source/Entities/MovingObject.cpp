@@ -150,7 +150,6 @@ namespace roadfighter {
         m_verticalSpeed=0;
         m_status=Driving;
         m_timeOut=0;
-        m_immune=false;
     }
 
     /**
@@ -218,14 +217,6 @@ namespace roadfighter {
         MovingObject::m_timeOut = m_timeOut;
     }
 
-    /**
-     * a getter for the immunity of the object
-     * @return a bool
-     * @exception none
-     */
-    bool MovingObject::isImmune() const {
-        return m_immune;
-    }
 
     /**
      * setter for the vertical acceleration
@@ -237,15 +228,6 @@ namespace roadfighter {
         MovingObject::m_vertAccel = m_vertAccel;
     }
 
-    /**
-     * setter for the immunity of the object
-     * @param immune a bool
-     * @return none
-     * @exception none
-     */
-    void MovingObject::setImmune(bool immune) {
-        MovingObject::m_immune = immune;
-    }
 
     /**
      * a function that subtracts one of the timeout

@@ -100,11 +100,7 @@ namespace roadfighter {
         //function that decrements the timeOut with 1
         void decrementTimeOut();
 
-        //getter for the immunity of this object
-        bool isImmune() const;
 
-        //seter for the immunity
-        void setImmune(bool immune);
 
         //updates the logic of the object
         void updateLogic() override;
@@ -122,19 +118,17 @@ namespace roadfighter {
         double getMaxVertSpeed() const;
 
     private:
-        double m_verticalSpeed{};
-        double m_horizontalSpeed{};
+        double m_verticalSpeed;
+        double m_horizontalSpeed;
 
-        double m_maxVertSpeed{};
+        double m_maxVertSpeed;
 
-        double m_vertAccel{};
-        double m_horAccel{};
-
-        bool m_immune{};
+        double m_vertAccel;
+        double m_horAccel;
 
         EStatus m_status;
 
-        int m_timeOut{};
+        int m_timeOut;
     };
 }
 
