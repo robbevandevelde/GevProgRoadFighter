@@ -16,107 +16,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="almost got the entire gll documentation up to standard">
+    <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/readmeFiles/roadfighterScreenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/BonusCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/BonusCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/End.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/End.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entities/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entities/World.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/EntityTransporter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/EntityTransporter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Entity_Factory_base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Entity_Factory_base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Location.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Location.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Observer/Observable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Observer/Observable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/Observer/ScoreObserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/Observer/ScoreObserver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Utility/Clock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Utility/Clock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Utility/Clock.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Utility/Clock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Utility/Random.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Utility/Random.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Utility/Random.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Utility/Random.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/BonusCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/BonusCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/End.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/End.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/Entity.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/Entity.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/EntityInclude.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/EntityInclude.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/PassingCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/PassingCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/RacingCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/RacingCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entities/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entities/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/EntityTransporter.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/EntityTransporter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/GllException.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/GllException.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/HighScoreManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/HighScoreManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/InputController.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/InputController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Location.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Location.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Observer/Observable.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Observer/Observable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/Observer/ScoreObserver.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/Observer/ScoreObserver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBonusCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBonusCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEnd.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEnd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEntitySprite.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEntitySprite.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPassingCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPassingCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLRacingCar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLRacingCar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/Transformation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBonusCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBonusCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEnd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEnd.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEntitySprite.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEntitySprite.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPassingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPassingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLRacingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLRacingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/EntityTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Test/EntityTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/HighScoreTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Test/HighScoreTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/InputTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Test/InputTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/OberserTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OberserTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GevProgRoadFighter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GevProgRoadFighter.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/GevProgRoadFighterTest.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/PlayerCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/PlayerCar_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/classSFMLPlayerCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classSFMLPlayerCar-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/classSFMLPlayerCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classSFMLPlayerCar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar.tex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/GameLogic/cmake-build-debug/" />
@@ -145,55 +50,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="369">
+              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="189" column="27" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="43" column="171" selection-start-line="43" selection-start-column="171" selection-end-line="43" selection-end-column="171" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="279">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -203,6 +72,50 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
               <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
+              <folding>
+                <element signature="e#148#169#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="95" column="52" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -225,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/World.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
@@ -263,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Test/HighScoreTests.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Location.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h" />
         <option value="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBonusCar.cpp" />
@@ -282,7 +194,6 @@
         <option value="$PROJECT_DIR$/GameLogic/Source/EntityTransporter.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/InputController.h" />
         <option value="$PROJECT_DIR$/Test/InputTests.cpp" />
@@ -295,7 +206,6 @@
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/RacingCar.h" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Observer/ScoreObserver.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Observer/ScoreObserver.h" />
@@ -314,6 +224,9 @@
         <option value="$PROJECT_DIR$/SFMLConversion/Include/Transformation.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/World.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/World.h" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -336,11 +249,6 @@
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -507,21 +415,7 @@
       <workItem from="1547381973100" duration="1398000" />
       <workItem from="1547383977401" duration="6990000" />
       <workItem from="1547655334180" duration="13865000" />
-      <workItem from="1547731566076" duration="8153000" />
-    </task>
-    <task id="LOCAL-00011" summary="made singleton random class">
-      <created>1542831700321</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1542831700324</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added and linked gtest to seperate executable">
-      <created>1543168522082</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1543168522082</updated>
+      <workItem from="1547731566076" duration="10308000" />
     </task>
     <task id="LOCAL-00013" summary="attempt at making travis work with sfml 2.4.2">
       <created>1543323081098</created>
@@ -852,11 +746,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547680069814</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="got all the documentation up to standar, fixed some clang tidy errors and a lot of typos">
+      <created>1547742234896</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1547742234896</updated>
+    </task>
+    <task id="LOCAL-00061" summary="made the exception that happens when a wrong name is given be handled in the gll instead of the main of the sfml implementation">
+      <created>1547747097392</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1547747097392</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384647000" />
+    <option name="totallyTimeSpent" value="386802000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -871,13 +779,13 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29717764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29717764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997233" weight="0.4211663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -933,8 +841,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="made the world drawing use spriteheight isntead of screenheight" />
-    <MESSAGE value="fixed a bug with hitboxes being offset compared to graphical implementation" />
     <MESSAGE value="added comments and removed errors for the enitre game logic library" />
     <MESSAGE value="added logic for fuel in playercar" />
     <MESSAGE value="fixed bug causing non player cars to dissapear when hitting finishline" />
@@ -958,7 +864,9 @@
     <MESSAGE value="made a lot more documentation in the gll up te standard" />
     <MESSAGE value="removed all .h files from the cmakelist and added something to also copy the resources over when you compile" />
     <MESSAGE value="almost got the entire gll documentation up to standard" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost got the entire gll documentation up to standard" />
+    <MESSAGE value="got all the documentation up to standar, fixed some clang tidy errors and a lot of typos" />
+    <MESSAGE value="made the exception that happens when a wrong name is given be handled in the gll instead of the main of the sfml implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the exception that happens when a wrong name is given be handled in the gll instead of the main of the sfml implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1005,17 +913,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp</url>
-          <line>82</line>
+          <line>96</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp</url>
-          <line>49</line>
+          <line>63</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp</url>
-          <line>60</line>
+          <line>74</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -1032,13 +940,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -1113,30 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="81" column="73" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
-          <folding>
-            <element signature="e#148#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1242,20 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1371,13 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/World.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1389,6 +1245,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="60" column="55" lean-forward="true" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
+          <folding>
+            <element signature="e#148#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="95" column="52" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
