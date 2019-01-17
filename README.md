@@ -12,7 +12,7 @@ The project is an implementation of the NES game roadfighter using SFML 2.4
 <h2>Requirements</h2>
 <b>- SFML 2.4</b><br>
 <b>- cmake 3.6 minimum</b><br>
-<b>- a version of gcc (tested with 7.3.0)</b><br>
+<b>- a version of gcc/g++ or clang (tested with gcc 7.3.0 but most version should do)</b><br>
 <b>- linux (preferably ubuntu), other operating systems have not been tested</b><br>
 
 <h2>how to run</h2><br>
