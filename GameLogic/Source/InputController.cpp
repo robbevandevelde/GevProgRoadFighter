@@ -95,4 +95,59 @@ namespace roadfighter{
     std::string InputController::getText() const {
         return m_textInput;
     }
+
+    /**
+     * this function sets the horizontal move to left
+     * @return none
+     * @exception none
+     */
+    void InputController::moveLeft() {
+        setHorMove(h_left);
+    }
+
+    /**
+     * this function sets the horizontal move to the right
+     * @return none
+     * @exception none
+     */
+    void InputController::moveRight() {
+        setHorMove(h_right);
+    }
+
+    /**
+     * this function sets the vertical move to accelerate
+     * @return none
+     * @exception none
+     */
+    void InputController::accelerate() {
+        setVertMove(v_accel);
+    }
+
+    /**
+     * this function sets the horizontal move to decelerate
+     * @return none
+     * @exception none
+     */
+    void InputController::decelerate() {
+        setVertMove(v_decel);
+    }
+
+    /**
+     * this function sets the horizontal move to h_none
+     * @return none
+     * @exception none
+     */
+    void InputController::stopHorizontalMove() {
+        setHorMove(h_none);
+    }
+
+    /**
+     * this function sets the vertical move to v_none
+     * @return none
+     * @exception none
+     */
+    void InputController::stopVerticalMove() {
+        setVertMove(v_none);
+    }
+
 }

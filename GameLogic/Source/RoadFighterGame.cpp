@@ -142,42 +142,6 @@ namespace roadfighter{
         m_world->draw();
     }
 
-    /**
-     * a function that will set the movementcontroller to go left next tick
-     * @return none
-     * @exception none
-     */
-    void RoadFighterGame::moveLeft() {
-        if(m_status==gameRunning)m_MoveController->setHorMove(h_left);
-    }
-
-    /**
-     * a function that will set the movementcontroller to go right next tick
-     * @return none
-     * @exception none
-     */
-    void RoadFighterGame::moveRight() {
-        if(m_status==gameRunning) m_MoveController->setHorMove(h_right);
-    }
-
-    /**
-     * a function that will set the movementcontroller to accelerate in the vertical direction next tick
-     * @return none
-     * @exception none
-     */
-    void RoadFighterGame::accelerate() {
-        if(m_status==gameRunning)m_MoveController->setVertMove(v_accel);
-    }
-
-    /**
-    * a function that will set the movementcontroller to decelerate in the vertical direction next tick
-     * @return none
-     * @exception none
-    */
-    void RoadFighterGame::decelerate() {
-        if(m_status==gameRunning)m_MoveController->setVertMove(v_decel);
-    }
-
     //private function used in constructor
     void RoadFighterGame::initialize() {
         //creat transporter/movecontroller and set these into the factory so they can be given to the cars
@@ -240,24 +204,6 @@ namespace roadfighter{
         }
     }
 
-
-    /**
-    * a function that sets the movementcontroller to none for the horizontal move
-     * @return none
-     * @exception none
-    */
-    void RoadFighterGame::stopHorizontalMove() {
-        m_MoveController->setHorMove(h_none);
-    }
-
-    /**
-     * a function that sets the movementcontroller to none for the vertical move
-     * @return none
-     * @exception none
-     */
-    void RoadFighterGame::stopVerticalMove() {
-        m_MoveController->setVertMove(v_none);
-    }
     /**
     * gets the current speed of the playercar
     * @return a double representing the speed of the playercar
@@ -292,24 +238,6 @@ namespace roadfighter{
     }
 
     /**
-    * a function that handles the movecontroller to make it shoot
-     * @return none
-     * @exception none
-    */
-    void RoadFighterGame::shoot() {
-        if(m_status==gameRunning)m_MoveController->shoot();
-    }
-
-    /**
-     * a function that handles the movementcontrolle rto make it stop shooting
-     * @return none
-     * @exception none
-     */
-    void RoadFighterGame::stopShooting() {
-        m_MoveController->noShoot();
-    }
-
-    /**
      * function that gets the score of the player
      * @return an unsigned int denoting the score
      * @exception none
@@ -341,15 +269,6 @@ namespace roadfighter{
     }
 
     /**
-     * getter for the current status of the game
-     * @return the status of the game
-     * @exception none
-     */
-    EGameStatus RoadFighterGame::getStatus() const {
-        return m_status;
-    }
-
-    /**
      * function that checks if the game is paused
      * @return bool
      * @exception none
@@ -358,12 +277,4 @@ namespace roadfighter{
         return m_status==gamePaused;
     }
 
-    /**
-     * setter for the text of the inputcontroller
-     * @param text the text that will be given to the controller
-     * @exception none
-     */
-    void RoadFighterGame::setText(const std::string &text) {
-        m_MoveController->setText(text);
-    }
 }

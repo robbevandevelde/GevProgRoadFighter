@@ -67,24 +67,6 @@ namespace roadfighter {
        //a function that ticks the game with dt ticks (dt should be below 1)
         void tick(double dt);
 
-        //function that sets the movementcontroller to left
-        void moveLeft();
-
-        //function that sets the horizontal movement to none
-        void stopHorizontalMove();
-
-        //function that sets the horizontal movement to the right
-        void moveRight();
-
-        //function that sets the movement to accelerate
-        void accelerate();
-
-        //function that sets the vertical movement to none
-        void stopVerticalMove();
-
-        //function that sets the vertical movement to decelerate
-        void decelerate();
-
         //getter for the speed
         double getsSpeed() const;
 
@@ -93,12 +75,6 @@ namespace roadfighter {
 
         //getter for the fuel
         double getFuel() const;
-
-        //function that sets the movementcontroller to true
-        void shoot();
-
-        //function that sets the movementcontroller to stop shooting
-        void stopShooting();
 
         //getter for the score
         unsigned int getScore() const;
@@ -112,14 +88,8 @@ namespace roadfighter {
         //function that continues the game after it was paused
         void continueGame();
 
-        //getter for the game status
-        EGameStatus getStatus() const;
-
         //getter for the paused bool
         bool ispaused() const;
-
-        //setter for the text of the movementcontroler
-        void setText(const std::string& text);
 
     //all private functions
     private:

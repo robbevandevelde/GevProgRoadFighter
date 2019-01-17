@@ -30,15 +30,15 @@ namespace roadfighterSFML {
     private:
         //here are a bunch of helper function to help draw the screen
 
-        void draw(std::shared_ptr<sf::RenderWindow> &window);
+        void draw();
 
-        void drawSideStats(std::shared_ptr<sf::RenderWindow> &window);
+        void drawSideStats();
 
-        void drawPaused(std::shared_ptr<sf::RenderWindow> &window);
+        void drawPaused();
 
-        void drawEnded(std::shared_ptr<sf::RenderWindow> &window);
+        void drawEnded();
 
-        void drawText(std::shared_ptr<sf::RenderWindow> &window, std::string text, std::tuple<int, int> position,
+        void drawText(std::string text, std::tuple<int, int> position,
                       sf::Color color = sf::Color(255, 255, 255), int size = 24);
 
 
@@ -60,6 +60,8 @@ namespace roadfighterSFML {
         std::string m_endName;
 
         bool m_nameGiven;
+
+        std::shared_ptr<roadfighter::InputController> m_input;
     };
 }
 

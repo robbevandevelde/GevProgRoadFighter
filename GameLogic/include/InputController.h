@@ -20,6 +20,24 @@ namespace roadfighter {
          */
         InputController()= default;
 
+        //function to move left
+        void moveLeft();
+
+        //function to move right
+        void moveRight();
+
+        //does what you think
+        void stopHorizontalMove();
+
+        //does what you think
+        void stopVerticalMove();
+
+        //does what you think
+        void accelerate();
+
+        //does what you think
+        void decelerate();
+
         //function to set vertical movement
         void setVertMove(EVertMove move);
 
