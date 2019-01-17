@@ -22,7 +22,7 @@ The project is an implementation of the NES game roadfighter using SFML 2.4
 <b>- cd into that directory</b><br>
 <b>- run cmake from the new directory onto the directory you cloned the project in</b><br>
 <b>- run make in the directory you made</b><br>
-<b>- the compiled version can now be found in the SFMLCoversion map and is named GevProgRoadFighter</b><br>
+<b>- the compiled version can now be found in the SFMLConversion map and is named GevProgRoadFighter</b><br>
 <br>
 <b> note 1: if you were to move the compiled version be sure to also move the resources directory with it</b><br>
 <b> note 2: test made with the google framework can now also be run with the compiled version in the Tests directory</b><br>
