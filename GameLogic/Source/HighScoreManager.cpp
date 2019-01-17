@@ -20,6 +20,20 @@ namespace roadfighter {
      * @exception none
      */
     void HighScoreManager::addHighScore(const std::string &name, unsigned int score) {
+        //a quick lambda to check if the given name only consists of letters or number
+        auto correctNameLambda=[](const std::string & name)-> bool
+        {
+            bool correct=true;
+            for(auto i:name){
+                if(!((i>='a'&&i<='z')||(i>='A'&&i<'Z')||(i>='0'&&i<='9'))){
+                    correct=false;
+                }
+            }
+            return correct;
+        };
+        if(!correctNameLambda(name)){
+            throw  GllException("given name has characters that are not valid");
+        }
         std::vector<highScore> scores;
         scores = gethighScores();
         //quick lambda function to sort the vector of highscores

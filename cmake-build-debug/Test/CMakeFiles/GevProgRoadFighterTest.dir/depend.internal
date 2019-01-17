@@ -50,6 +50,7 @@ Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o
  ../GameLogic/include/Entities/CollisionObject.h
  ../GameLogic/include/Entities/End.h
  ../GameLogic/include/Entities/Entity.h
+ ../GameLogic/include/Entities/EntityInclude.h
  ../GameLogic/include/Entities/MovingObject.h
  ../GameLogic/include/Entities/PassingCar.h
  ../GameLogic/include/Entities/PlayerCar.h
@@ -93,6 +94,7 @@ Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o
  ../GameLogic/include/Entities/CollisionObject.h
  ../GameLogic/include/Entities/End.h
  ../GameLogic/include/Entities/Entity.h
+ ../GameLogic/include/Entities/EntityInclude.h
  ../GameLogic/include/Entities/MovingObject.h
  ../GameLogic/include/Entities/PassingCar.h
  ../GameLogic/include/Entities/PlayerCar.h

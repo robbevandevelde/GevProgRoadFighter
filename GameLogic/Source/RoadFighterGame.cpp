@@ -89,7 +89,12 @@ namespace roadfighter{
             }
         }
         if(m_status==gameEnded&&!m_MoveController->getText().empty()){
-            HighScoreManager::addHighScore(m_MoveController->getText(),m_ScoreObserver->getScore());
+            try {
+                HighScoreManager::addHighScore(m_MoveController->getText(), m_ScoreObserver->getScore());
+            }catch (GllException& except){
+                std::cerr<<"an exception occured while adding the highscore"<<std::endl;
+                std::cerr<<except.what()<<std::endl;
+            }
             m_MoveController->setNone();
         }
     }

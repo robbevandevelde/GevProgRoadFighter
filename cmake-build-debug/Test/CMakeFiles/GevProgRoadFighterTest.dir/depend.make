@@ -49,6 +49,7 @@ Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/in
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/End.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/Entity.h
+Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/EntityInclude.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/HighScoreTests.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
@@ -92,6 +93,7 @@ Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/includ
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/CollisionObject.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/End.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/Entity.h
+Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/EntityInclude.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/MovingObject.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/PassingCar.h
 Test/CMakeFiles/GevProgRoadFighterTest.dir/InputTests.cpp.o: ../GameLogic/include/Entities/PlayerCar.h
