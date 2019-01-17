@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 31.12.18.
-//
+/**
+ * @file
+ * this file contains the declaration and implementation for a simple exception class
+ * @author Thibaut Van Goethem
+ */
 #include <exception>
 #include <iostream>
 #ifndef GEVPROGROADFIGHTER_SFMLCONVERSIONEXCEPTION_H

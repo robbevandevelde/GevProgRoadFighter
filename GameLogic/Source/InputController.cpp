@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 06.12.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the InputController class
+ * @author Thibaut Van Goethem
+ */
 #include <InputController.h>
 
 #include "InputController.h"
@@ -61,7 +62,7 @@ namespace roadfighter{
         m_shoot=true;
     }
     /**
-     * simple funtion that sets the shoot bool on false
+     * simple function that sets the shoot bool on false
      */
     void InputController::noShoot() {
         m_shoot=false;
@@ -87,7 +88,7 @@ namespace roadfighter{
     }
 
     /**
-     * getter for the tecxt
+     * getter for the text
      * @return a string that is the text
      * @exception none
      */

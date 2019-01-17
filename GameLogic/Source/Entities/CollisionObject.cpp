@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 25.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the CollisionObject class
+ * @author Thibaut Van Goethem
+ */
 
 #include <Entities/CollisionObject.h>
 namespace roadfighter {
@@ -44,7 +46,7 @@ namespace roadfighter {
     }
 
     /**
-     * a non default constructor for collsionObject where both postions are given
+     * a non default constructor for collisionObject where both positions are given
      * @param m_loc1 first location
      * @param m_loc2 second location
      * @return none
@@ -53,8 +55,8 @@ namespace roadfighter {
     roadfighter::CollisionObject::CollisionObject(const Location &m_loc1, const Location &m_loc2) : m_loc1(m_loc1),
                                                                                                     m_loc2(m_loc2),m_delete(false) {}
     /**
-     * this function checks wether 2 collisionobjects collide
-     * @param check the collsionobject you are cheking with
+     * this function checks whether 2 collisionobjects collide
+     * @param check the collisionobject you are checking with
      * @return a bool that is true if they collide
      * @exception none
      */
@@ -69,7 +71,7 @@ namespace roadfighter {
     }
 
     /**
-     * this function moves the object forwar/backwar by "amount" space
+     * this function moves the object forward/backward by "amount" space
      * @param amount the amount it is moving (negative is forward!!)
      * @return none
      * @exception none
@@ -80,8 +82,8 @@ namespace roadfighter {
     }
 
     /**
-     * function that moces the collisionobject horizonatly
-     * @param amount the amount it must forwar/backward
+     * function that moves the collisionobject horizontaly
+     * @param amount the amount it must forward/backward
      * @return none
      * @exception GllException
      */
@@ -161,7 +163,7 @@ namespace roadfighter {
     }
 
     /**
-     * a function that should be overriden and is used to denote wether an object should be deletet or not
+     * a function that should be overriden and is used to denote whether an object should be deleted or not
      * @return a bool
      * @exception none
      */

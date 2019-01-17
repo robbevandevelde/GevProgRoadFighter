@@ -1,14 +1,16 @@
-#include <utility>
+/**
+ * @file
+ * this file contains the implementation of the RoadfighterGame class
+ * @author Thibaut Van Goethem
+ */
 
-//
-// Created by thibaut on 01.12.18.
-//
+#include <utility>
 #include <RoadFighterGame.h>
 #include "GllException.h"
 
 namespace roadfighter{
     /**
-    * default constructor for RoadFighterGameµ
+    * default constructor for RoadFighterGame
     * @return none
     * @exception none
     */
@@ -18,7 +20,7 @@ namespace roadfighter{
     }
 
     /**
-     * a constructor were the factory that is used to initalise all the objects is given
+     * a constructor were the factory that is used to initialise all the objects is given
      * @param factory the factory that will be used to make everything
      * @return none
      * @exception none
@@ -54,7 +56,7 @@ namespace roadfighter{
 
     /**
      * a function that updates the movement of all entities by dt ticks
-     * @param dt amount of a tick the postions must be updated with
+     * @param dt amount of a tick the positions must be updated with
      * @return none
      * @exception none
      */
@@ -93,7 +95,7 @@ namespace roadfighter{
     }
 
     /**
-     * functiont that checks if the game has ended
+     * function that checks if the game has ended
      * @return bool
      * @exception none
      */
@@ -253,7 +255,7 @@ namespace roadfighter{
     }
     /**
     * gets the current speed of the playercar
-    * @return a double represeting the speed of the playercar
+    * @return a double representing the speed of the playercar
      * @exception none
     */
     double RoadFighterGame::getsSpeed() const {
@@ -264,7 +266,7 @@ namespace roadfighter{
     double RoadFighterGame::getYvariance() const {
         double toreturn= m_Player->getLoc2().getY()-m_Player->getheight()/2;
         if(toreturn>0){
-            throw GllException("playercar with positive yvariance occured,this should always be negative or 0");
+            throw GllException("playercar with positive yvariance occurred,this should always be negative or 0");
         }
         return toreturn;
     }

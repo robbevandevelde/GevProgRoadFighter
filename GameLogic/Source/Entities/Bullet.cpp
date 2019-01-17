@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the Bullet class
+ * @author Thibaut Van Goethem
+ */
 #include "../../include/Entities/Bullet.h"
 namespace roadfighter {
 
@@ -53,7 +54,7 @@ namespace roadfighter {
     }
 
     /**
-     * cosntructor where all variables are given
+     * constructor where all variables are given
      * @param m_loc1 first location
      * @param m_loc2 second location
      * @param vertspeed vertical speed
@@ -65,7 +66,7 @@ namespace roadfighter {
     }
 
     /**
-     * overidden fucntion that denotes wether the bullet must be deletet or not
+     * overidden function that denotes whether the bullet must be deleted or not
      * @return a bool
      * @exception none
      */

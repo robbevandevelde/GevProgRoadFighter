@@ -1,6 +1,8 @@
 
 /**
- * @file header for the SFMLEntitySprite class
+ * @file
+ * header for the SFMLEntitySprite class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SFMLENTITY_H

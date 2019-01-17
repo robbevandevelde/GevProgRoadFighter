@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class MovingObject and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_CAR_H
 #define GEVPROGROADFIGHTER_CAR_H
@@ -57,7 +58,7 @@ namespace roadfighter {
         //stops all movement of this object
         virtual void stop();
 
-        //accelerates the object by the vertaccle*dt
+        //accelerates the object by the vertaccel*dt
         virtual void accelerate(double dt);
 
         //setter for the vertical speed
@@ -102,7 +103,7 @@ namespace roadfighter {
         //getter for the immunity of this object
         bool isImmune() const;
 
-        //setetr for the immunity
+        //seter for the immunity
         void setImmune(bool immune);
 
         //updates the logic of the object
@@ -121,19 +122,19 @@ namespace roadfighter {
         double getMaxVertSpeed() const;
 
     private:
-        double m_verticalSpeed;
-        double m_horizontalSpeed;
+        double m_verticalSpeed{};
+        double m_horizontalSpeed{};
 
-        double m_maxVertSpeed;
+        double m_maxVertSpeed{};
 
-        double m_vertAccel;
-        double m_horAccel;
+        double m_vertAccel{};
+        double m_horAccel{};
 
-        bool m_immune;
+        bool m_immune{};
 
         EStatus m_status;
 
-        int m_timeOut;
+        int m_timeOut{};
     };
 }
 

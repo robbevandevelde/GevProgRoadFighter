@@ -1,10 +1,10 @@
-#include <utility>
-
 /**
  *@file
  * implementation of the SFMLEntitySprite class
+ * @author Thibaut Van Goethem
  */
 
+#include <utility>
 #include "../../Include/Entities/SFMLEntitySprite.h"
 namespace roadfighterSFML {
 
@@ -26,7 +26,7 @@ namespace roadfighterSFML {
 
     /**
      * function that sets the sprite location
-     * @param x balue of location
+     * @param x value of location
      * @param y value of location
      * @return none
      * @exception none

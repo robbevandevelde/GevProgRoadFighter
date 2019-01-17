@@ -1,5 +1,7 @@
 /**
+ * @file
  * this file contains the declaration of the highscoremanager which handles the reading from and writing to a json file that has the highscores
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_HIGHSCOREMANAGER_H

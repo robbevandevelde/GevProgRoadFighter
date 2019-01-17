@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is for the entityTransporter that will regulate the exchange of entities between the game and the world
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_ENTITYTRANSPORTER_H

@@ -1,9 +1,10 @@
-//
-// Created by thibaut on 17.12.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the Definitions declared in the HighScoreManager header
+ * @author Thibaut Van Goethem
+ */
 #include <sys/stat.h>
-#include <stdio.h>
+#include <cstdio>
 #include <iostream>
 #include "HighScoreManager.h"
 
@@ -11,7 +12,7 @@
 namespace roadfighter {
     /**
      * this function adds a possible new highscores
-     * in this function all the higshcores will be read from a json file, your highscore will be added and then the score will be sorted
+     * in this function all the highscores will be read from a json file, your highscore will be added and then the score will be sorted
      * after that the scores will be writen back to the json file
      * @param name a string denoting the name for the new score
      * @param score an int denoting the score itself
@@ -27,7 +28,7 @@ namespace roadfighter {
              return a.score > b.score;
          };
 
-       //add the new score, sort the vector adn then cutt of anything past index then before writing back to the file
+       //add the new score, sort the vector and then cut of anything past index then before writing back to the file
         scores.emplace_back(name,score);
         std::sort(scores.begin(),scores.end(),sortLambda);
         while (scores.size()>10){
@@ -57,7 +58,7 @@ namespace roadfighter {
         try{
         i >> j;
         }catch (std::exception& e){
-            std::cerr<<"an error occured while reading the highscores file\n";
+            std::cerr<<"an error occurred while reading the highscores file\n";
             std::cerr<<"highscore file will be removed\n";
             std::remove("highScores.json");
             return {};
@@ -78,7 +79,7 @@ namespace roadfighter {
      * @exception none
      */
     void HighScoreManager::writeHighScores(std::vector<highScore> &towrite) {
-        //checking if the file exists and then clearing it so we can wrtie all the scores to it
+        //checking if the file exists and then clearing it so we can write all the scores to it
         struct stat buffer{};
         bool Exists(stat("highScores.json", &buffer) == 0);
         std::ofstream scoreFile;
@@ -90,7 +91,7 @@ namespace roadfighter {
 
             scoreFile << "{\n"
                          "  \"Scores\":[" << std::endl;
-        if(towrite.size()!=0) {
+        if(!towrite.empty()) {
             for (unsigned int i = 0; i < towrite.size() - 1; i++) {
                 scoreFile << R"( {"name": ")" + towrite[i].name + R"(","score":)" + std::to_string(towrite[i].score) +
                              "}," << std::endl;

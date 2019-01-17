@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 10.12.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the end class
+ * @author Thibaut Van Goethem
+ */
 #include "Entities/End.h"
 namespace  roadfighter {
     /**
@@ -24,7 +25,7 @@ namespace  roadfighter {
 
     /**
      * this function can update the movement of a collisionobject but as the end object doesnt move the function will do nothing
-     * @param dt the amount of a tick this objecct will move forward with
+     * @param dt the amount of a tick this object will move forward with
      * @return none
      * @exception none
      */

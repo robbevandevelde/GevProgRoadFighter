@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class World and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_WORLD_H
 #define GEVPROGROADFIGHTER_WORLD_H
@@ -54,10 +55,10 @@ namespace roadfighter {
          */
         virtual ~World()= default;
 
-        //function that sets back all the entieis in world with double setback
+        //function that sets back all the entities in world with double setback
         void setBackY(double setback);
 
-        //function that updates the movement for allt eh entities
+        //function that updates the movement for all the entities
         void updateMovement(double dt) override;
 
         //gets new entities out of the transporter
@@ -66,7 +67,7 @@ namespace roadfighter {
         //checks collision for all entities
         void checkCollision();
 
-        //calls draw funtionnon all entities
+        //calls draw funtion on all entities
         void draw() override;
 
         //updates all logic for the entities

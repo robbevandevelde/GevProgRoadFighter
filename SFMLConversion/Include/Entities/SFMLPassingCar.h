@@ -1,5 +1,7 @@
 /**
- * @file header for SFMLPassingCar class
+ * @file
+ * header for SFMLPassingCar class
+ * @author Thibaut Van Goethem
  */
 
 

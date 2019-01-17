@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class PassingCar and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_PASSINGCAR_H
 #define GEVPROGROADFIGHTER_PASSINGCAR_H

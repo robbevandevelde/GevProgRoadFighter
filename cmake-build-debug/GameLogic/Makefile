@@ -603,33 +603,6 @@ Source/Observer/Observable.cpp.s:
 	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.s
 .PHONY : Source/Observer/Observable.cpp.s
 
-Source/Observer/ObserverBase.o: Source/Observer/ObserverBase.cpp.o
-
-.PHONY : Source/Observer/ObserverBase.o
-
-# target to build an object file
-Source/Observer/ObserverBase.cpp.o:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.o
-.PHONY : Source/Observer/ObserverBase.cpp.o
-
-Source/Observer/ObserverBase.i: Source/Observer/ObserverBase.cpp.i
-
-.PHONY : Source/Observer/ObserverBase.i
-
-# target to preprocess a source file
-Source/Observer/ObserverBase.cpp.i:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.i
-.PHONY : Source/Observer/ObserverBase.cpp.i
-
-Source/Observer/ObserverBase.s: Source/Observer/ObserverBase.cpp.s
-
-.PHONY : Source/Observer/ObserverBase.s
-
-# target to generate assembly for a file
-Source/Observer/ObserverBase.cpp.s:
-	cd "/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/cmake-build-debug" && $(MAKE) -f GameLogic/CMakeFiles/GLL.dir/build.make GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.s
-.PHONY : Source/Observer/ObserverBase.cpp.s
-
 Source/Observer/ScoreObserver.o: Source/Observer/ScoreObserver.cpp.o
 
 .PHONY : Source/Observer/ScoreObserver.o
@@ -799,9 +772,6 @@ help:
 	@echo "... Source/Observer/Observable.o"
 	@echo "... Source/Observer/Observable.i"
 	@echo "... Source/Observer/Observable.s"
-	@echo "... Source/Observer/ObserverBase.o"
-	@echo "... Source/Observer/ObserverBase.i"
-	@echo "... Source/Observer/ObserverBase.s"
 	@echo "... Source/Observer/ScoreObserver.o"
 	@echo "... Source/Observer/ScoreObserver.i"
 	@echo "... Source/Observer/ScoreObserver.s"

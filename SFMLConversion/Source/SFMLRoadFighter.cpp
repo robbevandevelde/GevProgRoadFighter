@@ -1,6 +1,7 @@
 /**
  *@file
  * implementation of the SFMLroadfighter class
+ * @author Thibaut Van Goethem
  */
 
 #include "../Include/SFMLRoadFighter.h"

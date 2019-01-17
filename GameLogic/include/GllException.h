@@ -1,6 +1,7 @@
 /**
  * @file
  * this file contains a exception class used throughout the entire game logic library
+ * @author Thibaut Van Goethem
  */
 #include <exception>
 #include <iostream>

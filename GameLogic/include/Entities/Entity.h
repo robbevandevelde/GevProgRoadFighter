@@ -1,6 +1,7 @@
 /**
  * @file
  * this is an interface header that contains a class entity implemented by all world objects of the game logic library
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_ENTITY_H
 #define GEVPROGROADFIGHTER_ENTITY_H
@@ -23,7 +24,7 @@ namespace roadfighter {
             /**
              * virtual void function that is used to draw the entity
              * this function is not overriden in the game logic itself and should be implemented by the creator of the graphics implementation
-             * the reason this function is not pure virtual is to make it posible to simulate throught the game logic library without actually implementing it
+             * the reason this function is not pure virtual is to make it possible to simulate through the game logic library without actually implementing it
              */
             virtual void draw(){};
 

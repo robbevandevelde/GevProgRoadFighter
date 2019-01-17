@@ -1,7 +1,8 @@
 /**
  * @file
- * this file contains a class derived from teh base antitie factory and will be teh default value if no abstract factory is given to the roadfighter game
+ * this file contains a class derived from teh base entitie factory and will be teh default value if no abstract factory is given to the roadfighter game
  * this factory will be used to create all sorts of entities
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_GLL_ENTITY_FACTORY_H
@@ -14,17 +15,17 @@ namespace roadfighter {
     class GLL_Entity_Factory : public Entity_Factory_base{
     public:
         /**
-         * derault constructor
+         * default constructor
          */
         GLL_Entity_Factory()= default;
 
-        //overridden function to create buller
+        //overridden function to create bullet
         std::shared_ptr<Entity> createBullet(double x,double y,double vSpeed) override;
 
         //overridden function to create passing car
         std::shared_ptr<Entity> creatPassingCar(double x,double y,double vSpeed) override;
 
-       //overridden fucntion to create player car
+       //overridden function to create player car
         std::shared_ptr<Entity> createPlayerCar(double x,double y,double max,double vAccel,double hAccel,double fuel) override;
 
         //overridden function to create racing car

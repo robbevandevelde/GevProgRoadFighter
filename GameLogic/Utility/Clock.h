@@ -1,10 +1,11 @@
-//
-// Created by thibaut on 28.11.18.
-//
-
+/**
+ * @file
+ * $this file contains the Clock class which is a class that makes it easier to use the c++ clock functionality
+ * @author Thibaut Van Goethem
+ */
 #ifndef GEVPROGROADFIGHTER_CLOCK_H
 #define GEVPROGROADFIGHTER_CLOCK_H
-#include <time.h>
+#include <ctime>
 #include "../include/GllException.h"
 
 /**

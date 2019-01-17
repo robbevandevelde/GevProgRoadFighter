@@ -272,9 +272,6 @@
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/Observable.cpp">
 			<Option target="GLL"/>
 		</Unit>
-		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/ObserverBase.cpp">
-			<Option target="GLL"/>
-		</Unit>
 		<Unit filename="/home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/ScoreObserver.cpp">
 			<Option target="GLL"/>
 		</Unit>

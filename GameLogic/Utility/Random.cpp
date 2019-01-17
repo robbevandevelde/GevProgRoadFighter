@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 21.11.18.
-//
+/**
+ * @file
+ * implementation for the singleton Random number generator class
+ * @author Thibaut Van Goethem
+ */
 
 #include "Random.h"
 

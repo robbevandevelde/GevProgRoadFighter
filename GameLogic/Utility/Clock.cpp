@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 28.11.18.
-//
+/**
+ * @file
+ * implementation of the clock class
+ * @author Thibaut Van Goethem
+ */
 
 #include "Clock.h"
 namespace  roadfighter {

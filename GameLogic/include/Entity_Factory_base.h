@@ -1,6 +1,7 @@
 /**
  *@file
  * a abstract class that should be overidden and is used to represent the abstract factory that is used to create all the entities
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_ENTITY_FACTORY_H
@@ -15,7 +16,7 @@
 
 namespace roadfighter {
     class Entity_Factory_base: public std::enable_shared_from_this<Entity_Factory_base> {
-//here are all the pure virual function that should always be overridden in each class inheriting from this one
+//here are all the pure virtual function that should always be overridden in each class inheriting from this one
     public:
         /**
        * base factory method for creating a bullet
@@ -34,7 +35,7 @@ namespace roadfighter {
 
         /**
          * base factory method for crating the player car
-         * @param x xoordinate of the player car (the middle)
+         * @param x xcoordinate of the player car (the middle)
          * @param y coordinate of the player car (the middle)
          * @param max the max vertical speed
          * @param vAccel the vertical acceleration per tick
@@ -46,7 +47,7 @@ namespace roadfighter {
 
         /**
         * base factory method for crating a racing car
-        * @param x xoordinate of the racing car (the middle)
+        * @param x xcoordinate of the racing car (the middle)
         * @param y coordinate of the racing car (the middle)
         * @param max the max vertical speed
         * @param vAccel the vertical acceleration per tick
@@ -73,7 +74,7 @@ namespace roadfighter {
 
         /**
          * base factory method for creating the world
-         * @return a shared pointer to an enityt
+         * @return a shared pointer to an entity
          */
         virtual std::shared_ptr<Entity> createWorld()=0;
 
@@ -82,7 +83,7 @@ namespace roadfighter {
          */
         virtual ~Entity_Factory_base()= default;
 
-        //here are a bunch of non virtual function that should keep the smae functionality over all classe that inherit form this one
+        //here are a bunch of non virtual function that should keep the same functionality over all class that inherit form this one
     public:
 
         //constructor

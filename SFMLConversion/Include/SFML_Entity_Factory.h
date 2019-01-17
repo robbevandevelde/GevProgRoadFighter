@@ -1,5 +1,7 @@
 /**
- * @file header for the sfml_entity_factory class
+ * @file
+ * header for the sfml_entity_factory class
+ * @author Thibaut Van Goethem
  */
 
 
@@ -28,7 +30,7 @@ namespace roadfighterSFML {
         std::shared_ptr<roadfighter::Entity> createBullet(double x, double y, double vSpeed) override;
 
         //function that creates an entity from a sfmlPassingCar, function is inherited from entity_factory_base
-        std::shared_ptr<roadfighter::Entity> creatPassingCar(double x, double y, double vSpeedl) override;
+        std::shared_ptr<roadfighter::Entity> creatPassingCar(double x, double y, double vSpeed) override;
 
         //function that creates an entity from a sfmlPlayerCar, function is inherited from entity_factory_base
         std::shared_ptr<roadfighter::Entity>

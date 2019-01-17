@@ -1,5 +1,7 @@
 /**
- * @file header for SFMLBonusCar class
+ * @file
+ * header for SFMLBonusCar class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SFMLBONUSCAR_H

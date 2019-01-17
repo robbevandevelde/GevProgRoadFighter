@@ -1,6 +1,7 @@
 /**
  *@file
  * implementation of the SFML_Entity_Factory class
+ * @author Thibaut Van Goethem
  */
 
 #include "../Include/SFML_Entity_Factory.h"
@@ -9,9 +10,9 @@ namespace roadfighterSFML {
 
     /**
      * function that creates a entity from  a bullet
-     * @param x the x lovation
+     * @param x the x location
      * @param y the y location
-     * @param vSpeed teh vertical speed of the buller
+     * @param vSpeed teh vertical speed of the bullet
      * @return std::shared_ptr<roadfighter::Entity>
      * @exception none
      */
@@ -42,7 +43,7 @@ namespace roadfighterSFML {
     }
 
     /**
-     * function that creates an enity from a bonuscar
+     * function that creates an entity from a bonuscar
      * @param x the x location
      * @param y the y location
      * @param vSpeed the vertical speed
@@ -85,7 +86,7 @@ namespace roadfighterSFML {
      * @param y the y coordinate
      * @param max max vertical
      * @param max max vertical speed
-     * @param vAccel verticall acceleration
+     * @param vAccel vertical acceleration
      * @param hAccel horizontal acceleration
      * @return std::shared_ptr<roadfighter::Entity>
      * @exception none
@@ -100,7 +101,7 @@ namespace roadfighterSFML {
     }
 
     /**
-     * a function that creates an enity from a SFMLWorld
+     * a function that creates an entity from a SFMLWorld
      * @return std::shared_ptr<roadfighter::Entity>
      * @exception none
      */

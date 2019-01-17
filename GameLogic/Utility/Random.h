@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 21.11.18.
-//
+/**
+ * @file
+ * this file contains the declaration of the singleton Random class
+ * @author Thibaut Van Goethem
+ */
 
 #ifndef GEVPROGROADFIGHTER_RANDOM_H
 #define GEVPROGROADFIGHTER_RANDOM_H
@@ -17,7 +19,7 @@ namespace  roadfighter {
 
 
     public:
-        //all posible move/copy constructors have been deleted
+        //all possible move/copy constructors have been deleted
         Random(const Random &copy) = delete;
 
         Random(const Random &&move) = delete;
@@ -37,7 +39,7 @@ namespace  roadfighter {
          * @param to the max possible int that the random int will go to
          * @return a random int ranging from 0 to "to"
          */
-        int getRandom(const int to) const;
+        int getRandom(int to) const;
     };
 }
 

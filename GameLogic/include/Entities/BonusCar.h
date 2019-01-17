@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class bonus car and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_BONUSCAR_H
 #define GEVPROGROADFIGHTER_BONUSCAR_H

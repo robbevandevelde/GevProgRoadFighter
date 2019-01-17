@@ -1,15 +1,16 @@
 /**
  *@file
  * implementation of the sfmlBullet class
+ * @author Thibaut Van Goethem
  */
 
 #include "../../Include/Entities/SFMLBullet.h"
 namespace roadfighterSFML {
 
     /**
-     * constructor for sfmlNullet
+     * constructor for sfmlBullet
      * @param m_loc1 first location of the bullet (top left)
-     * @param m_loc2 second location of the buller (bottem right)
+     * @param m_loc2 second location of the bullet (bottom right)
      * @param vertspeed vertical speed of the bullet
      * @param window the sfmlrenderwindow that is used to draw on
      * @return none
@@ -20,12 +21,12 @@ namespace roadfighterSFML {
                                                                               SFMLEntitySprite(
                                                                                       "./resources/sprites/bullet.png",
                                                                                       window) {
-        std::tuple<int, int> sfmlpos1 = Transformation::getInstance().locationTransformation(getLoc1());
-        std::tuple<int, int> sfmlpos2 = Transformation::getInstance().locationTransformation(getLoc2());
+        std::tuple<double, double> sfmlpos1 = Transformation::getInstance().locationTransformation(getLoc1());
+        std::tuple<double, double> sfmlpos2 = Transformation::getInstance().locationTransformation(getLoc2());
         setOrigin(SFMLEntitySprite::getGlobalBounds().width / 2, SFMLEntitySprite::getGlobalBounds().height / 2);
         SFMLEntitySprite::scale(sf::Vector2f(
-                ((std::get<0>(sfmlpos2) - std::get<0>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().width),
-                ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
+                static_cast<float>((std::get<0>(sfmlpos2) - std::get<0>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().width),
+                static_cast<float>((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
     /**
@@ -34,7 +35,7 @@ namespace roadfighterSFML {
    * @exception none
    */
     void SFMLBullet::draw() {
-        std::tuple<int, int> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
+        std::tuple<double, double> newloc = Transformation::getInstance().locationTransformation(this->getLoc1());
         setSpriteLocation(std::get<0>(newloc) + SFMLEntitySprite::getGlobalBounds().width / 2,
                           std::get<1>(newloc) + SFMLEntitySprite::getGlobalBounds().height / 2);
         if (getVerticalSpeed() < 0) {

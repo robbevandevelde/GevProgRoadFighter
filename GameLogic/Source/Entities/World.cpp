@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
+/**
+* @file
+* this file contains the implementation of the World class
+ * @author Thibaut Van Goethem
+*/
 #include <Entities/World.h>
 
 #include "../../include/Entities/World.h"
@@ -55,7 +57,7 @@ namespace roadfighter {
     }
 
     /**
-     * this function subtracts the given paramater from all the y values of the m_roadEntities
+     * this function subtracts the given parameter from all the y values of the m_roadEntities
      * @param setback the amount all entities should be setback
      * @return none
      * @exception none
@@ -101,7 +103,7 @@ namespace roadfighter {
      * @exception none
      */
     void World::checkCollision() {
-        //in this function all the enitites get downcasted to collisionobject and if that is not possible we cant check collision for it
+        //in this function all the entitites get downcasted to collisionobject and if that is not possible we cant check collision for it
         for(auto& i:m_roadEntities){
             std::shared_ptr<CollisionObject> checkFor=std::dynamic_pointer_cast<CollisionObject>(i);
             if(checkFor!= nullptr){
@@ -118,7 +120,7 @@ namespace roadfighter {
     }
 
     /**
-    * gets the amount of ticks that the world had to move loast movementUpdate
+    * gets the amount of ticks that the world had to move last movementUpdate
     * @return a double
      * @exception none
     */
@@ -127,7 +129,7 @@ namespace roadfighter {
     }
 
     /**
-     * detach all observers from an entitie if it can be downcasted to observable class
+     * detach all observers from an entity if it can be downcasted to observable class
      * @return none
      * @excepiont none
      */

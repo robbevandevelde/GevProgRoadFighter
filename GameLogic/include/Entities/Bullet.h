@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class Bullet car and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_BULLET_H
 #define GEVPROGROADFIGHTER_BULLET_H
@@ -78,7 +79,7 @@ namespace roadfighter {
         //updates the logic of the bullet
         void updateLogic() override;
 
-        //says wetehr the bullet msut be deletet or not
+        //says whether the bullet must be deleted or not
         bool mustDelete() const override;
 
     };

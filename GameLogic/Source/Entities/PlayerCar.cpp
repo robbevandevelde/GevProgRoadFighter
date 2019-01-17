@@ -1,8 +1,9 @@
+/**
+ * @file
+ * this file contains the implementation of the Playercar class
+ * @author Thibaut Van Goethem
+ */
 #include <utility>
-
-//
-// Created by thibaut on 20.11.18.
-//
 #include <iostream>
 #include <Entities/PlayerCar.h>
 namespace roadfighter {
@@ -14,7 +15,7 @@ namespace roadfighter {
     * @exception GllException
     *
     */
-    void PlayerCar::decreasFuel(const double &amount) {
+    void PlayerCar::decreaseFuel(const double &amount) {
         if(getStatus()!=Won) {
             m_fuel -= amount;
             if (m_fuel < 0) {
@@ -65,7 +66,7 @@ namespace roadfighter {
     }
 
     /**
-    * this funtion updates the logic of the player car
+    * this function updates the logic of the player car
      * @return none
      * @expception none
     */
@@ -76,7 +77,7 @@ namespace roadfighter {
         if(isImmune()&&getTimeOut()==0&&getStatus()==Driving){
             setImmune(false);
         }
-        //after the 30 ticks crash timer has run out set another one so you get a 30 tick immunty to get started again
+        //after the 30 ticks crash timer has run out set another one so you get a 30 tick immunity to get started again
         if(getStatus()==Crashed){
             if(getTimeOut()==0){
                 setStatus(Driving);
@@ -85,7 +86,7 @@ namespace roadfighter {
             }
         }
         decreasefireCountdown();
-        decreasFuel(0.1);
+        decreaseFuel(0.1);
     }
 
     /**
@@ -109,8 +110,8 @@ namespace roadfighter {
      * @param m_horAccel
      * @param m_fuel amount of starting fuel
      * @param m_moveController the movecontroller that is used to see if any movement must be made
-     * @param transporter enitty transporter that is used to transport bullet from the car to the world
-     * @param factory an antity factory used to create bullets
+     * @param transporter entity transporter that is used to transport bullet from the car to the world
+     * @param factory an entity factory used to create bullets
      * @return none
      * @excpetion none
      */
@@ -121,8 +122,8 @@ namespace roadfighter {
               m_moveController(m_moveController),m_transporter(transporter),m_factory(factory),m_fireCountdown(0) {}
 
     /**
-     * this function well say wether the car can be deletet or not
-     * @return playercar can never be deletet so it will always be false
+     * this function well say whether the car can be deletet or not
+     * @return playercar can never be deleted so it will always be false
      * @exception none
      */
     bool PlayerCar::mustDelete() const {
@@ -151,7 +152,7 @@ namespace roadfighter {
             stop();
             setStatus(Crashed);
             setTimeOut(90);
-            decreasFuel(5);
+            decreaseFuel(5);
             notify(-500);
         }
     }
@@ -195,7 +196,7 @@ namespace roadfighter {
     }
 
     /**
-     * getter for the fual of the car
+     * getter for the fuel of the car
      * @return a double depicting the fuel
      * @exception none
      */

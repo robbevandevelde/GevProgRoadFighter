@@ -1,6 +1,7 @@
 /**
  * @file
  * this file contains the declartaion of a scoreobserver which is derived from teh observerbase
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SCOREOBSERVER_H
@@ -17,8 +18,8 @@ namespace  roadfighter {
         ScoreObserver();
 
         /**
-         * update function overidded from observerbase
-         * @param amount the amopunt of score that gets added
+         * update function overidden from observerbase
+         * @param amount the amount of score that gets added
          */
         void update(int amount) override;
 

@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the Passingcar class
+ * @author Thibaut Van Goethem
+ */
 
 #include "../../include/Entities/PassingCar.h"
 namespace roadfighter {
@@ -36,7 +38,7 @@ namespace roadfighter {
 
     /**
     * a function that say whether the car needs to be removed from the game
-    * @return a bool that is true if the car needs to be deletet
+    * @return a bool that is true if the car needs to be deleted
      * @exception none
     */
     bool PassingCar::mustDelete() const {

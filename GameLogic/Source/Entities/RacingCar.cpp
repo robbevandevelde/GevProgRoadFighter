@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the RacingCar class
+ * @author Thibaut Van Goethem
+ */
 
 #include "../../include/Entities/RacingCar.h"
 namespace roadfighter {
@@ -10,7 +11,7 @@ namespace roadfighter {
      * @param m_loc1
      * @param m_loc2
      * @param m_maxVertSpeed maximum vertical speed
-     * @param m_vertAccel vertival acceleration
+     * @param m_vertAccel vertical acceleration
      * @param m_horAccel horizontal acceleration
      * @return none
      * @exception none
@@ -19,7 +20,7 @@ namespace roadfighter {
                          double m_horAccel) : MovingObject(m_loc1, m_loc2, m_maxVertSpeed, m_vertAccel, m_horAccel) {}
 
     /**
-    * this function will update the postion of the car by dt ticks
+    * this function will update the position of the car by dt ticks
     * @param dt the amount of a tick the car will be moved forward
      *@return none
      * @exception none

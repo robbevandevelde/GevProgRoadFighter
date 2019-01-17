@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class End and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_END_H
 #define GEVPROGROADFIGHTER_END_H
@@ -19,7 +20,7 @@ namespace roadfighter {
         //updates the movement of this end object
         void updateMovement(double dt) override;
 
-        //cosntructor where all the values are given
+        //constructor where all the values are given
         End(const Location &m_loc1, const Location &m_loc2);
     };
 }

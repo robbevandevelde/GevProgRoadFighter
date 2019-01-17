@@ -1,5 +1,7 @@
 /**
- * @file header for SFMLPlayerCar class
+ * @file
+ * header for SFMLPlayerCar class
+ * @author Thibaut Van Goethem
  */
 
 
@@ -22,7 +24,7 @@ namespace roadfighterSFML {
                       const std::shared_ptr<roadfighter::EntityTransporter> &transporter,
                       const std::shared_ptr<roadfighter::Entity_Factory_base> &factory,
                       const std::shared_ptr<sf::RenderWindow> &window);
-        //draw function overrided from roadfighter::entity
+        //draw function overriden from roadfighter::entity
         void draw() override;
     };
 }

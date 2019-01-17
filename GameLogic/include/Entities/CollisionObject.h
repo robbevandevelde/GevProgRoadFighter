@@ -1,6 +1,7 @@
 /**
  * @file
- * this file is the declaration of the class CollsionObject and all it members
+ * this file is the declaration of the class CollisionObject and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_COLLISIONOBJECT_H
 #define GEVPROGROADFIGHTER_COLLISIONOBJECT_H
@@ -71,7 +72,7 @@ namespace  roadfighter {
         bool checkCollision(std::shared_ptr<CollisionObject>& check) const ;
 
         /**
-         * a function that can be overriden that will say what will happen to an objec tlust it collide with this one
+         * a function that can be overriden that will say what will happen to an object must it collide with this one
          * @param collided the object this one collided with
          * it will do nothing by default
          */

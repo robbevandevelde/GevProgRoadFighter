@@ -17,7 +17,7 @@ protected:
     // virtual void SetUp() will be called before each test is run.  You
     // should define it if you need to initialize the variables.
     // Otherwise, this can be skipped.
-    virtual void SetUp() {
+    void SetUp() override{
         std::vector<highScore> remove;
         HighScoreManager::writeHighScores(remove);
     }
@@ -25,7 +25,7 @@ protected:
     // virtual void TearDown() will be called after each test is run.
     // You should define it if there is cleanup work to do.  Otherwise,
     // you don't have to provide it.
-    virtual void TearDown() {}
+    void TearDown() override {}
 
 
 };
@@ -63,7 +63,7 @@ TEST_F(HighScoreTests,HighScoreTests_AddScore_Tests){
     ASSERT_EQ(105,HighScoreManager::gethighScores()[0].score);
 
     for (int i = 0; i <9 ; ++i) {
-        HighScoreManager::addHighScore("jonny",100+i+1);
+        HighScoreManager::addHighScore("jonny", static_cast<unsigned int>(100 + i + 1));
     }
 
     ASSERT_EQ(10,HighScoreManager::gethighScores().size());

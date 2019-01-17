@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class Racing car and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_RACINGCAR_H
 #define GEVPROGROADFIGHTER_RACINGCAR_H
@@ -58,13 +59,13 @@ namespace roadfighter {
        //updates the logic of the car
         void updateLogic() override;
 
-        //a function that says wether this car must be deletete or not
+        //a function that says whether this car must be deleted or not
         bool mustDelete() const override;
 
-        //an overidden fucntion that says what must happen if this car wins
+        //an overidden function that says what must happen if this car wins
         void win() override;
 
-        //functiont hat handles the logic for wath happens when something collides with this
+        //function hat handles the logic for what happens when something collides with this
         void collideWith(std::shared_ptr<CollisionObject> &collided) override;
 
         //handles the crashing for this car

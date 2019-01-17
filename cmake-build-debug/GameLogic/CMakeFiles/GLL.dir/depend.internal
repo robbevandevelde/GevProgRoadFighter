@@ -147,9 +147,6 @@ GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.o
  ../GameLogic/include/Observer/ObserverBase.h
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/Observable.cpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/Observable.h
-GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.o
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/ObserverBase.cpp
- /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/ObserverBase.h
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/Source/Observer/ScoreObserver.cpp
  /home/thibaut/CLionProjects/gevorderd programmeren/GevProgRoadFighter/GameLogic/include/Observer/ObserverBase.h

@@ -1,5 +1,7 @@
 /**
- * @file header for SFMLRacingCar class
+ * @file
+ * header for SFMLRacingCar class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SFMLRACINGCAR_H

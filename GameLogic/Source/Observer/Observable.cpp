@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 28.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the Observable car class
+ * @author Thibaut Van Goethem
+ */
 
 #include <Observer/Observable.h>
 
@@ -27,10 +29,10 @@ namespace  roadfighter {
 
     /**
      * function that notifies all the observers with a certain amount
-     * @param amount the amount you are notfying them with
+     * @param amount the amount you are notifying them with
      */
     void Observable::notify(int amount) {
-        for (auto i:m_observers) {
+        for (const auto &i:m_observers) {
             i->update(amount);
         }
     }

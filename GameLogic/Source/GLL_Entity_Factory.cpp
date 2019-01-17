@@ -1,12 +1,14 @@
-//
-// Created by thibaut on 05.12.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the GLL_Entity_Factory class
+ * @author Thibaut Van Goethem
+ */
 
 #include "GLL_Entity_Factory.h"
 namespace roadfighter{
 
     /**
-     * an overrided factory method for creating a bullet
+     * an overriden factory method for creating a bullet
      * @return a shared pointer to an Entity
      * @exception none
      */
@@ -18,7 +20,7 @@ namespace roadfighter{
     }
 
     /**
-     * an overrided factory method for creating a PassingCar
+     * an overriden factory method for creating a PassingCar
      * @param x coordinate of the passing car (the middle)
      * @param y coordinate of the passing car (the middle)
      * @param vSpeed the set speed of the passingcar
@@ -35,8 +37,8 @@ namespace roadfighter{
         return toreturn;
     }
     /**
-    * an overrided factory method for crating the player car
-    * @param x xoordinate of the player car (the middle)
+    * an overriden factory method for crating the player car
+    * @param x xcoordinate of the player car (the middle)
     * @param y coordinate of the player car (the middle)
     * @param max the max vertical speed
     * @param vAccel the vertical acceleration per tick
@@ -53,8 +55,8 @@ namespace roadfighter{
         return toreturn;
     }
     /**
-    * an overrided factory method for crating a racing car
-    * @param x xoordinate of the racing car (the middle)
+    * an overriden factory method for crating a racing car
+    * @param x xcoordinate of the racing car (the middle)
     * @param y coordinate of the racing car (the middle)
     * @param max the max vertical speed
     * @param vAccel the vertical acceleration per tick
@@ -71,7 +73,7 @@ namespace roadfighter{
     }
 
     /**
-    * an overrided factory method for creating the world
+    * an overriden factory method for creating the world
     * @return a shared pointer to an entity
      * @exception none
     */
@@ -81,7 +83,7 @@ namespace roadfighter{
     }
 
     /**
-      * an overrided factory method for creating a BonusCar
+      * an overriden factory method for creating a BonusCar
       * @param x coordinate of the bonus car (the middle)
       * @param y coordinate of the passing bonus car (the middle)
       * @param vSpeed the set speed of the passingcar
@@ -99,8 +101,8 @@ namespace roadfighter{
     }
 
     /**
-     * an overrided factory method to create an end object
-     * @param y the y value of th eend object
+     * an overriden factory method to create an end object
+     * @param y the y value of th end object
      * @return a shared pointer to the end
      * @exception none
      */

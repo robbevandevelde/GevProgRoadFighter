@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the Base Entity Factory class
+ * @author Thibaut Van Goethem
+ */
 #include "Entity_Factory_base.h"
 namespace roadfighter {
 
@@ -58,7 +59,7 @@ namespace roadfighter {
     }
 
     /**
-     * constructor for base enityt factory
+     * constructor for base entity factory
      * @return none
      * @exception none
      */

@@ -1,6 +1,6 @@
 /**
  * @file
- * this file conatins all the tests regarding the input controller
+ * this file contains all the tests regarding the input controller
  */
 #include <gtest/gtest.h>
 #include <fstream>
@@ -17,16 +17,13 @@ protected:
     // virtual void SetUp() will be called before each test is run.  You
     // should define it if you need to initialize the variables.
     // Otherwise, this can be skipped.
-    virtual void SetUp() {
-        factory =  std::make_shared<GLL_Entity_Factory>();
-    }
+    void SetUp() override {}
 
     // virtual void TearDown() will be called after each test is run.
     // You should define it if there is cleanup work to do.  Otherwise,
     // you don't have to provide it.
-    virtual void TearDown() {}
+    void TearDown() override{}
 
-    std::shared_ptr<GLL_Entity_Factory> factory;
     // Declares the variables your tests want to use.
 
 };

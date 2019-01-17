@@ -1,6 +1,7 @@
 /**
  * @file
  * this file contains a class that will be the brains of the logic behind the roadfighter game
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_ROADFIGHTERGAME_H
@@ -66,10 +67,10 @@ namespace roadfighter {
        //a function that ticks the game with dt ticks (dt should be below 1)
         void tick(double dt);
 
-        //function thta sets the movementcontroller to left
+        //function that sets the movementcontroller to left
         void moveLeft();
 
-        //function that sets the horoziontal movement to none
+        //function that sets the horizontal movement to none
         void stopHorizontalMove();
 
         //function that sets the horizontal movement to the right
@@ -105,7 +106,7 @@ namespace roadfighter {
         //getter for the ended bool
         bool hasEnded() const;
 
-        //getter for wether the game is paused
+        //getter for whether the game is paused
         void pauseGame();
 
         //function that continues the game after it was paused
@@ -117,7 +118,7 @@ namespace roadfighter {
         //getter for the paused bool
         bool ispaused() const;
 
-        //setter for the text of the movementcontrolelr
+        //setter for the text of the movementcontroler
         void setText(const std::string& text);
 
     //all private functions
@@ -159,7 +160,7 @@ namespace roadfighter {
         //this is why this var is kept if it is higher than 1 it means a logicTick needs to be done
         double m_logicTick;
 
-        //this varianle denotes the amount of time goes before another logic ticks should be done
+        //this variable denotes the amount of time goes before another logic ticks should be done
         double m_logicTickSpeed;
 
     };

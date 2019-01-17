@@ -1,6 +1,7 @@
 /**
  * @file
  * this file is the declaration of the class Player Car and all it members
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_PLAYERCAR_H
 #define GEVPROGROADFIGHTER_PLAYERCAR_H
@@ -61,7 +62,7 @@ namespace roadfighter {
         ~PlayerCar() override = default ;
 
         //decrease the fuel of this car with "amount"
-        void decreasFuel(const double &amount);
+        void decreaseFuel(const double &amount);
 
         //updates the position of this car with dt time, here is also checked if there is new input
         void updateMovement(double dt) override;
@@ -96,9 +97,9 @@ namespace roadfighter {
         //function that shoots if the firecountdown is 0
         void shoot();
     private:
-        double m_fuel;
+        double m_fuel{};
 
-        int m_fireCountdown;
+        int m_fireCountdown{};
 
         std::shared_ptr<InputController> m_moveController;
 

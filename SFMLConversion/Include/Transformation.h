@@ -1,5 +1,7 @@
 /**
- * @file header for the singleton transformation class
+ * @file
+ * header for the singleton transformation class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_TRANSFORMATION_H
@@ -10,7 +12,7 @@
 namespace roadfighterSFML {
     class Transformation {
     public:
-        //gets an instance of this class and if tehre is no instance it creates one
+        //gets an instance of this class and if there is no instance it creates one
         static Transformation &getInstance();
 
         //transforms gll coordinates into a tuple of doubles that are sfml coordinates

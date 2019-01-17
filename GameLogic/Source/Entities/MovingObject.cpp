@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 20.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the MovingObject class
+ * @author Thibaut Van Goethem
+ */
 
 #include <Entities/MovingObject.h>
 
@@ -8,7 +10,7 @@
 namespace roadfighter {
 
     /**
-    * setter for vertivalspeed
+    * setter for verticalspeed
     * @param m_VerticalSpeed the new verticalspeed
      * @return none
      * @exception none
@@ -21,7 +23,7 @@ namespace roadfighter {
     }
 
     /**
-     * setter for vertivalspeed were there is no check if you are above the macvertspeed
+     * setter for verticalspeed were there is no check if you are above the maxvertspeed
      * @param m_VerticalSpeed the new verticalspeed
      * @return none
      * @excpetion none
@@ -51,7 +53,7 @@ namespace roadfighter {
     }
 
     /**
-     * a function that accelrates the car with the verticalaccel*dt
+     * a function that accelerates the car with the verticalaccel*dt
      * @param dt teh amount of a tick that has passed since previous one
      * @return none
      * @excpetion none
@@ -66,7 +68,7 @@ namespace roadfighter {
 
     /**
      * this function updates the logic of a movingobject
-     * this only means that the verticalspeed gets chnaged according to the current acceleration
+     * this only means that the verticalspeed gets changed according to the current acceleration
      * @return none
      * @exception none
      */
@@ -104,7 +106,7 @@ namespace roadfighter {
     /**
     * a function that updates the car
     * @param dt the amount of ticks that have passed since the previous one
-    * overrided form entity class
+    * overriden from entity class
      * @return none
      * @exception none
     */
@@ -132,8 +134,8 @@ namespace roadfighter {
     }
 
     /**
-     * construxtor where all the parameters are given
-     * @param m_loc1 first lcoation
+     * constructor where all the parameters are given
+     * @param m_loc1 first location
      * @param m_loc2 second location
      * @param m_maxVertSpeed
      * @param m_vertAccel

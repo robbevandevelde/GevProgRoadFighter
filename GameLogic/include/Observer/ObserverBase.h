@@ -1,6 +1,7 @@
 /**
  * @file
  * This file contains the interface class for an observer
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_OBSERVERBASE_H

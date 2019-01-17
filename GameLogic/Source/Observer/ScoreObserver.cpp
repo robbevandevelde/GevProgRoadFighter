@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 28.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the ScoreObserver class
+ * @author Thibaut Van Goethem
+ */
 
 #include "../../include/Observer/ScoreObserver.h"
 namespace  roadfighter {
@@ -11,12 +13,12 @@ namespace  roadfighter {
         }
         //underflow/overflow prevention
         if (amount < 0) {
-            //if after substrraction the score is higher then there is underflow
+            //if after substraction the score is higher then there is underflow
             if (m_score > temp) {
                 m_score = 0;
             }
             //if after addition the score is lower than the start then there is overflow
-            //this is unlickely to happen but you never know
+            //this is unlikely to happen but you never know
         } else if (amount > 0) {
             if (m_score < temp) {
                 m_score = std::numeric_limits<unsigned int>::max();

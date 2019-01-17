@@ -1,5 +1,7 @@
 /**
- * @file header for the SFMLRoadfighter class
+ * @file
+ * header for the SFMLRoadfighter class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SFMLROADFIGHTER_H

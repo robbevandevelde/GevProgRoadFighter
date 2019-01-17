@@ -1,13 +1,14 @@
 /**
  *@file
  * implementation of the singleton Transformation class
+ * @author Thibaut Van Goethem
  */
 
 #include "../Include/Transformation.h"
 #include <iostream>
 namespace roadfighterSFML {
     /**
-     * function that gets the instance of the transfomation class and creates one if it doesnt yet excist
+     * function that gets the instance of the transfomation class and creates one if it doesnt yet exist
      * @return reference to the Transformation
      * @exception none
      */
@@ -37,7 +38,7 @@ namespace roadfighterSFML {
     }
 
     /**
-     * pricate constructor
+     * private constructor
      * @param x x size of the screen
      * @param y y size of the screen
      */

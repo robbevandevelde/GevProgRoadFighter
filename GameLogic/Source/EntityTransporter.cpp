@@ -1,6 +1,9 @@
-//
-// Created by thibaut on 06.12.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the EntityTransporter class
+ * @author Thibaut Van Goethem
+ */
+
 #include "EntityTransporter.h"
 
 /**
@@ -23,7 +26,7 @@ std::vector<std::shared_ptr<roadfighter::Entity>> &roadfighter::EntityTransporte
 }
 
 /**
- * removes all the enities that are currently in the vector
+ * removes all the entities that are currently in the vector
  * @return none
  * @exception none
  */

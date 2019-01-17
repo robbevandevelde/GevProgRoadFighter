@@ -1,5 +1,7 @@
 /**
- * @file header for SFMLBullet
+ * @file
+ * header for SFMLBullet class
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_SFMLBULLET_H

@@ -1,6 +1,7 @@
 /**
  * @file
- * this file has a very simple 2d location class that is used in every collision object to represetn it's position
+ * this file has a very simple 2d location class that is used in every collision object to represent it's position
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_LOCATION_H

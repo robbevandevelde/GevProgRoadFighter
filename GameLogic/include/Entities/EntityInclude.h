@@ -1,6 +1,7 @@
 /**
  * @file
  * a simple header that is made the easily include all entities
+ * @author Thibaut Van Goethem
  */
 
 #include "BonusCar.h"

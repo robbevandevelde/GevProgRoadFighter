@@ -1,7 +1,8 @@
-//
-// Created by thibaut on 07.12.18.
-//
-
+/**
+ * @file
+ * this file contains the implementation of the bonus car class
+ * @author Thibaut Van Goethem
+ */
 #include "Entities/BonusCar.h"
 
 namespace roadfighter{

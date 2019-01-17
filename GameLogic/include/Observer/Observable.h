@@ -1,7 +1,8 @@
 /**
  * @file
- * This file conatins the declaration of the observable class and its members
+ * This file contains the declaration of the observable class and its members
  * this class is from the observer pattern
+ * @author Thibaut Van Goethem
  */
 #ifndef GEVPROGROADFIGHTER_OBSERVABLE_H
 #define GEVPROGROADFIGHTER_OBSERVABLE_H

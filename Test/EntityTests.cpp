@@ -1,6 +1,6 @@
 /**
  * @file
- * this file conatins all the tests for the enitities
+ * this file contains all the tests for the entities
  */
 #include <gtest/gtest.h>
 #include <fstream>
@@ -18,14 +18,14 @@ protected:
     // virtual void SetUp() will be called before each test is run.  You
     // should define it if you need to initialize the variables.
     // Otherwise, this can be skipped.
-    virtual void SetUp() {
+    void SetUp() override {
        factory =  std::make_shared<GLL_Entity_Factory>();
     }
 
     // virtual void TearDown() will be called after each test is run.
     // You should define it if there is cleanup work to do.  Otherwise,
     // you don't have to provide it.
-    virtual void TearDown() {}
+    void TearDown() override{}
 
     std::shared_ptr<GLL_Entity_Factory> factory;
     // Declares the variables your tests want to use.

@@ -147,9 +147,6 @@ GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.o: ../GameLogic/incl
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.o: ../GameLogic/Source/Observer/Observable.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/Observable.cpp.o: ../GameLogic/include/Observer/Observable.h
 
-GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.o: ../GameLogic/Source/Observer/ObserverBase.cpp
-GameLogic/CMakeFiles/GLL.dir/Source/Observer/ObserverBase.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
-
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o: ../GameLogic/Source/Observer/ScoreObserver.cpp
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o: ../GameLogic/include/Observer/ObserverBase.h
 GameLogic/CMakeFiles/GLL.dir/Source/Observer/ScoreObserver.cpp.o: ../GameLogic/include/Observer/ScoreObserver.h

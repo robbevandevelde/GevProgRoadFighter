@@ -1,7 +1,8 @@
 /**
  * @file
- * this file contains the movecontroller class that handles the acces of current keyboard input over the whole roadfighter game
+ * this file contains the movecontroller class that handles the access of current keyboard input over the whole roadfighter game
  * it also contains 2 enums used to represent vertical and horizontal movement
+ * @author Thibaut Van Goethem
  */
 
 #ifndef GEVPROGROADFIGHTER_MOVECONTROLLER_H
@@ -37,7 +38,7 @@ namespace roadfighter {
         //simple function that sets the shoot bool to true
         void shoot();
 
-        // simple funtion that sets the shoot bool on false
+        // simple function that sets the shoot bool on false
         void noShoot();
 
         //getter for the shoot bool
@@ -54,7 +55,7 @@ namespace roadfighter {
 
         EHorMove m_nextHorMove;
 
-        bool m_shoot;
+        bool m_shoot{};
 
         std::string m_textInput;
     };

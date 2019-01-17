@@ -1,6 +1,8 @@
-//
-// Created by thibaut on 21.11.18.
-//
+/**
+ * @file
+ * this file contains the implementation of the Location class
+ * @author Thibaut Van Goethem
+ */
 
 #include "../include/Location.h"
 namespace roadfighter {
@@ -91,11 +93,7 @@ namespace roadfighter {
      * @return a new Location that is equal to the other one
      * @exception none
      */
-    Location &Location::operator=(const Location &other) {
-        x=other.x;
-        y=other.y;
-        return *this;
-    }
+    Location &Location::operator=(const Location &other) = default;
 
     /**
      * move assignment for Location

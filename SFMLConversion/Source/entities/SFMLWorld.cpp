@@ -1,6 +1,7 @@
 /**
  *@file
  * implementation of the SFMLWorld class
+ * @author Thibaut Van Goethem
  */
 
 #include "../../Include/Entities/SFMLWorld.h"
@@ -13,6 +14,7 @@ namespace roadfighterSFML {
      * @param window the renderwindow that will be sued to draw the world one
      * @return none
      * @exception none
+     * this constructor is used in the sfml_entity_factory but for some reason clang tidy doesnt see that
      */
     SFMLWorld::SFMLWorld(const std::shared_ptr<roadfighter::EntityTransporter> &m_Transporter,
                          const std::shared_ptr<sf::RenderWindow> &window) : World(m_Transporter),
@@ -20,13 +22,13 @@ namespace roadfighterSFML {
                                                                                     "./resources/sprites/background.png",
                                                                                     window) {
 
-        std::tuple<int, int> sfmlpos1 = std::make_tuple(0, 0);
-        std::tuple<int, int> sfmlpos2 = Transformation::getInstance().locationTransformation(
+        std::tuple<double, double> sfmlpos1 = std::make_tuple(0, 0);
+        std::tuple<double, double> sfmlpos2 = Transformation::getInstance().locationTransformation(
                 roadfighter::Location(3, 4));
 
         SFMLEntitySprite::scale(sf::Vector2f(
                 static_cast<float>((std::get<0>(sfmlpos2) - std::get<0>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().width * 1.10),
-                ((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
+                static_cast<float>((std::get<1>(sfmlpos2) - std::get<1>(sfmlpos1)) / SFMLEntitySprite::getGlobalBounds().height)));
     }
 
     /**
@@ -39,7 +41,7 @@ namespace roadfighterSFML {
         double tickmovemnt = std::get<1>(
                 Transformation::getInstance().locationTransformation(roadfighter::Location(0, getTickMovement() - 4)));
 
-        //if the postion of the sprite is larger than teh height of the sprite it means that a full revolution of the sprite has been done thus we set the location back 1 spriteheight
+        //if the position of the sprite is larger than teh height of the sprite it means that a full revolution of the sprite has been done thus we set the location back 1 spriteheight
         if (getPosition().y > getGlobalBounds().height)
             setPosition(getPosition().x, getPosition().y - getGlobalBounds().height);
         //move the sprite with the amount the playercar has moved since last drawing
