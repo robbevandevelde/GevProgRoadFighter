@@ -2,11 +2,12 @@
 \label{classroadfighter_1_1End}\index{roadfighter\+::\+End@{roadfighter\+::\+End}}
 
 
-Inheritance diagram for roadfighter\+:\+:End\+:\nopagebreak
+Inheritance diagram for roadfighter\+:\+:End\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=214pt]{classroadfighter_1_1End__inherit__graph}
+\includegraphics[width=218pt]{classroadfighter_1_1End__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -23,17 +24,9 @@ Collaboration diagram for roadfighter\+:\+:End\+:\nopagebreak
 \item 
 void \hyperlink{classroadfighter_1_1End_a56dfbe6f0c760a5728b58fc9d9f40486}{collide\+With} (std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1CollisionObject}{Collision\+Object} $>$ \&collided) override
 \item 
-void \hyperlink{classroadfighter_1_1End_af88fbaf5ebd266bd153d0ba3f32ba0f8}{crash} () override
-\item 
-void \hyperlink{classroadfighter_1_1End_af81f5e854c8504a60afa11ea826aaec8}{shot} () override
-\item 
-void \hyperlink{classroadfighter_1_1End_a501a09cafb9de82e3a6af39e9524eb3d}{bonus} () override
-\item 
 void \hyperlink{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}{update\+Logic} () override
 \item 
 void \hyperlink{classroadfighter_1_1End_a6ea4afe8b07f96801fb2a67b82d6b71c}{update\+Movement} (double dt) override
-\item 
-void \hyperlink{classroadfighter_1_1End_abcf20b9e8a2dda73a9215eb8c01c4aef}{win} () override
 \item 
 \hyperlink{classroadfighter_1_1End_ab5806203f3fb473a220b3cce19f2fb0c}{End} (const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc1, const \hyperlink{classroadfighter_1_1Location}{Location} \&m\+\_\+loc2)
 \end{DoxyCompactItemize}
@@ -46,26 +39,24 @@ void \hyperlink{classroadfighter_1_1End_abcf20b9e8a2dda73a9215eb8c01c4aef}{win} 
 \subsubsection{\texorpdfstring{End()}{End()}}
 {\footnotesize\ttfamily roadfighter\+::\+End\+::\+End (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc1,  }\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{m\+\_\+loc2 }\end{DoxyParamCaption})}
 
-constructor by value 
+constructor for end where all the parameters are given 
 \begin{DoxyParams}{Parameters}
-{\em m\+\_\+loc1} & \\
+{\em m\+\_\+loc1} & first location \\
 \hline
-{\em m\+\_\+loc2} & \\
+{\em m\+\_\+loc2} & second location \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classroadfighter_1_1End_a501a09cafb9de82e3a6af39e9524eb3d}\label{classroadfighter_1_1End_a501a09cafb9de82e3a6af39e9524eb3d}} 
-\index{roadfighter\+::\+End@{roadfighter\+::\+End}!bonus@{bonus}}
-\index{bonus@{bonus}!roadfighter\+::\+End@{roadfighter\+::\+End}}
-\subsubsection{\texorpdfstring{bonus()}{bonus()}}
-{\footnotesize\ttfamily void roadfighter\+::\+End\+::bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-this function handles what will happen when this object gets a bonus 
-
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}{roadfighter\+::\+Collision\+Object}.
-
 \mbox{\Hypertarget{classroadfighter_1_1End_a56dfbe6f0c760a5728b58fc9d9f40486}\label{classroadfighter_1_1End_a56dfbe6f0c760a5728b58fc9d9f40486}} 
 \index{roadfighter\+::\+End@{roadfighter\+::\+End}!collide\+With@{collide\+With}}
 \index{collide\+With@{collide\+With}!roadfighter\+::\+End@{roadfighter\+::\+End}}
@@ -77,29 +68,17 @@ a function that will handle what will happen when an object collides with this o
 {\em collided} & the object it collides with \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}{roadfighter\+::\+Collision\+Object}.
-
-\mbox{\Hypertarget{classroadfighter_1_1End_af88fbaf5ebd266bd153d0ba3f32ba0f8}\label{classroadfighter_1_1End_af88fbaf5ebd266bd153d0ba3f32ba0f8}} 
-\index{roadfighter\+::\+End@{roadfighter\+::\+End}!crash@{crash}}
-\index{crash@{crash}!roadfighter\+::\+End@{roadfighter\+::\+End}}
-\subsubsection{\texorpdfstring{crash()}{crash()}}
-{\footnotesize\ttfamily void roadfighter\+::\+End\+::crash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-this function handles what will happen when this object crashes 
-
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}{roadfighter\+::\+Collision\+Object}.
-
-\mbox{\Hypertarget{classroadfighter_1_1End_af81f5e854c8504a60afa11ea826aaec8}\label{classroadfighter_1_1End_af81f5e854c8504a60afa11ea826aaec8}} 
-\index{roadfighter\+::\+End@{roadfighter\+::\+End}!shot@{shot}}
-\index{shot@{shot}!roadfighter\+::\+End@{roadfighter\+::\+End}}
-\subsubsection{\texorpdfstring{shot()}{shot()}}
-{\footnotesize\ttfamily void roadfighter\+::\+End\+::shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-this function handles what will happen when this object gets shot 
-
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}{roadfighter\+::\+Collision\+Object}.
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a9eba85551432f548f2a0c20217a60f42}{roadfighter\+::\+Collision\+Object}.
 
 \mbox{\Hypertarget{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}\label{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}} 
 \index{roadfighter\+::\+End@{roadfighter\+::\+End}!update\+Logic@{update\+Logic}}
@@ -107,7 +86,15 @@ Implements \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57
 \subsubsection{\texorpdfstring{update\+Logic()}{updateLogic()}}
 {\footnotesize\ttfamily void roadfighter\+::\+End\+::update\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-this function updates the logic of the end object nothing at the moment 
+this function updates the logic of the end object it does nothing because there is no logic in the end object \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}{roadfighter\+::\+Entity}.
 
@@ -119,26 +106,24 @@ Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e19656
 
 this function can update the movement of a collisionobject but as the end object doesnt move the function will do nothing 
 \begin{DoxyParams}{Parameters}
-{\em dt} & the amount of a tick this objecct will move forward with \\
+{\em dt} & the amount of a tick this object will move forward with \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implements \hyperlink{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}{roadfighter\+::\+Entity}.
-
-\mbox{\Hypertarget{classroadfighter_1_1End_abcf20b9e8a2dda73a9215eb8c01c4aef}\label{classroadfighter_1_1End_abcf20b9e8a2dda73a9215eb8c01c4aef}} 
-\index{roadfighter\+::\+End@{roadfighter\+::\+End}!win@{win}}
-\index{win@{win}!roadfighter\+::\+End@{roadfighter\+::\+End}}
-\subsubsection{\texorpdfstring{win()}{win()}}
-{\footnotesize\ttfamily void roadfighter\+::\+End\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-this function handles what will happen when this object wins 
-
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}{roadfighter\+::\+Collision\+Object}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Logic/include/\+Entities/End.\+h\item 
-Game\+Logic/\+Source/\+Entities/End.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/include/\+Entities/\hyperlink{End_8h}{End.\+h}\item 
+Game\+Logic/\+Source/\+Entities/\hyperlink{End_8cpp}{End.\+cpp}\end{DoxyCompactItemize}

@@ -193,7 +193,7 @@ namespace roadfighterSFML {
      * @exception none
      */
     void SFMLRoadFighter::drawPaused() {
-        sf::RectangleShape transparenrect(sf::Vector2f(m_window->getSize().x, m_window->getSize().y));
+        sf::RectangleShape transparenrect(sf::Vector2f(m_window->getDefaultView().getSize().x, m_window->getDefaultView().getSize().y));
         transparenrect.setFillColor(sf::Color(0, 0, 0, 200));
         m_window->draw(transparenrect);
 
@@ -240,7 +240,7 @@ namespace roadfighterSFML {
      * @exception none
      */
     void SFMLRoadFighter::drawEnded() {
-        sf::RectangleShape transparenrect(sf::Vector2f(m_window->getSize().x, m_window->getSize().y));
+        sf::RectangleShape transparenrect(sf::Vector2f(m_window->getDefaultView().getSize().x, m_window->getDefaultView().getSize().y));
         transparenrect.setFillColor(sf::Color(0, 0, 0, 200));
         m_window->draw(transparenrect);
 

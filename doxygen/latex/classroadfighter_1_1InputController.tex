@@ -5,6 +5,18 @@
 \item 
 \hyperlink{classroadfighter_1_1InputController_ae1647309708d4053f7f993452436c6de}{Input\+Controller} ()=default
 \item 
+void \hyperlink{classroadfighter_1_1InputController_a3c22763233f67e98dfbd5dc2774804f7}{move\+Left} ()
+\item 
+void \hyperlink{classroadfighter_1_1InputController_ae67a4ee406d64253bf62b90b766f28bb}{move\+Right} ()
+\item 
+void \hyperlink{classroadfighter_1_1InputController_aa5d545e2810c9b9b46b219d9baa1e32e}{stop\+Horizontal\+Move} ()
+\item 
+void \hyperlink{classroadfighter_1_1InputController_a9a3281103fedbc1e86dd936731209ee9}{stop\+Vertical\+Move} ()
+\item 
+void \hyperlink{classroadfighter_1_1InputController_a8b8656f81620db2af82d5bf9ca60fac0}{accelerate} ()
+\item 
+void \hyperlink{classroadfighter_1_1InputController_ab7e35b651a8b388e927a7d8d1a228f80}{decelerate} ()
+\item 
 void \hyperlink{classroadfighter_1_1InputController_a02d3a5d5c84eee14ff52adb92d4367cb}{set\+Vert\+Move} (E\+Vert\+Move move)
 \item 
 void \hyperlink{classroadfighter_1_1InputController_a1b1efa38b003c59f50dbafcd20d781e4}{set\+Hor\+Move} (E\+Hor\+Move move)
@@ -15,19 +27,15 @@ E\+Hor\+Move \hyperlink{classroadfighter_1_1InputController_aef3c083d96e54782562
 \item 
 void \hyperlink{classroadfighter_1_1InputController_a729813bffe0b3180acc07ce54f6c7078}{set\+None} ()
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1InputController_a63ba4cb79605531878f2e12f5564194a}\label{classroadfighter_1_1InputController_a63ba4cb79605531878f2e12f5564194a}} 
-void {\bfseries shoot} ()
+void \hyperlink{classroadfighter_1_1InputController_a63ba4cb79605531878f2e12f5564194a}{shoot} ()
 \item 
 void \hyperlink{classroadfighter_1_1InputController_a0bc4209941f91c548673f85905fb3ead}{no\+Shoot} ()
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1InputController_aba6e5f98ed035840c5319b17c3291046}\label{classroadfighter_1_1InputController_aba6e5f98ed035840c5319b17c3291046}} 
-bool {\bfseries must\+Shoot} () const
+bool \hyperlink{classroadfighter_1_1InputController_aba6e5f98ed035840c5319b17c3291046}{must\+Shoot} () const
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1InputController_a962ec0e6e8247ca42db314c04ce65399}\label{classroadfighter_1_1InputController_a962ec0e6e8247ca42db314c04ce65399}} 
-void {\bfseries set\+Text} (const std\+::string \&newtext)
+void \hyperlink{classroadfighter_1_1InputController_a962ec0e6e8247ca42db314c04ce65399}{set\+Text} (const std\+::string \&newtext)
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1InputController_ae8e47099a39fd61e18cdd89b34fb5d5c}\label{classroadfighter_1_1InputController_ae8e47099a39fd61e18cdd89b34fb5d5c}} 
-std\+::string {\bfseries get\+Text} () const
+std\+::string \hyperlink{classroadfighter_1_1InputController_ae8e47099a39fd61e18cdd89b34fb5d5c}{get\+Text} () const
 \end{DoxyCompactItemize}
 
 
@@ -41,6 +49,34 @@ std\+::string {\bfseries get\+Text} () const
 default constructor 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a8b8656f81620db2af82d5bf9ca60fac0}\label{classroadfighter_1_1InputController_a8b8656f81620db2af82d5bf9ca60fac0}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{accelerate()}{accelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::accelerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the vertical move to accelerate \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_ab7e35b651a8b388e927a7d8d1a228f80}\label{classroadfighter_1_1InputController_ab7e35b651a8b388e927a7d8d1a228f80}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!decelerate@{decelerate}}
+\index{decelerate@{decelerate}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{decelerate()}{decelerate()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::decelerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the horizontal move to decelerate \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1InputController_aef3c083d96e5478256255aa77f2d964e}\label{classroadfighter_1_1InputController_aef3c083d96e5478256255aa77f2d964e}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!get\+Next\+Hor\+Move@{get\+Next\+Hor\+Move}}
 \index{get\+Next\+Hor\+Move@{get\+Next\+Hor\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
@@ -50,6 +86,11 @@ default constructor
 a getter for the horizontalmove \begin{DoxyReturn}{Returns}
 an E\+Hor\+Move enum 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1InputController_a345eeddef99bff95e238f9dd822daf77}\label{classroadfighter_1_1InputController_a345eeddef99bff95e238f9dd822daf77}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!get\+Next\+Vert\+Move@{get\+Next\+Vert\+Move}}
 \index{get\+Next\+Vert\+Move@{get\+Next\+Vert\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
@@ -59,13 +100,74 @@ an E\+Hor\+Move enum
 getter for the vertivalmove \begin{DoxyReturn}{Returns}
 an E\+Vert\+Move enum 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_ae8e47099a39fd61e18cdd89b34fb5d5c}\label{classroadfighter_1_1InputController_ae8e47099a39fd61e18cdd89b34fb5d5c}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{get\+Text()}{getText()}}
+{\footnotesize\ttfamily std\+::string roadfighter\+::\+Input\+Controller\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the text \begin{DoxyReturn}{Returns}
+a string that is the text 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a3c22763233f67e98dfbd5dc2774804f7}\label{classroadfighter_1_1InputController_a3c22763233f67e98dfbd5dc2774804f7}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the horizontal move to left \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_ae67a4ee406d64253bf62b90b766f28bb}\label{classroadfighter_1_1InputController_ae67a4ee406d64253bf62b90b766f28bb}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the horizontal move to the right \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_aba6e5f98ed035840c5319b17c3291046}\label{classroadfighter_1_1InputController_aba6e5f98ed035840c5319b17c3291046}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!must\+Shoot@{must\+Shoot}}
+\index{must\+Shoot@{must\+Shoot}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{must\+Shoot()}{mustShoot()}}
+{\footnotesize\ttfamily bool roadfighter\+::\+Input\+Controller\+::must\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+getter for the shoot bool \begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1InputController_a0bc4209941f91c548673f85905fb3ead}\label{classroadfighter_1_1InputController_a0bc4209941f91c548673f85905fb3ead}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!no\+Shoot@{no\+Shoot}}
 \index{no\+Shoot@{no\+Shoot}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
 \subsubsection{\texorpdfstring{no\+Shoot()}{noShoot()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::no\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-simple funtion that sets the shoot bool on false \mbox{\Hypertarget{classroadfighter_1_1InputController_a1b1efa38b003c59f50dbafcd20d781e4}\label{classroadfighter_1_1InputController_a1b1efa38b003c59f50dbafcd20d781e4}} 
+simple function that sets the shoot bool on false \mbox{\Hypertarget{classroadfighter_1_1InputController_a1b1efa38b003c59f50dbafcd20d781e4}\label{classroadfighter_1_1InputController_a1b1efa38b003c59f50dbafcd20d781e4}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!set\+Hor\+Move@{set\+Hor\+Move}}
 \index{set\+Hor\+Move@{set\+Hor\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
 \subsubsection{\texorpdfstring{set\+Hor\+Move()}{setHorMove()}}
@@ -76,13 +178,48 @@ setter for the horizontal move
 {\em move} & a E\+Hor\+Move enum \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1InputController_a729813bffe0b3180acc07ce54f6c7078}\label{classroadfighter_1_1InputController_a729813bffe0b3180acc07ce54f6c7078}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!set\+None@{set\+None}}
 \index{set\+None@{set\+None}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
 \subsubsection{\texorpdfstring{set\+None()}{setNone()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::set\+None (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-a function that sets both the vertival and horizontal mvoe to none \mbox{\Hypertarget{classroadfighter_1_1InputController_a02d3a5d5c84eee14ff52adb92d4367cb}\label{classroadfighter_1_1InputController_a02d3a5d5c84eee14ff52adb92d4367cb}} 
+a function that sets all movement types in the controller to none or empty \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a962ec0e6e8247ca42db314c04ce65399}\label{classroadfighter_1_1InputController_a962ec0e6e8247ca42db314c04ce65399}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{set\+Text()}{setText()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{newtext }\end{DoxyParamCaption})}
+
+setter for the text 
+\begin{DoxyParams}{Parameters}
+{\em newtext} & a string that will become the new text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a02d3a5d5c84eee14ff52adb92d4367cb}\label{classroadfighter_1_1InputController_a02d3a5d5c84eee14ff52adb92d4367cb}} 
 \index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!set\+Vert\+Move@{set\+Vert\+Move}}
 \index{set\+Vert\+Move@{set\+Vert\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
 \subsubsection{\texorpdfstring{set\+Vert\+Move()}{setVertMove()}}
@@ -93,9 +230,54 @@ setter for the verticalmove
 {\em move} & a E\+Vertmove enum \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a63ba4cb79605531878f2e12f5564194a}\label{classroadfighter_1_1InputController_a63ba4cb79605531878f2e12f5564194a}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!shoot@{shoot}}
+\index{shoot@{shoot}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+simple function that sets the shoot bool on true \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_aa5d545e2810c9b9b46b219d9baa1e32e}\label{classroadfighter_1_1InputController_aa5d545e2810c9b9b46b219d9baa1e32e}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!stop\+Horizontal\+Move@{stop\+Horizontal\+Move}}
+\index{stop\+Horizontal\+Move@{stop\+Horizontal\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{stop\+Horizontal\+Move()}{stopHorizontalMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::stop\+Horizontal\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the horizontal move to h\+\_\+none \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1InputController_a9a3281103fedbc1e86dd936731209ee9}\label{classroadfighter_1_1InputController_a9a3281103fedbc1e86dd936731209ee9}} 
+\index{roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}!stop\+Vertical\+Move@{stop\+Vertical\+Move}}
+\index{stop\+Vertical\+Move@{stop\+Vertical\+Move}!roadfighter\+::\+Input\+Controller@{roadfighter\+::\+Input\+Controller}}
+\subsubsection{\texorpdfstring{stop\+Vertical\+Move()}{stopVerticalMove()}}
+{\footnotesize\ttfamily void roadfighter\+::\+Input\+Controller\+::stop\+Vertical\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this function sets the vertical move to v\+\_\+none \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 Game\+Logic/include/\hyperlink{InputController_8h}{Input\+Controller.\+h}\item 
-Game\+Logic/\+Source/Input\+Controller.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/\+Source/\hyperlink{InputController_8cpp}{Input\+Controller.\+cpp}\end{DoxyCompactItemize}

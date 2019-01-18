@@ -1,3 +1,6 @@
 <map id="GameLogic/include/RoadFighterGame.h" name="GameLogic/include/RoadFighterGame.h">
-<area shape="rect" id="node2" href="$SFMLRoadFighter_8h_source.html" title="SFMLConversion/Include\l/SFMLRoadFighter.h" alt="" coords="25,95,194,136"/>
+<area shape="rect" id="node2" href="$RoadFighterGame_8cpp.html" title="GameLogic/Source/RoadFighter\lGame.cpp" alt="" coords="5,95,213,136"/>
+<area shape="rect" id="node3" href="$SFMLRoadFighter_8h.html" title="SFMLConversion/Include\l/SFMLRoadFighter.h" alt="" coords="238,95,407,136"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="SFMLConversion/main.cpp" alt="" coords="133,191,313,218"/>
+<area shape="rect" id="node5" href="$SFMLRoadFighter_8cpp.html" title="SFMLConversion/Source\l/SFMLRoadFighter.cpp" alt="" coords="337,184,505,225"/>
 </map>

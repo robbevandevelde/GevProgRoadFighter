@@ -1,4 +1,4 @@
 <map id="roadfighter::World" name="roadfighter::World">
-<area shape="rect" id="node3" href="$classSFMLWorld.html" title="SFMLWorld" alt="" coords="23,155,113,181"/>
-<area shape="rect" id="node2" href="$classroadfighter_1_1Entity.html" title="roadfighter::Entity" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node3" href="$classroadfighterSFML_1_1SFMLWorld.html" title="roadfighterSFML::SFMLWorld" alt="" coords="5,155,200,181"/>
+<area shape="rect" id="node2" href="$classroadfighter_1_1Entity.html" title="roadfighter::Entity" alt="" coords="40,5,165,32"/>
 </map>

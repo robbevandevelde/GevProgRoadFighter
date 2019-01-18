@@ -46,7 +46,7 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ \hy
 \subsubsection{\texorpdfstring{G\+L\+L\+\_\+\+Entity\+\_\+\+Factory()}{GLL\_Entity\_Factory()}}
 {\footnotesize\ttfamily roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-derault constructor 
+default constructor 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classroadfighter_1_1GLL__Entity__Factory_a2a6a8d397d43c48894adb6c9d9ed0947}\label{classroadfighter_1_1GLL__Entity__Factory_a2a6a8d397d43c48894adb6c9d9ed0947}} 
@@ -55,7 +55,7 @@ derault constructor
 \subsubsection{\texorpdfstring{create\+Bonus\+Car()}{createBonusCar()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+Bonus\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for creating a \hyperlink{classroadfighter_1_1BonusCar}{Bonus\+Car} 
+an overriden factory method for creating a \hyperlink{classroadfighter_1_1BonusCar}{Bonus\+Car} 
 \begin{DoxyParams}{Parameters}
 {\em x} & coordinate of the bonus car (the middle) \\
 \hline
@@ -68,6 +68,11 @@ an overrided factory method for creating a \hyperlink{classroadfighter_1_1BonusC
 a shared pointer to an entity 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a888f537d2deed2d90a391c1900e9fdb6}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
 
@@ -77,9 +82,14 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a888f537d2deed2d
 \subsubsection{\texorpdfstring{create\+Bullet()}{createBullet()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+Bullet (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for creating a bullet \begin{DoxyReturn}{Returns}
+an overriden factory method for creating a bullet \begin{DoxyReturn}{Returns}
 a shared pointer to an \hyperlink{classroadfighter_1_1Entity}{Entity} 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a5241bdb886a9f1b086d009a0f6478045}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
@@ -90,14 +100,19 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a5241bdb886a9f1b
 \subsubsection{\texorpdfstring{create\+End()}{createEnd()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+End (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-base factory method for creating a \hyperlink{classroadfighter_1_1End}{End} 
+an overriden factory method to create an end object 
 \begin{DoxyParams}{Parameters}
-{\em y} & coordinate of the end \\
+{\em y} & the y value of th end object \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-a shared pointer to an entity 
+a shared pointer to the end 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a791574991ccbe7ff95f28e5651ed2cb1}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
@@ -108,9 +123,9 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a791574991ccbe7f
 \subsubsection{\texorpdfstring{create\+Player\+Car()}{createPlayerCar()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+Player\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{max,  }\item[{double}]{v\+Accel,  }\item[{double}]{h\+Accel,  }\item[{double}]{fuel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for crating the player car 
+an overriden factory method for crating the player car 
 \begin{DoxyParams}{Parameters}
-{\em x} & xoordinate of the player car (the middle) \\
+{\em x} & xcoordinate of the player car (the middle) \\
 \hline
 {\em y} & coordinate of the player car (the middle) \\
 \hline
@@ -127,6 +142,11 @@ an overrided factory method for crating the player car
 a shared pointer to an entity 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a3021f69b62b9df33706096381664d58f}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
 
@@ -136,9 +156,9 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a3021f69b62b9df3
 \subsubsection{\texorpdfstring{create\+Racing\+Car()}{createRacingCar()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+Racing\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{max,  }\item[{double}]{v\+Accel,  }\item[{double}]{h\+Accel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for crating a racing car 
+an overriden factory method for crating a racing car 
 \begin{DoxyParams}{Parameters}
-{\em x} & xoordinate of the racing car (the middle) \\
+{\em x} & xcoordinate of the racing car (the middle) \\
 \hline
 {\em y} & coordinate of the racing car (the middle) \\
 \hline
@@ -153,6 +173,11 @@ an overrided factory method for crating a racing car
 a shared pointer to an entity 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a17b9c30501b8a11624bee8f1c24a6b7e}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
 
@@ -162,9 +187,14 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_a17b9c30501b8a11
 \subsubsection{\texorpdfstring{create\+World()}{createWorld()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::create\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for creating the world \begin{DoxyReturn}{Returns}
+an overriden factory method for creating the world \begin{DoxyReturn}{Returns}
 a shared pointer to an entity 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_aa24de6bbeb80c25e96f3e24d6bcb5169}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
@@ -175,7 +205,7 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_aa24de6bbeb80c25
 \subsubsection{\texorpdfstring{creat\+Passing\+Car()}{creatPassingCar()}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classroadfighter_1_1Entity}{Entity} $>$ roadfighter\+::\+G\+L\+L\+\_\+\+Entity\+\_\+\+Factory\+::creat\+Passing\+Car (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-an overrided factory method for creating a \hyperlink{classroadfighter_1_1PassingCar}{Passing\+Car} 
+an overriden factory method for creating a \hyperlink{classroadfighter_1_1PassingCar}{Passing\+Car} 
 \begin{DoxyParams}{Parameters}
 {\em x} & coordinate of the passing car (the middle) \\
 \hline
@@ -188,6 +218,11 @@ an overrided factory method for creating a \hyperlink{classroadfighter_1_1Passin
 a shared pointer to an entity 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_aa21b8cb23696844b7349ccf2c87d10fa}{roadfighter\+::\+Entity\+\_\+\+Factory\+\_\+base}.
 
@@ -196,4 +231,4 @@ Implements \hyperlink{classroadfighter_1_1Entity__Factory__base_aa21b8cb23696844
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 Game\+Logic/include/\hyperlink{GLL__Entity__Factory_8h}{G\+L\+L\+\_\+\+Entity\+\_\+\+Factory.\+h}\item 
-Game\+Logic/\+Source/G\+L\+L\+\_\+\+Entity\+\_\+\+Factory.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/\+Source/\hyperlink{GLL__Entity__Factory_8cpp}{G\+L\+L\+\_\+\+Entity\+\_\+\+Factory.\+cpp}\end{DoxyCompactItemize}

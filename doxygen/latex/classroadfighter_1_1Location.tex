@@ -69,6 +69,9 @@ constructor by value
 {\em y} & \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none  none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classroadfighter_1_1Location_ac3e3afdb0b4c32abdd92d771d1ddf2be}\label{classroadfighter_1_1Location_ac3e3afdb0b4c32abdd92d771d1ddf2be}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!Location@{Location}}
 \index{Location@{Location}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
@@ -109,6 +112,11 @@ destructor for \hyperlink{classroadfighter_1_1Location}{Location}
 getter for the x coordinate \begin{DoxyReturn}{Returns}
 a double 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1Location_ae249866ad25f0127591f1abd478a17cd}\label{classroadfighter_1_1Location_ae249866ad25f0127591f1abd478a17cd}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!getY@{getY}}
 \index{getY@{getY}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
@@ -118,11 +126,16 @@ a double
 getter for the y coordinate \begin{DoxyReturn}{Returns}
 a double 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1Location_a44b584ce6b39f638d08709ae370feaf4}\label{classroadfighter_1_1Location_a44b584ce6b39f638d08709ae370feaf4}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!operator=@{operator=}}
 \index{operator=@{operator=}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1Location}{Location} \& roadfighter\+::\+Location\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{other }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classroadfighter_1_1Location}{Location} \& roadfighter\+::\+Location\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 copy assigment for \hyperlink{classroadfighter_1_1Location}{Location} 
 \begin{DoxyParams}{Parameters}
@@ -132,6 +145,11 @@ copy assigment for \hyperlink{classroadfighter_1_1Location}{Location}
 \begin{DoxyReturn}{Returns}
 a new \hyperlink{classroadfighter_1_1Location}{Location} that is equal to the other one 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1Location_a638a7648859525b0f56cc2fcc49de6f2}\label{classroadfighter_1_1Location_a638a7648859525b0f56cc2fcc49de6f2}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!operator=@{operator=}}
 \index{operator=@{operator=}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
@@ -144,15 +162,28 @@ move assignment for \hyperlink{classroadfighter_1_1Location}{Location}
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
+a \hyperlink{classroadfighter_1_1Location}{Location} that contains all the data of the first one
+\end{DoxyReturn}
+move assignment for \hyperlink{classroadfighter_1_1Location}{Location} 
+\begin{DoxyParams}{Parameters}
+{\em other} & other \hyperlink{classroadfighter_1_1Location}{Location} that is being moved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 a \hyperlink{classroadfighter_1_1Location}{Location} that contains all the data of the first one 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1Location_a41950b871d6b83269c063e9d34bbc24c}\label{classroadfighter_1_1Location_a41950b871d6b83269c063e9d34bbc24c}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!operator==@{operator==}}
 \index{operator==@{operator==}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
 \subsubsection{\texorpdfstring{operator==()}{operator==()}}
 {\footnotesize\ttfamily bool roadfighter\+::\+Location\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classroadfighter_1_1Location}{Location} \&}]{rhs }\end{DoxyParamCaption}) const}
 
-esuality operators 
+equality operators 
 \begin{DoxyParams}{Parameters}
 {\em rhs} & the location you are comparing to \\
 \hline
@@ -166,11 +197,19 @@ a bool
 \subsubsection{\texorpdfstring{set\+X()}{setX()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Location\+::setX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
 
-seeter for the x coordinate 
+setter for the x coordinate 
 \begin{DoxyParams}{Parameters}
 {\em x} & a double \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classroadfighter_1_1Location_ace0dc3e91d430176c43ec88c2bc4677c}\label{classroadfighter_1_1Location_ace0dc3e91d430176c43ec88c2bc4677c}} 
 \index{roadfighter\+::\+Location@{roadfighter\+::\+Location}!setY@{setY}}
 \index{setY@{setY}!roadfighter\+::\+Location@{roadfighter\+::\+Location}}
@@ -182,6 +221,14 @@ setter for the y coordinate
 {\em y} & a double \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Friends And Related Function Documentation}
@@ -206,4 +253,4 @@ the sotream object with the location wrtiten on it
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 Game\+Logic/include/\hyperlink{Location_8h}{Location.\+h}\item 
-Game\+Logic/\+Source/Location.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/\+Source/\hyperlink{Location_8cpp}{Location.\+cpp}\end{DoxyCompactItemize}

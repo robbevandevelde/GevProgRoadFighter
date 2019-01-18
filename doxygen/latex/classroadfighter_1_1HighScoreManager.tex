@@ -3,18 +3,72 @@
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_a9c40cba8af2b9db8bf76ed81c250f52d}\label{classroadfighter_1_1HighScoreManager_a9c40cba8af2b9db8bf76ed81c250f52d}} 
-static void {\bfseries add\+High\+Score} (const std\+::string \&name, unsigned int score)
+static void \hyperlink{classroadfighter_1_1HighScoreManager_a9c40cba8af2b9db8bf76ed81c250f52d}{add\+High\+Score} (const std\+::string \&name, unsigned int score)
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_af5f73f94d50829ec3f13792c5fbb33bb}\label{classroadfighter_1_1HighScoreManager_af5f73f94d50829ec3f13792c5fbb33bb}} 
-static std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ {\bfseries gethigh\+Scores} ()
+static std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ \hyperlink{classroadfighter_1_1HighScoreManager_af5f73f94d50829ec3f13792c5fbb33bb}{gethigh\+Scores} ()
 \item 
-\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_aa3b964a1c4631093aa2542a0cd8c4f00}\label{classroadfighter_1_1HighScoreManager_aa3b964a1c4631093aa2542a0cd8c4f00}} 
-static void {\bfseries write\+High\+Scores} (std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ \&towrite)
+static void \hyperlink{classroadfighter_1_1HighScoreManager_aa3b964a1c4631093aa2542a0cd8c4f00}{write\+High\+Scores} (std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ \&towrite)
 \end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_a9c40cba8af2b9db8bf76ed81c250f52d}\label{classroadfighter_1_1HighScoreManager_a9c40cba8af2b9db8bf76ed81c250f52d}} 
+\index{roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}!add\+High\+Score@{add\+High\+Score}}
+\index{add\+High\+Score@{add\+High\+Score}!roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}}
+\subsubsection{\texorpdfstring{add\+High\+Score()}{addHighScore()}}
+{\footnotesize\ttfamily void roadfighter\+::\+High\+Score\+Manager\+::add\+High\+Score (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{unsigned int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+this function adds a possible new highscores in this function all the highscores will be read from a json file, your highscore will be added and then the score will be sorted after that the scores will be writen back to the json file 
+\begin{DoxyParams}{Parameters}
+{\em name} & a string denoting the name for the new score \\
+\hline
+{\em score} & an int denoting the score itself \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_af5f73f94d50829ec3f13792c5fbb33bb}\label{classroadfighter_1_1HighScoreManager_af5f73f94d50829ec3f13792c5fbb33bb}} 
+\index{roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}!gethigh\+Scores@{gethigh\+Scores}}
+\index{gethigh\+Scores@{gethigh\+Scores}!roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}}
+\subsubsection{\texorpdfstring{gethigh\+Scores()}{gethighScores()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ roadfighter\+::\+High\+Score\+Manager\+::gethigh\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+function that reads the higshcores from a json file for this the nlohmann json parser is used \begin{DoxyReturn}{Returns}
+a vector of highscores 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classroadfighter_1_1HighScoreManager_aa3b964a1c4631093aa2542a0cd8c4f00}\label{classroadfighter_1_1HighScoreManager_aa3b964a1c4631093aa2542a0cd8c4f00}} 
+\index{roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}!write\+High\+Scores@{write\+High\+Scores}}
+\index{write\+High\+Scores@{write\+High\+Scores}!roadfighter\+::\+High\+Score\+Manager@{roadfighter\+::\+High\+Score\+Manager}}
+\subsubsection{\texorpdfstring{write\+High\+Scores()}{writeHighScores()}}
+{\footnotesize\ttfamily void roadfighter\+::\+High\+Score\+Manager\+::write\+High\+Scores (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{structroadfighter_1_1highScore}{high\+Score} $>$ \&}]{towrite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+function that writes a vector of highscores to a json file 
+\begin{DoxyParams}{Parameters}
+{\em towrite} & the vector of highscores that will be writen to the json file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Logic/include/High\+Score\+Manager.\+h\item 
-Game\+Logic/\+Source/High\+Score\+Manager.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/include/\hyperlink{HighScoreManager_8h}{High\+Score\+Manager.\+h}\item 
+Game\+Logic/\+Source/\hyperlink{HighScoreManager_8cpp}{High\+Score\+Manager.\+cpp}\end{DoxyCompactItemize}

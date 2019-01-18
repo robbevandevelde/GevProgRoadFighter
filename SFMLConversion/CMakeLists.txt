@@ -3,8 +3,7 @@ cmake_minimum_required(VERSION 3.6)
 project(GevProgRoadFighter)
 
 set(CMAKE_CXX_STANDARD 14)
-#extra compile flags to make srue code conventions are followed
-#set(CMAKE_CXX_FLAGS "-Wall -Werror")
+#extra compile flags to make sure code conventions are followed
 set(CMAKE_CXX_FLAGS -pthread)
 set(CMAKE_EXE_LINKER_FLAGS -pthread)
 

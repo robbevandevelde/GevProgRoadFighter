@@ -2,20 +2,22 @@
 \label{classroadfighter_1_1Bullet}\index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
 
 
-Inheritance diagram for roadfighter\+:\+:Bullet\+:\nopagebreak
+Inheritance diagram for roadfighter\+:\+:Bullet\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classroadfighter_1_1Bullet__inherit__graph}
+\includegraphics[width=350pt]{classroadfighter_1_1Bullet__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for roadfighter\+:\+:Bullet\+:\nopagebreak
+Collaboration diagram for roadfighter\+:\+:Bullet\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classroadfighter_1_1Bullet__coll__graph}
+\includegraphics[width=350pt]{classroadfighter_1_1Bullet__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -96,9 +98,18 @@ constructor by values
 \hline
 {\em m\+\_\+vert\+Accel} & \\
 \hline
-{\em m\+\_\+hor\+Accel} & \\
+{\em m\+\_\+hor\+Accel} & constructor where all variables are given \\
+\hline
+{\em m\+\_\+loc1} & first location \\
+\hline
+{\em m\+\_\+loc2} & second location \\
+\hline
+{\em vertspeed} & vertical speed \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none  none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classroadfighter_1_1Bullet_a297de09c51315af09bd676801cc4e2bd}\label{classroadfighter_1_1Bullet_a297de09c51315af09bd676801cc4e2bd}} 
 \index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!````~Bullet@{$\sim$\+Bullet}}
 \index{````~Bullet@{$\sim$\+Bullet}!roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}}
@@ -114,9 +125,17 @@ destructor for \hyperlink{classroadfighter_1_1Bullet}{Bullet}
 \subsubsection{\texorpdfstring{bonus()}{bonus()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-this function handles the bonus function of the bullet 
+this function handles the bonus function of the bullet \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a157e499c27619ceefd6179a459fafd90}{roadfighter\+::\+Collision\+Object}.
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_ad35887bb3cfb8c054eaaee56306d6944}{roadfighter\+::\+Collision\+Object}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}\label{classroadfighter_1_1Bullet_a36156632331e59c11abf5ae76024bc1f}} 
 \index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!collide\+With@{collide\+With}}
@@ -129,9 +148,17 @@ this function handles what should happen must a object colldie with this bullet 
 {\em collided} & the object the bullet collides with \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816fdd9370d28d9}{roadfighter\+::\+Collision\+Object}.
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a9eba85551432f548f2a0c20217a60f42}{roadfighter\+::\+Collision\+Object}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}\label{classroadfighter_1_1Bullet_ac96121377fffa9ed8ea94c333a841a7a}} 
 \index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!crash@{crash}}
@@ -139,9 +166,17 @@ Implements \hyperlink{classroadfighter_1_1CollisionObject_a7eafa2fdc4463788b816f
 \subsubsection{\texorpdfstring{crash()}{crash()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::crash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-this function handles the crash of a bullet 
+this function handles the crash of a bullet \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554daac0d398a2c}{roadfighter\+::\+Collision\+Object}.
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a9a5265d810f0ed7583b60046ab3fa88c}{roadfighter\+::\+Collision\+Object}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}\label{classroadfighter_1_1Bullet_a0f87b693a1583522e551ba1324fcd067}} 
 \index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!must\+Delete@{must\+Delete}}
@@ -149,9 +184,14 @@ Implements \hyperlink{classroadfighter_1_1CollisionObject_a18f0f60a5a664d6fb554d
 \subsubsection{\texorpdfstring{must\+Delete()}{mustDelete()}}
 {\footnotesize\ttfamily bool roadfighter\+::\+Bullet\+::must\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-a function that should be overriden and is used to denote wether an object should be deletet or not \begin{DoxyReturn}{Returns}
+overidden function that denotes whether the bullet must be deleted or not \begin{DoxyReturn}{Returns}
 a bool 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
 
 
 Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a738071cd7b1b8cd4c8d455b5e552bd4c}{roadfighter\+::\+Collision\+Object}.
@@ -190,9 +230,17 @@ a \hyperlink{classroadfighter_1_1Bullet}{Bullet} that contains all the data of t
 \subsubsection{\texorpdfstring{shot()}{shot()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-this function handles the shot logic of the bullet 
+this function handles the shot logic of the bullet \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57c8673308dbb}{roadfighter\+::\+Collision\+Object}.
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_a55d891b6d9b50abdc44f964a40a7777c}{roadfighter\+::\+Collision\+Object}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}\label{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}} 
 \index{roadfighter\+::\+Bullet@{roadfighter\+::\+Bullet}!update\+Logic@{update\+Logic}}
@@ -200,7 +248,15 @@ Implements \hyperlink{classroadfighter_1_1CollisionObject_a338a1071e6d5e25439e57
 \subsubsection{\texorpdfstring{update\+Logic()}{updateLogic()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::update\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-virtual void function that should be used to update the logic of the entity 
+overidden function that updates the logic of the bullet \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em none} & \\
+\hline
+\end{DoxyExceptions}
+
 
 Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}{roadfighter\+::\+Entity}.
 
@@ -210,13 +266,21 @@ Implements \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e19656
 \subsubsection{\texorpdfstring{win()}{win()}}
 {\footnotesize\ttfamily void roadfighter\+::\+Bullet\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-this function handles the win condition of a bullet 
+this function handles the win condition of a bullet \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 
-Implements \hyperlink{classroadfighter_1_1CollisionObject_a03ce1ae52676088839d85c597743052c}{roadfighter\+::\+Collision\+Object}.
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classroadfighter_1_1CollisionObject_aa793e1b9943ee90bbb4129ddd06b9be7}{roadfighter\+::\+Collision\+Object}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Logic/include/\+Entities/Bullet.\+h\item 
-Game\+Logic/\+Source/\+Entities/Bullet.\+cpp\end{DoxyCompactItemize}
+Game\+Logic/include/\+Entities/\hyperlink{Bullet_8h}{Bullet.\+h}\item 
+Game\+Logic/\+Source/\+Entities/\hyperlink{Bullet_8cpp}{Bullet.\+cpp}\end{DoxyCompactItemize}

@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>roadfighter</b></li><li class="navelem"><a class="el" href="classroadfighter_1_1HighScoreManager.html">HighScoreManager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceroadfighter.html">roadfighter</a></li><li class="navelem"><a class="el" href="classroadfighter_1_1HighScoreManager.html">HighScoreManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,19 +72,138 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c40cba8af2b9db8bf76ed81c250f52d"><td class="memItemLeft" align="right" valign="top"><a id="a9c40cba8af2b9db8bf76ed81c250f52d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>addHighScore</b> (const std::string &amp;name, unsigned int score)</td></tr>
+<tr class="memitem:a9c40cba8af2b9db8bf76ed81c250f52d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroadfighter_1_1HighScoreManager.html#a9c40cba8af2b9db8bf76ed81c250f52d">addHighScore</a> (const std::string &amp;name, unsigned int score)</td></tr>
 <tr class="separator:a9c40cba8af2b9db8bf76ed81c250f52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f73f94d50829ec3f13792c5fbb33bb"><td class="memItemLeft" align="right" valign="top"><a id="af5f73f94d50829ec3f13792c5fbb33bb"></a>
-static std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gethighScores</b> ()</td></tr>
+<tr class="memitem:af5f73f94d50829ec3f13792c5fbb33bb"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroadfighter_1_1HighScoreManager.html#af5f73f94d50829ec3f13792c5fbb33bb">gethighScores</a> ()</td></tr>
 <tr class="separator:af5f73f94d50829ec3f13792c5fbb33bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b964a1c4631093aa2542a0cd8c4f00"><td class="memItemLeft" align="right" valign="top"><a id="aa3b964a1c4631093aa2542a0cd8c4f00"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeHighScores</b> (std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt; &amp;towrite)</td></tr>
+<tr class="memitem:aa3b964a1c4631093aa2542a0cd8c4f00"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroadfighter_1_1HighScoreManager.html#aa3b964a1c4631093aa2542a0cd8c4f00">writeHighScores</a> (std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt; &amp;towrite)</td></tr>
 <tr class="separator:aa3b964a1c4631093aa2542a0cd8c4f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9c40cba8af2b9db8bf76ed81c250f52d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c40cba8af2b9db8bf76ed81c250f52d">&#9670;&nbsp;</a></span>addHighScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roadfighter::HighScoreManager::addHighScore </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>score</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>this function adds a possible new highscores in this function all the highscores will be read from a json file, your highscore will be added and then the score will be sorted after that the scores will be writen back to the json file </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>a string denoting the name for the new score </td></tr>
+    <tr><td class="paramname">score</td><td>an int denoting the score itself </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5f73f94d50829ec3f13792c5fbb33bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f73f94d50829ec3f13792c5fbb33bb">&#9670;&nbsp;</a></span>gethighScores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt; roadfighter::HighScoreManager::gethighScores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>function that reads the higshcores from a json file for this the nlohmann json parser is used </p><dl class="section return"><dt>Returns</dt><dd>a vector of highscores </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3b964a1c4631093aa2542a0cd8c4f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b964a1c4631093aa2542a0cd8c4f00">&#9670;&nbsp;</a></span>writeHighScores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roadfighter::HighScoreManager::writeHighScores </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structroadfighter_1_1highScore.html">highScore</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>towrite</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>function that writes a vector of highscores to a json file </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">towrite</td><td>the vector of highscores that will be writen to the json file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>GameLogic/include/<a class="el" href="HighScoreManager_8h_source.html">HighScoreManager.h</a></li>
-<li>GameLogic/Source/HighScoreManager.cpp</li>
+<li>GameLogic/Source/<a class="el" href="HighScoreManager_8cpp.html">HighScoreManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

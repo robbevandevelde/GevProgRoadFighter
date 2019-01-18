@@ -6,8 +6,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighterTest" />
-      <config projectName="GevProgRoadFighter" targetName="GLL" />
       <config projectName="GevProgRoadFighter" targetName="GevProgRoadFighter" />
+      <config projectName="GevProgRoadFighter" targetName="GLL" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -18,18 +18,456 @@
   <component name="ChangeListManager">
     <list default="true" id="b1dd85cb-c1a5-4279-b0a1-a800b112b4ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/InputController.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/InputController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportGevProgRoadfighter.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ReportGevProgRoadfighter.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLConversion/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLRacingCar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLRacingCar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TempDesign.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TempDesign.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GameLogic/CMakeFiles/GLL.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/CMakeFiles/GevProgRoadFighter.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SFMLConversion/GevProgRoadFighter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/BonusCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/BonusCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Bullet_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Bullet_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Clock_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Clock_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/CollisionObject_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/CollisionObject_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/End_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/End_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/EntityTransporter_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Entity__Factory__base_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/GLL__Entity__Factory_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/HighScoreManager_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/HighScoreManager_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/InputController_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/InputController_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/InputController_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/InputController_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/InputController_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Location_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Location_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Location_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Location_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Location_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/MovingObject_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/MovingObject_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Observable_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Observable_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/ObserverBase_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/ObserverBase_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/PassingCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/PassingCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/PlayerCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/PlayerCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RacingCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RacingCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Random_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Random_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__dep__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h__incl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/RoadFighterGame_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLBonusCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLBonusCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLBullet_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLBullet_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLEnd_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLEnd_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLEntitySprite_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLEntitySprite_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLPassingCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLPassingCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLPlayerCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLPlayerCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLRacingCar_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLRacingCar_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLRoadFighter_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLRoadFighter_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFMLWorld_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFMLWorld_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/SFML__Entity__Factory_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/SFML__Entity__Factory_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/ScoreObserver_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/ScoreObserver_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/Transformation_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/Transformation_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/World_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/World_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1BonusCar__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Bullet__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1CollisionObject__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1End__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1EntityTransporter-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1EntityTransporter-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1EntityTransporter.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1EntityTransporter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__Factory__base__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Entity__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1GLL__Entity__Factory-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1GLL__Entity__Factory-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1GLL__Entity__Factory.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1GLL__Entity__Factory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1HighScoreManager-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1HighScoreManager-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1HighScoreManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1HighScoreManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1InputController-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1InputController-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1InputController.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1InputController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Location-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Location-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Location.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1Location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1MovingObject__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PassingCar__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1PlayerCar__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RacingCar__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RoadFighterGame-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RoadFighterGame-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RoadFighterGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1RoadFighterGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/classroadfighter_1_1World__inherit__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_28e088e4f021040016a0e1f73d142605_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_2b510fd7071679ad269c21298d9f88a1_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_3400746e3f69377991bcdbf305114ba6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_3400746e3f69377991bcdbf305114ba6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_37618a71d99bdfed5979e976980d5eec.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_37618a71d99bdfed5979e976980d5eec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_487d7adc2f64206731f2d380c67f3c17_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_4f957c5e0f94ee136631f281665aa11e_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_6464a4fa7fdf2f5ed6d3d3d718d9d714.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_6464a4fa7fdf2f5ed6d3d3d718d9d714.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_79c1c0e12363158964077614c7a1779e_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_8a2252573690e4b82c45552f649fcd0b.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_8a2252573690e4b82c45552f649fcd0b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_953d2f3bf31643e94ed15e44d163d4d2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_953d2f3bf31643e94ed15e44d163d4d2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_d0dfa290957bfd9a59dc429b36d9fe40.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_d0dfa290957bfd9a59dc429b36d9fe40.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/dir_e294a2d48963233b35802ef2ee4f292b.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/dir_e294a2d48963233b35802ef2ee4f292b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_i.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_l.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_l.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_m.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_m.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_o.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_o.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_u.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_func_w.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_func_w.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_h.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_i.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_l.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_l.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_m.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_m.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_o.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_o.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_u.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/functions_w.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/functions_w.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.map" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherit_graph_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/inherits.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/inherits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/md_README.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/md_README.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/all_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/classes_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/classes_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/files_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/files_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/files_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/files_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/files_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/files_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/files_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/files_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/functions_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/functions_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/structroadfighter_1_1highScore-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/structroadfighter_1_1highScore-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/html/structroadfighter_1_1highScore.html" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/html/structroadfighter_1_1highScore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/EntityTransporter_8h__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Entity__Factory__base_8h__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/GLL__Entity__Factory_8h__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/InputController_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/InputController_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/InputController_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/InputController_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/InputController_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/InputController_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Location_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Location_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Location_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Location_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/Location_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/Location_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__dep__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__dep__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/RoadFighterGame_8h__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1BonusCar__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Bullet__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1CollisionObject__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1End__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1EntityTransporter.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1EntityTransporter.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__Factory__base__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Entity__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1GLL__Entity__Factory.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1GLL__Entity__Factory.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1HighScoreManager.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1HighScoreManager.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1InputController.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1InputController.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Location.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1Location.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1MovingObject__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PassingCar__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1PlayerCar__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__coll__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__coll__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RacingCar__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RoadFighterGame.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1RoadFighterGame.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World__inherit__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World__inherit__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World__inherit__graph.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/classroadfighter_1_1World__inherit__graph.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_28e088e4f021040016a0e1f73d142605_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_2b510fd7071679ad269c21298d9f88a1_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_3400746e3f69377991bcdbf305114ba6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_3400746e3f69377991bcdbf305114ba6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_37618a71d99bdfed5979e976980d5eec.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_37618a71d99bdfed5979e976980d5eec.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_487d7adc2f64206731f2d380c67f3c17_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_4f957c5e0f94ee136631f281665aa11e_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_54b6db2872b9a54ff35fc6c48f41fa92_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_6464a4fa7fdf2f5ed6d3d3d718d9d714.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_6464a4fa7fdf2f5ed6d3d3d718d9d714.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_79c1c0e12363158964077614c7a1779e_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_899996c12d8ef0f9073aaa54f9ab7330_dep.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_8a2252573690e4b82c45552f649fcd0b.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_8a2252573690e4b82c45552f649fcd0b.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_953d2f3bf31643e94ed15e44d163d4d2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_953d2f3bf31643e94ed15e44d163d4d2.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_d0dfa290957bfd9a59dc429b36d9fe40.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_d0dfa290957bfd9a59dc429b36d9fe40.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/dir_e294a2d48963233b35802ef2ee4f292b.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/dir_e294a2d48963233b35802ef2ee4f292b.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/hierarchy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/hierarchy.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/md_README.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/md_README.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doxygen/latex/structroadfighter_1_1highScore.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doxygen/latex/structroadfighter_1_1highScore.tex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/GameLogic/cmake-build-debug/" />
@@ -58,93 +496,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+        <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SFMLConversion/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2100">
-              <caret line="142" column="5" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TODO.txt">
+        <entry file="file://$PROJECT_DIR$/GameLogic/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="465">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/InputTests.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TempDesign.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TempDesign.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLPlayerCar.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="71" column="57" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
+            <state relative-caret-position="409">
+              <caret line="242" column="135" lean-forward="true" selection-start-line="242" selection-start-column="135" selection-end-line="242" selection-end-column="135" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/Source/InputController.cpp">
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+            <state relative-caret-position="-1305" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameLogic/include/InputController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -176,10 +596,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/Bullet.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/Bullet.h" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" />
-        <option value="$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/End.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/End.h" />
         <option value="$PROJECT_DIR$/GameLogic/include/Entities/Entity.h" />
@@ -191,8 +608,6 @@
         <option value="$PROJECT_DIR$/GameLogic/include/GLL_Entity_Factory.h" />
         <option value="$PROJECT_DIR$/Test/InputTests.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/main.cpp" />
-        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" />
-        <option value="$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Observer/Observable.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/Observer/Observable.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp" />
@@ -222,11 +637,16 @@
         <option value="$PROJECT_DIR$/GameLogic/include/InputController.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/InputController.cpp" />
         <option value="$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h" />
-        <option value="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" />
         <option value="$PROJECT_DIR$/GameLogic/include/RoadFighterGame.h" />
         <option value="$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp" />
         <option value="$PROJECT_DIR$/TempDesign.txt" />
         <option value="$PROJECT_DIR$/TODO.txt" />
+        <option value="$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h" />
+        <option value="$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp" />
+        <option value="$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp" />
+        <option value="$PROJECT_DIR$/SFMLConversion/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp" />
       </list>
     </option>
   </component>
@@ -249,6 +669,17 @@
             <path>
               <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GevProgRoadFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GevProgRoadFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="SFMLConversion" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -415,14 +846,8 @@
       <workItem from="1547381973100" duration="1398000" />
       <workItem from="1547383977401" duration="6990000" />
       <workItem from="1547655334180" duration="13865000" />
-      <workItem from="1547731566076" duration="19316000" />
-    </task>
-    <task id="LOCAL-00018" summary="another travis test">
-      <created>1543324314466</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1543324314466</updated>
+      <workItem from="1547731566076" duration="26439000" />
+      <workItem from="1547809821092" duration="3530000" />
     </task>
     <task id="LOCAL-00019" summary="more gtest with travis attempts">
       <created>1543324648985</created>
@@ -760,11 +1185,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547750388549</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="changed the way the input works and some general code cleanup">
+      <created>1547760191266</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1547760191266</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395810000" />
+    <option name="totallyTimeSpent" value="406463000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -779,13 +1211,12 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29717764" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892008" visible="true" weight="0.30049807" />
+      <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.30049807" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4864416" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997233" weight="0.4211663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -796,6 +1227,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32937366" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4991699" weight="0.3275862" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4864416" weight="0.32937366" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -841,7 +1273,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="added finishline sprite, slowdown after crossing finishline and boos teffect when hitting bonuscar" />
     <MESSAGE value="fixed bugs in boost" />
     <MESSAGE value="added the scoreObserver and all needed functionality for that, also added some endgame logic" />
     <MESSAGE value="added pausescreen when pressing escape when the game is running" />
@@ -866,7 +1297,8 @@
     <MESSAGE value="finished readme" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="some additions to the readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="some additions to the readme" />
+    <MESSAGE value="changed the way the input works and some general code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the way the input works and some general code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,244 +1372,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/End.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Entity.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entity_Factory_base.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="85" column="75" selection-start-line="85" selection-start-column="75" selection-end-line="85" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/EntityTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/EntityTransporter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/HighScoreTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/InputTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/mainTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Observer/Observable.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/Observable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/PlayerCar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/RacingCar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Observer/ScoreObserver.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ScoreObserver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFML_Entity_Factory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLBullet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEnd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEnd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLEntitySprite.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLPlayerCar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/entities/SFMLWorld.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="171" selection-start-line="43" selection-start-column="171" selection-end-line="43" selection-end-column="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/World.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="131" column="42" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/World.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Transformation.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1189,16 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
-          <folding>
-            <element signature="e#148#169#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1252,20 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameLogic/include/HighScoreManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -1280,13 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="142" column="5" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1294,10 +1457,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entity_Factory_base.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/Entity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/World.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/PassingCar.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/EntityInclude.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/End.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/RacingCar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/CollisionObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entities/MovingObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/HighScoreManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
+          <folding>
+            <element signature="e#148#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/GLL_Entity_Factory.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/EntityTransporter.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Location.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/MovingObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/CollisionObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PassingCar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Entity_Factory_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ObserverBase.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/ScoreObserver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/include/Observer/Observable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/BonusCar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-961" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/RoadFighterGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1576">
+          <caret line="142" column="5" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLBonusCar.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLEntitySprite.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFML_Entity_Factory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLconversionException.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/SFMLRoadFighter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/HighScoreTests.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Include/Entities/SFMLWorld.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/InputTests.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/TempDesign.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/PlayerCar.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/Source/Entities/RacingCar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1305" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SFMLConversion/Source/SFMLRoadFighter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="242" column="135" lean-forward="true" selection-start-line="242" selection-start-column="135" selection-end-line="242" selection-end-column="135" />
         </state>
       </provider>
     </entry>

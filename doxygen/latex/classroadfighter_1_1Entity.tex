@@ -2,7 +2,8 @@
 \label{classroadfighter_1_1Entity}\index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
 
 
-Inheritance diagram for roadfighter\+:\+:Entity\+:\nopagebreak
+Inheritance diagram for roadfighter\+:\+:Entity\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,20 +17,20 @@ virtual void \hyperlink{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196
 \item 
 virtual void \hyperlink{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}{update\+Movement} (double dt)=0
 \item 
-virtual void \hyperlink{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}{draw} ()=0
+virtual void \hyperlink{classroadfighter_1_1Entity_a30caeaac440c67460ea311f9b1bf3552}{draw} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}\label{classroadfighter_1_1Entity_ac516f8005f969ad5a86c252e5a3640ee}} 
+\mbox{\Hypertarget{classroadfighter_1_1Entity_a30caeaac440c67460ea311f9b1bf3552}\label{classroadfighter_1_1Entity_a30caeaac440c67460ea311f9b1bf3552}} 
 \index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!draw@{draw}}
 \index{draw@{draw}!roadfighter\+::\+Entity@{roadfighter\+::\+Entity}}
 \subsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily virtual void roadfighter\+::\+Entity\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void roadfighter\+::\+Entity\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-virtual void function that is used to draw the entity this function is not overriden in the game logic itself and should be implemented by the creator of the graphics implementation 
+virtual void function that is used to draw the entity this function is not overriden in the game logic itself and should be implemented by the creator of the graphics implementation the reason this function is not pure virtual is to make it possible to simulate through the game logic library without actually implementing it 
 
-Implemented in \hyperlink{classroadfighter_1_1World_a90534263a154d6d7c1e8aef4e0138881}{roadfighter\+::\+World}, \hyperlink{classSFMLPlayerCar_ab4adedb2554e5f5eb59b7565a592c2b2}{S\+F\+M\+L\+Player\+Car}, \hyperlink{classSFMLBonusCar_a95d6a17fdbd099db1fe080da1581da20}{S\+F\+M\+L\+Bonus\+Car}, \hyperlink{classSFMLBullet_a2b774898d1f369ab6d1e58659dab389a}{S\+F\+M\+L\+Bullet}, \hyperlink{classSFMLPassingCar_ad860ff5f0eea98fffaa51381c9424e8d}{S\+F\+M\+L\+Passing\+Car}, \hyperlink{classSFMLRacingCar_a2b1c8b9ad2b80c9e18990cb078d2d62d}{S\+F\+M\+L\+Racing\+Car}, \hyperlink{classSFMLWorld_aa0e1deda989ca494937054c5f5b139b0}{S\+F\+M\+L\+World}, and \hyperlink{classSFMLEnd_aee51982a63f9c1c6495f539528683989}{S\+F\+M\+L\+End}.
+Reimplemented in \hyperlink{classroadfighter_1_1World_a90534263a154d6d7c1e8aef4e0138881}{roadfighter\+::\+World}, \hyperlink{classroadfighterSFML_1_1SFMLPlayerCar_a09685e98ed5357ce9aa87834a89c2a3e}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+Player\+Car}, \hyperlink{classroadfighterSFML_1_1SFMLPassingCar_a6126e27f57541cfce33207260304331a}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+Passing\+Car}, \hyperlink{classroadfighterSFML_1_1SFMLWorld_ac65836bf9c104d4611f63e6640706713}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+World}, \hyperlink{classroadfighterSFML_1_1SFMLBonusCar_a9e17ddeef7127e67ee8a68079def59b9}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+Bonus\+Car}, \hyperlink{classroadfighterSFML_1_1SFMLBullet_a7e46ff1aad9edf3cecb8e88bf386c7b7}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+Bullet}, \hyperlink{classroadfighterSFML_1_1SFMLRacingCar_af03d32b40f2f213936df8afa29b5529c}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+Racing\+Car}, and \hyperlink{classroadfighterSFML_1_1SFMLEnd_a3b2b22f599e8011b8e2a83fd5aadee9f}{roadfighter\+S\+F\+M\+L\+::\+S\+F\+M\+L\+End}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}\label{classroadfighter_1_1Entity_a54c00f1af306290bae3e4b84e196566b}} 
 \index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!update\+Logic@{update\+Logic}}
@@ -39,7 +40,7 @@ Implemented in \hyperlink{classroadfighter_1_1World_a90534263a154d6d7c1e8aef4e01
 
 virtual void function that should be used to update the logic of the entity 
 
-Implemented in \hyperlink{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}{roadfighter\+::\+Moving\+Object}, \hyperlink{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}{roadfighter\+::\+Bullet}, \hyperlink{classroadfighter_1_1PlayerCar_a01480487ca7978a50a3c6609f1ebe6df}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1World_a066592a75c8a38e241013707b429206c}{roadfighter\+::\+World}, \hyperlink{classroadfighter_1_1RacingCar_af3f3b4c368ba61c13dc9b99004895c5d}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_a21d55ad1e1595ac6c86ca20f8819778b}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ac3fe3087290121bf44880f94efa3a916}{roadfighter\+::\+Passing\+Car}, and \hyperlink{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}{roadfighter\+::\+End}.
+Implemented in \hyperlink{classroadfighter_1_1MovingObject_a2c5d69054a59fc5c6d7458f864ee9d57}{roadfighter\+::\+Moving\+Object}, \hyperlink{classroadfighter_1_1Bullet_a13aa730279ee8590d0eb2f9e6c01f265}{roadfighter\+::\+Bullet}, \hyperlink{classroadfighter_1_1World_a066592a75c8a38e241013707b429206c}{roadfighter\+::\+World}, \hyperlink{classroadfighter_1_1PlayerCar_a01480487ca7978a50a3c6609f1ebe6df}{roadfighter\+::\+Player\+Car}, \hyperlink{classroadfighter_1_1RacingCar_af3f3b4c368ba61c13dc9b99004895c5d}{roadfighter\+::\+Racing\+Car}, \hyperlink{classroadfighter_1_1BonusCar_a21d55ad1e1595ac6c86ca20f8819778b}{roadfighter\+::\+Bonus\+Car}, \hyperlink{classroadfighter_1_1PassingCar_ac3fe3087290121bf44880f94efa3a916}{roadfighter\+::\+Passing\+Car}, and \hyperlink{classroadfighter_1_1End_aee4a4fed3e7bd5f85f183351280e54f9}{roadfighter\+::\+End}.
 
 \mbox{\Hypertarget{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}\label{classroadfighter_1_1Entity_a66614a11004d6f9516473f60b530f689}} 
 \index{roadfighter\+::\+Entity@{roadfighter\+::\+Entity}!update\+Movement@{update\+Movement}}
@@ -60,4 +61,4 @@ Implemented in \hyperlink{classroadfighter_1_1MovingObject_ac1918d96dac118c4bd7d
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Logic/include/\+Entities/Entity.\+h\end{DoxyCompactItemize}
+Game\+Logic/include/\+Entities/\hyperlink{Entity_8h}{Entity.\+h}\end{DoxyCompactItemize}

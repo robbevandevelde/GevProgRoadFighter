@@ -1,6 +1,6 @@
 <map id="roadfighter::BonusCar" name="roadfighter::BonusCar">
-<area shape="rect" id="node2" href="$classroadfighter_1_1MovingObject.html" title="roadfighter::MovingObject" alt="" coords="88,155,259,181"/>
+<area shape="rect" id="node2" href="$classroadfighter_1_1MovingObject.html" title="roadfighter::MovingObject" alt="" coords="105,155,276,181"/>
 <area shape="rect" id="node3" href="$classroadfighter_1_1CollisionObject.html" title="roadfighter::CollisionObject" alt="" coords="5,80,184,107"/>
 <area shape="rect" id="node4" href="$classroadfighter_1_1Entity.html" title="roadfighter::Entity" alt="" coords="32,5,157,32"/>
-<area shape="rect" id="node5" href="$classObservable.html" title="Observable" alt="" coords="208,80,296,107"/>
+<area shape="rect" id="node5" href="$classroadfighter_1_1Observable.html" title="roadfighter::Observable" alt="" coords="208,80,365,107"/>
 </map>

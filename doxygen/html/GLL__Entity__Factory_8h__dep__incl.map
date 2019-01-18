@@ -1,4 +1,12 @@
 <map id="GameLogic/include/GLL_Entity_Factory.h" name="GameLogic/include/GLL_Entity_Factory.h">
-<area shape="rect" id="node2" href="$RoadFighterGame_8h.html" title="GameLogic/include/RoadFighter\lGame.h" alt="" coords="5,95,213,136"/>
-<area shape="rect" id="node3" href="$SFMLRoadFighter_8h_source.html" title="SFMLConversion/Include\l/SFMLRoadFighter.h" alt="" coords="25,184,194,225"/>
+<area shape="rect" id="node2" href="$RoadFighterGame_8h.html" title="GameLogic/include/RoadFighter\lGame.h" alt="" coords="112,95,320,136"/>
+<area shape="rect" id="node7" href="$GLL__Entity__Factory_8cpp.html" title="GameLogic/Source/GLL\l_Entity_Factory.cpp" alt="" coords="345,95,506,136"/>
+<area shape="rect" id="node8" href="$EntityTests_8cpp.html" title="Test/EntityTests.cpp" alt="" coords="531,102,675,129"/>
+<area shape="rect" id="node9" href="$HighScoreTests_8cpp.html" title="Test/HighScoreTests.cpp" alt="" coords="699,102,869,129"/>
+<area shape="rect" id="node10" href="$InputTests_8cpp.html" title="Test/InputTests.cpp" alt="" coords="893,102,1032,129"/>
+<area shape="rect" id="node11" href="$OberserTests_8cpp.html" title="Test/OberserTests.cpp" alt="" coords="1057,102,1213,129"/>
+<area shape="rect" id="node3" href="$RoadFighterGame_8cpp.html" title="GameLogic/Source/RoadFighter\lGame.cpp" alt="" coords="5,184,213,225"/>
+<area shape="rect" id="node4" href="$SFMLRoadFighter_8h.html" title="SFMLConversion/Include\l/SFMLRoadFighter.h" alt="" coords="238,184,407,225"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="SFMLConversion/main.cpp" alt="" coords="133,281,313,307"/>
+<area shape="rect" id="node6" href="$SFMLRoadFighter_8cpp.html" title="SFMLConversion/Source\l/SFMLRoadFighter.cpp" alt="" coords="337,273,505,315"/>
 </map>

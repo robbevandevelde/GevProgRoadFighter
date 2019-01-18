@@ -1,7 +1,8 @@
 <map id="GameLogic/include/Entity_Factory_base.h" name="GameLogic/include/Entity_Factory_base.h">
-<area shape="rect" id="node3" href="$Entity_8h_source.html" title="Entities/Entity.h" alt="" coords="184,169,299,196"/>
-<area shape="rect" id="node4" href="$ScoreObserver_8h_source.html" title="Observer/ScoreObserver.h" alt="" coords="334,95,511,121"/>
-<area shape="rect" id="node5" href="$ObserverBase_8h_source.html" title="ObserverBase.h" alt="" coords="323,169,439,196"/>
-<area shape="rect" id="node7" href="$InputController_8h.html" title="InputController.h" alt="" coords="535,95,654,121"/>
-<area shape="rect" id="node9" href="$EntityTransporter_8h.html" title="EntityTransporter.h" alt="" coords="75,95,208,121"/>
+<area shape="rect" id="node3" href="$Entity_8h.html" title="Entities/Entity.h" alt="" coords="181,169,296,196"/>
+<area shape="rect" id="node7" href="$ScoreObserver_8h.html" title="Observer/ScoreObserver.h" alt="" coords="337,95,514,121"/>
+<area shape="rect" id="node8" href="$ObserverBase_8h.html" title="ObserverBase.h" alt="" coords="321,169,437,196"/>
+<area shape="rect" id="node10" href="$InputController_8h.html" title="InputController.h" alt="" coords="450,244,569,271"/>
+<area shape="rect" id="node11" href="$EntityTransporter_8h.html" title="EntityTransporter.h" alt="" coords="77,95,211,121"/>
+<area shape="rect" id="node4" href="$GllException_8h.html" title="../GllException.h" alt="" coords="265,244,383,271"/>
 </map>

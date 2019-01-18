@@ -1,4 +1,4 @@
 <map id="roadfighter::Entity_Factory_base" name="roadfighter::Entity_Factory_base">
 <area shape="rect" id="node3" href="$classroadfighter_1_1GLL__Entity__Factory.html" title="roadfighter::GLL_Entity\l_Factory" alt="" coords="5,199,161,240"/>
-<area shape="rect" id="node4" href="$classSFML__Entity__Factory.html" title="SFML_Entity_Factory" alt="" coords="186,206,335,233"/>
+<area shape="rect" id="node4" href="$classroadfighterSFML_1_1SFML__Entity__Factory.html" title="roadfighterSFML::SFML\l_Entity_Factory" alt="" coords="185,199,347,240"/>
 </map>
